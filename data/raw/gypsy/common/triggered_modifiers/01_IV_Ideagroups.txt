@@ -1,0 +1,1310 @@
+humanist_bonus = {
+	potential = {
+		has_idea_group = humanist_ideas
+	}
+	trigger = {
+		has_idea = cultural_ties_2
+		num_accepted_cultures = 5
+	}
+	land_morale = 0.1
+}
+
+dynastic_bonus = {
+	potential = {
+		has_idea_group = dynasty0
+	}
+	trigger = {
+		has_idea = diplomatic_corps_2
+		has_reform = elective_monarchy
+	}
+	monarch_diplomatic_power = 1
+}
+
+dynastic_bonus_2 = {
+	potential = {
+		has_idea_group = monarchy0
+	}
+	trigger = {
+		has_idea = monarchy1 
+		has_reform = elective_monarchy
+	}
+	monarch_admin_power = 1
+	prestige = 1
+}
+ 
+
+heavy_ship_1_bonus = {
+	potential = {
+		has_idea_group = heavy_ship0
+		NOT = { num_of_heavy_ship = 100 }
+	}
+	trigger = {
+		has_idea = heavy_ship7
+		num_of_heavy_ship = 50
+		NOT = { num_of_heavy_ship = 100 }
+	}
+	navy_tradition = 0.25
+}
+
+heavy_ship_2_bonus = {
+	potential = {
+		has_idea_group = heavy_ship0
+		NOT = { num_of_heavy_ship = 150 }
+	}
+	trigger = {
+		has_idea = heavy_ship7
+		num_of_heavy_ship = 100
+		NOT = { num_of_heavy_ship = 150 }
+	}
+	navy_tradition = 0.5
+}
+
+heavy_ship_3_bonus = {
+	potential = {
+		has_idea_group = heavy_ship0
+		NOT = { num_of_heavy_ship = 200 }
+	}
+	trigger = {
+		has_idea = heavy_ship7
+		num_of_heavy_ship = 150
+		NOT = { num_of_heavy_ship = 200 }
+	}
+	navy_tradition = 0.75
+}
+
+heavy_ship_4_bonus = {
+	potential = {
+		has_idea_group = heavy_ship0
+		NOT = { num_of_heavy_ship = 300 }
+	}
+	trigger = {
+		has_idea = heavy_ship7
+		num_of_heavy_ship = 200
+		NOT = { num_of_heavy_ship = 300 }
+	}
+	navy_tradition = 1.0
+}
+
+heavy_ship_5_bonus = {
+	potential = {
+		has_idea_group = heavy_ship0
+	}
+	trigger = {
+		has_idea = heavy_ship7
+		num_of_heavy_ship = 300
+	}
+	navy_tradition = 1.5
+}
+
+galley_1_bonus = {
+	potential = {
+		has_idea_group = galley0
+		NOT = { num_of_galley = 200 }
+	}
+	trigger = {
+		has_idea = galley5
+		num_of_galley = 100
+		NOT = { num_of_galley = 200 }
+	}
+	navy_tradition = 0.25
+}
+
+galley_2_bonus = {
+	potential = {
+		has_idea_group = galley0
+		NOT = { num_of_galley = 300 }
+	}
+	trigger = {
+		has_idea = galley5
+		num_of_galley = 200
+		NOT = { num_of_galley = 300 }
+	}
+	navy_tradition = 0.5
+}
+
+galley_3_bonus = {
+	potential = {
+		has_idea_group = galley0
+		NOT = { num_of_galley = 500 }
+	}
+	trigger = {
+		has_idea = galley5
+		num_of_galley = 300
+		NOT = { num_of_galley = 500 }
+	}
+	navy_tradition = 0.75
+}
+
+galley_4_bonus = {
+	potential = {
+		has_idea_group = galley0
+		NOT = { num_of_galley = 700 }
+	}
+	trigger = {
+		has_idea = galley5
+		num_of_galley = 500
+		NOT = { num_of_galley = 700 }
+	}
+	navy_tradition = 1.0
+}
+
+galley_5_bonus = {
+	potential = {
+		has_idea_group = galley0
+	}
+	trigger = {
+		has_idea = galley5
+		num_of_galley = 700
+	}
+	navy_tradition = 1.5
+}
+
+handel_1_bonus = {
+	potential = {
+		has_idea_group = light_ship0
+		NOT = { num_of_light_ship = 70 }
+	}
+	trigger = {
+		has_idea = light_ship3
+		num_of_light_ship = 35
+		NOT = { num_of_light_ship = 70 }
+	}
+	navy_tradition = 0.25
+}
+
+handel_2_bonus = {
+	potential = {
+		has_idea_group = light_ship0
+		NOT = { num_of_light_ship = 100 }
+	}
+	trigger = {
+		has_idea = light_ship3
+		num_of_light_ship = 70
+		NOT = { num_of_light_ship = 100 }
+	}
+	navy_tradition = 0.5
+}
+
+
+handel_3_bonus = {
+	potential = {
+		has_idea_group = light_ship0
+		NOT = { num_of_light_ship = 150 }
+	}
+	trigger = {
+		has_idea = light_ship3
+		num_of_light_ship = 100
+		NOT = { num_of_light_ship = 150 }
+	}
+	navy_tradition = 0.75
+}
+
+handel_4_bonus = {
+	potential = {
+		has_idea_group = light_ship0
+		NOT = { num_of_light_ship = 175 }
+	}
+	trigger = {
+		has_idea = light_ship3
+		num_of_light_ship = 150
+		NOT = { num_of_light_ship = 175 }
+	}
+	navy_tradition = 1.0
+}
+
+handel_5_bonus = {
+	potential = {
+		has_idea_group = light_ship0
+	}
+	trigger = {
+		has_idea = light_ship3
+		num_of_light_ship = 175
+	}
+	navy_tradition = 1.5
+}
+
+
+kolo3_1_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 1
+		NOT = { colony = 2 }	
+	}
+	trigger = {
+		has_idea = colonial_empire4
+		colony = 1
+		NOT = { colony = 2 }
+	}
+	global_tariffs = 0.02
+	inflation_reduction = -0.01
+}
+
+kolo3_2_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 2
+		NOT = { colony = 3 }
+	}
+	trigger = {
+		has_idea = colonial_empire4
+		colony = 2
+		NOT = { colony = 3 }
+	}
+	global_tariffs = 0.04
+	inflation_reduction = -0.02
+}
+
+kolo3_3_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 3
+		NOT = { colony = 4 }	
+	}
+	trigger = {
+		has_idea = colonial_empire4
+		colony = 3
+		NOT = { colony = 4 }
+	}
+	global_tariffs = 0.06
+	inflation_reduction = -0.03
+	
+}
+
+kolo3_4_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 4
+		NOT = { colony = 5 }	
+	}
+	trigger = {
+		has_idea = colonial_empire4
+		colony = 4
+		NOT = { colony = 5 }
+	}
+	global_tariffs = 0.08
+	inflation_reduction = -0.04
+}
+
+kolo3_5_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 5
+		NOT = { colony = 6 }	
+	}
+	trigger = {
+		has_idea = colonial_empire4
+		colony = 5
+		NOT = { colony = 6 }
+	}
+	global_tariffs = 0.1
+	inflation_reduction = -0.05
+}
+
+kolo3_6_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 6
+		NOT = { colony = 7 }	
+	}
+	trigger = {
+		has_idea = colonial_empire4
+		colony = 6
+		NOT = { colony = 7 }
+	}
+	global_tariffs = 0.012
+	inflation_reduction = -0.06
+}
+
+kolo3_7_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 7
+		NOT = { colony = 8 }	
+	}
+	trigger = {
+		has_idea = colonial_empire4
+		colony = 7
+		NOT = { colony = 8 }
+	}
+	global_tariffs = 0.014
+	inflation_reduction = -0.07
+}
+
+kolo3_8_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 8
+		NOT = { colony = 9 }	
+	}
+	trigger = {
+		has_idea = colonial_empire4
+		colony = 8
+		NOT = { colony = 9 }
+	}
+	global_tariffs = 0.16
+	inflation_reduction = -0.08
+}
+
+kolo3_9_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 9
+		NOT = { colony = 10 }
+	}
+	trigger = {
+		has_idea = colonial_empire4
+		colony = 9
+		NOT = { colony = 10 }
+	}
+	global_tariffs = 0.18
+	inflation_reduction = -0.09
+}
+
+kolo3_10_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 10
+	}
+	trigger = {
+		has_idea = colonial_empire4
+		colony = 10
+	}
+	global_tariffs = 0.2
+	inflation_reduction = -0.1
+}
+
+kolo4_1_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 1
+		NOT = { colony = 2 }
+	}
+	trigger = {
+		has_idea = colonial_empire3
+		colony = 1
+		NOT = { colony = 2 }
+		
+	}
+	global_manpower_modifier = 0.05
+	global_sailors_modifier = 0.05
+}
+
+kolo4_2_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 2
+		NOT = { colony = 3 }
+	}
+	trigger = {
+		has_idea = colonial_empire3
+		colony = 2
+		NOT = { colony = 3 }
+		
+		
+	}
+	global_manpower_modifier = 0.1
+	global_sailors_modifier = 0.1
+}
+
+kolo4_3_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 3
+		NOT = { colony = 4 }
+	}
+	trigger = {
+		has_idea = colonial_empire3
+		colony = 3
+		NOT = { colony = 4 }
+		
+		
+	}
+	global_manpower_modifier = 0.15
+	global_sailors_modifier = 0.15
+}
+
+kolo4_4_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 4
+		NOT = { colony = 5 }
+	}
+	trigger = {
+		has_idea = colonial_empire3
+		colony = 4
+		NOT = { colony = 5 }
+		
+	}
+	global_manpower_modifier = 0.2
+	global_sailors_modifier = 0.2
+}
+
+kolo4_5_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 5
+		NOT = { colony = 6 }
+	}
+	trigger = {
+		has_idea = colonial_empire3
+		colony = 5
+		NOT = { colony = 6 }
+		
+	}
+	global_manpower_modifier = 0.25
+	global_sailors_modifier = 0.25
+}
+
+kolo4_6_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 6
+		NOT = { colony = 7 }
+	}
+	trigger = {
+		has_idea = colonial_empire3
+		colony = 6
+		NOT = { colony = 7 }
+		
+	}
+	global_manpower_modifier = 0.3
+	global_sailors_modifier = 0.3
+}
+
+kolo4_7_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 7
+		NOT = { colony = 8 }
+	}
+	trigger = {
+		has_idea = colonial_empire3
+		colony = 7
+		NOT = { colony = 8 }
+		
+		
+	}
+	global_manpower_modifier = 0.35
+	global_sailors_modifier = 0.35
+}
+
+kolo4_8_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 8
+		NOT = { colony = 9 }
+	}
+	trigger = {
+		has_idea = colonial_empire3
+		colony = 8
+		NOT = { colony = 9 }
+		
+	}
+	global_manpower_modifier = 0.4
+	global_sailors_modifier = 0.4
+}
+
+kolo4_9_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 9
+		NOT = { colony = 10 }
+	}
+	trigger = {
+		has_idea = colonial_empire3
+		colony = 9
+		NOT = { colony = 10 }	
+		
+	}
+	global_manpower_modifier = 0.45
+	global_sailors_modifier = 0.45
+}
+
+kolo4_10_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 10
+
+	}
+	trigger = {
+		has_idea = colonial_empire3
+		colony = 10
+		
+		
+	}
+	global_manpower_modifier = 0.5
+	global_sailors_modifier = 0.5
+}
+
+kolo6_1_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 1
+		NOT = { colony = 2 }
+	}
+	trigger = {
+		has_idea = colonial_empire6
+		colony = 1
+		NOT = { colony = 2 }
+		
+	}
+	naval_forcelimit_modifier = 0.05
+}
+
+kolo6_2_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 2
+		NOT = { colony = 3 }
+	}
+	trigger = {
+		has_idea = colonial_empire6
+		colony = 2
+		NOT = { colony = 3 }
+		
+		
+	}
+	naval_forcelimit_modifier = 0.1
+}
+
+kolo6_3_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 3
+		NOT = { colony = 4 }
+	}
+	trigger = {
+		has_idea = colonial_empire6
+		colony = 3
+		NOT = { colony = 4 }
+		
+		
+	}
+	naval_forcelimit_modifier = 0.15
+}
+
+kolo6_4_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 4
+		NOT = { colony = 5 }
+	}
+	trigger = {
+		has_idea = colonial_empire6
+		colony = 4
+		NOT = { colony = 5 }
+		
+	}
+	naval_forcelimit_modifier = 0.2
+}
+
+kolo6_5_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 5
+		NOT = { colony = 6 }
+	}
+	trigger = {
+		has_idea = colonial_empire6
+		colony = 5
+		NOT = { colony = 6 }
+		
+	}
+	naval_forcelimit_modifier = 0.25
+}
+
+kolo6_6_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 6
+		NOT = { colony = 7 }
+	}
+	trigger = {
+		has_idea = colonial_empire6
+		colony = 6
+		NOT = { colony = 7 }
+		
+	}
+	naval_forcelimit_modifier = 0.3
+}
+
+kolo6_7_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 7
+		NOT = { colony = 8 }
+	}
+	trigger = {
+		has_idea = colonial_empire6
+		colony = 7
+		NOT = { colony = 8 }
+		
+		
+	}
+	naval_forcelimit_modifier = 0.35
+}
+
+kolo6_8_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 8
+		NOT = { colony = 9 }
+	}
+	trigger = {
+		has_idea = colonial_empire6
+		colony = 8
+		NOT = { colony = 9 }
+		
+	}
+	naval_forcelimit_modifier = 0.4
+}
+
+kolo6_9_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 9
+		NOT = { colony = 10 }
+	}
+	trigger = {
+		has_idea = colonial_empire6
+		colony = 9
+		NOT = { colony = 10 }	
+		
+	}
+	naval_forcelimit_modifier = 0.45
+}
+
+kolo6_10_bonus = {
+	potential = {
+		has_idea_group = colonial_empire0
+		colony = 10
+
+	}
+	trigger = {
+		has_idea = colonial_empire6
+		colony = 10
+		
+		
+	}
+	naval_forcelimit_modifier = 0.5
+}
+
+
+fleet_base_manpower_1 = {
+	potential = {
+		has_idea_group = fleet_base0
+		current_age = age_of_reformation
+	}
+	trigger = {
+		has_idea = fleet_base1
+		current_age = age_of_reformation
+	}
+	global_manpower = 2.5
+}
+
+fleet_base_manpower_2 = {
+	potential = {
+		has_idea_group = fleet_base0
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		has_idea = fleet_base1
+		current_age = age_of_absolutism
+	}	
+	global_manpower = 5.0
+}
+
+fleet_base_manpower_3 = {
+	potential = {
+		has_idea_group = fleet_base0
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		has_idea = fleet_base1
+		current_age = age_of_revolutions
+	}
+	global_manpower = 7.5
+}
+
+
+kolo5_1_bonus = { # moved to province triggered modifier
+	potential = {
+		colonial_parent = {	has_idea_group = colonial_empire0 }
+	}
+	trigger = {
+		colonial_parent = {	has_idea = colonial_empire5 }
+	}
+	build_cost = -0.33
+}
+
+kolo5_2_bonus = {
+	potential = {
+		colonial_parent = {	has_idea_group = colonial_empire0 }
+	}
+	trigger = {
+		colonial_parent = {	has_idea = colonial_empire2 }
+	}
+	colonists = 1
+}
+
+fleet_base_sailors_1 = {
+	potential = {
+		has_idea_group = fleet_base0
+		current_age = age_of_reformation
+	}
+	trigger = {
+		has_idea = fleet_base4
+		current_age = age_of_reformation
+	}
+	global_sailors = 2500
+}
+
+fleet_base_sailors_2 = {
+	potential = {
+		has_idea_group = fleet_base0
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		has_idea = fleet_base4
+		current_age = age_of_absolutism
+	}
+	global_sailors = 5000	
+}
+
+fleet_base_sailors_3 = {
+	potential = {
+		has_idea_group = fleet_base0
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		has_idea = fleet_base4
+		current_age = age_of_revolutions
+	}	
+	global_sailors = 7500
+}
+
+nationalism_manpower_1 = {
+	potential = {
+		has_idea_group = nationalism0
+		current_age = age_of_reformation
+	}
+	trigger = {
+		has_idea = nationalism2
+		current_age = age_of_reformation
+	}
+	global_manpower = 2.5
+}
+
+nationalism_manpower_2 = {
+	potential = {
+		has_idea_group = nationalism0
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		has_idea = nationalism2
+		current_age = age_of_absolutism
+	}
+	global_manpower = 5.0
+}
+
+nationalism_manpower_3 = {
+	potential = {
+		has_idea_group = nationalism0
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		has_idea = nationalism2
+		current_age = age_of_revolutions
+	}
+	global_manpower = 7.5
+}
+
+conscription_manpower_1 = {
+	potential = {
+		has_idea_group = conscription0
+		current_age = age_of_reformation
+	}
+	trigger = {
+		has_idea = conscription1
+		current_age = age_of_reformation
+	}
+	global_manpower = 5.0
+}
+
+conscription_manpower_2 = {
+	potential = {
+		has_idea_group = conscription0
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		has_idea = conscription1
+		current_age = age_of_absolutism
+	}
+	global_manpower = 10.0
+}
+
+conscription_manpower_3 = {
+	potential = {
+		has_idea_group = conscription0
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		has_idea = conscription1
+		current_age = age_of_revolutions
+	}
+	global_manpower = 15.0
+}
+
+centralisation_manpower_1 = {
+	potential = {
+		has_idea_group = centralisation0
+		current_age = age_of_reformation
+	}
+	trigger = {
+		has_idea = centralisation5
+		current_age = age_of_reformation
+	}
+	global_manpower = 2.5
+	global_sailors = 1250
+}
+
+centralisation_manpower_2 = {
+	potential = {
+		has_idea_group = centralisation0
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		has_idea = centralisation5
+		current_age = age_of_absolutism
+	}
+	global_manpower = 5.0
+	global_sailors = 2500
+}
+
+centralisation_manpower_3 = {
+	potential = {
+		has_idea_group = centralisation0
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		has_idea = centralisation5
+		current_age = age_of_revolutions
+	}
+	global_manpower = 7.5
+	global_sailors = 3750
+}
+
+militarism_manpower_1 = {
+	potential = {
+		has_idea_group = militarism0
+		current_age = age_of_reformation
+	}
+	trigger = {
+		has_idea = militarism4
+		current_age = age_of_reformation
+	}
+	global_manpower = 5.0
+}
+
+militarism_manpower_2 = {
+	potential = {
+		has_idea_group = militarism0
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		has_idea = militarism4
+		current_age = age_of_absolutism
+	}
+	global_manpower = 10.0
+}
+
+militarism_manpower_3 = {
+	potential = {
+		has_idea_group = militarism0
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		has_idea = militarism4
+		current_age = age_of_revolutions
+	}
+	global_manpower = 15.0
+}
+
+imperialism_autoritaet_1 = {
+	potential = {
+		has_idea_group = imperialism0
+		current_age = age_of_reformation
+	}
+	trigger = {
+		has_idea = imperialism2
+		current_age = age_of_reformation
+	}
+	imperial_authority_value = 0.05
+	imperial_mandate = 0.05
+}
+
+imperialism_autoritaet_2 = {
+	potential = {
+		has_idea_group = imperialism0
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		has_idea = imperialism2
+		current_age = age_of_absolutism
+	}
+	imperial_authority_value = 0.1
+	imperial_mandate = 0.1
+}
+
+imperialism_autoritaet_3 = {
+	potential = {
+		has_idea_group = imperialism0
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		has_idea = imperialism2
+		current_age = age_of_revolutions
+	}
+	imperial_authority_value = 0.15
+		imperial_mandate = 0.15
+}
+
+imperial_ambition_force_land_1 = {
+	potential = {
+		has_idea_group = imperial_ambition0
+		current_age = age_of_reformation
+	}
+	trigger = {
+		has_idea = imperial_ambition2
+		current_age = age_of_reformation
+	}
+	land_forcelimit = 3
+}
+
+imperial_ambition_force_land_2 = {
+	potential = {
+		has_idea_group = imperial_ambition0
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		has_idea = imperial_ambition2
+		current_age = age_of_absolutism
+	}
+	land_forcelimit = 6
+}
+
+imperial_ambition_force_land_3 = {
+	potential = {
+		has_idea_group = imperial_ambition0
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		has_idea = imperial_ambition2
+		current_age = age_of_revolutions
+	}
+	land_forcelimit = 9
+}
+
+imperial_ambition_force_fleet_1 = {
+	potential = {
+		has_idea_group = imperial_ambition0
+		current_age = age_of_reformation
+	}
+	trigger = {
+		has_idea = imperial_ambition5
+		current_age = age_of_reformation
+	}
+	naval_forcelimit = 20
+}
+
+imperial_ambition_force_fleet_2 = {
+	potential = {
+		has_idea_group = imperial_ambition0
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		has_idea = imperial_ambition5
+		current_age = age_of_absolutism
+	}
+	naval_forcelimit = 40
+}
+
+imperial_ambition_force_fleet_3 = {
+	potential = {
+		has_idea_group = imperial_ambition0
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		has_idea = imperial_ambition5
+		current_age = age_of_revolutions
+	}
+	naval_forcelimit = 60
+}
+
+galley_force_fleet_1 = {
+	potential = {
+		has_idea_group = galley0
+		current_age = age_of_reformation
+	}
+	trigger = {
+		has_idea = galley1
+		current_age = age_of_reformation
+	}
+	naval_forcelimit = 100
+}
+
+galley_force_fleet_2 = {
+	potential = {
+		has_idea_group = galley0
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		has_idea = galley1
+		current_age = age_of_absolutism
+	}
+	naval_forcelimit = 150
+}
+
+galley_force_fleet_3 = {
+	potential = {
+		has_idea_group = galley0
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		has_idea = galley1
+		current_age = age_of_revolutions
+	}
+	naval_forcelimit = 200
+}
+
+#kriegsprod_forcelimit_1 = {
+#	potential = {
+#		has_idea_group = war_production0
+#		current_age = age_of_reformation
+#	}
+#	trigger = {
+#		has_idea = war_production4
+#		current_age = age_of_reformation
+#	}
+#	naval_forcelimit = 15
+#	land_forcelimit = 7
+#}
+
+#kriegsprod_forcelimit_2 = {
+#	potential = {
+#		has_idea_group = war_production0
+#		current_age = age_of_absolutism
+#	}
+#	trigger = {
+#		has_idea = war_production4
+#		current_age = age_of_absolutism
+#	}
+#	naval_forcelimit = 30
+#	land_forcelimit = 14
+#}
+
+#kriegsprod_forcelimit_3 = {
+#	potential = {
+#		has_idea_group = war_production0
+#		current_age = age_of_revolutions
+#	}
+#	trigger = {
+#		has_idea = war_production4
+#		current_age = age_of_revolutions
+#	}
+#	naval_forcelimit = 45
+#	land_forcelimit = 21
+#}
+
+#full_merc_1 = {
+#	potential = {
+#		has_idea_group = mercenary0
+#		army_professionalism = 0.9
+#	}
+#	trigger = {
+#		full_idea_group = mercenary0
+#		army_professionalism = 0.9
+#	}
+#	yearly_army_professionalism = -0.025
+#	
+#}
+
+#full_merc_2 = {
+#	potential = {
+#		has_idea_group = mercenary0
+#		army_professionalism = 0.8
+#		NOT = { army_professionalism = 0.9 }
+#	}
+#	trigger = {
+#		full_idea_group = mercenary0
+#		army_professionalism = 0.8
+#		NOT = { army_professionalism = 0.9 }
+#	}
+#	yearly_army_professionalism = -0.02
+#	
+#}
+
+#full_merc_3 = {
+#	potential = {
+#		has_idea_group = mercenary0
+#		army_professionalism = 0.7
+#		NOT = { army_professionalism = 0.8 }
+#		
+#	}
+#	trigger = {
+#		full_idea_group = mercenary0
+#		army_professionalism = 0.7
+#		NOT = { army_professionalism = 0.8 }
+#	}
+#	yearly_army_professionalism = -0.015
+#	
+#}
+
+#full_merc_4 = {
+#	potential = {
+#		has_idea_group = mercenary0
+#		army_professionalism = 0.6
+#		NOT = { army_professionalism = 0.7 }
+#	}
+#	trigger = {
+#		full_idea_group = mercenary0
+#		army_professionalism = 0.6
+#		NOT = { army_professionalism = 0.7 }
+#		
+#	}
+#	yearly_army_professionalism = -0.01
+#	
+#}
+
+#full_merc_5 = {
+#	potential = {
+#		has_idea_group = mercenary0
+#		army_professionalism = 0.5
+#		NOT = { army_professionalism = 0.6 }
+#	}
+#	trigger = {
+#		full_idea_group = mercenary0
+#		army_professionalism = 0.5
+#		NOT = { army_professionalism = 0.6 }
+#	}
+#	yearly_army_professionalism = -0.005
+#	
+#}
+
+shock_firedamage_1 = {
+	potential = {
+		has_idea_group = shock0
+		current_age = age_of_reformation
+	}
+	trigger = {
+		has_idea = shock1
+		current_age = age_of_reformation
+	}
+	fire_damage_received = -0.025
+}
+
+shock_firedamage_2 = {
+	potential = {
+		has_idea_group = shock0
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		has_idea = shock1
+		current_age = age_of_absolutism
+	}
+	fire_damage_received = -0.05
+}
+
+shock_firedamage_3 = {
+	potential = {
+		has_idea_group = shock0
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		has_idea = shock1
+		current_age = age_of_revolutions
+	}
+	fire_damage_received = -0.075
+}
+
+#development_6_bonus = { # removed and moved to Admin Ideas (and to province triggered modifier)
+#	potential = {
+#	overlord = {	has_idea_group = development0 }
+#			
+#	}
+#	trigger = {
+#	overlord = {	has_idea = development6 }
+#
+#	}
+#	build_cost = -0.25
+#	
+#}
+
+formation_5_1 = {
+	potential = {
+		has_idea_group = tactical0
+		army_professionalism = 0.20
+		NOT = { army_professionalism = 0.40 }
+	}
+	trigger = {
+		has_idea = tactical5
+		army_professionalism = 0.20 
+		NOT = { army_professionalism = 0.40 }
+	}
+	discipline = 0.02 
+}
+
+formation_5_2 = {
+	potential = {
+		has_idea_group = tactical0
+		army_professionalism = 0.40
+		NOT = { army_professionalism = 0.60 }
+	}
+	trigger = {
+		has_idea = tactical5
+		army_professionalism = 0.40 
+		NOT = { army_professionalism = 0.60 }
+	}
+	discipline = 0.04
+}
+
+formation_5_3 = {
+	potential = {
+		has_idea_group = tactical0
+		army_professionalism = 0.60
+		NOT = { army_professionalism = 0.80 }
+	}
+	trigger = {
+		has_idea = tactical5
+		army_professionalism = 0.60 
+		NOT = { army_professionalism = 0.80 }
+	}
+	discipline = 0.06
+}
+
+formation_5_4 = {
+	potential = {
+		has_idea_group = tactical0
+		army_professionalism = 0.80
+		NOT = { army_professionalism = 1.0 }
+	}
+	trigger = {
+		has_idea = tactical5
+		army_professionalism = 0.60 
+		NOT = { army_professionalism = 1.0 }
+	}
+	discipline = 0.08
+}
+
+formation_5_5 = {
+	potential = {
+		has_idea_group = tactical0
+		army_professionalism = 1.0
+	}
+	trigger = {
+		has_idea = tactical5
+		army_professionalism = 1.0 
+	}
+	discipline = 0.1
+}
+

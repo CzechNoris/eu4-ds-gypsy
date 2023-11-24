@@ -1,0 +1,286 @@
+﻿l_spanish:
+#Balkans
+ gme_great_palace_constantinople: "Gran Palacio de constantinopla"
+ gme_kruje_castle: "Castillo de Kruje"
+ gme_walls_ragusa: "Murros de Ragusa"
+
+#Baltic
+ gme_dlugi_targ: "Dlugi Targ"
+ gme_vilnius_cathedral: "Catedral Basílica de Vilna"
+
+#Britain
+ gme_blarney_castle: "Castillo de Blarney"
+ gme_kilkenny_castle: "Castillo de Kilkenny"
+ gme_newgrange_tomb: "Tumba de Newgrange"
+ gme_patrick_cathedral: "Catedral de San Patricio"
+ gme_rock_chasel: "Roca de Chasel"
+
+#Carpathia
+ gme_basilica_estergom: "Basilica de Esztergoma"
+ gme_eszterhaza: "Eszterháza"
+ gme_reformatus_nagytemplom: "Református Nagytemplom"
+
+#Caucasia
+ gme_alaverdi_monastery: "Monasterio de Alaverdi"
+ gme_derbent_fortifications: "Fortificaciones de Derbent"
+ gme_gelati_monastery: "Monasterio de Gelati"
+ gme_narikala: "Narikala"
+ gme_noah_mausoleum: "Mausoleo de Noah"
+ gme_vardzia: "Vardzia"
+
+#Deccan
+ gme_elephant_stables: "Establos y recinto de elefantes"
+ gme_market_complex: "Complejo del mercado"
+
+#France
+ gme_bretagne_castles: "Chateau des Ducs de Bretagne"
+ gme_chambord: "Chateau de Chambord"
+ gme_chenonceau: "Chateau de Chenonceau"
+ gme_mont_michel: "Mont Saint-Michel"
+ gme_palais_des_papes: "Palais des Papes"
+ gme_port_de_moon: "Port de la Lune"
+
+#Iberia
+ gme_alcazar_segovia: "Alcazar de Segovia"
+ gme_al_qasr_al_muriq: "Al-Qasr al-Muriq"
+ gme_casa_de_contratacion: "Casa de Contratación"
+ gme_cathedral_seville: "Catredal de Sevilla"
+ gme_lonja_seda: "Lonja de la Seda"
+ gme_mosque_cathedral: "Mezquita-Catedral de Cordoba"
+ gme_rock_gibraltar: "Roca de Gibraltar"
+ gme_sagres_school_navigation: "Escuela de Navegación de Sagres"
+ gme_santa_barbara_castle: "Castillo de Santa Barbara"
+ gme_santiago_compostela: "Santiago de Compostela"
+ gme_tierra_castillos: "Tierra de Castillos"
+ gme_tower_hercules: "Torre de Hercules"
+
+#Italy
+ gme_altare_patria: "Altare della Patria"
+ gme_arsenale_veneziano: "Arsenale Veneziano"
+ gme_basilica_san_marco: "Basilica di San Marco"
+ gme_basilica_san_nicola: "Basilica di San Nicola"
+ gme_castello_estense: "Castello Estense"
+ gme_castel_sant_angelo: "Castel Sant'Angelo"
+ gme_castelvecchio: "Castelvecchio"
+ gme_duomo_monreale: "Duomo di Monreale"
+ gme_federico_II: "Federico II"
+ gme_fori_imperiali: "Fori Imperiali"
+ gme_lanterna_genova: "Lanterna di Genova"
+ gme_palazzo_pitti: "Palazzo Pitti"
+ gme_parramentu_sicilianu: "Parramentu Sicilianu"
+ gme_sala_dei_cavalli: "Sala dei Cavalli"
+ gme_torre_pisa: "Torre di Pisa"
+ gme_universita_bologna: "Università di Bologna"
+
+#Japan
+
+#Korea
+ gme_beomeosa: "Beomeosa"
+ gme_dol_hareunbang: "Dol Hareubang"
+ gme_dosan_seowon: "Dosan Seowon"
+ gme_five_grand_palaces: "Cinco grandes palacios"
+ gme_gakhwangsa: "Gakhwangsa"
+ gme_goguryeyo_tombs: "Tumbas de Goguryeyo"
+ gme_hallasan: "Hallasan"
+ gme_hwaseong_fortress: "Hwaseong Fortress"
+ gme_jinnamgwan_hall: "Jinnamgwan Hall"
+ gme_jongmyo_shrine: "Jongmyo Shrine"
+ gme_mt_paekdu: "Mt Paekdu"
+ gme_royal_tombs_joseon: "Tumbas Reales de Joseon"
+ gme_seokguram: "Seokguram"
+ gme_sungkyunkwan: "Sungkyunkwan"
+ gme_tripitaka_koreana: "Tripitaka Koreana"
+
+#Low Countries
+ gme_binnenhof: "Binnenhof"
+ gme_bishop_palace: "Palacio Episcopal"
+ gme_bruges_city_centre: "Centro de Brujas"
+ gme_domkerk: "Domkerk"
+ gme_grote_raad_mechelen: "Grote Raad van Mechelen"
+ gme_het_gravensteen: "Het Gravensteen"
+ gme_kasteel_de_haar: "Kasteel de Haar"
+ gme_leiden_university: "Universidad de Leiden"
+ gme_old_leuven_university: "Antigua Universidad de Lovaina"
+ gme_paleis_koudenberg: "Paleis op de Koudenberg"
+ gme_sint_pietersabdij: "Sint-Pietersabdij"
+ gme_the_bock: "La Bock"
+
+#Mashriq
+ gme_abu_hanifa_mosque: "Mezquita de Abu Hanifa"
+ gme_alkarak_castle: "Castillo de Kerak"
+ gme_al_kadhimiya_mosque: "Mezquita de Al-Kadhimiya"
+ gme_al_mustansiriya: "Al-Mustansiriya"
+ gme_cave_patriarch: "Cueva de los Patriarcas"
+ gme_citadel_aleppo: "Ciudadela de Alepo"
+ gme_forty_martyrs_cathedral: "Catedral de los Cuarenta Mártires"
+ gme_great_mosque_aleppo: "Gran Mezquita de Alepo"
+ gme_shaf_ve_yativ_synagogue: "Sinagoga de Shaf ve'Yativ"
+ gme_mausoleum_saladin: "Mausoleo de Saladin"
+ gme_norias_hama: "Norias de Hama"
+ gme_mor_mattai_monastery: "Monasterio de Mor Mattai"
+ gme_qasr_al_azm: "Qasr al-Azm"
+ gme_saint_peter_church: "Iglesia de San Pedro"
+ gme_saint_ananias_chapel: "Capilla de San Ananías"
+ gme_tekkiye_mosque: "Mezquita de Tekkiye"
+ gme_tomb_ezekiel: "Tumba de Ezequiel"
+ gme_umayyad_mosque: "Mezquita Omeya"
+
+#Mongolia
+ gme_alamliq: "Almaliq"
+ gme_forbidden_genghis_khan_golden_tent: "Tienda dorada de Gengis Kan"
+ gme_mausoleum_genghis_khan: "Mausoleo de Gengis Kan"
+ gme_yili_general_government: "Gobierno General de Yili"
+
+#North China
+ gme_beihai_park: "Parque Beihai"
+ gme_chengde_mountain_resort: "Estación de montaña de Chengde"
+ gme_governor_office_of_zhili: "Oficina del Gobernador de Zhili"
+ gme_mogao_grottoes: "Grutas de Mogao"
+ gme_old_summer_palace: "Antiguo Palacio de Verano"
+ gme_prince_kungs_mansion: "Mansión del Príncipe Kung"
+ gme_thirteen_ming_tombs: "Trece tumbas Ming"
+ gme_temple_of_heaven: "Templo del Cielo"
+ gme_yungang_grottoes: "Grutas de Yungang"
+
+#North Germany
+ gme_externsteine: "Externsteine"
+ gme_schloss_neuhaus: "Palacio Neuhaus"
+ gme_reichstag: "Reichstag"
+
+#Persia
+ gme_agha_bozorg_mosque: "Mezquita de Agha Bozorg"
+ gme_ali_qapu_palace: "Palacio Ali Qapu"
+ gme_arg_kharim_khan: "Arg de Kharim Khan"
+ gme_bazaar_tabriz: "Bazar de Tabriz"
+ gme_behistun_inscription: "Inscripción de Behistun"
+ gme_chaharbagh_school: "Escuela de Chaharbagh"
+ gme_chehel_sotun: "Chehel Sotun"
+ gme_dome_soltaniyeh: "Cúpula de Soltanieh"
+ gme_erbil_citadel: "Ciudadela de Erbil"
+ gme_golestan_palace: "Palacio Golestán"
+ gme_gonbad_qabus_tower: "Torre Gonbad-e Qabus"
+ gme_maragheh_observatory: "Observatorio Maragheh"
+ gme_sheikh_safi: "Jeque Safi al-Din"
+ gme_shrine_fatimah_masumeh: "Santuario de Fatimah al-Masumeh"
+ gme_towers_silence: "Torres del Silencio"
+ gme_vank_cathedral: "Catedral de Vank"
+
+#Poland
+ gme_cathedral_poznan: "Catedral de Poznan"
+ gme_jagielon_university: "Universidad Jagellónica"
+ gme_lazienki_park: "Parque Lazienki"
+ gme_saint_mary_basilica: "Basílica de Santa María"
+ gme_salt_mines_wieliczka_bochnia: "Minas de sal de Wieliczka y Bochnia"
+ gme_sigismund_column: "Columna de Segismundo"
+ gme_wawel: "Wawel"
+ gme_zamosc_city: "Ciudad de Zamosc"
+
+#Pontic Steppe
+ gme_bakhchisaray_palace: "Palacio de Bakhchisaray"
+
+#Russia
+ gme_petersburg_admiralty: "Almirantazgo"
+ gme_peterhof_palace: "Palacio de Peterhof"
+ gme_bolshoi_theatre: "Teatro Bolshoi"
+
+#Ruthenia
+ gme_brotherhood_school: "Escuela de la Hermandad"
+ gme_mir_castle: "Castillo de Mir"
+
+#Sahel
+ gme_djinguereber_mosque: "Mezquita de Djinguereber"
+ gme_tomb_askia: "Tumba de Askia"
+
+#South China
+ gme_classical_gardens_suzhou: "Jardines clásicos de Suzhou"
+ gme_donglin_academy: "Academia Donglin"
+ gme_grand_canal: "Gran Canal"
+ gme_igreja_madre_deus: "Igreja da Madre de Deus"
+ gme_jingdezhen_imperial_kiln_factory: "Fábrica Imperial de Hornos de Jingdezhen"
+ gme_quanzhou_port: "Puerto de Quanzou"
+ gme_shi_bo_si: "Shi Bo Si"
+ gme_zhaozhou_bridge: "Puente de Zhaozhou"
+
+#South Germany
+ gme_bundeshaus: "Bundeshaus"
+ gme_chillon_castle: "Castillo de Chillon"
+ gme_college_geneve: "College de Genève"
+ gme_neuschwanstein_castle: "Castillo de Neuschwanstein"
+ gme_stone_bridge_regensburg: "Puente de piedra de Ratisbona"
+
+#Tibet
+ gme_mount_kailash: "Monte Kailash"
+ gme_padmasambhava_hidden_valley: "Valle oculto de Padmasambhava"
+ gme_potala_palace: "Palacio de Potala"
+
+#Xinan
+ gme_leshan_giant_buddha: "Leshan Giant Buddha"
+ 
+ citadel_of_namor: "Citadel of Namur"
+ doge_palace: "Doge's Palace"
+ dolmen_of_emmen: "Dolmen of Emmen"
+ gravensteen: "Gravensteen"
+ het_oude_loo: "Het Oude Loo"
+ hvalsey_church: "Hvalsey Church"
+ jelling_stones: "Jelling Stones"
+ jochumhof: "Jochumhof"
+ prague_castle: "Prague Castle"
+ ruins_of_marib_dam: "Ruins of Marib Dam"
+ seville_cathedral: "Seville Cathedral"
+ jenne_mosque: "The Great Mosque of Jenne"
+ benin: "Walls of Benin"
+ cathedral_dijon: "Cathedrale Saint-Benigne de Dijon"
+ cathedral_baptiste: "Cathedrale Saint-Jean-Baptiste"
+ cathedral_bayeaux: "Bayeaux Cathedral"
+ duloe_stones: "Duloe Stones"
+ cathedral_canterbury: "Canterbury Cathedral"
+ york_minster: "York Minster"
+ cathedral_st_asaph: "St Asaph Cathedral"
+ calanais_standing_stones: "Calanais Standing Stones"
+ druids_temple: "Druids Temple"
+ kidwelly_castle: "Kidwelly Castle"
+ stirling_castle: "Stirling Castle"
+ ring_of_brodgar: "Ring of Brodgar"
+ jarlshof: "Jarlshof"
+ dunlace_castle: "Dunlace Castle"
+ poulnabrone_dolmen: "Poulnabrone Dolmen"
+ rock_of_cashel: "Rock of Cashel"
+ chateau_bretagne: "Chateau de Ducs de Bretagne"
+ chateau_pirou: "Chateau Fort de Pirou"
+ pont_du_gard: "Pont du Gard"
+ mainz_cathedral: "Mainz Cathedral"
+ franziskaner: "Franziskaner Klosterkirche"
+ marienkirche: "Marien Kirche"
+ holter_burg: "Holter Burg"
+ reinhardsbrunn: "Reinhardsbrunn"
+ hacon_stones: "Hacon Stones"
+ danevirke: "Dane Virke"
+ imperial_castle: "Imperial Castle"
+ hohenbaden_castle: "Hohenbaden Castle"
+ visconti_castle: "Visconti Castle"
+ neufalkenstein_castle: "Neu-Falkenstein Castle"
+ burg_prunn: "Burg Prunn"
+ augsburger_dom: "Augsburger Dom"
+ cathedral_lausanne: "Lausanne Cathedral"
+ froso_kyrka: "Froso Kyrka"
+ holder_danske: "Holder Danske"
+ urnes_staves_church: "Urnes Staves Church"
+ visby_walls: "Visby Walls"
+ olavinlinna: "Olavinlinna"
+ mortensnes: "Mortensnes"
+ hame_castle: "Hame Castle"
+ kyichu: "Lyichu Lhakhang"
+ konark_sun: "Konark Sun Temple"
+ Sompur_Mahavihara: "Sompur Mahavihara"
+ Shyam_Sundar_Ashram: "Shyam Sundar Ashram"
+ barabati_fort: "Barabati Fort"
+ ita_fort: "Ita Fort"
+ gingee_fort: "Gingee Fort" #IMAGE TO DO
+ golcanda_fort: "Golcanda Fort" #IMAGE TO DO
+ chitradurga_fort: "Chitradurga Fort" #IMAGE TO DO
+ vijaydurg_fort: "Vijaydurg Fort" #IMAGE TO DO
+ badami_temple: "Badami Temple" #IMAGE TO DO
+ amman_temple: "Meenakshi Amman Temple" #IMAGE TO DO
+ bhima_ratha_temple: "Bhima Ratha Temple" #IMAGE TO DO
+ amaravati_stupa_temple: "Amaravati Stupa Temple " #IMAGE TO DO
+ nakula_sahadeva_ratha: "Nakula Sahadeva Ratha" #IMAGE TO DO

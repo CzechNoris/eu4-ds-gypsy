@@ -1,0 +1,165 @@
+ai_startup_bonus = {
+	potential = {
+		ai = yes
+	}
+	trigger = {
+		ai = yes
+	}
+	global_tax_modifier = 0.5
+	state_maintenance_modifier = -0.5
+	all_power_cost = -0.1
+	global_autonomy = -0.1
+	max_absolutism = 50
+	governing_capacity = 300
+}
+
+ai_idea_bonus_1 = {
+	potential = {
+		ai = yes
+		is_year = 1470
+		is_subject = yes
+	}
+	trigger = {
+		ai = yes
+		is_year = 1470
+		is_subject = yes
+		NOT = {
+			num_of_completed_idea_groups = { amount = 2 }
+		}
+	}
+	idea_cost = -0.1
+}
+
+
+ai_idea_bonus_2 = {
+	potential = {
+		ai = yes
+		is_year = 1500
+		is_subject = yes
+	}
+	trigger = {
+		ai = yes
+		is_year = 1500
+		is_subject = yes
+		NOT = {
+			num_of_completed_idea_groups = { amount = 4 }
+		}
+	}
+	idea_cost = -0.1
+}
+
+
+ai_idea_bonus_3 = {
+	potential = {
+		ai = yes
+		is_year = 1550
+		is_subject = yes
+	}
+	trigger = {
+		ai = yes
+		is_year = 1550
+		is_subject = yes
+		NOT = {
+			num_of_completed_idea_groups = { amount = 6 }
+		}
+	}
+	idea_cost = -0.1
+}
+
+ai_idea_bonus_4 = {
+	potential = {
+		ai = yes
+		is_year = 1600
+		is_subject = yes
+	}
+	trigger = {
+		ai = yes
+		is_year = 1600
+		is_subject = yes
+		NOT = {
+			num_of_completed_idea_groups = { amount = 8 }
+		}
+	}
+	idea_cost = -0.1
+}
+
+ai_idea_bonus_5 = {
+	potential = {
+		ai = yes
+		is_year = 1650
+		is_subject = yes
+	}
+	trigger = {
+		ai = yes
+		is_year = 1650
+		is_subject = yes
+		NOT = {
+			num_of_completed_idea_groups = { amount = 10 }
+		}
+	}
+	idea_cost = -0.1
+}
+
+ai_idea_bonus_6 = {
+	potential = {
+		ai = yes
+		is_year = 1700
+		is_subject = yes
+	}
+	trigger = {
+		ai = yes
+		is_year = 1700
+		is_subject = yes
+		NOT = {
+			num_of_completed_idea_groups = { amount = 12 }
+		}
+	}
+	idea_cost = -0.1
+}
+
+ai_idea_bonus_7 = {
+	potential = {
+		ai = yes
+		is_year = 1750
+		is_subject = yes
+	}
+	trigger = {
+		ai = yes
+		is_year = 1750
+		is_subject = yes
+		NOT = {
+			num_of_completed_idea_groups = { amount = 14 }
+		}
+	}
+	idea_cost = -0.1
+}
+
+ai_idea_bonus_8 = {
+	potential = {
+		ai = yes
+		is_year = 1800
+		is_subject = yes
+	}
+	trigger = {
+		ai = yes
+		is_year = 1800
+		is_subject = yes
+		NOT = {
+			num_of_completed_idea_groups = { amount = 16 }
+		}
+	}
+	idea_cost = -0.1
+}
+
+otto_startup_bonus = {
+	potential = {
+		ai = yes
+		tag = TUR
+	}
+	trigger = {
+		ai = yes
+		tag = TUR
+	}
+	yearly_corruption = -0.25
+	monthly_ottoman_decadence = -1
+}

@@ -1,0 +1,1339 @@
+#####################################
+#### Default ones /without Idea Reduction
+#####################################
+
+gov_nerf_1 = {
+	potential = {
+		num_of_provinces_in_states = 50
+		NOT = {
+			num_of_provinces_in_states = 54
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 50
+		NOT = {
+			num_of_provinces_in_states = 54
+			has_global_flag = setting_1
+			OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.01
+}
+
+gov_nerf_2 = {
+	potential = {
+		num_of_provinces_in_states = 54
+		NOT = {
+			num_of_provinces_in_states = 58
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 54
+		NOT = {
+			num_of_provinces_in_states = 58
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.02
+}
+
+gov_nerf_3 = {
+	potential = {
+		num_of_provinces_in_states = 58
+		NOT = {
+			num_of_provinces_in_states = 62
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 58
+		NOT = {
+			num_of_provinces_in_states = 62
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.03
+}
+
+gov_nerf_4 = {
+	potential = {
+		num_of_provinces_in_states = 62
+		NOT = {
+			num_of_provinces_in_states = 66
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 62
+		NOT = {
+			num_of_provinces_in_states = 66
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.04
+}
+
+gov_nerf_5 = {
+	potential = {
+		num_of_provinces_in_states = 66
+		NOT = {
+			num_of_provinces_in_states = 70
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 66
+		NOT = {
+			num_of_provinces_in_states = 70
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.05
+}
+
+gov_nerf_6 = {
+	potential = {
+		num_of_provinces_in_states = 70
+		NOT = {
+			num_of_provinces_in_states = 74
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 74
+		NOT = {
+			num_of_provinces_in_states = 78
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.06
+}
+
+gov_nerf_7 = {
+	potential = {
+		num_of_provinces_in_states = 78
+		NOT = {
+			num_of_provinces_in_states = 82
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 82
+		NOT = {
+			num_of_provinces_in_states = 86
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.07
+}
+
+gov_nerf_8 = {
+	potential = {
+		num_of_provinces_in_states = 86
+		NOT = {
+			num_of_provinces_in_states = 90
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 86
+		NOT = {
+			num_of_provinces_in_states = 90
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.08
+}
+
+gov_nerf_9 = {
+	potential = {
+		num_of_provinces_in_states = 90
+		NOT = {
+			num_of_provinces_in_states = 94
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 90
+		NOT = {
+			num_of_provinces_in_states = 94
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.09
+}
+
+gov_nerf_10 = {
+	potential = {
+		num_of_provinces_in_states = 94
+		NOT = {
+			num_of_provinces_in_states = 98
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 94
+		NOT = {
+			num_of_provinces_in_states = 98
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+		
+	state_governing_cost = 0.1
+}
+
+gov_nerf_11 = {
+	potential = {
+		num_of_provinces_in_states = 98
+		NOT = {
+			num_of_provinces_in_states = 102
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 98
+		NOT = {
+			num_of_provinces_in_states = 102
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.11
+}
+
+gov_nerf_12 = {
+	potential = {
+		num_of_provinces_in_states = 102
+		NOT = {
+			num_of_provinces_in_states = 106
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 102
+		NOT = {
+			num_of_provinces_in_states = 106
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.12
+}
+
+gov_nerf_13 = {
+	potential = {
+		num_of_provinces_in_states = 106
+		NOT = {
+			num_of_provinces_in_states = 110
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 106
+		NOT = {
+			num_of_provinces_in_states = 110
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.13
+}
+
+gov_nerf_14 = {
+	potential = {
+		num_of_provinces_in_states = 110
+		NOT = {
+			num_of_provinces_in_states = 114
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 110
+		NOT = {
+			num_of_provinces_in_states = 114
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.14
+}
+
+gov_nerf_15 = {
+	potential = {
+		num_of_provinces_in_states = 114
+		NOT = {
+			num_of_provinces_in_states = 118
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 114
+		NOT = {
+			num_of_provinces_in_states = 118
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.15
+}
+
+gov_nerf_16 = {
+	potential = {
+		num_of_provinces_in_states = 118
+		NOT = {
+			num_of_provinces_in_states = 122
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 118
+		NOT = {
+			num_of_provinces_in_states = 122
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.16
+}
+
+gov_nerf_17 = {
+	potential = {
+		num_of_provinces_in_states = 122
+		NOT = {
+			num_of_provinces_in_states = 126
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 122
+		NOT = {
+			num_of_provinces_in_states = 126
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.17
+}
+
+gov_nerf_18 = {
+	potential = {
+		num_of_provinces_in_states = 126
+		NOT = {
+			num_of_provinces_in_states = 130
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 126
+		NOT = {
+			num_of_provinces_in_states = 130
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.18
+}
+
+gov_nerf_19 = {
+	potential = {
+		num_of_provinces_in_states = 130
+		NOT = {
+			num_of_provinces_in_states = 134
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 130
+		NOT = {
+			num_of_provinces_in_states = 134
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.19
+}
+
+gov_nerf_20 = {
+	potential = {
+		num_of_provinces_in_states = 134
+		NOT = {
+			num_of_provinces_in_states = 138
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 134
+		NOT = {
+			num_of_provinces_in_states = 138
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.2
+}
+
+gov_nerf_21 = {
+	potential = {
+		num_of_provinces_in_states = 138
+		NOT = {
+			num_of_provinces_in_states = 142
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 138
+		NOT = {
+			num_of_provinces_in_states = 142
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.21
+}
+
+gov_nerf_22 = {
+	potential = {
+		num_of_provinces_in_states = 142
+		NOT = {
+			num_of_provinces_in_states = 146
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 142
+		NOT = {
+			num_of_provinces_in_states = 146
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.22
+}
+
+gov_nerf_23 = {
+	potential = {
+		num_of_provinces_in_states = 146
+		NOT = {
+			num_of_provinces_in_states = 148
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 146
+		NOT = {
+			num_of_provinces_in_states = 148
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.23
+}
+
+gov_nerf_24 = {
+	potential = {
+		num_of_provinces_in_states = 148
+		NOT = {
+			num_of_provinces_in_states = 150
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 148
+		NOT = {
+			num_of_provinces_in_states = 150
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.24
+}
+
+gov_nerf_25 = {
+	potential = {
+		num_of_provinces_in_states = 150
+		NOT = {
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	trigger = {
+		num_of_provinces_in_states = 150
+		NOT = {
+			has_global_flag = setting_1
+			OR = {
+				has_idea = horde6
+				has_idea = decentralisation1
+			}
+		}
+	}
+	state_governing_cost = 0.25
+}
+
+########################################
+#### Reduced Idea Ones
+########################################
+
+gov_nerf_redu_1 = {
+	potential = {
+		num_of_provinces_in_states = 50
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 54
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 50
+		NOT = {
+			num_of_provinces_in_states = 54
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.005
+}
+
+
+gov_nerf_redu_2 = {
+	potential = {
+		num_of_provinces_in_states = 54
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 58
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 54
+		NOT = {
+			num_of_provinces_in_states = 58
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.01
+}
+
+gov_nerf_redu_3 = {
+	potential = {
+		num_of_provinces_in_states = 58
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 62
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 58
+		NOT = {
+			num_of_provinces_in_states = 62
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.015
+}
+
+gov_nerf_redu_4 = {
+	potential = {
+		num_of_provinces_in_states = 62
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 66
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 62
+		NOT = {
+			num_of_provinces_in_states = 66
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.02
+}
+
+gov_nerf_redu_5 = {
+	potential = {
+		num_of_provinces_in_states = 66
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 70
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 66
+		NOT = {
+			num_of_provinces_in_states = 70
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.025
+}
+
+gov_nerf_redu_6 = {
+	potential = {
+		num_of_provinces_in_states = 70
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 74
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 70
+		NOT = {
+			num_of_provinces_in_states = 74
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.03
+}
+
+gov_nerf_redu_7 = {
+	potential = {
+		num_of_provinces_in_states = 74
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 78
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 74
+		NOT = {
+			num_of_provinces_in_states = 78
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.035
+}
+
+gov_nerf_redu_8 = {
+	potential = {
+		num_of_provinces_in_states = 78
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 82
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 78
+		NOT = {
+			num_of_provinces_in_states = 82
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.04
+}
+
+gov_nerf_redu_9 = {
+	potential = {
+		num_of_provinces_in_states = 82
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 86
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 82
+		NOT = {
+			num_of_provinces_in_states = 86
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.045
+}
+
+gov_nerf_redu_10 = {
+	potential = {
+		num_of_provinces_in_states = 86
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 90
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 86
+		NOT = {
+			num_of_provinces_in_states = 90
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.05
+}
+
+gov_nerf_redu_11 = {
+	potential = {
+		num_of_provinces_in_states = 90
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 94
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 90
+		NOT = {
+			num_of_provinces_in_states = 94
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.055
+}
+
+
+gov_nerf_redu_12 = {
+	potential = {
+		num_of_provinces_in_states = 94
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 98
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 94
+		NOT = {
+			num_of_provinces_in_states = 98
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.06
+}
+
+gov_nerf_redu_13 = {
+	potential = {
+		num_of_provinces_in_states = 98
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 102
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 98
+		NOT = {
+			num_of_provinces_in_states = 102
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.065
+}
+
+gov_nerf_redu_14 = {
+	potential = {
+		num_of_provinces_in_states = 102
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 106
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 102
+		NOT = {
+			num_of_provinces_in_states = 106
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.07
+}
+
+gov_nerf_redu_15 = {
+	potential = {
+		num_of_provinces_in_states = 106
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 110
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 106
+		NOT = {
+			num_of_provinces_in_states = 110
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.075
+}
+
+gov_nerf_redu_16 = {
+	potential = {
+		num_of_provinces_in_states = 110
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 114
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 110
+		NOT = {
+			num_of_provinces_in_states = 114
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.08
+}
+
+gov_nerf_redu_17 = {
+	potential = {
+		num_of_provinces_in_states = 114
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 118
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 114
+		NOT = {
+			num_of_provinces_in_states = 118
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.085
+}
+
+gov_nerf_redu_18 = {
+	potential = {
+		num_of_provinces_in_states = 122
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 126
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 122
+		NOT = {
+			num_of_provinces_in_states = 126
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.09
+}
+
+gov_nerf_redu_19 = {
+	potential = {
+		num_of_provinces_in_states = 126
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 130
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 126
+		NOT = {
+			num_of_provinces_in_states = 130
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.095
+}
+
+gov_nerf_redu_20 = {
+	potential = {
+		num_of_provinces_in_states = 130
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 134
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 130
+		NOT = {
+			num_of_provinces_in_states = 134
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.1
+}
+
+gov_nerf_redu_21 = {
+	potential = {
+		num_of_provinces_in_states = 134
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 138
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 134
+		NOT = {
+			num_of_provinces_in_states = 138
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.105
+}
+
+gov_nerf_redu_22 = {
+	potential = {
+		num_of_provinces_in_states = 138
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 142
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 138
+		NOT = {
+			num_of_provinces_in_states = 142
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.11
+}
+
+gov_nerf_redu_23 = {
+	potential = {
+		num_of_provinces_in_states = 142
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 146
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 142
+		NOT = {
+			num_of_provinces_in_states = 146
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.115
+}
+
+gov_nerf_redu_24 = {
+	potential = {
+		num_of_provinces_in_states = 146
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			num_of_provinces_in_states = 150
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 146
+		NOT = {
+			num_of_provinces_in_states = 150
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.12
+}
+
+gov_nerf_redu_25 = {
+	potential = {
+		num_of_provinces_in_states = 150
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		NOT = {
+			has_global_flag = setting_1
+		}
+	}
+	trigger = {
+		OR = {
+			has_idea = horde6
+			has_idea = decentralisation1
+		}
+		num_of_provinces_in_states = 150
+		NOT = {
+			has_global_flag = setting_1
+		}
+	}
+	state_governing_cost = 0.125
+}
+
+
+engagement_1 = {
+	potential = {
+		current_age = age_of_reformation
+	}
+	trigger = {
+		current_age = age_of_reformation
+	}
+	global_naval_engagement_modifier = 0.5
+}
+
+engagement_2 = {
+	potential = {
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		current_age = age_of_absolutism
+	}
+	global_naval_engagement_modifier = 1.0
+}
+
+engagement_3 = {
+	potential = {
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		current_age = age_of_revolutions
+	}
+	global_naval_engagement_modifier = 1.5
+}
+
+

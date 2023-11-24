@@ -1,0 +1,7777 @@
+idea_variation_act_556:
+    monarch_power: ADM
+    potential:
+        - economic_ideas
+        - quantity
+    allow:
+        - economic_ideas
+        - quantity
+    land_forcelimit_modifier: 0.15
+idea_variation_act_557: 
+    monarch_power: DIP
+    potential:
+        - administrative_ideas
+        - maritime_ideas
+    allow:
+        - administrative_ideas
+        - maritime_ideas
+    navy_tradition: 2
+idea_variation_act_558:
+    monarch_power: DIP
+    potential:
+        - innovativeness_ideas
+        - spy_ideas
+    allow:
+        - innovativeness_ideas
+        - spy_ideas
+    global_spy_defence: 0.3
+    spy_offence: 0.2
+idea_variation_act_559:
+    monarch_power: DIP  
+    potential:
+        - spy_ideas
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - spy_ideas
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    yearly_absolutism: 0.75
+    yearly_corruption: -0.1
+idea_variation_act_560:
+    monarch_power: ADM
+    potential:
+        - spy_ideas
+        - defensive
+    allow:
+        - spy_ideas
+        - defensive
+    defensiveness: 0.1
+idea_variation_act_561:
+    monarch_power: DIP
+    potential:
+        - spy_ideas
+        - economic_ideas
+    allow:
+        - spy_ideas
+        - economic_ideas
+    diplomats: 1
+idea_variation_act_562:
+    monarch_power: ADM
+    potential:
+        - spy_ideas
+        - quality
+    allow:
+        - spy_ideas
+        - quality
+    army_tradition_decay: -0.01
+idea_variation_act_563:
+    monarch_power: ADM    
+    potential:
+        - spy_ideas
+        - quantity
+    allow:
+        - spy_ideas
+        - quantity
+    mercenary_manpower: 0.15
+    mercenary_cost: -0.25
+idea_variation_act_564:
+    monarch_power: ADM
+    potential:
+        - spy_ideas
+        - administrative_ideas
+    allow:
+        - spy_ideas
+        - administrative_ideas
+    global_trade_goods_size_modifier: 0.15    
+idea_variation_act_565:
+    monarch_power: ADM
+    potential: 
+        - defensive
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - defensive
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    global_unrest: -1
+    religious_unity: 0.2
+idea_variation_act_566:
+    monarch_power: MIL
+    potential:
+        - defensive
+        - economic_ideas
+    allow:
+        - defensive
+        - economic_ideas
+    development_cost: -0.1
+idea_variation_act_567:
+    monarch_power: ADM
+    potential:
+        - defensive
+        - administrative_ideas
+    allow:
+        - defensive
+        - administrative_ideas
+    yearly_corruption: -0.3
+idea_variation_act_568:
+    monarch_power: ADM
+    potential:
+        - spy_ideas
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - spy_ideas
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    global_missionary_strength: 0.02
+    global_spy_defence: 0.2
+idea_variation_act_570:
+    monarch_power: MIL
+    potential:
+        - offensive
+        - administrative_ideas
+    allow:
+        - offensive
+        - administrative_ideas
+    shock_damage: 0.075
+idea_variation_act_571:
+    monarch_power: DIP
+    potential:
+        - economic_ideas
+        - exploration_ideas
+    allow:
+        - economic_ideas
+        - exploration_ideas
+    global_tariffs: 0.25
+idea_variation_act_572:
+    monarch_power: MIL
+    potential:
+        - economic_ideas
+        - quality
+    allow:
+        - economic_ideas
+        - quality
+    discipline: 0.05
+idea_variation_act_573:
+    monarch_power: DIP
+    potential:
+        - administrative_ideas
+        - exploration_ideas
+    allow:
+        - administrative_ideas
+        - exploration_ideas
+    global_colonial_growth: 10
+    colonist_placement_chance: 0.1
+idea_variation_act_574:
+    monarch_power: DIP
+    potential:
+        - administrative_ideas
+        - dynastic
+    allow:
+        - administrative_ideas
+        - dynastic
+    diplomats: 1
+    diplomatic_reputation: 1
+idea_variation_act_575:
+    monarch_power: adm
+    potential:
+        - offensive
+        - expansion_ideas
+    allow:
+        - offensive
+        - expansion_ideas
+    ae_impact: -0.15
+idea_variation_act_576:
+    monarch_power: ADM
+    potential:
+        - dynastic
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - dynastic
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    religious_unity: 0.2
+    global_missionary_strength: 0.01
+idea_variation_act_577:
+    monarch_power: DIP
+    potential:
+        - spy_ideas
+        - expansion_ideas
+    allow:
+        - spy_ideas
+        - expansion_ideas
+    global_spy_defence: 0.35
+idea_variation_act_578:
+    monarch_power: ADM
+    potential:
+        - humanist_ideas
+        - trade_ideas
+    allow:
+        - humanist_ideas
+        - trade_ideas
+    idea_cost: -0.075
+idea_variation_act_579:
+    monarch_power: DIP
+    potential:
+        - influence_ideas
+        - economic_ideas
+    allow:
+        - influence_ideas
+        - economic_ideas
+    reduced_liberty_desire: 10
+idea_variation_act_580:
+    monarch_power: DIP
+    potential:
+        - influence_ideas
+        - innovativeness_ideas
+    allow:
+        - influence_ideas
+        - innovativeness_ideas
+    ae_impact: -0.15
+idea_variation_act_581:
+    monarch_power: ADM
+    potential:
+        - influence_ideas
+        - administrative_ideas
+    allow:
+        - influence_ideas
+        - administrative_ideas
+    diplomatic_annexation_cost: -0.15
+idea_variation_act_582:
+    monarch_power: DIP
+    potential:
+        - influence_ideas
+        - expansion_ideas
+    allow:
+        - influence_ideas
+        - expansion_ideas
+    global_tariffs: 0.25
+idea_variation_act_583:
+    monarch_power: ADM
+    potential:
+        - humanist_ideas
+        - offensive
+    allow:
+        - humanist_ideas
+        - offensive
+    global_unrest: -1
+    years_of_nationalism: -5
+idea_variation_act_584:
+    monarch_power: ADM
+    potential:
+        - humanist_ideas
+        - quality
+    allow:
+        - humanist_ideas
+        - quality
+    prestige: 1
+    prestige_decay: -0.01
+idea_variation_act_586:
+    monarch_power: DIP
+    potential:
+        - administrative_ideas
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - administrative_ideas
+    trade_efficiency: 0.2
+    global_ship_repair: 0.2
+idea_variation_act_587:
+    monarch_power: DIP
+    potential:
+        - expansion_ideas
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - expansion_ideas
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    global_tariffs: 0.2
+    global_ship_repair: 0.1
+idea_variation_act_588: 
+    monarch_power: ADM
+    potential:
+        - trade_ideas
+        - economic_ideas
+    allow:
+        - trade_ideas
+        - economic_ideas
+    build_cost: -0.1
+idea_variation_act_589:
+    monarch_power: DIP
+    potential:
+        - maritime_ideas
+        - economic_ideas
+    allow:
+        - maritime_ideas
+        - economic_ideas
+    global_sailors_modifier: 0.2
+    naval_maintenance_modifier: -0.1
+idea_variation_act_591: 
+    monarch_power: ADM
+    potential:
+        - dynastic
+        - economic_ideas
+    allow:
+        - dynastic
+        - economic_ideas
+    build_cost: -0.1
+idea_variation_act_592: 
+    monarch_power: DIP
+    potential:
+        - maritime_ideas
+        - OR:
+            - defensive
+            - offensive
+    allow:
+        - maritime_ideas
+        - OR:
+            - defensive
+            - offensive
+    trade_efficiency: 0.2
+    global_ship_recruit_speed: -0.2
+idea_variation_act_593: 
+    monarch_power: DIP
+    potential:
+        - trade_ideas
+        - administrative_ideas
+    allow:
+        - trade_ideas
+        - administrative_ideas
+    trade_efficiency: 0.25
+idea_variation_act_594: 
+    monarch_power: DIP
+    potential:
+        - expansion_ideas
+        - exploration_ideas
+    allow:
+        - expansion_ideas
+        - exploration_ideas
+    global_colonial_growth: 20
+    native_uprising_chance: -0.5
+idea_variation_act_595: 
+    monarch_power: DIP
+    potential:
+        - exploration_ideas
+        - innovativeness_ideas
+    allow:
+        - exploration_ideas
+        - innovativeness_ideas
+    colonist_placement_chance: 0.1
+    global_trade_power: 0.15
+idea_variation_act_596:
+    monarch_power: DIP
+    potential:
+        - exploration_ideas
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - exploration_ideas
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    global_tariffs: 0.1
+    global_missionary_strength: 0.02
+idea_variation_act_597:
+    monarch_power: DIP
+    potential:
+        - maritime_ideas
+        - expansion_ideas
+    allow:
+        - maritime_ideas
+        - expansion_ideas
+    naval_forcelimit_modifier: 0.25
+idea_variation_act_598:
+    monarch_power: DIP
+    potential:
+        - innovativeness_ideas
+        - dynastic
+    allow:
+        - innovativeness_ideas
+        - dynastic
+    diplomatic_reputation: 2
+idea_variation_act_599:
+    monarch_power: DIP
+    potential:
+        - innovativeness_ideas
+        - trade_ideas
+    allow:
+        - innovativeness_ideas
+        - trade_ideas
+    trade_efficiency: 0.3    
+idea_variation_act_600:
+    monarch_power: MIL
+    potential:
+        - innovativeness_ideas
+        - maritime_ideas
+    allow:
+        - innovativeness_ideas
+        - maritime_ideas
+    heavy_ship_power: 0.15
+idea_variation_act_601:
+    monarch_power: DIP
+    potential:
+        - trade_ideas
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - trade_ideas
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    global_foreign_trade_power: 0.3
+idea_variation_act_602:
+    monarch_power: DIP
+    potential:
+        - exploration_ideas
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - exploration_ideas
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    diplomats: 1
+    diplomatic_reputation: 1
+idea_variation_act_603:
+    monarch_power: DIP
+    potential:
+        - maritime_ideas
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - maritime_ideas
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    navy_tradition_decay: -0.02
+idea_variation_act_604:
+    monarch_power: DIP
+    potential:
+        - exploration_ideas
+        - defensive
+    allow:
+        - exploration_ideas
+        - defensive
+    naval_morale: 0.15
+idea_variation_act_605:
+    monarch_power: MIL    
+    potential:
+        - maritime_ideas
+        - OR:
+            - quantity
+            - quality
+    allow:
+        - maritime_ideas
+        - OR:
+            - quantity
+            - quality
+    galley_power: 0.15
+idea_variation_act_606:
+    monarch_power: DIP
+    potential:
+        - trade_ideas
+        - quality
+    allow:
+        - trade_ideas
+        - quality
+    trade_efficiency: 0.25
+idea_variation_act_607:
+    monarch_power: DIP
+    potential:
+        - trade_ideas
+        - quantity
+    allow:
+        - trade_ideas
+        - quantity
+    global_trade_goods_size_modifier: 0.15
+idea_variation_act_608:
+    monarch_power: DIP
+    potential:
+        - trade_ideas
+        - expansion_ideas
+    allow:
+        - trade_ideas
+        - expansion_ideas
+    trade_efficiency: 0.15
+    trade_steering: 0.15
+idea_variation_act_609:
+    monarch_power: DIP
+    potential:
+        - dynastic
+        - expansion_ideas
+    allow:
+        - dynastic
+        - expansion_ideas
+    global_trade_power: 0.15        
+    diplomatic_reputation: 1
+idea_variation_act_612:
+    monarch_power: DIP
+    potential:
+        - dynastic
+        - quality
+    allow:
+        - dynastic
+        - quality
+    diplomatic_reputation: 2
+idea_variation_act_615: 
+    monarch_power: ADM
+    potential:
+        - trade_ideas
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - trade_ideas
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    global_trade_goods_size_modifier: 0.15
+idea_variation_act_616: 
+    monarch_power: MIL
+    potential:
+        - maritime_ideas
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - maritime_ideas
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    naval_morale: 0.1
+    recover_navy_morale_speed: 0.1
+idea_variation_act_617:
+    monarch_power: DIP
+    potential:
+        - humanist_ideas
+        - dynastic
+    allow:
+        - humanist_ideas
+        - dynastic
+    num_accepted_cultures: 1
+    improve_relation_modifier: 0.1
+idea_variation_act_618:
+    monarch_power: DIP
+    potential:
+        - humanist_ideas
+        - exploration_ideas
+    allow:
+        - humanist_ideas
+        - exploration_ideas
+    global_colonial_growth: 20
+    tolerance_heathen: 1
+idea_variation_act_619:
+    monarch_power: ADM
+    potential:
+        - humanist_ideas
+        - spy_ideas
+    allow:
+        - humanist_ideas
+        - spy_ideas
+    global_unrest: -2
+idea_variation_act_620:
+    monarch_power: DIP
+    potential:
+        - humanist_ideas
+        - influence_ideas
+    allow:
+        - humanist_ideas
+        - influence_ideas
+    improve_relation_modifier: 0.1
+    diplomatic_reputation: 1
+idea_variation_act_621:
+    monarch_power: DIP
+    potential:
+        - influence_ideas
+        - OR:
+            - religious_ideas
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - influence_ideas
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    culture_conversion_cost: -0.25
+idea_variation_act_622:
+    monarch_power: DIP
+    potential:
+        - humanist_ideas
+        - maritime_ideas
+    allow:
+        - humanist_ideas
+        - maritime_ideas
+    naval_attrition: -0.5
+idea_variation_act_626:
+    monarch_power: ADM
+    potential:
+        - influence_ideas
+        - quality
+    allow:
+        - influence_ideas
+        - quality
+    global_institution_spread: 0.25
+idea_variation_act_629:
+    monarch_power: ADM
+    potential:
+        - administrative_ideas
+        - quantity
+    allow:
+        - administrative_ideas
+        - quantity
+    manpower_recovery_speed: 0.25
+idea_variation_act_630: 
+    monarch_power: MIL
+    potential:
+        - expansion_ideas
+        - quality
+    allow:
+        - expansion_ideas
+        - quality
+    leader_land_fire: 2
+idea_variation_act_631: 
+    monarch_power: ADM
+    potential:
+        - quality
+        - administrative_ideas
+    allow:
+        - quality
+        - administrative_ideas
+    state_maintenance_modifier: -0.75
+idea_variation_act_632:
+    monarch_power: MIL
+    potential:
+        - offensive
+        - economic_ideas
+    allow:
+        - offensive
+        - economic_ideas
+    artillery_power: 0.15
+idea_variation_act_633:
+    monarch_power: DIP
+    potential:
+        - defensive
+        - trade_ideas
+    allow:
+        - defensive
+        - trade_ideas
+    trade_steering: 0.15
+    merchants: 1
+idea_variation_act_634:
+    monarch_power: MIL
+    potential:
+        - offensive
+        - trade_ideas
+    allow:
+        - offensive
+        - trade_ideas
+    infantry_power: 0.1
+    land_morale: 0.1
+idea_variation_act_636:
+    monarch_power: ADM            
+    potential:
+        - quality
+        - exploration_ideas
+    allow:
+        - quality
+        - exploration_ideas
+    manpower_recovery_speed: 0.1
+    land_attrition: -0.1
+idea_variation_act_637:
+    monarch_power: ADM
+    potential:
+        - innovativeness_ideas
+        - offensive
+    allow:
+        - innovativeness_ideas
+        - offensive
+    siege_ability: 0.1    
+idea_variation_act_638:
+    monarch_power: ADM
+    potential:
+        - innovativeness_ideas
+        - defensive
+    allow:
+        - innovativeness_ideas
+        - defensive
+    defensiveness: 0.1
+idea_variation_act_639:
+    monarch_power: ADM
+    potential:
+        - innovativeness_ideas
+        - quality
+    allow:
+        - innovativeness_ideas
+        - quality
+    production_efficiency: 0.15
+    trade_efficiency: 0.15
+idea_variation_act_640:
+    monarch_power: ADM
+    potential:
+        - innovativeness_ideas
+        - quantity
+    allow:
+        - innovativeness_ideas
+        - quantity
+    recover_army_morale_speed: 0.15
+idea_variation_act_641:
+    monarch_power: DIP
+    potential:
+        - spy_ideas
+        - offensive
+    allow:
+        - spy_ideas
+        - offensive
+    cavalry_power: 0.1
+    cav_to_inf_ratio: 0.1
+idea_variation_act_642:
+    monarch_power: ADM
+    potential:
+        - offensive
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - offensive
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    religious_unity: 0.2
+    global_heretic_missionary_strength: 0.03
+idea_variation_act_643:
+    monarch_power: MIL
+    potential:
+        - quality
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - quality
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    land_morale: 0.1
+    siege_ability: 0.1
+idea_variation_act_644:
+    monarch_power: DIP
+    potential:
+        - offensive
+        - exploration_ideas
+    allow:
+        - offensive
+        - exploration_ideas
+    heavy_ship_power: 0.1
+    light_ship_power: 0.1
+idea_variation_act_645:
+    monarch_power: MIL
+    potential:
+        - quantity
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - quantity
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    land_morale: 0.15
+idea_variation_act_646:
+    monarch_power: DIP            
+    potential:
+        - dynastic
+        - quantity
+    allow:
+        - dynastic
+        - quantity
+    diplomatic_reputation: 1
+    land_forcelimit_modifier: 0.15
+idea_variation_act_647:
+    monarch_power: MIL
+    potential:
+        - dynastic
+        - defensive
+    allow:
+        - dynastic
+        - defensive
+    fire_damage_received: -0.05
+idea_variation_act_648:
+    monarch_power: ADM
+    potential:
+        - expansion_ideas
+        - defensive
+    allow:
+        - expansion_ideas
+        - defensive
+    global_regiment_cost: -0.25
+idea_variation_act_649:
+    monarch_power: DIP
+    potential:
+        - dynastic
+        - offensive
+    allow:
+        - dynastic
+        - offensive
+    diplomatic_reputation: 2
+idea_variation_act_650:
+    monarch_power: MIL        
+    potential:
+        - quantity
+        - exploration_ideas
+    allow:
+        - quantity
+        - exploration_ideas
+    global_colonial_growth: 20
+    native_uprising_chance: -0.5
+idea_variation_act_651: 
+    monarch_power: ADM
+    potential:
+        - dynastic
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - dynastic
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    legitimacy: 2
+    republican_tradition: 1
+    devotion: 1            
+    horde_unity: 1
+idea_variation_act_652: 
+    monarch_power: ADM
+    potential:
+        - quantity
+        - expansion_ideas 
+    allow:
+        - quantity
+        - expansion_ideas
+    land_forcelimit_modifier: 0.15
+    global_colonial_growth: 10
+idea_variation_act_653:
+    monarch_power: DIP
+    potential:
+        - war_production
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - war_production
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    naval_forcelimit_modifier: 0.2
+    embargo_efficiency: 0.25
+idea_variation_act_655:
+    monarch_power: DIP        
+    potential:
+        - innovativeness_ideas
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - innovativeness_ideas
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    leader_naval_fire: 2
+idea_variation_act_656:
+    monarch_power: DIP            
+    potential:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - OR:
+                - religious_ideas   
+                - katholisch0
+                - protestant0
+                - reformiert0
+                - orthodox0
+                - islam0
+                - cathar0
+                - shinto0
+                - norse0
+                - budda0
+                - confuci0 
+                - hindu0
+                - tengri0
+                - coptic0
+                - helle0
+                - slav0
+                - jew0
+                - suomi0
+                - romuva0
+                - animist0
+                - feti0
+                - zoro0
+                - mane0
+                - ancli0
+                - mesoam0
+                - inti0
+                - tote0
+                - nahu0
+                - shia0
+                - ibadi0
+                - hussite0
+    allow:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    leader_naval_shock: 2
+idea_variation_act_657:
+    monarch_power: DIP 
+    potential:
+        - influence_ideas
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - influence_ideas
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    global_unrest: -1
+    reduced_liberty_desire: 5
+idea_variation_act_658:
+    monarch_power: MIL
+    potential:
+        - humanist_ideas
+        - quantity 
+    allow:
+        - humanist_ideas
+        - quantity
+    leader_land_shock: 2
+idea_variation_act_659:
+    monarch_power: DIP                
+    potential:
+        - humanist_ideas 
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - humanist_ideas 
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    naval_morale: 0.15
+idea_variation_act_660:
+    monarch_power: ADM
+    potential:
+        - humanist_ideas
+        - defensive
+    allow:
+        - humanist_ideas
+        - defensive
+    land_attrition: -0.15
+idea_variation_act_661:
+    monarch_power: MIL
+    potential:
+        - influence_ideas
+        - defensive
+    allow:
+        - influence_ideas
+        - defensive
+    land_morale: 0.15
+idea_variation_act_662:
+    monarch_power: DIP        
+    potential:
+        - influence_ideas
+        - offensive
+    allow:
+        - influence_ideas
+        - offensive
+    reduced_liberty_desire: 10
+idea_variation_act_663:
+    monarch_power: MIL
+    potential:
+        - influence_ideas
+        - quantity
+    allow:
+        - influence_ideas
+        - quantity
+    shock_damage: 0.075
+idea_variation_act_1: 
+    monarch_power: DIP
+    potential:
+        - public_admin
+        - fleet_base 
+    allow:
+        - public_admin
+        - fleet_base
+    naval_maintenance_modifier: -0.25
+idea_variation_act_2: 
+    monarch_power: DIP
+    potential:
+        - public_admin
+        - colonial_emp
+    allow:
+        - public_admin
+        - colonial_emp
+    global_colonial_growth: 15
+    global_tariffs: 0.15
+idea_variation_act_3: 
+    monarch_power: DIP
+    potential:
+        - public_admin
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - public_admin
+    naval_forcelimit_modifier: 0.25
+idea_variation_act_4: 
+    monarch_power: DIP
+    potential:
+        - public_admin
+        - exploration_ideas
+    allow:
+        - public_admin
+        - exploration_ideas
+    colonists: 1
+    colonist_placement_chance: 0.1
+idea_variation_act_5: 
+    monarch_power: ADM
+    potential:
+        - public_admin
+        - offensive
+    allow:
+        - public_admin
+        - offensive
+    core_creation: -0.15
+idea_variation_act_6: 
+    monarch_power: MIL
+    potential:
+        - public_admin
+        - merc_army 
+    allow:
+        - public_admin
+        - merc_army  
+    mercenary_discipline: 0.05    
+idea_variation_act_7: 
+    monarch_power: MIL                
+    potential:
+        - public_admin
+        - war_production
+    allow:
+        - public_admin
+        - war_production
+    fire_damage: 0.075
+idea_variation_act_8: 
+    monarch_power: ADM
+    potential:
+        - public_admin
+        - nationalismus
+    allow:
+        - public_admin
+        - nationalismus
+    advisor_cost: -0.1
+idea_variation_act_10: 
+    monarch_power: ADM
+    potential:
+        - judiciary
+        - assimilation
+    allow:
+        - judiciary
+        - assimilation 
+    global_institution_spread: 0.2
+idea_variation_act_11: 
+    monarch_power: ADM
+    potential:
+        - judiciary
+        - trade_ideas 
+    allow:
+        - judiciary
+        - trade_ideas 
+    global_tax_modifier: 0.15
+    production_efficiency: 0.15
+idea_variation_act_12: 
+    monarch_power: ADM
+    potential:
+        - judiciary
+        - offensive
+    allow:
+        - judiciary
+        - offensive
+    land_attrition: -0.15
+idea_variation_act_13: 
+    monarch_power: ADM
+    potential:
+        - judiciary
+        - sociaty 
+    allow:
+        - judiciary
+        - sociaty 
+    idea_cost: -0.075
+idea_variation_act_14: 
+    monarch_power: ADM
+    potential:
+        - judiciary
+        - war_production
+    allow:
+        - judiciary
+        - war_production
+    global_trade_goods_size_modifier: 0.15
+idea_variation_act_16: 
+    monarch_power: DIP
+    potential:
+        - judiciary
+        - influence_ideas  
+    allow:
+        - judiciary
+        - influence_ideas  
+    diplomatic_reputation: 2
+idea_variation_act_17: 
+    monarch_power: MIL
+    potential:
+        - development
+        - weapon_quality
+    allow:
+        - development
+        - weapon_quality
+    discipline: 0.05
+idea_variation_act_18: 
+    monarch_power: DIP
+    potential:
+        - development
+        - trade_ideas 
+    allow:
+        - development
+        - trade_ideas 
+    merchants: 1
+    global_trade_power: 0.1 
+idea_variation_act_19: 
+    monarch_power: DIP
+    potential:
+        - development
+        - maritime_ideas 
+    allow:
+        - development
+        - maritime_ideas 
+    global_ship_recruit_speed: -0.25
+    naval_attrition: -0.25
+idea_variation_act_20: 
+    monarch_power: MIL
+    potential:
+        - development
+        - general_staff 
+    allow:
+        - development
+        - general_staff
+    yearly_army_professionalism: 0.015
+    drill_gain_modifier: 0.25
+idea_variation_act_21: 
+    monarch_power: ADM            
+    potential:
+        - development
+        - quantity
+    allow:
+        - development
+        - quantity
+    build_cost: -0.2
+idea_variation_act_22: 
+    monarch_power: ADM
+    potential:
+        - development 
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - development 
+        - OR:
+            - imperialismus
+            - konigreich0
+    global_tax_modifier: 0.15
+    production_efficiency: 0.15
+idea_variation_act_23: 
+    monarch_power: ADM
+    potential:
+        - judiciary
+        - propaganda
+    allow:
+        - judiciary
+        - propaganda
+    development_cost: -0.1 
+idea_variation_act_24: 
+    monarch_power: ADM
+    potential:
+        - development
+        - quality 
+    allow:
+        - development
+        - quality
+    defensiveness: 0.1
+idea_variation_act_25: 
+    monarch_power: MIL
+    potential:
+        - offensive
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - offensive
+        - OR:
+            - strong_men
+            - fem_boy
+    land_morale: 0.15
+idea_variation_act_26: 
+    monarch_power: ADM
+    potential:
+        - OR:
+            - standing_army 
+            - conscription
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - OR:
+            - standing_army 
+            - conscription
+        - OR:
+            - strong_men
+            - fem_boy
+    manpower_recovery_speed: 0.25 
+idea_variation_act_27: 
+    monarch_power: ADM
+    potential:
+        - sociaty 
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - sociaty 
+        - OR:
+            - strong_men
+            - fem_boy
+    global_tax_modifier: 0.15
+    production_efficiency: 0.15
+idea_variation_act_28: 
+    monarch_power: ADM
+    potential:
+        - fortress
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - fortress
+        - OR:
+            - strong_men
+            - fem_boy
+    embracement_cost: -0.25
+idea_variation_act_29: 
+    monarch_power: DIP
+    potential:
+        - assimilation
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - assimilation
+        - OR:
+            - strong_men
+            - fem_boy
+    diplomatic_annexation_cost: -0.15
+idea_variation_act_30: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - colonial_emp
+        - OR:
+            - strong_men
+            - fem_boy
+    native_assimilation: 0.5
+    native_uprising_chance: -0.5
+idea_variation_act_31: 
+    monarch_power: ADM
+    potential:
+        - quality
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - quality
+        - OR:
+            - strong_men
+            - fem_boy
+    discipline: 0.05
+idea_variation_act_32: 
+    monarch_power: MIL
+    potential:
+        - maritime_ideas
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - maritime_ideas
+        - OR:
+            - strong_men
+            - fem_boy
+    naval_morale: 0.15
+idea_variation_act_41: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - innovativeness_ideas
+    allow:
+        - colonial_emp
+        - innovativeness_ideas
+    global_trade_power: 0.1
+    merchants: 1
+idea_variation_act_43: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - colonial_emp
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    global_tariffs: 0.25
+idea_variation_act_45: 
+    monarch_power: ADM
+    potential:
+        - quantity
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - quantity
+        - OR:
+            - strong_men
+            - fem_boy
+    land_forcelimit_modifier: 0.15
+idea_variation_act_46: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - humanist_ideas 
+    allow:
+        - colonial_emp
+        - humanist_ideas 
+    global_colonial_growth: 25
+idea_variation_act_47: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - expansion_ideas
+    allow:
+        - colonial_emp
+        - expansion_ideas
+    colonists: 1
+idea_variation_act_48: 
+    monarch_power: ADM
+    potential:
+        - assimilation
+        - fortress
+    allow:
+        - assimilation
+        - fortress
+    core_creation: -0.15
+idea_variation_act_49: 
+    monarch_power: ADM
+    potential:
+        - assimilation
+        - public_admin
+    allow:
+        - assimilation
+        - public_admin
+    global_unrest: -3            
+idea_variation_act_50: 
+    monarch_power: DIP
+    potential:
+        - assimilation
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - assimilation
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    diplomatic_reputation: 1
+    improve_relation_modifier: 0.1    
+idea_variation_act_51: 
+    monarch_power: MIL
+    potential:
+        - assimilation
+        - conscription
+    allow:
+        - assimilation
+        - conscription
+    global_manpower_modifier: 0.25
+idea_variation_act_52: 
+    monarch_power: MIL
+    potential:
+        - assimilation
+        - quality
+    allow:
+        - assimilation
+        - quality
+    infantry_power: 0.1
+    land_morale: 0.1
+idea_variation_act_53: 
+    monarch_power: ADM
+    potential:
+        - assimilation
+        - humanist_ideas 
+    allow:
+        - assimilation
+        - humanist_ideas 
+    years_of_nationalism: -5
+    stability_cost_modifier: -0.25
+idea_variation_act_54: 
+    monarch_power: ADM
+    potential:
+        - sociaty 
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - sociaty 
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    missionaries: 2
+idea_variation_act_55: 
+    monarch_power: DIP
+    potential:
+        - sociaty 
+        - OR:
+            - republik0
+            - aristo0
+            - monarchie0
+            - horde0
+            - diktatur0
+    allow:
+        - sociaty 
+        - OR:
+            - republik0 
+            - aristo0
+            - monarchie0
+            - horde0
+            - diktatur0
+    diplomatic_annexation_cost: -0.15
+idea_variation_act_56: 
+    monarch_power: MIL
+    potential:
+        - sociaty 
+        - OR:
+            - standing_army 
+            - conscription
+    allow:
+        - sociaty 
+        - OR:
+            - standing_army
+            - conscription
+    discipline: 0.05
+idea_variation_act_57: 
+    monarch_power: MIL
+    potential:
+        - sociaty 
+        - weapon_quality
+    allow:
+        - sociaty 
+        - weapon_quality
+    discipline: 0.05
+idea_variation_act_58: 
+    monarch_power: MIL
+    potential:
+        - general_staff
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - general_staff
+    leader_naval_fire: 1
+    leader_naval_shock: 1
+idea_variation_act_59: 
+    monarch_power: ADM
+    potential:
+        - propaganda
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - propaganda
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    legitimacy: 2
+    republican_tradition: 1
+    devotion: 1            
+    horde_unity: 1
+idea_variation_act_60: 
+    monarch_power: DIP
+    potential:
+        - propaganda
+        - conscription
+    allow:
+        - propaganda
+        - conscription
+    land_maintenance_modifier: -0.2
+idea_variation_act_61: 
+    monarch_power: DIP
+    potential:
+        - propaganda
+        - offensive
+    allow:
+        - propaganda
+        - offensive
+    siege_ability: 0.1
+idea_variation_act_62: 
+    monarch_power: ADM
+    potential:
+        - propaganda
+        - innovativeness_ideas
+    allow:
+        - propaganda
+        - innovativeness_ideas
+    production_efficiency: 0.3
+idea_variation_act_63: 
+    monarch_power: DIP
+    potential:
+        - fleet_base
+        - expansion_ideas
+    allow:
+        - fleet_base
+        - expansion_ideas
+    global_ship_cost: -0.25
+idea_variation_act_64: 
+    monarch_power: DIP        
+    potential:
+        - weapon_quality
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - weapon_quality
+    heavy_ship_power: 0.1
+    galley_power: 0.1
+idea_variation_act_65: 
+    monarch_power: ADM
+    potential:
+        - fleet_base
+        - fortress
+    allow:
+        - fleet_base
+        - fortress
+    land_maintenance_modifier: -0.1
+    land_forcelimit_modifier: 0.15
+idea_variation_act_66: 
+    monarch_power: DIP
+    potential:
+        - fleet_base
+        - economic_ideas
+    allow:
+        - fleet_base
+        - economic_ideas
+    trade_range_modifier: 0.25
+    trade_steering: 0.25
+idea_variation_act_67: 
+    monarch_power: MIL
+    potential:
+        - fleet_base
+        - general_staff
+    allow:
+        - fleet_base
+        - general_staff
+    leader_naval_manuever: 2
+idea_variation_act_68: 
+    monarch_power: MIL
+    potential:
+        - nationalismus
+        - general_staff
+    allow:
+        - nationalismus
+        - general_staff
+    leader_land_shock: 1
+    leader_land_fire: 1
+idea_variation_act_69: 
+    monarch_power: DIP
+    potential:
+        - nationalismus
+        - defensive
+    allow:
+        - nationalismus
+        - defensive
+    hostile_attrition: 2    
+idea_variation_act_70: 
+    monarch_power: DIP
+    potential:
+        - nationalismus
+        - fortress
+    allow:
+        - nationalismus
+        - fortress
+    defensiveness: 0.1
+idea_variation_act_71: 
+    monarch_power: MIL
+    potential:
+        - nationalismus
+        - conscription
+    allow:
+        - nationalismus
+        - conscription
+    global_manpower_modifier: 0.25
+idea_variation_act_72: 
+    monarch_power: MIL                
+    potential:
+        - nationalismus
+        - war_production
+    allow:
+        - nationalismus
+        - war_production
+    global_trade_goods_size_modifier: 0.15
+idea_variation_act_74: 
+    monarch_power: ADM
+    potential:
+        - nationalismus
+        - administrative_ideas
+    allow:
+        - nationalismus
+        - administrative_ideas
+    global_unrest: -2
+idea_variation_act_75: 
+    monarch_power: MIL
+    potential:
+        - merc_army
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - merc_army
+        - OR:
+            - imperialismus
+            - konigreich0
+    mercenary_manpower: 1.0
+idea_variation_act_76: 
+    monarch_power: DIP
+    potential:
+        - OR:
+            - konigreich0
+            - imperialismus
+        - OR:
+                - religious_ideas   
+                - katholisch0
+                - protestant0
+                - reformiert0
+                - orthodox0
+                - islam0
+                - cathar0
+                - shinto0
+                - norse0
+                - budda0
+                - confuci0 
+                - hindu0
+                - tengri0
+                - coptic0
+                - helle0
+                - slav0
+                - jew0
+                - suomi0
+                - romuva0
+                - animist0
+                - feti0
+                - zoro0
+                - mane0
+                - ancli0
+                - mesoam0
+                - inti0
+                - tote0
+                - nahu0
+                - shia0
+                - ibadi0
+                - hussite0
+    allow:
+        - OR:
+            - imperialismus
+            - konigreich0
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    religious_unity: 0.5
+idea_variation_act_77: 
+    monarch_power: ADM
+    potential:
+        - expansion_ideas
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - expansion_ideas
+        - OR:
+            - imperialismus
+            - konigreich0
+    core_creation: -0.15
+idea_variation_act_78: 
+    monarch_power: DIP
+    potential:
+        - quantity
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - quantity
+        - OR:
+            - imperialismus
+            - konigreich0
+    land_maintenance_modifier: -0.2
+idea_variation_act_79: 
+    monarch_power: DIP
+    potential:
+        - OR:
+            - konigreich0
+            - imperialismus
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - OR:
+            - imperialismus
+            - konigreich0
+        - OR:
+            - republik0
+            - aristo0
+            - monarchie0
+            - horde0
+            - diktatur0
+    ae_impact: -0.15
+idea_variation_act_80: 
+    monarch_power: DIP
+    potential:
+        - humanist_ideas
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - humanist_ideas
+        - OR:
+            - imperialismus
+            - konigreich0
+    diplomatic_annexation_cost: -0.15
+idea_variation_act_81: 
+    monarch_power: ADM
+    potential:
+        - general_staff
+        - innovativeness_ideas
+    allow:
+        - general_staff
+        - innovativeness_ideas
+    siege_ability: 0.1 
+idea_variation_act_82: 
+    monarch_power: MIL
+    potential:
+        - general_staff
+        - propaganda
+    allow:
+        - general_staff
+        - propaganda
+    discipline: 0.05
+idea_variation_act_83: 
+    monarch_power: MIL
+    potential:
+        - general_staff
+        - sociaty 
+    allow:
+        - general_staff
+        - sociaty 
+    cavalry_power: 0.1
+    cav_to_inf_ratio: 0.1
+idea_variation_act_84: 
+    monarch_power: MIL
+    potential:
+        - general_staff
+        - administrative_ideas
+    allow:
+        - general_staff
+        - administrative_ideas
+    cavalry_power: 0.1
+    cav_to_inf_ratio: 0.1
+idea_variation_act_85: 
+    monarch_power: MIL                
+    potential:
+        - general_staff
+        - economic_ideas
+    allow:
+        - general_staff
+        - economic_ideas
+    land_maintenance_modifier: -0.15
+    naval_maintenance_modifier: -0.15
+idea_variation_act_86: 
+    monarch_power: MIL
+    potential:
+        - standing_army
+        - OR:
+            - republik0
+            - aristo0
+            - monarchie0
+            - horde0
+            - diktatur0
+    allow:
+        - standing_army
+        - OR:
+            - republik0 
+            - aristo0
+            - monarchie0
+            - horde0
+            - diktatur0
+    discipline: 0.05
+idea_variation_act_87: 
+    monarch_power: ADM
+    potential:
+        - standing_army
+        - administrative_ideas
+    allow:
+        - standing_army
+        - administrative_ideas
+    land_maintenance_modifier: -0.2
+idea_variation_act_88: 
+    monarch_power: MIL
+    potential:
+        - standing_army
+        - nationalismus
+    allow:
+        - standing_army
+        - nationalismus
+    land_morale: 0.15
+idea_variation_act_89: 
+    monarch_power: DIP
+    potential:
+        - standing_army
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - standing_army
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    global_sailors_modifier: 0.33
+idea_variation_act_90: 
+    monarch_power: DIP
+    potential:
+        - standing_army
+        - influence_ideas
+    allow:
+        - standing_army
+        - influence_ideas
+    ae_impact: -0.15
+idea_variation_act_91: 
+    monarch_power: ADM
+    potential:
+        - merc_army 
+        - expansion_ideas
+    allow:
+        - merc_army 
+        - expansion_ideas
+    merc_maintenance_modifier: -0.25
+idea_variation_act_92: 
+    monarch_power: MIL
+    potential:
+        - merc_army 
+        - economic_ideas
+    allow:
+        - merc_army 
+        - economic_ideas
+    development_cost: -0.1
+idea_variation_act_93: 
+    monarch_power: ADM
+    potential:
+        - merc_army 
+        - innovativeness_ideas
+    allow:
+        - merc_army 
+        - innovativeness_ideas
+    free_leader_pool: 2
+idea_variation_act_94: 
+    monarch_power: ADM
+    potential:
+        - merc_army 
+        - humanist_ideas 
+    allow:
+        - merc_army 
+        - humanist_ideas 
+    years_of_nationalism: -5
+    prestige_from_land: 1.0
+idea_variation_act_95: 
+    monarch_power: DIP
+    potential:
+        - merc_army 
+        - trade_ideas 
+    allow:
+        - merc_army 
+        - trade_ideas 
+    mercenary_discipline: 0.05
+idea_variation_act_96: 
+    monarch_power: MIL
+    potential:
+        - merc_army 
+        - dynastic
+    allow:
+        - merc_army 
+        - dynastic
+    shock_damage_received: -0.05
+idea_variation_act_97: 
+    monarch_power: MIL
+    potential:
+        - conscription 
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - conscription
+        - OR:
+            - imperialismus
+            - konigreich0
+    infantry_power: 0.1
+    land_morale: 0.1
+idea_variation_act_98: 
+    monarch_power: DIP        
+    potential:
+        - conscription
+        - fleet_base
+    allow:
+        - conscription
+        - fleet_base
+    naval_morale: 0.15
+    navy_tradition: 1
+idea_variation_act_99: 
+    monarch_power: MIL
+    potential:
+        - conscription
+        - colonial_emp
+    allow:
+        - conscription
+        - colonial_emp
+    global_manpower_modifier: 0.25
+idea_variation_act_100: 
+    monarch_power: MIL
+    potential:
+        - weapon_quality
+        - economic_ideas
+    allow:
+        - weapon_quality
+        - economic_ideas
+    infantry_power: 0.1
+    artillery_power: 0.1
+idea_variation_act_101: 
+    monarch_power: DIP
+    potential:
+        - propaganda
+        - fortress
+    allow:
+        - propaganda
+        - fortress
+    defensiveness: 0.1
+idea_variation_act_102: 
+    monarch_power: DIP
+    potential:
+        - weapon_quality
+        - spy_ideas
+    allow:
+        - weapon_quality
+        - spy_ideas
+    siege_ability: 0.1
+idea_variation_act_103: 
+    monarch_power: MIL
+    potential:
+        - weapon_quality
+        - trade_ideas 
+    allow:
+        - weapon_quality
+        - trade_ideas 
+    land_morale: 0.15
+idea_variation_act_104: 
+    monarch_power: ADM
+    potential:
+        - war_production
+        - economic_ideas
+    allow:
+        - war_production
+        - economic_ideas
+    artillery_power: 0.1
+idea_variation_act_105: 
+    monarch_power: ADM
+    potential:
+        - war_production
+        - administrative_ideas
+    allow:
+        - war_production
+        - administrative_ideas
+    interest: -1
+idea_variation_act_106: 
+    monarch_power: DIP
+    potential:
+        - war_production
+        - trade_ideas
+    allow:
+        - war_production
+        - trade_ideas
+    fire_damage: 0.05
+idea_variation_act_107: 
+    monarch_power: ADM
+    potential:
+        - fortress
+        - OR:
+                - religious_ideas   
+                - katholisch0
+                - protestant0
+                - reformiert0
+                - orthodox0
+                - islam0
+                - cathar0
+                - shinto0
+                - norse0
+                - budda0
+                - confuci0 
+                - hindu0
+                - tengri0
+                - coptic0
+                - helle0
+                - slav0
+                - jew0
+                - suomi0
+                - romuva0
+                - animist0
+                - feti0
+                - zoro0
+                - mane0
+                - ancli0
+                - mesoam0
+                - inti0
+                - tote0
+                - nahu0
+                - shia0
+                - ibadi0
+                - hussite0
+    allow:
+        - fortress
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    defensiveness: 0.1
+    siege_ability: 0.1
+idea_variation_act_108: 
+    monarch_power: MIL
+    potential:
+        - fortress
+        - administrative_ideas
+    allow:
+        - fortress
+        - administrative_ideas
+    fire_damage_received: -0.05
+idea_variation_act_109: 
+    monarch_power: MIL
+    potential:
+        - fortress
+        - OR:
+            - republik0
+            - aristo0
+            - monarchie0
+            - horde0
+            - diktatur0
+    allow:
+        - fortress
+        - OR:
+            - republik0 
+            - aristo0
+            - monarchie0
+            - horde0
+            - diktatur0
+    shock_damage_received: -0.05
+idea_variation_act_110: 
+    monarch_power: DIP
+    potential:
+        - fortress
+        - sociaty 
+    allow:
+        - fortress
+        - sociaty 
+    hostile_attrition: 2
+idea_variation_act_111: 
+    monarch_power: ADM
+    potential:
+        - colonial_emp
+        - administrative_ideas
+    allow:
+        - colonial_emp
+        - administrative_ideas
+    state_maintenance_modifier: -0.5
+    years_of_nationalism: -5
+idea_variation_act_112: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - colonial_emp
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    global_colonial_growth: 20
+idea_variation_act_113: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - economic_ideas
+    allow:
+        - colonial_emp
+        - economic_ideas
+    global_tariffs: 0.15
+    trade_efficiency: 0.1
+idea_variation_act_114: 
+    monarch_power: MIL
+    potential:
+        - colonial_emp
+        - defensive
+    allow:
+        - colonial_emp
+        - defensive
+    fire_damage_received: -0.05
+idea_variation_act_115: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - offensive
+    allow:
+        - colonial_emp
+        - offensive
+    siege_ability: 0.1
+idea_variation_act_116: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - quality
+    allow:
+        - colonial_emp
+        - quality
+    colonist_placement_chance: 0.15
+    global_colonial_growth: 10
+idea_variation_act_117: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - quantity
+    allow:
+        - colonial_emp
+        - quantity
+    colonists: 1
+idea_variation_act_118: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - development
+    allow:
+        - colonial_emp
+        - development
+    native_uprising_chance: -0.5        
+    reduced_liberty_desire: 10
+idea_variation_act_120: 
+    monarch_power: ADM
+    potential:
+        - colonial_emp
+        - judiciary
+    allow:
+        - colonial_emp
+        - judiciary
+    global_unrest: -1
+    yearly_corruption: -0.1
+idea_variation_act_121: 
+    monarch_power: ADM
+    potential:
+        - colonial_emp
+        - general_staff
+    allow:
+        - colonial_emp
+        - general_staff
+    free_leader_pool: 2
+idea_variation_act_122: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - standing_army
+    allow:
+        - colonial_emp
+        - standing_army
+    land_forcelimit_modifier: 0.15
+idea_variation_act_123: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - merc_army 
+    allow:
+        - colonial_emp
+        - merc_army 
+    mercenary_manpower: 0.25
+idea_variation_act_124: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - weapon_quality
+    allow:
+        - colonial_emp
+        - weapon_quality
+    reinforce_speed: 0.25
+idea_variation_act_125: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - fortress
+    allow:
+        - colonial_emp
+        - fortress
+    fort_maintenance_modifier: -0.25
+    reduced_liberty_desire: 10
+idea_variation_act_126: 
+    monarch_power: MIL
+    potential:
+        - colonial_emp
+        - war_production
+    allow:
+        - colonial_emp
+        - war_production
+    colonists: 1
+idea_variation_act_127: 
+    monarch_power: ADM
+    potential:
+        - fleet_base
+        - administrative_ideas
+    allow:
+        - fleet_base
+        - administrative_ideas
+    governing_capacity_modifier: 0.25
+idea_variation_act_128: 
+    monarch_power: DIP
+    potential:
+        - fleet_base
+        - humanist_ideas 
+    allow:
+        - fleet_base
+        - humanist_ideas 
+    num_accepted_cultures: 1
+    naval_forcelimit_modifier: 0.2
+idea_variation_act_129: 
+    monarch_power: ADM
+    potential:
+        - fleet_base
+        - innovativeness_ideas
+    allow:
+        - fleet_base
+        - innovativeness_ideas
+    state_maintenance_modifier: -0.75
+idea_variation_act_130: 
+    monarch_power: MIL
+    potential:
+        - fleet_base
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - fleet_base
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    tolerance_heathen: 1
+    tolerance_heretic: 1
+idea_variation_act_131: 
+    monarch_power: ADM
+    potential:
+        - fleet_base
+        - OR:
+            - republik0
+            - aristo0
+            - monarchie0
+            - horde0
+            - diktatur0
+    allow:
+        - fleet_base
+        - OR:
+            - republik0 
+            - aristo0
+            - monarchie0
+            - horde0
+            - diktatur0
+    legitimacy: 2
+    republican_tradition: 1
+    devotion: 1
+    horde_unity: 1
+idea_variation_act_132: 
+    monarch_power: MIL
+    potential:
+        - fleet_base
+        - defensive
+    allow:
+        - fleet_base
+        - defensive
+    fire_damage_received: -0.05
+idea_variation_act_133: 
+    monarch_power: DIP
+    potential:
+        - fleet_base
+        - quality
+    allow:
+        - fleet_base
+        - quality
+    naval_maintenance_modifier: -0.25 
+idea_variation_act_134: 
+    monarch_power: DIP                
+    potential:
+        - fleet_base
+        - offensive
+    allow:
+        - fleet_base
+        - offensive
+    naval_morale: 0.15
+    range: 0.2
+idea_variation_act_135: 
+    monarch_power: DIP
+    potential:
+        - fleet_base
+        - quantity
+    allow:
+        - fleet_base
+        - quantity
+    range: 0.5
+idea_variation_act_136: 
+    monarch_power: ADM
+    potential:
+        - fleet_base
+        - judiciary
+    allow:
+        - fleet_base
+        - judiciary
+    global_autonomy: -0.1
+    global_unrest: -1
+idea_variation_act_137: 
+    monarch_power: DIP
+    potential:
+        - fleet_base
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - fleet_base
+        - OR:
+            - strong_men
+            - fem_boy
+    navy_tradition: 1
+    range: 0.25
+idea_variation_act_138: 
+    monarch_power: ADM
+    potential:
+        - fleet_base
+        - development
+    allow:
+        - fleet_base
+        - development
+    build_cost: -0.15
+idea_variation_act_140: 
+    monarch_power: DIP
+    potential:
+        - fleet_base
+        - standing_army
+    allow:
+        - fleet_base
+        - standing_army
+    global_manpower_modifier: 0.25
+idea_variation_act_141: 
+    monarch_power: DIP
+    potential:
+        - fleet_base
+        - merc_army 
+    allow:
+        - fleet_base
+        - merc_army 
+    mercenary_cost: -0.15
+    mercenary_manpower: 0.15
+idea_variation_act_142: 
+    monarch_power: MIL
+    potential:
+        - fleet_base 
+        - weapon_quality 
+    allow:
+        - fleet_base
+        - weapon_quality
+    discipline: 0.05
+idea_variation_act_143: 
+    monarch_power: MIL
+    potential:
+        - fleet_base
+        - war_production
+    allow:
+        - fleet_base
+        - war_production
+    infantry_power: 0.1
+    land_morale: 0.1
+idea_variation_act_144: 
+    monarch_power: ADM
+    potential:
+        - propaganda
+        - administrative_ideas
+    allow:
+        - propaganda
+        - administrative_ideas
+    interest: -1
+idea_variation_act_145: 
+    monarch_power: DIP
+    potential:
+        - propaganda
+        - humanist_ideas 
+    allow:
+        - propaganda
+        - humanist_ideas 
+    num_accepted_cultures: 1
+    culture_conversion_cost: -0.25
+idea_variation_act_146: 
+    monarch_power: ADM
+    potential:
+        - propaganda
+        - expansion_ideas
+    allow:
+        - propaganda
+        - expansion_ideas
+    core_creation: -0.15
+idea_variation_act_147: 
+    monarch_power: ADM
+    potential:
+        - propaganda
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - propaganda
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    tolerance_own: 3
+idea_variation_act_149: 
+    monarch_power: DIP
+    potential:
+        - propaganda
+        - defensive
+    allow:
+        - propaganda
+        - defensive
+    defensiveness: 0.075
+    war_exhaustion: -0.02
+idea_variation_act_150: 
+    monarch_power: DIP
+    potential:
+        - propaganda
+        - quantity
+    allow:
+        - propaganda
+        - quantity
+    land_forcelimit_modifier: 0.15
+idea_variation_act_151: 
+    monarch_power: MIL
+    potential:
+        - propaganda
+        - quality
+    allow:
+        - propaganda
+        - quality
+    land_morale: 0.15
+    army_tradition_decay: -0.01
+idea_variation_act_152: 
+    monarch_power: DIP
+    potential:
+        - propaganda
+        - judiciary
+    allow:
+        - propaganda
+        - judiciary
+    improve_relation_modifier: 0.2
+idea_variation_act_153: 
+    monarch_power: DIP
+    potential:
+        - propaganda
+        - development
+    allow:
+        - propaganda
+        - development
+    development_cost: -0.1
+idea_variation_act_154: 
+    monarch_power: ADM
+    potential:
+        - propaganda
+        - public_admin
+    allow:
+        - propaganda
+        - public_admin
+    global_institution_spread: 0.1
+    state_maintenance_modifier: -0.5
+idea_variation_act_155: 
+    monarch_power: DIP
+    potential:
+        - propaganda
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - propaganda
+        - OR:
+            - strong_men
+            - fem_boy
+    global_institution_spread: 0.2
+    embracement_cost: -0.25
+idea_variation_act_156: 
+    monarch_power: MIL
+    potential:
+        - propaganda 
+        - standing_army 
+    allow:
+        - propaganda
+        - standing_army
+    discipline: 0.05
+idea_variation_act_157: 
+    monarch_power: ADM
+    potential:
+        - economic_ideas
+        - nationalismus
+    allow:
+        - economic_ideas
+        - nationalismus
+    development_cost_in_primary_culture: -0.1
+idea_variation_act_15: 
+    monarch_power: ADM
+    potential:
+        - economic_ideas
+        - propaganda    
+    allow:
+        - economic_ideas
+        - propaganda 
+    global_tax_modifier: 0.3
+idea_variation_act_158: 
+    monarch_power: MIL
+    potential:
+        - propaganda
+        - merc_army 
+    allow:
+        - propaganda
+        - merc_army 
+    mercenary_discipline: 0.05    
+idea_variation_act_159: 
+    monarch_power: DIP
+    potential:
+        - propaganda
+        - weapon_quality
+    allow:
+        - propaganda
+        - weapon_quality
+    merchants: 1
+    global_trade_power: 0.1
+idea_variation_act_160: 
+    monarch_power: MIL
+    potential:
+        - propaganda
+        - war_production
+    allow:
+        - propaganda
+        - war_production
+    global_trade_goods_size_modifier: 0.15
+idea_variation_act_161: 
+    monarch_power: ADM
+    potential:
+        - nationalismus
+        - expansion_ideas
+    allow:
+        - nationalismus
+        - expansion_ideas
+    years_of_nationalism: -5
+idea_variation_act_162: 
+    monarch_power: DIP
+    potential:
+        - nationalismus
+        - humanist_ideas 
+    allow:
+        - nationalismus
+        - humanist_ideas 
+    enemy_core_creation: 0.5
+idea_variation_act_163: 
+    monarch_power: ADM
+    potential:
+        - nationalismus
+        - innovativeness_ideas
+    allow:
+        - nationalismus
+        - innovativeness_ideas
+    same_culture_advisor_cost: -0.15
+idea_variation_act_164: 
+    monarch_power: ADM
+    potential:
+        - nationalismus
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - nationalismus
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    global_autonomy: -0.15
+idea_variation_act_165: 
+    monarch_power: MIL
+    potential:
+        - nationalismus
+        - offensive
+    allow:
+        - nationalismus
+        - offensive
+    land_morale: 0.15
+idea_variation_act_166: 
+    monarch_power: MIL
+    potential:
+        - nationalismus 
+        - quality
+    allow:
+        - nationalismus
+        - quality
+    discipline: 0.05
+idea_variation_act_167: 
+    monarch_power: DIP
+    potential:
+        - nationalismus
+        - quantity
+    allow:
+        - nationalismus
+        - quantity
+    global_manpower_modifier: 0.15
+    global_sailors_modifier: 0.2
+idea_variation_act_168: 
+    monarch_power: ADM
+    potential:
+        - nationalismus
+        - judiciary
+    allow:
+        - nationalismus
+        - judiciary
+    governing_capacity_modifier: 0.25
+idea_variation_act_169: 
+    monarch_power: ADM
+    potential:
+        - nationalismus
+        - development
+    allow:
+        - nationalismus
+        - development
+    global_tax_modifier: 0.3
+idea_variation_act_170: 
+    monarch_power: ADM
+    potential:
+        - nationalismus
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - nationalismus
+        - OR:
+            - strong_men
+            - fem_boy
+    global_tax_modifier: 0.15
+    production_efficiency: 0.15
+idea_variation_act_171: 
+    monarch_power: DIP
+    potential:
+        - nationalismus
+        - merc_army 
+    allow:
+        - nationalismus
+        - merc_army 
+    hostile_attrition: 2
+idea_variation_act_172: 
+    monarch_power: MIL
+    potential:
+        - nationalismus
+        - weapon_quality
+    allow:
+        - nationalismus
+        - weapon_quality
+    land_morale: 0.15
+idea_variation_act_173: 
+    monarch_power: ADM
+    potential:
+        - nationalismus
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - nationalismus
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    missionaries: 1
+    religious_unity: 0.25
+idea_variation_act_174: 
+    monarch_power: ADM
+    potential:
+            - sociaty 
+            - public_admin
+    allow:
+        - sociaty 
+        - public_admin 
+    state_maintenance_modifier: -0.75
+idea_variation_act_287: 
+    monarch_power: ADM
+    potential:
+            - sociaty 
+            - administrative_ideas
+    allow:
+        - sociaty 
+        - administrative_ideas
+    state_maintenance_modifier: -0.75
+idea_variation_act_175: 
+    monarch_power: ADM
+    potential:
+        - sociaty 
+        - economic_ideas
+    allow:
+        - sociaty 
+        - economic_ideas
+    global_tax_modifier: 0.3
+idea_variation_act_176: 
+    monarch_power: ADM
+    potential:
+        - sociaty 
+        - expansion_ideas
+    allow:
+        - sociaty 
+        - expansion_ideas
+    religious_unity: 0.2
+    tolerance_own: 2
+idea_variation_act_177: 
+    monarch_power: DIP
+    potential:
+        - sociaty 
+        - humanist_ideas 
+    allow:
+        - sociaty 
+        - humanist_ideas 
+    tolerance_heathen: 1
+    tolerance_heretic: 1
+idea_variation_act_178: 
+    monarch_power: ADM
+    potential:
+        - sociaty 
+        - innovativeness_ideas
+    allow:
+        - sociaty 
+        - innovativeness_ideas
+    global_institution_spread: 0.25
+idea_variation_act_179: 
+    monarch_power: DIP
+    potential:
+        - sociaty 
+        - defensive
+    allow:
+        - sociaty 
+        - defensive
+    defensiveness: 0.1
+idea_variation_act_180: 
+    monarch_power: DIP
+    potential:
+        - sociaty 
+        - offensive
+    allow:
+        - sociaty 
+        - offensive
+    embracement_cost: -0.5
+idea_variation_act_181: 
+    monarch_power: MIL
+    potential:
+        - sociaty 
+        - quality
+    allow:
+        - sociaty 
+        - quality
+    artillery_power: 0.1
+    cavalry_power: 0.1
+idea_variation_act_182: 
+    monarch_power: ADM
+    potential:
+        - sociaty 
+        - quantity
+    allow:
+        - sociaty 
+        - quantity
+    land_forcelimit_modifier: 0.15
+idea_variation_act_183: 
+    monarch_power: DIP
+    potential:
+        - sociaty 
+        - development
+    allow:
+        - sociaty 
+        - development
+    global_tariffs: 0.25
+idea_variation_act_184: 
+    monarch_power: MIL
+    potential:
+        - sociaty 
+        - war_production
+    allow:
+        - sociaty 
+        - war_production
+    global_trade_goods_size_modifier: 0.15
+idea_variation_act_185: 
+    monarch_power: MIL
+    potential:
+        - sociaty 
+        - merc_army 
+    allow:
+        - sociaty 
+        - merc_army 
+    discipline: 0.05
+idea_variation_act_186: 
+    monarch_power: DIP    
+    potential:
+        - assimilation
+        - administrative_ideas
+    allow:
+        - assimilation
+        - administrative_ideas
+    diplomatic_annexation_cost: -0.15
+idea_variation_act_187: 
+    monarch_power: ADM
+    potential:
+        - assimilation
+        - economic_ideas
+    allow:
+        - assimilation
+        - economic_ideas
+    advisor_cost: -0.1
+idea_variation_act_188: 
+    monarch_power: ADM
+    potential:
+        - assimilation
+        - expansion_ideas
+    allow:
+        - assimilation
+        - expansion_ideas
+    core_creation: -0.15
+idea_variation_act_189: 
+    monarch_power: DIP
+    potential:
+        - assimilation
+        - innovativeness_ideas
+    allow:
+        - assimilation
+        - innovativeness_ideas
+    global_foreign_trade_power: 0.3        
+idea_variation_act_190: 
+    monarch_power: ADM
+    potential:
+        - assimilation
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - assimilation
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    global_missionary_strength: 0.03
+idea_variation_act_191: 
+    monarch_power: MIL
+    potential:
+        - assimilation
+        - defensive
+    allow:
+        - assimilation
+        - defensive
+    land_morale: 0.15
+idea_variation_act_192: 
+    monarch_power: DIP
+    potential:
+        - assimilation
+        - offensive
+    allow:
+        - assimilation
+        - offensive
+    global_missionary_strength: 0.02
+    culture_conversion_cost: -0.1
+idea_variation_act_193: 
+    monarch_power: DIP
+    potential:
+        - assimilation
+        - quantity
+    allow:
+        - assimilation
+        - quantity
+    cavalry_power: 0.1
+    cav_to_inf_ratio: 0.1
+idea_variation_act_194: 
+    monarch_power: ADM
+    potential:
+        - assimilation
+        - development
+    allow:
+        - assimilation
+        - development
+    development_cost_in_primary_culture: -0.1
+idea_variation_act_195: 
+    monarch_power: MIL
+    potential:
+        - assimilation
+        - general_staff
+    allow:
+        - assimilation
+        - general_staff
+    land_morale: 0.15
+    free_leader_pool: 1
+idea_variation_act_196: 
+    monarch_power: MIL
+    potential:
+        - assimilation
+        - standing_army
+    allow:
+        - assimilation
+        - standing_army
+    cavalry_power: 0.1
+    cav_to_inf_ratio: 0.1
+idea_variation_act_197: 
+    monarch_power: MIL
+    potential:
+        - assimilation
+        - merc_army 
+    allow:
+        - assimilation
+        - merc_army 
+    global_manpower_modifier: 0.25
+idea_variation_act_198: 
+    monarch_power: DIP
+    potential:
+        - assimilation
+        - weapon_quality
+    allow:
+        - assimilation
+        - weapon_quality
+    mil_tech_cost_modifier: -0.1
+idea_variation_act_199: 
+    monarch_power: ADM
+    potential:
+        - assimilation
+        - war_production
+    allow:
+        - assimilation
+        - war_production
+    global_trade_goods_size_modifier: 0.15
+idea_variation_act_200: 
+    monarch_power: ADM
+    potential:
+        - administrative_ideas
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - administrative_ideas
+        - OR:
+            - imperialismus
+            - konigreich0
+    governing_capacity_modifier: 0.25
+idea_variation_act_201: 
+    monarch_power: ADM
+    potential:
+        - economic_ideas
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - economic_ideas
+        - OR:
+            - imperialismus
+            - konigreich0
+    global_tax_modifier: 0.2
+    inflation_action_cost: -0.25
+idea_variation_act_202: 
+    monarch_power: ADM
+    potential:
+        - innovativeness_ideas
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - innovativeness_ideas
+        - OR:
+            - imperialismus
+            - konigreich0
+    advisor_pool: 5
+idea_variation_act_203: 
+    monarch_power: DIP
+    potential:
+        - defensive
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - defensive
+        - OR:
+            - imperialismus
+            - konigreich0
+    defensiveness: 0.1
+idea_variation_act_204: 
+    monarch_power: MIL
+    potential:
+        - offensive
+        - OR:
+            - konigreich0 
+            - imperialismus 
+    allow:
+        - offensive
+        - OR:
+            - imperialismus
+            - konigreich0
+    discipline: 0.05
+idea_variation_act_205: 
+    monarch_power: MIL
+    potential:
+        - quality
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - quality
+        - OR:
+            - imperialismus
+            - konigreich0
+    fire_damage: 0.075
+idea_variation_act_206: 
+    monarch_power: ADM
+    potential:
+        - judiciary
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - OR:
+            - imperialismus
+            - konigreich0
+        - judiciary
+    idea_cost: -0.075
+idea_variation_act_207: 
+    monarch_power: ADM
+    potential:
+        - OR:
+            - konigreich0
+            - imperialismus
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - OR:
+            - imperialismus
+            - konigreich0
+        - OR:
+            - strong_men
+            - fem_boy
+    development_cost: -0.1
+idea_variation_act_208: 
+    monarch_power: ADM
+    potential:
+        - public_admin
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - public_admin
+        - OR:
+            - imperialismus
+            - konigreich0
+    state_maintenance_modifier: -0.5
+    yearly_corruption: -0.1
+idea_variation_act_209: 
+    monarch_power: DIP
+    potential:
+        - general_staff
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - general_staff
+        - OR:
+            - imperialismus
+            - konigreich0
+    land_maintenance_modifier: -0.1
+    land_forcelimit_modifier: 0.15
+idea_variation_act_210: 
+    monarch_power: MIL
+    potential:
+        - standing_army
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:     
+        - standing_army
+        - OR:
+            - imperialismus
+            - konigreich0
+    global_manpower_modifier: 0.25
+idea_variation_act_211: 
+    monarch_power: MIL
+    potential:
+        - weapon_quality
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - weapon_quality
+        - OR:
+            - imperialismus
+            - konigreich0
+    land_morale: 0.15
+idea_variation_act_212: 
+    monarch_power: DIP
+    potential:
+        - fortress
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - fortress
+        - OR:
+            - imperialismus
+            - konigreich0
+    defensiveness: 0.1
+idea_variation_act_213: 
+    monarch_power: MIL
+    potential:
+        - war_production
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - war_production
+        - OR:
+            - imperialismus
+            - konigreich0
+    fire_damage_received: -0.05
+idea_variation_act_214: 
+    monarch_power: DIP        
+    potential:
+        - dynastic
+        - judiciary
+    allow:
+        - dynastic
+        - judiciary
+    interest: -1                
+idea_variation_act_215: 
+    monarch_power: ADM        
+    potential:
+        - dynastic
+        - development
+    allow:
+        - dynastic
+        - development
+    improve_relation_modifier: 0.1
+    diplomatic_upkeep: 2
+idea_variation_act_216: 
+    monarch_power: DIP
+    potential:
+        - dynastic
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - dynastic
+        - OR:
+            - strong_men
+            - fem_boy
+    reduced_liberty_desire: 10
+    diplomatic_reputation: 1
+idea_variation_act_218: 
+    monarch_power: DIP
+    potential:
+        - dynastic
+        - public_admin
+    allow:
+        - dynastic
+        - public_admin
+    diplomats: 1
+    diplomatic_annexation_cost: -0.1
+idea_variation_act_219: 
+    monarch_power: MIL        
+    potential:
+        - dynastic
+        - general_staff
+    allow:
+        - dynastic
+        - general_staff
+    idea_cost: -0.075
+idea_variation_act_220: 
+    monarch_power: DIP
+    potential:
+        - dynastic
+        - standing_army
+    allow:
+        - dynastic
+        - standing_army
+    ae_impact: -0.15
+idea_variation_act_221: 
+    monarch_power: DIP
+    potential:
+        - dynastic
+        - conscription
+    allow:
+        - dynastic
+        - conscription
+    global_manpower_modifier: 0.25
+idea_variation_act_222: 
+    monarch_power: DIP
+    potential:
+        - dynastic
+        - weapon_quality
+    allow:
+        - dynastic
+        - weapon_quality
+    mil_tech_cost_modifier: -0.1
+idea_variation_act_223: 
+    monarch_power: DIP
+    potential:
+        - dynastic
+        - fortress
+    allow:
+        - dynastic
+        - fortress
+    diplomatic_reputation: 2
+idea_variation_act_224: 
+    monarch_power: MIL
+    potential:
+        - dynastic
+        - war_production
+    allow:
+        - dynastic
+        - war_production
+    land_morale: 0.1
+    siege_ability: 0.1
+idea_variation_act_225: 
+    monarch_power: DIP
+    potential:
+        - spy_ideas 
+        - judiciary
+    allow:
+        - spy_ideas 
+        - judiciary
+    global_spy_defence: 0.35
+idea_variation_act_226: 
+    monarch_power: DIP
+    potential:
+        - spy_ideas 
+        - development
+    allow:
+        - spy_ideas 
+        - development
+    spy_offence: 0.5
+idea_variation_act_227: 
+    monarch_power: DIP
+    potential:
+        - spy_ideas 
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - spy_ideas 
+        - OR:
+            - strong_men
+            - fem_boy
+    idea_cost: -0.075
+idea_variation_act_229: 
+    monarch_power: ADM
+    potential:
+        - spy_ideas 
+        - public_admin
+    allow:
+        - spy_ideas 
+        - public_admin
+    yearly_corruption: -0.2
+idea_variation_act_230: 
+    monarch_power: MIL
+    potential:
+        - spy_ideas 
+        - general_staff
+    allow:
+        - spy_ideas 
+        - general_staff
+    land_morale: 0.1
+    siege_ability: 0.1
+idea_variation_act_231: 
+    monarch_power: ADM
+    potential:
+        - spy_ideas 
+        - conscription
+    allow:
+        - spy_ideas 
+        - conscription
+    manpower_recovery_speed: 0.25
+idea_variation_act_232: 
+    monarch_power: ADM
+    potential:
+        - spy_ideas 
+        - standing_army
+    allow:
+        - spy_ideas 
+        - standing_army
+    stability_cost_modifier: -0.5
+    war_exhaustion_cost: -0.5
+idea_variation_act_233: 
+    monarch_power: DIP
+    potential:
+        - spy_ideas 
+        - merc_army 
+    allow:
+        - spy_ideas 
+        - merc_army 
+    war_exhaustion: -0.02
+    merc_maintenance_modifier: -0.15
+idea_variation_act_234: 
+    monarch_power: MIL
+    potential:
+        - spy_ideas 
+        - fortress
+    allow:
+        - spy_ideas 
+        - fortress
+    artillery_power: 0.15
+idea_variation_act_235: 
+    monarch_power: MIL        
+    potential:
+        - spy_ideas 
+        - war_production
+    allow:
+        - spy_ideas 
+        - war_production
+    production_efficiency: 0.3
+idea_variation_act_236: 
+    monarch_power: ADM        
+    potential:
+        - exploration_ideas
+        - judiciary
+    allow:
+        - exploration_ideas
+        - judiciary
+    colonists: 1
+idea_variation_act_237: 
+    monarch_power: DIP
+    potential:
+        - exploration_ideas
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - exploration_ideas
+        - OR:
+            - strong_men
+            - fem_boy
+    colonist_placement_chance: 0.15
+    global_colonial_growth: 10
+idea_variation_act_238: 
+    monarch_power: ADM
+    potential:
+        - exploration_ideas
+        - development
+    allow:
+        - exploration_ideas
+        - development
+    development_cost: -0.1
+idea_variation_act_240: 
+    monarch_power: MIL
+    potential:
+        - exploration_ideas
+        - general_staff
+    allow:
+        - exploration_ideas
+        - general_staff
+    leader_naval_manuever: 1
+    leader_land_manuever: 1
+idea_variation_act_241: 
+    monarch_power: DIP
+    potential:
+        - exploration_ideas
+        - conscription
+    allow:
+        - exploration_ideas
+        - conscription
+    trade_efficiency: 0.20
+    trade_range_modifier: 0.25
+idea_variation_act_242: 
+    monarch_power: DIP
+    potential:
+        - exploration_ideas
+        - standing_army
+    allow:
+        - exploration_ideas
+        - standing_army
+    global_sailors_modifier: 0.33
+idea_variation_act_243: 
+    monarch_power: ADM
+    potential:
+        - exploration_ideas
+        - merc_army 
+    allow:
+        - exploration_ideas
+        - merc_army 
+    mercenary_manpower: 0.25
+idea_variation_act_244: 
+    monarch_power: MIL        
+    potential:
+        - exploration_ideas
+        - weapon_quality
+    allow:
+        - exploration_ideas
+        - weapon_quality
+    infantry_cost: -0.25
+idea_variation_act_245: 
+    monarch_power: DIP
+    potential:
+        - exploration_ideas
+        - fortress
+    allow:
+        - exploration_ideas
+        - fortress
+    defensiveness: 0.1
+    siege_ability: 0.1
+idea_variation_act_246: 
+    monarch_power: MIL
+    potential:
+        - exploration_ideas
+        - war_production
+    allow:
+        - exploration_ideas
+        - war_production
+    infantry_power: 0.1
+    infantry_cost: -0.1
+idea_variation_act_247: 
+    monarch_power: DIP
+    potential:
+        - influence_ideas 
+        - development
+    allow:
+        - influence_ideas 
+        - development
+    diplomatic_annexation_cost: -0.10
+    diplomatic_reputation: 1
+idea_variation_act_248: 
+    monarch_power: DIP                
+    potential:
+        - influence_ideas 
+        - public_admin
+    allow:
+        - influence_ideas 
+        - public_admin
+    interest: -1            
+idea_variation_act_250: 
+    monarch_power: ADM
+    potential:
+        - influence_ideas 
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - influence_ideas 
+        - OR:
+            - strong_men
+            - fem_boy
+    technology_cost: -0.05
+idea_variation_act_251: 
+    monarch_power: DIP
+    potential:
+        - influence_ideas 
+        - general_staff
+    allow:
+        - influence_ideas 
+        - general_staff
+    yearly_absolutism: 1.0
+idea_variation_act_252: 
+    monarch_power: MIL
+    potential:
+        - influence_ideas 
+        - merc_army 
+    allow:
+        - influence_ideas 
+        - merc_army 
+    mercenary_discipline: 0.05    
+idea_variation_act_253: 
+    monarch_power: MIL
+    potential:
+        - influence_ideas 
+        - conscription
+    allow:
+        - influence_ideas 
+        - conscription
+    global_manpower_modifier: 0.25
+idea_variation_act_254: 
+    monarch_power: DIP
+    potential:
+        - influence_ideas 
+        - weapon_quality
+    allow:
+        - influence_ideas 
+        - weapon_quality
+    land_forcelimit_modifier: 0.15
+idea_variation_act_255: 
+    monarch_power: DIP
+    potential:
+        - influence_ideas 
+        - fortress
+    allow:
+        - influence_ideas 
+        - fortress
+    fort_maintenance_modifier: -0.25
+    garrison_size: 0.15
+idea_variation_act_256: 
+    monarch_power: DIP
+    potential:
+        - influence_ideas 
+        - war_production
+    allow:
+        - influence_ideas 
+        - war_production
+    ae_impact: -0.15
+idea_variation_act_257: 
+    monarch_power: DIP
+    potential:
+        - maritime_ideas
+        - judiciary
+    allow:
+        - maritime_ideas
+        - judiciary
+    global_ship_cost: -0.15
+    global_ship_recruit_speed: -0.25
+idea_variation_act_259: 
+    monarch_power: ADM
+    potential:
+        - maritime_ideas
+        - public_admin
+    allow:
+        - maritime_ideas
+        - public_admin
+    development_cost: -0.1
+idea_variation_act_260: 
+    monarch_power: MIL    
+    potential:
+        - maritime_ideas
+        - general_staff
+    allow:
+        - maritime_ideas
+        - general_staff
+    heavy_ship_power: 0.1
+    galley_power: 0.1
+idea_variation_act_263: 
+    monarch_power: DIP
+    potential:
+        - maritime_ideas
+        - OR:
+            - standing_army
+            - conscription
+    allow:
+        - maritime_ideas
+        - OR:
+            - standing_army
+            - conscription
+    global_sailors_modifier: 0.2
+    sailors_recovery_speed: 0.15
+idea_variation_act_264: 
+    monarch_power: DIP
+    potential:
+        - maritime_ideas
+        - merc_army 
+    allow:
+        - maritime_ideas
+        - merc_army 
+    naval_maintenance_modifier: -0.25
+idea_variation_act_265: 
+    monarch_power: DIP        
+    potential:
+        - maritime_ideas
+        - weapon_quality
+    allow:
+        - maritime_ideas
+        - weapon_quality
+    heavy_ship_power: 0.1
+    galley_power: 0.1
+idea_variation_act_266: 
+    monarch_power: DIP
+    potential:
+        - maritime_ideas
+        - fortress
+    allow:
+        - maritime_ideas
+        - fortress
+    heavy_ship_cost: -0.2
+idea_variation_act_267: 
+    monarch_power: DIP
+    potential:
+        - maritime_ideas
+        - war_production
+    allow:
+        - maritime_ideas
+        - war_production
+    global_ship_cost: -0.33
+idea_variation_act_268: 
+    monarch_power: DIP
+    potential:
+        - trade_ideas
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - trade_ideas
+        - OR:
+            - strong_men
+            - fem_boy
+    merchants: 1
+idea_variation_act_269: 
+    monarch_power: DIP
+    potential:
+        - trade_ideas 
+        - public_admin
+    allow:
+        - trade_ideas 
+        - public_admin
+    caravan_power: 0.25
+    trade_steering: 0.25
+idea_variation_act_271: 
+    monarch_power: DIP
+    potential:
+        - trade_ideas 
+        - general_staff
+    allow:
+        - trade_ideas 
+        - general_staff
+    merchants: 1
+idea_variation_act_272: 
+    monarch_power: DIP        
+    potential:
+        - trade_ideas 
+        - conscription
+    allow:
+        - trade_ideas 
+        - conscription
+    global_prov_trade_power_modifier: 0.3
+idea_variation_act_273: 
+    monarch_power: MIL
+    potential:
+        - trade_ideas 
+        - standing_army
+    allow:
+        - trade_ideas 
+        - standing_army
+    land_morale: 0.15
+idea_variation_act_274: 
+    monarch_power: DIP
+    potential:
+        - trade_ideas 
+        - fortress
+    allow:
+        - trade_ideas 
+        - fortress
+    trade_efficiency: 0.15
+    light_ship_power: 0.15
+idea_variation_act_275: 
+    monarch_power: MIL
+    potential:
+        - defensive
+        - judiciary 
+    allow:
+        - defensive
+        - judiciary
+    discipline: 0.05
+idea_variation_act_276: 
+    monarch_power: ADM
+    potential:
+        - defensive
+        - development
+    allow:
+        - defensive
+        - development
+    defensiveness: 0.1
+idea_variation_act_277: 
+    monarch_power: ADM
+    potential:
+        - defensive
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - defensive
+        - OR:
+            - strong_men
+            - fem_boy
+    land_morale: 0.15
+idea_variation_act_279: 
+    monarch_power: MIL
+    potential:
+        - defensive
+        - public_admin
+    allow:
+        - defensive
+        - public_admin
+    land_morale: 0.15
+idea_variation_act_281: 
+    monarch_power: ADM
+    potential:
+        - offensive
+        - development
+    allow:
+        - offensive
+        - development
+    global_regiment_cost: -0.15
+    global_regiment_recruit_speed: -0.2
+idea_variation_act_283: 
+    monarch_power: ADM
+    potential:
+        - quality
+        - judiciary
+    allow:
+        - quality
+        - judiciary
+    global_autonomy: -0.2
+idea_variation_act_284: 
+    monarch_power: ADM
+    potential:
+        - quality
+        - public_admin
+    allow:
+        - quality
+        - public_admin
+    global_tax_modifier: 0.15
+    production_efficiency: 0.15
+idea_variation_act_285: 
+    monarch_power: ADM
+    potential:
+        - quantity
+        - judiciary
+    allow:
+        - quantity
+        - judiciary
+    global_missionary_strength: 0.01
+    missionaries: 1
+idea_variation_act_286: 
+    monarch_power: ADM
+    potential:
+        - quantity
+        - public_admin
+    allow:
+        - quantity
+        - public_admin
+    state_maintenance_modifier: -0.75
+idea_variation_act_288: 
+    monarch_power: ADM
+    potential:
+        - general_staff
+        - expansion_ideas
+    allow:
+        - general_staff
+        - expansion_ideas
+    shock_damage: 0.075
+idea_variation_act_289: 
+    monarch_power: ADM
+    potential:
+        - general_staff
+        - humanist_ideas 
+    allow:
+        - general_staff
+        - humanist_ideas 
+    army_tradition: 1
+idea_variation_act_290: 
+    monarch_power: ADM
+    potential:
+        - general_staff
+        - OR:
+            - republik0
+            - aristo0
+            - monarchie0
+            - horde0
+            - diktatur0
+    allow:
+        - general_staff
+        - OR:
+            - republik0 
+            - aristo0
+            - monarchie0
+            - horde0
+            - diktatur0
+    free_leader_pool: 1
+    advisor_pool: 3
+idea_variation_act_291: 
+    monarch_power: ADM
+    potential:
+        - general_staff
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - general_staff
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    missionaries: 1
+idea_variation_act_292: 
+    monarch_power: ADM
+    potential:
+        - general_staff
+        - judiciary
+    allow:
+        - general_staff
+        - judiciary
+    legitimacy: 2
+    republican_tradition: 1
+    devotion: 1
+    horde_unity: 1
+idea_variation_act_293: 
+    monarch_power: ADM
+    potential:
+        - general_staff
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - general_staff
+        - OR:
+            - strong_men
+            - fem_boy
+    manpower_recovery_speed: 0.15
+    land_forcelimit_modifier: 0.1
+idea_variation_act_295: 
+    monarch_power: ADM
+    potential:
+        - general_staff
+        - public_admin
+    allow:
+        - general_staff
+        - public_admin
+    reinforce_speed: 0.25
+idea_variation_act_296: 
+    monarch_power: ADM
+    potential:
+        - standing_army
+        - economic_ideas
+    allow:
+        - standing_army
+        - economic_ideas
+    land_maintenance_modifier: -0.2
+    global_tax_modifier: 0.1
+idea_variation_act_297: 
+    monarch_power: ADM
+    potential:
+        - standing_army
+        - humanist_ideas 
+    allow:
+        - standing_army
+        - humanist_ideas 
+    land_maintenance_modifier: -0.2
+idea_variation_act_298: 
+    monarch_power: MIL
+    potential:
+        - standing_army
+        - innovativeness_ideas
+    allow:
+        - standing_army
+        - innovativeness_ideas
+    infantry_power: 0.15
+idea_variation_act_299: 
+    monarch_power: ADM
+    potential:
+        - standing_army
+        - expansion_ideas
+    allow:
+        - standing_army
+        - expansion_ideas
+    global_regiment_cost: -0.2
+idea_variation_act_300: 
+    monarch_power: ADM
+    potential:
+        - standing_army
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - standing_army
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    missionaries: 1
+    global_missionary_strength: 0.02
+idea_variation_act_301: 
+    monarch_power: ADM
+    potential:
+        - standing_army
+        - judiciary
+    allow:
+        - standing_army
+        - judiciary
+    global_unrest: -3
+idea_variation_act_302: 
+    monarch_power: ADM
+    potential:
+        - standing_army
+        - development
+    allow:
+        - standing_army
+        - development
+    development_cost: -0.1
+idea_variation_act_304: 
+    monarch_power: ADM
+    potential:
+        - standing_army
+        - public_admin
+    allow:
+        - standing_army
+        - public_admin
+    land_maintenance_modifier: -0.2
+idea_variation_act_305: 
+    monarch_power: ADM
+    potential:
+        - merc_army 
+        - administrative_ideas
+    allow:
+        - merc_army 
+        - administrative_ideas
+    mercenary_cost: -0.15
+    merc_maintenance_modifier: -0.1
+idea_variation_act_306: 
+    monarch_power: ADM
+    potential:
+        - merc_army 
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - merc_army 
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    mercenary_manpower: 0.15
+    mercenary_cost: -0.1
+idea_variation_act_307: 
+    monarch_power: ADM
+    potential:
+        - merc_army 
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - merc_army 
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    war_exhaustion: -0.05
+    global_unrest: -2
+idea_variation_act_310: 
+    monarch_power: ADM
+    potential:
+        - merc_army 
+        - judiciary
+    allow:
+        - merc_army 
+        - judiciary
+    yearly_corruption: -0.2
+idea_variation_act_311: 
+    monarch_power: MIL
+    potential:
+        - merc_army
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - merc_army
+        - OR:
+            - strong_men
+            - fem_boy
+    discipline: 0.05
+idea_variation_act_312: 
+    monarch_power: ADM
+    potential:
+        - merc_army 
+        - development
+    allow:
+        - merc_army 
+        - development
+    siege_ability: 0.1
+idea_variation_act_313: 
+    monarch_power: ADM
+    potential:
+        - conscription
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - conscription
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    missionaries: 1            
+idea_variation_act_314: 
+    monarch_power: MIL
+    potential:
+        - conscription
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - conscription 
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    global_manpower_modifier: 0.25
+idea_variation_act_315: 
+    monarch_power: ADM
+    potential:
+        - conscription
+        - administrative_ideas
+    allow:
+        - conscription
+        - administrative_ideas
+    global_regiment_cost: -0.10
+    global_regiment_recruit_speed: -0.5
+idea_variation_act_316: 
+    monarch_power: ADM
+    potential:
+        - conscription
+        - economic_ideas
+    allow:
+        - conscription
+        - economic_ideas
+    global_tax_modifier: 0.15
+    production_efficiency: 0.15
+idea_variation_act_317: 
+    monarch_power: ADM
+    potential:
+        - conscription
+        - expansion_ideas
+    allow:
+        - conscription
+        - expansion_ideas
+    years_of_nationalism: -3
+    yearly_corruption: -0.2
+idea_variation_act_318: 
+    monarch_power: MIL
+    potential:
+        - conscription
+        - humanist_ideas 
+    allow:
+        - conscription
+        - humanist_ideas 
+    infantry_power: 0.1
+    artillery_power: 0.1
+idea_variation_act_319: 
+    monarch_power: MIL
+    potential:
+        - conscription 
+        - innovativeness_ideas
+    allow:
+        - conscription
+        - innovativeness_ideas
+    discipline: 0.05
+idea_variation_act_321: 
+    monarch_power: ADM            
+    potential:
+        - conscription
+        - judiciary
+    allow:
+        - conscription
+        - judiciary
+    land_morale: 0.15
+idea_variation_act_322: 
+    monarch_power: ADM
+    potential:
+        - conscription
+        - development
+    allow:
+        - conscription
+        - development
+    land_forcelimit_modifier: 0.15
+idea_variation_act_323: 
+    monarch_power: ADM
+    potential:
+        - conscription
+        - public_admin
+    allow:
+        - conscription
+        - public_admin
+    global_manpower_modifier: 0.25
+idea_variation_act_324: 
+    monarch_power: ADM
+    potential:
+        - weapon_quality
+        - administrative_ideas
+    allow:
+        - weapon_quality
+        - administrative_ideas
+    reinforce_speed: 0.2
+    land_attrition: -0.1
+idea_variation_act_325: 
+    monarch_power: MIL
+    potential:
+        - weapon_quality
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - weapon_quality
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    artillery_power: 0.15
+idea_variation_act_326: 
+    monarch_power: MIL
+    potential:
+        - weapon_quality
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - weapon_quality
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    leader_land_fire: 1
+    leader_land_shock: 1
+idea_variation_act_327: 
+    monarch_power: DIP
+    potential:
+        - weapon_quality
+        - expansion_ideas
+    allow:
+        - weapon_quality
+        - expansion_ideas
+    range: 0.5
+idea_variation_act_328: 
+    monarch_power: ADM
+    potential:
+        - weapon_quality
+        - humanist_ideas 
+    allow:
+        - weapon_quality
+        - humanist_ideas 
+    global_tax_modifier: 0.3
+idea_variation_act_329: 
+    monarch_power: ADM
+    potential:
+        - weapon_quality
+        - innovativeness_ideas
+    allow:
+        - weapon_quality
+        - innovativeness_ideas
+    global_institution_spread: 0.25
+idea_variation_act_332: 
+    monarch_power: ADM
+    potential:
+        - weapon_quality
+        - judiciary
+    allow:
+        - weapon_quality
+        - judiciary
+    embargo_efficiency: 0.25
+    production_efficiency: 0.2
+idea_variation_act_333: 
+    monarch_power: ADM
+    potential:
+        - weapon_quality
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - weapon_quality
+        - OR:
+            - strong_men
+            - fem_boy
+    idea_cost: -0.075
+idea_variation_act_334: 
+    monarch_power: ADM
+    potential:
+        - weapon_quality
+        - public_admin
+    allow:
+        - weapon_quality
+        - public_admin
+    interest: -1
+idea_variation_act_335: 
+    monarch_power: ADM
+    potential:
+        - fortress
+        - economic_ideas
+    allow:
+        - fortress
+        - economic_ideas
+    global_tax_modifier: 0.2
+    fort_maintenance_modifier: -0.1
+idea_variation_act_336: 
+    monarch_power: MIL
+    potential:
+        - fortress
+        - expansion_ideas
+    allow:
+        - fortress
+        - expansion_ideas
+    shock_damage_received: -0.05
+idea_variation_act_337: 
+    monarch_power: MIL
+    potential:
+        - fortress
+        - humanist_ideas 
+    allow:
+        - fortress
+        - humanist_ideas 
+    fire_damage_received: -0.05
+idea_variation_act_338: 
+    monarch_power: MIL
+    potential:
+        - fortress
+        - innovativeness_ideas
+    allow:
+        - fortress
+        - innovativeness_ideas
+    land_morale: 0.15
+idea_variation_act_339: 
+    monarch_power: MIL            
+    potential:
+        - fortress
+        - judiciary
+    allow:
+        - fortress
+        - judiciary
+    global_garrison_growth: 0.2
+    global_manpower_modifier: 0.15
+idea_variation_act_340: 
+    monarch_power: ADM
+    potential:
+        - fortress
+        - development
+    allow:
+        - fortress
+        - development
+    development_cost: -0.1            
+idea_variation_act_342: 
+    monarch_power: ADM
+    potential:
+        - fortress
+        - public_admin
+    allow:
+        - fortress
+        - public_admin
+    state_maintenance_modifier: -0.5
+    yearly_corruption: -0.1
+idea_variation_act_343: 
+    monarch_power: ADM
+    potential:
+        - war_production
+        - expansion_ideas
+    allow:
+        - war_production
+        - expansion_ideas
+    global_trade_goods_size_modifier: 0.15
+idea_variation_act_344: 
+    monarch_power: ADM
+    potential:
+        - war_production
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - war_production
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    tolerance_heathen: 2
+    tolerance_heretic: 2
+idea_variation_act_345: 
+    monarch_power: DIP
+    potential:
+        - war_production
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - war_production
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    global_own_trade_power: 0.3
+idea_variation_act_346: 
+    monarch_power: ADM
+    potential:
+        - war_production
+        - humanist_ideas 
+    allow:
+        - war_production
+        - humanist_ideas 
+    global_regiment_cost: -0.15
+    global_regiment_recruit_speed: -0.3
+idea_variation_act_347: 
+    monarch_power: ADM
+    potential:
+        - war_production
+        - innovativeness_ideas
+    allow:
+        - war_production
+        - innovativeness_ideas
+    global_trade_goods_size_modifier: 0.15
+idea_variation_act_350: 
+    monarch_power: ADM
+    potential:
+        - war_production
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - war_production
+        - OR:
+            - strong_men
+            - fem_boy
+    manpower_recovery_speed: 0.15
+    land_forcelimit_modifier: 0.1
+idea_variation_act_351: 
+    monarch_power: MIL
+    potential:
+        - war_production
+        - development
+    allow:
+        - war_production
+        - development
+    fire_damage: 0.075
+idea_variation_act_355: 
+    monarch_power: DIP
+    potential:
+        - conscription
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - conscription
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    global_sailors_modifier: 0.33
+idea_variation_act_356: 
+    monarch_power: ADM
+    potential:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - OR:
+            - strong_men
+            - fem_boy
+    naval_morale: 0.15
+idea_variation_act_357: 
+    monarch_power: ADM
+    potential:
+        - development
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - development
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    global_ship_cost: -0.25
+idea_variation_act_358: 
+    monarch_power: DIP
+    potential:
+        - quantity
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - quantity
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    naval_forcelimit_modifier: 0.25
+idea_variation_act_359: 
+    monarch_power: ADM
+    potential:
+        - OR:
+            - galley_ship
+            - heavy_ship
+            - trade_ship
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - OR:
+            - galley_ship
+            - heavy_ship
+            - trade_ship
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    legitimacy: 2
+    republican_tradition: 1
+    devotion: 1
+    horde_unity: 1
+idea_variation_act_360: 
+    monarch_power: DIP
+    potential:
+        - merc_army 
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - merc_army 
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    privateer_efficiency: 1
+    naval_maintenance_modifier: -0.25
+idea_variation_act_361: 
+    monarch_power: DIP
+    potential:
+        - judiciary
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - judiciary
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    naval_morale: 0.15
+idea_variation_act_362: 
+    monarch_power: DIP
+    potential:
+        - defensive
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - defensive
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    defensiveness: 0.1
+idea_variation_act_364: 
+    monarch_power: DIP
+    potential:
+        - offensive
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - offensive
+    heavy_ship_power: 0.1
+    galley_power: 0.1
+idea_variation_act_365: 
+    monarch_power: ADM
+    potential:
+        - economic_ideas
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - economic_ideas
+    global_tax_modifier: 0.2
+    global_ship_cost: -0.1
+idea_variation_act_371: 
+    monarch_power: MIL
+    potential:
+        - fortress
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - fortress
+    heavy_ship_power: 0.1
+    galley_power: 0.1
+idea_variation_act_373: 
+    monarch_power: MIL
+    potential:
+        - militarism
+        - innovativeness_ideas
+    allow:
+        - militarism
+        - innovativeness_ideas
+    global_manpower_modifier: 0.25
+idea_variation_act_374: 
+    monarch_power: MIL
+    potential:
+        - militarism
+        - economic_ideas
+    allow:
+        - militarism
+        - economic_ideas
+    cavalry_power: 0.1
+    artillery_power: 0.1
+idea_variation_act_375: 
+    monarch_power: MIL
+    potential:
+        - militarism
+        - expansion_ideas
+    allow:
+        - militarism
+        - expansion_ideas
+    discipline: 0.05
+idea_variation_act_376: 
+    monarch_power: ADM                
+    potential:
+        - militarism
+        - administrative_ideas
+    allow:
+        - militarism
+        - administrative_ideas
+    land_morale: 0.15
+idea_variation_act_377: 
+    monarch_power: MIL
+    potential:
+        - militarism
+        - humanist_ideas
+    allow:
+        - militarism
+        - humanist_ideas
+    shock_damage_received: -0.05
+idea_variation_act_378: 
+    monarch_power: ADM
+    potential:
+        - militarism
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - militarism
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    missionaries: 1
+    global_unrest: -1
+idea_variation_act_379: 
+    monarch_power: MIL
+    potential:
+        - militarism 
+        - judiciary
+    allow:
+        - militarism
+        - judiciary
+    discipline: 0.05
+idea_variation_act_380: 
+    monarch_power: ADM
+    potential:
+        - militarism
+        - development
+    allow:
+        - militarism
+        - development
+    fort_maintenance_modifier: -0.1
+    land_maintenance_modifier: -0.2
+idea_variation_act_381: 
+    monarch_power: ADM
+    potential:
+        - militarism
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - militarism
+        - OR:
+            - strong_men
+            - fem_boy
+    global_trade_goods_size_modifier: 0.15
+idea_variation_act_382: 
+    monarch_power: MIL
+    potential:
+        - militarism
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - militarism
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    shock_damage: 0.075
+idea_variation_act_385: 
+    monarch_power: MIL
+    potential:
+        - militarism
+        - public_admin
+    allow:
+        - militarism
+        - public_admin
+    shock_damage_received: -0.05
+idea_variation_act_386: 
+    monarch_power: DIP
+    potential:
+        - militarism
+        - spy_ideas 
+    allow:
+        - militarism
+        - spy_ideas 
+    global_spy_defence: 0.35
+idea_variation_act_387: 
+    monarch_power: MIL
+    potential:
+        - militarism
+        - dynastic
+    allow:
+        - militarism
+        - dynastic
+    discipline: 0.05
+idea_variation_act_388: 
+    monarch_power: MIL
+    potential:
+        - militarism
+        - influence_ideas 
+    allow:
+        - militarism
+        - influence_ideas 
+    shock_damage: 0.075
+idea_variation_act_389: 
+    monarch_power: MIL
+    potential:
+        - militarism
+        - trade_ideas 
+    allow:
+        - militarism
+        - trade_ideas 
+    fire_damage: 0.075
+idea_variation_act_390: 
+    monarch_power: DIP
+    potential:
+        - militarism
+        - exploration_ideas
+    allow:
+        - militarism
+        - exploration_ideas
+    global_colonial_growth: 35
+    native_uprising_chance: -0.5
+idea_variation_act_391: 
+    monarch_power: DIP
+    potential:
+        - militarism
+        - maritime_ideas
+    allow:
+        - militarism
+        - maritime_ideas
+    naval_morale: 0.15                
+idea_variation_act_392: 
+    monarch_power: DIP
+    potential:
+        - militarism
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - militarism
+    heavy_ship_power: 0.1
+    galley_power: 0.1
+idea_variation_act_395: 
+    monarch_power: MIL
+    potential:
+        - militarism
+        - colonial_emp
+    allow:
+        - militarism
+        - colonial_emp
+    infantry_power: 0.1
+    global_manpower_modifier: 0.15
+idea_variation_act_396: 
+    monarch_power: DIP
+    potential:
+        - militarism
+        - assimilation
+    allow:
+        - militarism
+        - assimilation
+    global_manpower_modifier: 0.25
+idea_variation_act_397: 
+    monarch_power: ADM
+    potential:
+        - militarism
+        - sociaty 
+    allow:
+        - militarism
+        - sociaty 
+    interest: -1
+idea_variation_act_398: 
+    monarch_power: DIP
+    potential:
+        - militarism
+        - propaganda
+    allow:
+        - militarism
+        - propaganda
+    war_exhaustion: -0.03
+idea_variation_act_399: 
+    monarch_power: DIP
+    potential:
+        - militarism
+        - fleet_base
+    allow:
+        - militarism
+        - fleet_base
+    defensiveness: 0.1
+idea_variation_act_400: 
+    monarch_power: ADM
+    potential:
+        - militarism
+        - nationalismus
+    allow:
+        - militarism
+        - nationalismus
+    legitimacy: 2
+    republican_tradition: 1
+    devotion: 1
+    horde_unity: 1
+idea_variation_act_401: 
+    monarch_power: DIP
+    potential:
+        - militarism
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - militarism
+        - OR:
+            - imperialismus
+            - konigreich0
+    global_autonomy: -0.05
+    imperial_authority: 0.25
+idea_variation_act_402: 
+    monarch_power: ADM
+    potential:
+        - formation0
+        - innovativeness_ideas
+    allow:
+        - formation0
+        - innovativeness_ideas
+    manpower_recovery_speed: 0.25
+idea_variation_act_403: 
+    monarch_power: ADM
+    potential:
+        - formation0
+        - economic_ideas
+    allow:
+        - formation0
+        - economic_ideas
+    global_institution_spread: 0.1
+    embracement_cost: -0.2
+idea_variation_act_404: 
+    monarch_power: ADM
+    potential:
+        - formation0
+        - expansion_ideas
+    allow:
+        - formation0
+        - expansion_ideas
+    movement_speed: 0.25            
+idea_variation_act_405: 
+    monarch_power: MIL
+    potential:
+        - formation0
+        - administrative_ideas
+    allow:
+        - formation0
+        - administrative_ideas
+    fire_damage: 0.075
+idea_variation_act_406: 
+    monarch_power: MIL
+    potential:
+        - formation0 
+        - humanist_ideas
+    allow:
+        - formation0
+        - humanist_ideas
+    discipline: 0.05
+idea_variation_act_407: 
+    monarch_power: MIL
+    potential:
+        - formation0
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - formation0
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    shock_damage_received: -0.05
+idea_variation_act_408: 
+    monarch_power: ADM                        
+    potential:
+        - formation0
+        - judiciary
+    allow:
+        - formation0
+        - judiciary
+    land_morale: 0.15
+idea_variation_act_409: 
+    monarch_power: MIL
+    potential:
+        - formation0
+        - development
+    allow:
+        - formation0
+        - development
+    fire_damage_received: -0.05
+idea_variation_act_410: 
+    monarch_power: ADM
+    potential:
+        - formation0
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - formation0
+        - OR:
+            - strong_men
+            - fem_boy
+    manpower_recovery_speed: 0.25
+idea_variation_act_411: 
+    monarch_power: MIL
+    potential:
+        - formation0
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - formation0
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    shock_damage_received: -0.05
+idea_variation_act_414: 
+    monarch_power: MIL
+    potential:
+        - formation0
+        - public_admin
+    allow:
+        - formation0
+        - public_admin
+    fire_damage_received: -0.05
+idea_variation_act_415: 
+    monarch_power: MIL
+    potential:
+        - formation0
+        - spy_ideas 
+    allow:
+        - formation0
+        - spy_ideas 
+    shock_damage: 0.075
+idea_variation_act_416: 
+    monarch_power: MIL
+    potential:
+        - formation0
+        - dynastic
+    allow:
+        - formation0
+        - dynastic
+    land_morale: 0.15
+idea_variation_act_417: 
+    monarch_power: DIP                
+    potential:
+        - formation0
+        - influence_ideas 
+    allow:
+        - formation0
+        - influence_ideas 
+    land_morale: 0.15
+idea_variation_act_418: 
+    monarch_power: MIL
+    potential:
+        - formation0
+        - trade_ideas 
+    allow:
+        - formation0
+        - trade_ideas 
+    shock_damage_received: -0.05
+idea_variation_act_419: 
+    monarch_power: MIL
+    potential:
+        - formation0
+        - exploration_ideas
+    allow:
+        - formation0
+        - exploration_ideas
+    fire_damage_received: -0.05
+idea_variation_act_420: 
+    monarch_power: DIP                
+    potential:
+        - formation0
+        - maritime_ideas
+    allow:
+        - formation0
+        - maritime_ideas
+    galley_power: 0.1
+    heavy_ship_power: 0.1
+idea_variation_act_421: 
+    monarch_power: DIP                
+    potential:
+        - formation0
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - formation0
+    navy_tradition: 1
+    naval_morale: 0.15
+idea_variation_act_424: 
+    monarch_power: MIL
+    potential:
+        - formation0
+        - colonial_emp
+    allow:
+        - formation0
+        - colonial_emp
+    global_manpower_modifier: 0.25
+idea_variation_act_425: 
+    monarch_power: DIP
+    potential:
+        - formation0
+        - assimilation
+    allow:
+        - formation0
+        - assimilation
+    build_cost: -0.15
+idea_variation_act_426: 
+    monarch_power: ADM
+    potential:
+        - formation0
+        - sociaty 
+    allow:
+        - formation0
+        - sociaty 
+    global_tax_modifier: 0.3
+idea_variation_act_427: 
+    monarch_power: ADM
+    potential:
+        - formation0
+        - propaganda
+    allow:
+        - formation0
+        - propaganda
+    global_unrest: -3
+idea_variation_act_428: 
+    monarch_power: DIP
+    potential:
+        - formation0
+        - fleet_base
+    allow:
+        - formation0
+        - fleet_base
+    naval_morale: 0.1
+    naval_forcelimit_modifier: 0.2
+idea_variation_act_429: 
+    monarch_power: DIP
+    potential:
+        - formation0
+        - nationalismus
+    allow:
+        - formation0
+        - nationalismus
+    enemy_core_creation: 0.5
+idea_variation_act_430: 
+    monarch_power: DIP
+    potential:
+        - formation0
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - formation0
+        - OR:
+            - imperialismus
+            - konigreich0
+    num_accepted_cultures: 1
+    trade_steering: 0.25
+idea_variation_act_431: 
+    monarch_power: MIL
+    potential:
+        - offensive
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - offensive
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    mercenary_discipline: 0.05
+idea_variation_act_432: 
+    monarch_power: DIP
+    potential:
+        - defensive
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - defensive
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    global_own_trade_power: 0.2
+    embargo_efficiency: 0.25
+idea_variation_act_433: 
+    monarch_power: ADM
+    potential:
+        - quality
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - quality
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    legitimacy: 2
+    republican_tradition: 1
+    devotion: 1
+    horde_unity: 1
+idea_variation_act_434: 
+    monarch_power: MIL
+    potential:
+        - quantity
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - quantity
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    land_morale: 0.15
+idea_variation_act_435: 
+    monarch_power: DIP
+    potential:
+        - quality
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - quality
+    naval_morale: 0.15
+idea_variation_act_437: 
+    monarch_power: MIL
+    potential:
+        - war_production
+        - propaganda
+    allow:
+        - war_production
+        - propaganda
+    global_trade_goods_size_modifier: 0.15
+idea_variation_act_438: 
+    monarch_power: MIL
+    potential:
+        - shock_ideas
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - shock_ideas
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    shock_damage: 0.075
+idea_variation_act_439: 
+    monarch_power: MIL
+    potential:
+        - shock_ideas
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - shock_ideas
+        - OR:
+            - republik0 
+            - aristo0
+            - monarchie0
+            - horde0
+            - diktatur0
+    shock_damage: 0.075
+idea_variation_act_440: 
+    monarch_power: ADM
+    potential:
+        - shock_ideas
+        - innovativeness_ideas
+    allow:
+        - shock_ideas
+        - innovativeness_ideas
+    core_creation: -0.15
+idea_variation_act_441: 
+    monarch_power: DIP
+    potential:
+        - shock_ideas
+        - spy_ideas
+    allow:
+        - shock_ideas
+        - spy_ideas
+    cavalry_power: 0.1
+    cav_to_inf_ratio: 0.1
+idea_variation_act_442: 
+    monarch_power: MIL
+    potential:
+        - shock_ideas
+        - dynastic
+    allow:
+        - shock_ideas
+        - dynastic
+    shock_damage: 0.075
+idea_variation_act_443: 
+    monarch_power: MIL
+    potential:
+        - shock_ideas
+        - influence_ideas
+    allow:
+        - shock_ideas
+        - influence_ideas
+    global_manpower_modifier: 0.25
+idea_variation_act_444: 
+    monarch_power: DIP
+    potential:
+        - shock_ideas
+        - trade_ideas 
+    allow:
+        - shock_ideas
+        - trade_ideas 
+    embargo_efficiency: 0.25
+    global_foreign_trade_power: 0.2
+idea_variation_act_445: 
+    monarch_power: MIL
+    potential:
+        - shock_ideas
+        - economic_ideas
+    allow:
+        - shock_ideas
+        - economic_ideas
+    shock_damage: 0.075
+idea_variation_act_446: 
+    monarch_power: DIP
+    potential:
+        - shock_ideas
+        - exploration_ideas
+    allow:
+        - shock_ideas
+        - exploration_ideas
+    land_forcelimit_modifier: 0.15
+idea_variation_act_448: 
+    monarch_power: ADM
+    potential:
+        - shock_ideas
+        - expansion_ideas
+    allow:
+        - shock_ideas
+        - expansion_ideas
+    diplomatic_annexation_cost: -0.15
+idea_variation_act_449: 
+    monarch_power: ADM
+    potential:
+        - shock_ideas
+        - administrative_ideas
+    allow:
+        - shock_ideas
+        - administrative_ideas
+    shock_damage: 0.075
+idea_variation_act_450: 
+    monarch_power: MIL
+    potential:
+        - shock_ideas
+        - humanist_ideas
+    allow:
+        - shock_ideas
+        - humanist_ideas
+    fire_damage_received: -0.05
+idea_variation_act_451: 
+    monarch_power: MIL
+    potential:
+        - shock_ideas
+        - judiciary 
+    allow:
+        - shock_ideas
+        - judiciary 
+    land_morale: 0.15        
+idea_variation_act_452: 
+    monarch_power: ADM
+    potential:
+        - shock_ideas
+        - development
+    allow:
+        - shock_ideas
+        - development
+    build_time: -0.25
+idea_variation_act_453: 
+    monarch_power: ADM
+    potential:
+        - shock_ideas
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - shock_ideas
+        - OR:
+            - strong_men
+            - fem_boy
+    shock_damage: 0.075
+idea_variation_act_458: 
+    monarch_power: DIP
+    potential:
+        - shock_ideas
+        - colonial_emp
+    allow:
+        - shock_ideas
+        - colonial_emp
+    reduced_liberty_desire: 10
+idea_variation_act_459: 
+    monarch_power: DIP
+    potential:
+        - shock_ideas
+        - assimilation 
+    allow:
+        - shock_ideas
+        - assimilation 
+    cavalry_power: 0.1
+    cav_to_inf_ratio: 0.1
+idea_variation_act_460: 
+    monarch_power: DIP
+    potential:
+        - shock_ideas
+        - sociaty 
+    allow:
+        - shock_ideas
+        - sociaty 
+    culture_conversion_cost: -0.2
+idea_variation_act_461: 
+    monarch_power: MIL
+    potential:
+        - shock_ideas
+        - propaganda
+    allow:
+        - shock_ideas
+        - propaganda
+    global_manpower_modifier: 0.25
+idea_variation_act_462: 
+    monarch_power: DIP
+    potential:
+        - shock_ideas
+        - fleet_base
+    allow:
+        - shock_ideas
+        - fleet_base
+    global_sailors_modifier: 0.2
+    naval_forcelimit_modifier: 0.2
+idea_variation_act_463: 
+    monarch_power: MIL
+    potential:
+        - shock_ideas
+        - nationalismus
+    allow:
+        - shock_ideas
+        - nationalismus
+    shock_damage: 0.075
+idea_variation_act_464: 
+    monarch_power: DIP
+    potential:
+        - shock_ideas
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - shock_ideas
+        - OR:
+            - imperialismus
+            - konigreich0
+    global_sailors_modifier: 0.33
+idea_variation_act_465: 
+    monarch_power: ADM
+    potential:
+        - shock_ideas
+        - public_admin 
+    allow:
+        - shock_ideas
+        - public_admin 
+    global_trade_goods_size_modifier: 0.15
+idea_variation_act_466: 
+    monarch_power: MIL
+    potential:
+        - shock_ideas
+        - OR:
+            - centralism
+            - decentralism
+    allow:
+        - shock_ideas
+        - OR:
+            - centralism
+            - decentralism
+    shock_damage: 0.075
+idea_variation_act_468: 
+    monarch_power: ADM
+    potential:
+        - fire_ideas
+        - OR:
+            - religious_ideas   
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    allow:
+        - fire_ideas
+        - OR:
+            - religious_ideas 
+            - katholisch0
+            - protestant0
+            - reformiert0
+            - orthodox0
+            - islam0
+            - cathar0
+            - shinto0
+            - norse0
+            - budda0
+            - confuci0 
+            - hindu0
+            - tengri0
+            - coptic0
+            - helle0
+            - slav0
+            - jew0
+            - suomi0
+            - romuva0
+            - animist0
+            - feti0
+            - zoro0
+            - mane0
+            - ancli0
+            - mesoam0
+            - inti0
+            - tote0
+            - nahu0
+            - shia0
+            - ibadi0
+            - hussite0
+    legitimacy: 2
+    republican_tradition: 1
+    devotion: 1
+    horde_unity: 1
+idea_variation_act_469: 
+    monarch_power: ADM
+    potential:
+        - fire_ideas
+        - OR:
+            - aristo0
+            - monarchie0
+            - horde0
+            - republik0
+            - diktatur0
+    allow:
+        - fire_ideas
+        - OR:
+            - republik0 
+            - aristo0
+            - monarchie0
+            - horde0
+            - diktatur0
+    artillery_cost: -0.2
+    infantry_cost: -0.1            
+idea_variation_act_470: 
+    monarch_power: MIL
+    potential:
+        - fire_ideas
+        - innovativeness_ideas
+    allow:
+        - fire_ideas
+        - innovativeness_ideas
+    fire_damage: 0.075
+idea_variation_act_471: 
+    monarch_power: DIP
+    potential:
+        - fire_ideas
+        - spy_ideas
+    allow:
+        - fire_ideas
+        - spy_ideas
+    diplomatic_reputation: 1
+    diplomatic_upkeep: 1
+idea_variation_act_472: 
+    monarch_power: DIP
+    potential:
+        - fire_ideas
+        - dynastic
+    allow:
+        - fire_ideas
+        - dynastic
+    manpower_recovery_speed: 0.25
+idea_variation_act_473: 
+    monarch_power: MIL            
+    potential:
+        - fire_ideas
+        - influence_ideas
+    allow:
+        - fire_ideas
+        - influence_ideas
+    shock_damage_received: -0.05
+idea_variation_act_474: 
+    monarch_power: MIL                
+    potential:
+        - fire_ideas
+        - trade_ideas 
+    allow:
+        - fire_ideas
+        - trade_ideas 
+    fire_damage: 0.075
+idea_variation_act_475: 
+    monarch_power: ADM
+    potential:
+        - fire_ideas
+        - economic_ideas
+    allow:
+        - fire_ideas
+        - economic_ideas
+    production_efficiency: 0.3
+idea_variation_act_476: 
+    monarch_power: MIL            
+    potential:
+        - fire_ideas
+        - exploration_ideas
+    allow:
+        - fire_ideas
+        - exploration_ideas
+    fire_damage: 0.075
+idea_variation_act_477: 
+    monarch_power: DIP
+    potential:
+        - maritime_ideas
+        - OR:
+            - fire_ideas
+            - shock_ideas
+    allow:
+        - maritime_ideas
+        - OR:
+            - fire_ideas
+            - shock_ideas
+    heavy_ship_power: 0.1
+    galley_power: 0.1
+idea_variation_act_478: 
+    monarch_power: MIL
+    potential:
+        - fire_ideas
+        - expansion_ideas
+    allow:
+        - fire_ideas
+        - expansion_ideas
+    land_morale: 0.15
+idea_variation_act_479: 
+    monarch_power: MIL
+    potential:
+        - fire_ideas
+        - administrative_ideas
+    allow:
+        - fire_ideas
+        - administrative_ideas
+    fire_damage: 0.075
+idea_variation_act_480: 
+    monarch_power: MIL
+    potential:
+        - fire_ideas
+        - humanist_ideas
+    allow:
+        - fire_ideas
+        - humanist_ideas
+    land_morale: 0.15
+idea_variation_act_481: 
+    monarch_power: DIP
+    potential:
+        - fire_ideas
+        - judiciary 
+    allow:
+        - fire_ideas
+        - judiciary
+    province_warscore_cost: -0.2
+idea_variation_act_482: 
+    monarch_power: ADM
+    potential:
+        - fire_ideas
+        - development
+    allow:
+        - fire_ideas
+        - development
+    siege_ability: 0.1
+idea_variation_act_483: 
+    monarch_power: ADM
+    potential:
+        - fire_ideas
+        - OR:
+            - strong_men
+            - fem_boy
+    allow:
+        - fire_ideas
+        - OR:
+            - strong_men
+            - fem_boy
+    reinforce_speed: 0.2
+    manpower_recovery_speed: 0.15
+idea_variation_act_485: 
+    monarch_power: DIP
+    potential:
+        - OR:
+            - fire_ideas
+            - shock_ideas
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+    allow:
+        - OR:
+            - trade_ship
+            - galley_ship
+            - heavy_ship
+        - OR:
+            - fire_ideas
+            - shock_ideas
+    heavy_ship_power: 0.1
+    galley_power: 0.1
+idea_variation_act_488: 
+    monarch_power: MIL
+    potential:
+        - fire_ideas
+        - colonial_emp
+    allow:
+        - fire_ideas
+        - colonial_emp
+    infantry_power: 0.1
+    artillery_power: 0.1
+idea_variation_act_489: 
+    monarch_power: MIL
+    potential:
+        - fire_ideas
+        - assimilation 
+    allow:
+        - fire_ideas
+        - assimilation 
+    fire_damage: 0.075
+idea_variation_act_490: 
+    monarch_power: DIP
+    potential:
+        - fire_ideas
+        - sociaty 
+    allow:
+        - fire_ideas
+        - sociaty 
+    yearly_absolutism: 1.0
+idea_variation_act_491: 
+    monarch_power: DIP
+    potential:
+        - fire_ideas
+        - propaganda
+    allow:
+        - fire_ideas
+        - propaganda
+    improve_relation_modifier: 0.2
+idea_variation_act_492: 
+    monarch_power: MIL
+    potential:
+        - fire_ideas
+        - fleet_base
+    allow:
+        - fire_ideas
+        - fleet_base
+    fire_damage: 0.075
+idea_variation_act_493: 
+    monarch_power: DIP
+    potential:
+        - fire_ideas
+        - nationalismus
+    allow:
+        - fire_ideas
+        - nationalismus
+    land_maintenance_modifier: -0.2
+idea_variation_act_494: 
+    monarch_power: ADM
+    potential:
+        - fire_ideas
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - fire_ideas
+        - OR:
+            - imperialismus
+            - konigreich0
+    prestige: 2
+idea_variation_act_495: 
+    monarch_power: DIP
+    potential:
+        - fire_ideas
+        - public_admin 
+    allow:
+        - fire_ideas
+        - public_admin 
+    trade_efficiency: 0.25
+idea_variation_act_496: 
+    monarch_power: ADM
+    potential:
+        - fire_ideas
+        - OR:
+            - centralism
+            - decentralism
+    allow:
+        - fire_ideas
+        - OR:
+            - centralism
+            - decentralism
+    global_trade_goods_size_modifier: 0.15
+idea_variation_act_501: 
+    monarch_power: MIL
+    potential:
+        - offensive
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - offensive
+        - OR:
+            - decentralism
+            - centralism
+    land_morale: 0.1
+    artillery_power: 0.1
+idea_variation_act_504: 
+    monarch_power: DIP
+    potential:
+        - exploration_ideas
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - exploration_ideas
+        - OR:
+            - decentralism
+            - centralism
+    colonists: 1
+idea_variation_act_505: 
+    monarch_power: DIP
+    potential:
+        - maritime_ideas
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - maritime_ideas
+        - OR:
+            - decentralism
+            - centralism
+    naval_forcelimit_modifier: 0.2
+    naval_maintenance_modifier: -0.25
+idea_variation_act_511: 
+    monarch_power: DIP
+    potential:
+        - colonial_emp
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - colonial_emp
+        - OR:
+            - decentralism
+            - centralism
+    global_tariffs: 0.25
+idea_variation_act_512: 
+    monarch_power: DIP
+    potential:
+        - assimilation
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - assimilation
+        - OR:
+            - decentralism
+            - centralism
+    culture_conversion_cost: -0.15
+idea_variation_act_513: 
+    monarch_power: ADM
+    potential:
+        - sociaty 
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - sociaty 
+        - OR:
+            - decentralism
+            - centralism
+    interest: -1
+idea_variation_act_514: 
+    monarch_power: DIP
+    potential:
+        - propaganda
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - propaganda
+        - OR:
+            - decentralism
+            - centralism
+    development_cost: -0.1
+idea_variation_act_515: 
+    monarch_power: ADM
+    potential:
+        - fleet_base
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - fleet_base
+        - OR:
+            - decentralism
+            - centralism
+    range: 0.5
+idea_variation_act_516: 
+    monarch_power: ADM
+    potential:
+        - OR:
+            - decentralism
+            - centralism
+        - OR:
+            - konigreich0
+            - imperialismus
+    allow:
+        - OR:
+            - decentralism
+            - centralism
+        - OR:
+            - imperialismus
+            - konigreich0
+    build_cost: -0.1
+idea_variation_act_517: 
+    monarch_power: ADM
+    potential:
+        - nationalismus
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - nationalismus
+        - OR:
+            - decentralism
+            - centralism
+    global_tax_modifier: 0.2
+idea_variation_act_518: 
+    monarch_power: ADM
+    potential:
+        - standing_army
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - standing_army
+        - OR:
+            - decentralism
+            - centralism
+    land_forcelimit_modifier: 0.15
+idea_variation_act_520: 
+    monarch_power: ADM
+    potential:
+        - merc_army
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - merc_army
+        - OR:
+            - decentralism
+            - centralism
+    mercenary_manpower: 0.5
+idea_variation_act_522: 
+    monarch_power: ADM
+    potential:
+        - weapon_quality
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - weapon_quality
+        - OR:
+            - decentralism
+            - centralism
+    siege_ability: 0.1
+idea_variation_act_524: 
+    monarch_power: MIL
+    potential:
+        - war_production
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - war_production
+        - OR:
+            - decentralism
+            - centralism
+    shock_damage_received: -0.05
+idea_variation_act_527: 
+    monarch_power: DIP
+    potential:
+        - spy_ideas
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - spy_ideas
+        - OR:
+            - decentralism
+            - centralism
+    province_warscore_cost: -0.2
+idea_variation_act_528: 
+    monarch_power: ADM
+    potential:
+        - dynastic
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - dynastic
+        - OR:
+            - decentralism
+            - centralism
+    development_cost: -0.1
+idea_variation_act_529: 
+    monarch_power: ADM
+    potential:
+        - influence_ideas
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - influence_ideas
+        - OR:
+            - decentralism
+            - centralism
+    build_cost: -0.1
+idea_variation_act_531: 
+    monarch_power: MIL
+    potential:
+        - defensive
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - defensive
+        - OR:
+            - decentralism
+            - centralism
+    land_morale: 0.15
+idea_variation_act_532: 
+    monarch_power: DIP
+    potential:
+        - trade_ideas
+        - OR:
+            - centralism
+            - decentralism
+    allow:
+        - trade_ideas
+        - OR:
+            - centralism
+            - decentralism
+    development_cost: -0.1
+idea_variation_act_535: 
+    monarch_power: MIL
+    potential:
+        - quality
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - quality
+        - OR:
+            - decentralism
+            - centralism
+    cavalry_power: 0.1
+    cav_to_inf_ratio: 0.1
+idea_variation_act_536: 
+    monarch_power: MIL
+    potential:
+        - quantity
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - quantity
+        - OR:
+            - decentralism
+            - centralism
+    global_manpower_modifier: 0.25
+idea_variation_act_537: 
+    monarch_power: DIP
+    potential:
+        - OR:
+            - decentralism
+            - centralism
+        - OR:
+            - heavy_ship
+            - hande10
+            - galley_ship
+    allow:
+        - OR:
+            - decentralism
+            - centralism
+        - OR:
+            - heavy_ship
+            - hande10
+            - galley_ship
+    naval_morale: 0.15
+idea_variation_act_548: 
+    monarch_power: ADM
+    potential:
+        - general_staff
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - general_staff
+        - OR:
+            - decentralism
+            - centralism
+    global_manpower_modifier: 0.25
+idea_variation_act_550: 
+    monarch_power: MIL
+    potential:
+        - conscription
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - conscription
+        - OR:
+            - decentralism
+            - centralism
+    land_morale: 0.15
+idea_variation_act_552: 
+    monarch_power: MIL
+    potential:
+        - fortress
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - fortress
+        - OR:
+            - decentralism
+            - centralism
+    shock_damage_received: -0.05
+idea_variation_act_554: 
+    monarch_power: MIL
+    potential:
+        - formation0
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - formation0
+        - OR:
+            - decentralism
+            - centralism
+    shock_damage_received: -0.05
+idea_variation_act_555: 
+    monarch_power: ADM
+    potential:
+        - militarism
+        - OR:
+            - decentralism
+            - centralism
+    allow:
+        - militarism
+        - OR:
+            - decentralism
+            - centralism
+    advisor_cost: -0.1

@@ -1,0 +1,4 @@
+por_spanish_tradition = {
+	land_morale = 0.30
+	discipline = 0.05
+}

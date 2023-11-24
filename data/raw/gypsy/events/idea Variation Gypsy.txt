@@ -1,0 +1,208 @@
+namespace = idea_var_gypsy
+
+##########################
+### Remove Shock Ideas ###
+##########################
+
+country_event = {
+
+	id = idea_var_gypsy.2
+	title = idea_var_gypsy.2.name
+	desc = idea_var_gypsy.2.desc
+	
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "idea_var_gypsy.2.a"
+		ai_chance = { factor = 100 }
+		if = {
+			limit = {
+				has_idea_group = shock0
+				NOT = { has_idea = shock1 }
+			}
+			remove_idea_group = shock0
+		}
+		
+		if = {
+			limit = {
+				has_idea = shock1
+				NOT = { has_idea = shock2 }
+			}
+			remove_idea_group = shock0
+			add_mil_power = 150
+		}
+		
+		if = {
+			limit = {
+				has_idea = shock2
+				NOT = { has_idea = shock3 }
+			}
+			remove_idea_group = shock0
+			add_mil_power = 300
+		}
+		
+		if = {
+			limit = {
+				has_idea = shock3
+				NOT = { has_idea = shock4 }
+			}
+			remove_idea_group = shock0
+			add_mil_power = 450
+		}
+		
+		if = {
+			limit = {
+				has_idea = shock4
+				NOT = { has_idea = shock5 }
+			}
+			remove_idea_group = shock0
+			add_mil_power = 600
+		}
+		
+		if = {
+			limit = {
+				has_idea = shock5
+				NOT = { has_idea = shock6 }
+			}
+			remove_idea_group = shock0
+			add_mil_power = 750
+		}
+		
+		if = {
+			limit = {
+				has_idea = shock6
+				NOT = { has_idea = shock7 }
+			}
+			remove_idea_group = shock0
+			add_mil_power = 900
+		}
+		
+		if = {
+			limit = {
+				has_idea = shock7
+			}
+			remove_idea_group = shock0
+			add_mil_power = 1050
+		}
+	}
+	
+	option = {
+		name = "idea_var_gypsy.2.b"
+	}
+}
+
+###########################################
+### Nation Formation Culture Convertion ###
+###########################################
+country_event = {
+	id = idea_var_gypsy.50
+	title = idea_var_gypsy.50.name
+	desc = idea_var_gypsy.50.desc
+	
+	picture = BIG_BOOK_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "idea_var_gypsy.50a"
+		ai_chance = { factor = 100 }
+		change_primary_culture = true_spanish
+		custom_tooltip = spanish_nation_convert.tt
+		hidden_effect = {
+			set_ruler_culture = true_spanish
+			if = {
+				limit = {
+					has_heir = yes
+				}
+				set_heir_culture = true_spanish
+			}
+			if = {
+				limit = {
+					has_consort = yes
+					OR = {
+						consort_culture = castillian
+						consort_culture = aragonese
+						consort_culture = leonese
+					}
+				}
+				set_consort_culture = true_spanish
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						culture = castillian
+						culture = aragonese
+						culture = leonese
+					}
+				}
+				change_culture = true_spanish
+			}
+		}
+	}
+	option = {
+		name = "idea_var_gypsy.50b"
+		add_dip_power = 100
+	}
+}
+
+country_event = {
+	id = idea_var_gypsy.51
+	title = idea_var_gypsy.51.name
+	desc = idea_var_gypsy.51.desc
+	
+	picture = BIG_BOOK_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "idea_var_gypsy.51a"
+		ai_chance = { factor = 100 }
+		change_primary_culture = true_italian
+		custom_tooltip = italian_nation_convert.tt
+		hidden_effect = {
+			set_ruler_culture = true_italian
+			if = {
+				limit = {
+					has_heir = yes
+				}
+				set_heir_culture = true_italian
+			}
+			if = {
+				limit = {
+					has_consort = yes
+					OR = {
+						consort_culture = lombard
+						consort_culture = tuscan
+						consort_culture = romagnan
+						consort_culture = ligurian
+						consort_culture = piedmontese
+						consort_culture = umbrian
+						consort_culture = venetian
+					}
+				}
+				set_consort_culture = true_italian
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						culture = lombard
+						culture = tuscan
+						culture = romagnan
+						culture = ligurian
+						culture = piedmontese
+						culture = umbrian
+						culture = venetian
+					}
+				}
+				change_culture = true_italian
+			}
+		}
+	}
+	
+	option = {
+		name = "idea_var_gypsy.51b"
+		add_dip_power = 100
+	}
+}

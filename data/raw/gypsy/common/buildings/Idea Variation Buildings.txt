@@ -1,0 +1,776 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new buildings, make sure they are uniquely named.
+
+# cost = x #==> cost in $ to build (subject to other modifiers)
+# time = x #==> number of months to build.
+# modifier = m # a modifier on the province that the building gives
+# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# one_per_country = yes/no # if yes, only one of these can exist in a country
+# manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
+# onmap = yes/no # show as a sprite on the map
+
+# FROM = owner
+# ROOT = province
+
+# AI will consider buildings it does not have the tech for at 20% of scripted AI weight (in case it wants to save slots)
+
+################################################
+# Navy 
+################################################
+dock = {
+	cost = 100
+	time = 12
+	build_trigger = {
+		has_port = yes
+	}
+	modifier = {
+		local_sailors_modifier = 0.5
+		ship_recruit_speed = -0.05
+		local_has_man_of_war = yes
+		local_has_galleass = yes
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_sailors = 200
+			}
+		}
+		add_development_from_building = {
+			building = dock
+			type = production
+			value = 1
+		}
+	}
+
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_sailors = -200
+			}
+		}
+		remove_development_from_building = {
+			building = dock
+			type = production
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+		modifier = {
+			factor = 4.5
+			owner = { is_subject = yes }
+		}
+		modifier = {
+			factor = 100.0
+			FROM = { treasury = 10000 }
+		}
+		#FROM AUTONOMY
+		modifier = {
+			factor = 0
+			FROM = {
+				NOT = { navy_size_percentage = 0.9 }
+			}
+		}
+		modifier = {
+			factor = 0.05
+			OR = {
+				NOT = { num_free_building_slots = 2 }
+				xorme_has_production_buildings_trigger = no
+			}
+		}
+		modifier = {
+			factor = 0.4
+			local_autonomy = 75
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 50
+		}
+		modifier = {
+			factor = 0.8
+			local_autonomy = 25
+		}
+		#FROM BASE DEV
+		modifier = {
+			factor = 3.0
+			FROM = { num_of_ports = 5 }
+		}
+		modifier = {
+			factor = 6.0
+			FROM = { num_of_ports = 10 }
+		}
+		modifier = {
+			factor = 9.0
+			FROM = { num_of_ports = 15 }
+		}
+		#BUILDINGS
+		modifier = {
+			factor = 10.0
+			xorme_has_production_buildings_trigger = yes
+		}
+		#FROM CASH
+		modifier = {
+			factor = 100.0
+			FROM = {
+				treasury = 7500
+			}
+		}
+	}
+}
+
+navymanpower_lvl_2 = {
+	cost = 250
+	time = 12
+	
+	make_obsolete = dock
+
+	build_trigger = {
+		has_port = yes
+		OR = {
+			has_idea = light_ship5
+			has_idea = galley1
+			has_idea = maritim3
+		}
+	}
+	
+	modifier = {
+		local_sailors_modifier = 1.0
+		ship_recruit_speed = -0.1
+		naval_forcelimit = 2
+		local_has_man_of_war = yes
+		local_has_galleass = yes
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_sailors = 200
+			}
+		}
+		add_development_from_upgrading_or_building = {
+			building = navymanpower_lvl_2
+			obsolete_building = dock
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_sailors = -200
+			}
+		}
+		remove_development_from_building = {
+			building = navymanpower_lvl_2
+			type = production
+			value = 2
+		}
+	}
+
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+	}
+}
+
+drydock = {
+	cost = 400
+	time = 12
+	
+	make_obsolete = navymanpower_lvl_2
+	
+	build_trigger = {
+		has_port = yes
+		OR = {
+			has_idea = light_ship5
+			has_idea = galley1
+			has_idea = maritim3
+		}
+	}
+	
+	modifier = {
+		local_sailors_modifier = 1.5
+		ship_recruit_speed = -0.2
+		naval_forcelimit = 4
+		local_has_man_of_war = yes
+		local_has_galleass = yes
+	}
+
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_sailors = 200
+			}
+		}
+		add_development_from_upgrading_or_building = {
+			building = drydock
+			obsolete_building = navymanpower_lvl_2
+			type = production
+			value = 3
+			upgrade_value = 1
+		}
+	}
+	
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_government_attribute = manpower_sailors_on_build
+				}
+			}
+			FROM = {
+				add_sailors = -200
+			}
+		}
+		remove_development_from_building = {
+			building = drydock
+			type = production
+			value = 3
+		}
+	}
+
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+	}
+}
+
+shipyard = {
+	cost = 100
+	time = 12
+	
+	build_trigger = {
+		has_port = yes
+	}
+	
+	modifier = {
+		naval_forcelimit = 4
+		ship_recruit_speed = -0.2
+		local_ship_repair = 0.2
+		local_has_man_of_war = yes
+		local_has_galleass = yes
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = shipyard
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = shipyard
+			type = production
+			value = 1		 
+		}
+		if = {
+			limit = { has_province_modifier = sca_swe_danish_shipyard }
+			remove_province_modifier = sca_swe_danish_shipyard
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.5 # bit more likely if close to the naval force limit
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+	}
+}
+
+navyforcelimit_lvl_2 = {
+	cost = 250
+	time = 12
+
+	make_obsolete = shipyard
+	
+	build_trigger = {
+		has_port = yes
+		OR = {
+			has_idea = heavy_ship6
+			has_idea = maritim3
+		}
+	}
+
+	modifier = {
+		naval_forcelimit = 6
+		ship_recruit_speed = -0.35
+		local_ship_repair = 0.35
+		local_sailors_modifier = 0.25
+		local_has_man_of_war = yes
+		local_has_galleass = yes
+	}
+	
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = navyforcelimit_lvl_2
+			obsolete_building = shipyard
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = navyforcelimit_lvl_2
+			type = production
+			value = 2
+		}
+		if = {
+			limit = { has_province_modifier = sca_swe_danish_shipyard }
+			remove_province_modifier = sca_swe_danish_shipyard
+		}
+	}
+ 
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.5 # bit more likely if close to the force limit
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+	}
+}
+
+navyforcelimit_lvl_3 = {
+	cost = 400
+	time = 12
+	
+	make_obsolete = navyforcelimit_lvl_2
+	
+	build_trigger = {
+		has_port = yes
+		OR = {
+			has_idea = heavy_ship6
+			has_idea = maritim3
+		}
+	}
+	
+	modifier = {
+		naval_forcelimit = 8
+		ship_recruit_speed = -0.50
+		local_ship_repair = 0.5
+		local_sailors_modifier = 0.5
+		local_has_man_of_war = yes
+		local_has_galleass = yes
+	}
+	
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = navyforcelimit_lvl_3
+			obsolete_building = navyforcelimit_lvl_2
+			type = production
+			value = 3
+			upgrade_value = 1
+		}
+	}
+	
+	on_destroyed = {
+		remove_development_from_building = {
+			building = navyforcelimit_lvl_3
+			type = production
+			value = 3
+		}
+		if = {
+			limit = { has_province_modifier = sca_swe_danish_shipyard }
+			remove_province_modifier = sca_swe_danish_shipyard
+		}
+	}
+ 
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.5 # bit more likely if close to the force limit
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+	}
+}
+
+navalbase_lvl_1 = {
+	cost = 400
+	time = 36
+	
+	build_trigger = {
+		has_port = yes
+		has_idea = fleet_base2
+	}
+	
+	onmap = yes
+	
+	modifier = {
+		fort_level = 1
+		local_manpower = 0.5
+		local_sailors = 500
+		naval_forcelimit = 5
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = 200
+			}
+		}
+		add_development_from_building = {
+			building = navalbase_lvl_1
+			type = production
+			value = 1
+		}
+	}
+
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = -200
+			}
+		}
+		remove_development_from_building = {
+			building = navalbase_lvl_1
+			type = production
+			value = 1
+		}
+	}
+
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+	}
+}
+
+navalbase_lvl_2 = {
+	cost = 800
+	time = 36
+	
+	build_trigger = {
+		has_port = yes
+		has_idea = fleet_base2
+	}
+	
+	onmap = yes
+	
+	make_obsolete = navalbase_lvl_1 
+	
+	modifier = {
+		fort_level = 2
+		local_manpower = 1.0
+		local_sailors = 1000
+		naval_forcelimit = 10
+	}
+	
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = navalbase_lvl_2
+			obsolete_building = navalbase_lvl_1
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	
+	on_destroyed = {
+		remove_development_from_building = {
+			building = navalbase_lvl_2
+			type = production
+			value = 2
+		}
+	}
+ 
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+	}
+}
+
+################################################
+# Fortress
+################################################
+fortress_keep = {
+	cost = 50
+	time = 12
+	
+	build_trigger = {
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+		}
+		has_idea = fortress4
+	}
+	
+	modifier = {
+		local_defensiveness = 0.25
+		allowed_num_of_buildings = 1
+		max_attrition = 1
+	}
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+	}
+}
+
+fortress_barracks = {
+	cost = 100
+	time = 12
+	
+	build_trigger = {
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+		}
+		has_idea = fortress4
+	}
+
+	make_obsolete = fortress_keep
+
+	modifier = {
+		local_defensiveness = 0.3
+		local_manpower = 0.25
+		allowed_num_of_buildings = 1
+		max_attrition = 1
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+	}
+}
+
+fortress_towers = {
+	cost = 200
+	time = 24
+	
+	build_trigger = {
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+		}
+		has_idea = fortress4
+	}
+
+	make_obsolete = fortress_barracks
+	
+	modifier = {
+		fort_level = 1
+		local_defensiveness = 0.35
+		local_manpower = 0.25
+		allowed_num_of_buildings = 1
+		max_attrition = 1
+	}
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+	}
+}
+
+fortress_artillery = {
+	cost = 300
+	time = 24
+	
+	build_trigger = {
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+		}
+		has_idea = fortress4
+	}
+
+	make_obsolete = fortress_towers 
+	
+	modifier = {
+		fort_level = 1
+		local_hostile_attrition = 1
+		local_defensiveness = 0.35
+		local_manpower = 0.5
+		allowed_num_of_buildings = 1
+		max_attrition = 1.5
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+	}
+}
+
+fortress_wall = {
+	cost = 400
+	time = 24
+	
+	build_trigger = {
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+		}
+		has_idea = fortress4
+	}
+	
+	make_obsolete = fortress_artillery
+	
+	modifier = {
+		fort_level = 2
+		local_hostile_attrition = 1
+		max_hostile_attrition = 1
+		local_defensiveness = 0.4
+		local_manpower = 0.5
+		allowed_num_of_buildings = 1
+		max_attrition = 2
+	}
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+	}
+}
+
+fortress_supply = {
+	cost = 500
+	time = 24
+	
+	build_trigger = {
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+		}
+		has_idea = fortress4
+	}
+	
+	make_obsolete = fortress_wall
+	
+	modifier = {
+		fort_level = 2
+		local_hostile_attrition = 2
+		max_hostile_attrition = 1
+		local_defensiveness = 0.5
+		local_manpower = 0.75
+		allowed_num_of_buildings = 1
+		max_attrition = 2.5
+	}
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 1 }
+		}
+	}
+}

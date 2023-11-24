@@ -1,0 +1,8 @@
+###################################################################
+#### Replaced Vanilla Modifiers
+###################################################################
+
+estate_cossacks_exploration_expedition_mod = {
+	local_development_cost = -0.15
+	local_tax_modifier = -0.1
+}

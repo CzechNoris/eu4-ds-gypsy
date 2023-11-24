@@ -1,0 +1,29 @@
+condot_limit_1 = {
+	potential = {
+		current_age = age_of_reformation
+	}
+	trigger = {
+		current_age = age_of_reformation
+	}
+	possible_condottieri = 1.0
+}
+
+condot_limit_2 = {
+	potential = {
+		current_age = age_of_absolutism
+	}
+	trigger = {
+		current_age = age_of_absolutism
+	}
+	possible_condottieri = 2.5
+}
+
+condot_limit_3 = {
+	potential = {
+		current_age = age_of_revolutions
+	}
+	trigger = {
+		current_age = age_of_revolutions
+	}
+	possible_condottieri = 5.0
+}

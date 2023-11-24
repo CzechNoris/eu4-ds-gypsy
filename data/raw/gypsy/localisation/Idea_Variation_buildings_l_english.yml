@@ -1,0 +1,82 @@
+﻿l_english:
+ building_dock:0 "Dock"
+ building_navymanpower_lvl_2:0 "Drydock"
+ building_drydock:0 "Arsenal"
+ building_dock_desc:0 "§YIf activated:§W §RState Maintenance +25%§W"
+ building_navymanpower_lvl_2_desc:0 "Requires §GMaritime, Galley Focus or Light Ship Focus Ideas§W \n§YIf activated:§W §RState Maintenance +50%§W"
+ building_drydock_desc:0 "Requires §GMaritime, Galley Focus or Light Ship Focus Ideas§W \n§YIf activated:§W §RState Maintenance +75%§W"
+ 
+ 
+ building_shipyard:0 "Shipyard"
+ building_navyforcelimit_lvl_2:0 "Grand Shipyard"
+ building_navyforcelimit_lvl_3:0 "Industrial Shipyard"
+ building_shipyard_desc:0 "§YIf activated:§W §RState Maintenance +50%§W"
+ building_navyforcelimit_lvl_2_desc:0 "Requires §GMaritime or Heavy Ship Focus Ideas§W \n§YIf activated:§W §RState Maintenance +75%§W"
+ building_navyforcelimit_lvl_3_desc:0 "Requires §GMaritime or Heavy Ship Focus Ideas§W \n§YIf activated:§W §RState Maintenance +100%§W"
+ 
+ 
+ building_navalbase_lvl_1:0 "Naval Base"
+ building_navalbase_lvl_2:0 "Huge Naval Base"
+ building_navalbase_lvl_1_desc:0 "§GRequires Fleetbase Ideas§W \n§YIf activated:§W §RState Maintenance +50%§W"
+ building_navalbase_lvl_2_desc:0 "§GRequires Fleetbase Ideas§W \n§YIf activated:§W §RState Maintenance +100%§W"
+ 
+ 
+ building_fortress_keep:0 "Fortified Keep"
+ building_fortress_barracks:0 "Fortress Barracks"
+ building_fortress_towers:0 "Additional Towers"
+ building_fortress_artillery:0 "Defensive Artillery"
+ building_fortress_wall:0 "Second Contravallation"
+ building_fortress_supply:0 "Underground Supply Depot"
+ 
+ building_fortress_keep_desc:0 "§GRequires Fortress Ideas§W \n§YIf activated:§W §RState Maintenance +10%§W"
+ building_fortress_barracks_desc:0 "§GRequires Fortress Ideas§W \n§YIf activated:§W §RState Maintenance +20%§W"
+ building_fortress_towers_desc:0 "§GRequires Fortress Ideas§W \n§YIf activated:§W §RState Maintenance +30%§W"
+ building_fortress_artillery_desc:0 "§GRequires Fortress Ideas§W \n§YIf activated:§W §RState Maintenance +40%§W"
+ building_fortress_wall_desc:0 "§GRequires Fortress Ideas§W \n§YIf activated:§W §RState Maintenance +50%§W"
+ building_fortress_supply_desc:0 "§GRequires Fortress Ideas§W \n§YIf activated:§W §RState Maintenance +60%§W"
+ 
+
+ building_temple:0 "Temple"
+ building_cathedral:0 "Cathedral"
+ building_temple_desc:0 "§YIf activated:§W §RState Maintenance +12,5%§W"
+ building_cathedral_desc:0 "§YIf activated:§W §RState Maintenance +25%§W"
+ building_university_desc:0 "§YIf activated:§W §RState Maintenance +50%§W"
+ 
+ building_marketplace:0 "Marketplace"
+ building_trade_depot:0 "Trade Depot"
+ building_stock_exchange:0 "Stock Exchange"
+ building_marketplace_desc:0 "§YIf activated:§W §RState Maintenance +12,5%§W"
+ building_trade_depot_desc:0 "§YIf activated:§W §RState Maintenance +25%§W"
+ building_stock_exchange_desc:0 "§YIf activated:§W §RState Maintenance +50%§W"
+ 
+ building_workshop:0 "Workshop"
+ building_counting_house:0 "Counting House"
+ building_workshop_desc:0 "§YIf activated:§W §RState Maintenance +12,5%§W"
+ building_counting_house_desc:0 "§YIf activated:§W §RState Maintenance +25%§W"
+ 
+ building_barracks:0 "Barracks"
+ building_training_building_fields:0 "Training Fields"
+ building_regimental_camp:0 "Regimental Camp"
+ building_conscription_center:0 "Conscription Center"
+ building_barracks_desc:0 "§YIf activated:§W §RState Maintenance +25%§W"
+ building_training_fields_desc:0 "§YIf activated:§W §RState Maintenance +50%§W"
+ building_regimental_camp_desc:0 "§YIf activated:§W §RState Maintenance +50%§W"
+ building_conscription_center_desc:0 "§YIf activated:§W §RState Maintenance +100%§W"
+ 
+ building_wharf_desc:0 "§YIf activated:§W §RState Maintenance +75%§W"
+ building_weapons_desc:0 "§YIf activated:§W §RState Maintenance +75%§W"
+ building_textile_desc:0 "§YIf activated:§W §RState Maintenance +75%§W"
+ building_plantations_desc:0 "§YIf activated:§W §RState Maintenance +75%§W"
+ building_tradecompany_desc:0 "§YIf activated:§W §RState Maintenance +75%§W"
+ building_farm_estate_desc:0 "§YIf activated:§W §RState Maintenance +75%§W"
+ building_mills_desc:0 "§YIf activated:§W §RState Maintenance +75%§W"
+ building_furnace_desc:0 "§YIf activated:§W §RState Maintenance +75%§W"
+ building_ramparts_desc:0 "§YIf activated:§W §RState Maintenance +75%§W"
+ building_soldier_households_desc:0 "§YIf activated:§W §RState Maintenance +75%§W"
+ building_impressment_offices_desc:0 "§YIf activated:§W §RState Maintenance +75%§W"
+ 
+ 
+ SAILORSTE:0 "Light Ships"
+ NAVY2:0 "Heavy Ship"
+ FLEETBASE:0 "Fleetbase Ideas"
+ FORTRESS:0 "Fortress Ideas"

@@ -1,0 +1,25 @@
+edict_encourage_development = {
+	potential = {
+		always = yes		#we support "potential" if modders want to have lots and just show some.
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	notify_trigger = {
+		always = no
+	}
+
+	modifier = {
+		local_development_cost = -0.1
+	}
+	
+	color = {  244 184 12  }
+	
+	
+	ai_will_do = {
+		factor = 100
+	}
+	
+}

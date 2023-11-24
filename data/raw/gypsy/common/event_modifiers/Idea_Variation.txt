@@ -1,0 +1,57 @@
+####################################################
+######## Idea Variation by flogi
+####################################################
+
+grand_captain_boost = {
+	land_morale = 0.15
+}
+
+commandant_boost = {
+	discipline = 0.05
+}
+
+recruitmaster_boost = {
+	mercenary_manpower = 0.25
+}
+
+development_raised = {
+	development_cost = 0.1
+}
+
+dynastic_involvement = {
+	ae_impact = 0.1
+}
+
+dynastic_change = {
+	diplomatic_upkeep = 1
+	diplomatic_reputation = 1
+}
+
+advisor_hired = {
+	advisor_cost = 0.05
+}
+
+advisor_hired_2 = {
+	advisor_cost = 0.2
+}
+
+centralisation_dev = {
+	local_development_cost = -0.2
+}
+
+dictatorship_done = {
+	global_unrest = 1
+}
+
+imperial_ambition_done = {
+	legitimacy = 1
+}
+
+estate_nationalist_manpower_mod = {
+	local_manpower_modifier = 0.2
+}
+
+estate_janissary_manpower_mod = {
+	religion = yes
+	local_manpower_modifier = 0.1
+}

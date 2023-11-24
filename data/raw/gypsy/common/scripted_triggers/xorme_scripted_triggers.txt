@@ -1,0 +1,354 @@
+#TERRAIN
+xorme_flat_terrain_trigger = {
+	OR = {
+		has_terrain = farmlands
+		has_terrain = grasslands
+		has_terrain = steppe
+		has_terrain = drylands
+		has_terrain = savannah
+		has_terrain = coastal_desert
+		has_terrain = coastline
+	}
+}
+
+xorme_high_terrain_trigger = {
+	OR = {
+		has_terrain = mountain
+		has_terrain = hills
+		has_terrain = highlands
+	}
+}
+
+xorme_high_terrain_not_mountain_trigger = {
+	OR = {
+		has_terrain = hills
+		has_terrain = highlands
+	}
+}
+
+xorme_forest_terrain_trigger = {
+	OR = {
+		has_terrain = forest
+		has_terrain = woods
+		has_terrain = jungle
+	}
+}
+
+xorme_bad_terrain_trigger = {
+	OR = {
+		has_terrain = glacier
+		has_terrain = desert
+	}
+}
+#BUILDINGS
+xorme_has_production_buildings_trigger = {
+	xorme_has_any_manufactory_trigger = yes
+	OR = {
+		has_building = workshop
+		has_building = counting_house
+	}
+}
+
+xorme_ai_has_any_fort_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = xorme_has_any_fort_trigger
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+		}
+	}
+}
+xorme_has_any_manufactory_trigger = {
+	OR = {
+		has_building = wharf
+		has_building = weapons
+		has_building = textile
+		has_building = plantations
+		has_building = tradecompany
+		has_building = farm_estate
+		has_building = mills
+		has_building = furnace
+		has_building = ramparts
+		has_building = soldier_households
+		has_building = impressment_offices
+		has_building = state_house
+	}
+}
+#TRADE GOODS QUALITY
+xorme_lowest_quality_trade_goods_trigger = {
+	OR = {
+		trade_goods = grain
+		trade_goods = fish
+		trade_goods = naval_supplies
+		trade_goods = slaves
+		trade_goods = wine
+		trade_goods = wool
+		trade_goods = livestock
+		trade_goods = tropical_wood
+	}
+}
+
+xorme_low_quality_trade_goods_trigger = {
+	OR = {
+		trade_goods = iron
+		trade_goods = copper
+		trade_goods = chinaware
+		trade_goods = salt
+		trade_goods = sugar
+		trade_goods = coffee
+		trade_goods = tobacco
+	}
+}
+
+xorme_medium_quality_trade_goods_trigger = {
+	OR = {
+		trade_goods = fur
+		trade_goods = ivory
+		trade_goods = cloth
+		trade_goods = incense
+		trade_goods = tea
+		trade_goods = cotton
+	}
+}
+
+xorme_high_quality_trade_goods_trigger = {
+	OR = {
+		trade_goods = glass
+		trade_goods = paper
+		trade_goods = gems 
+		trade_goods = silk
+		trade_goods = dyes
+		trade_goods = cocoa
+		trade_goods = spices
+		trade_goods = cloves
+	}
+}
+#TRADE GOODS PURPOSE
+xorme_additional_manpower_goods_trigger = {
+	OR = {
+		trade_goods = grain
+		trade_goods = fish
+		trade_goods = livestock
+		trade_goods = wine
+	}
+}
+
+
+num_of_completed_idea_groups = {
+	calc_true_if = {
+		amount = $amount$
+		{
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = infrastructure_ideas
+			
+			full_idea_group = catholic0
+			full_idea_group = protestant0
+			full_idea_group = reformed0
+			full_idea_group = orthodox0
+			full_idea_group = sunni0
+			full_idea_group = tengri0
+			full_idea_group = hindu0
+			full_idea_group = confucian0
+			full_idea_group = buddhism0
+			full_idea_group = norse0
+			full_idea_group = shinto0
+			full_idea_group = cathar0
+			full_idea_group = coptic0
+			full_idea_group = romuva0
+			full_idea_group = suomi0
+			full_idea_group = jewish0
+			full_idea_group = slavic0
+			full_idea_group = hellenic0
+			full_idea_group = manichean0
+			full_idea_group = animist0
+			full_idea_group = fetishist0
+			full_idea_group = zoroastrian0
+			full_idea_group = anglican0
+			full_idea_group = nahuatl0
+			full_idea_group = mesoamerican0
+			full_idea_group = inti0
+			full_idea_group = totemist0
+			full_idea_group = shia0
+			full_idea_group = ibadi0
+			full_idea_group = hussite0
+			full_idea_group = dreamtime0
+			full_idea_group = jurisprudence0
+			full_idea_group = development0
+			full_idea_group = strongman0
+			full_idea_group = strongfem0
+			full_idea_group = monarchy0
+			full_idea_group = republic0
+			full_idea_group = theocracy0
+			full_idea_group = dictatorship0
+			full_idea_group = horde0
+			full_idea_group = state_administration0
+			full_idea_group = centralisation0
+			full_idea_group = decentralisation0
+			
+			full_idea_group = spy_ideas
+			#full_idea_group = diplomatic_ideas
+			full_idea_group = trade_ideas
+			full_idea_group = exploration_ideas
+			full_idea_group = maritime_ideas
+			full_idea_group = influence_ideas
+			full_idea_group = court_ideas
+			
+			full_idea_group = heavy_ship0
+			full_idea_group = galley0
+			full_idea_group = light_ship0
+			full_idea_group = colonial_empire0
+			full_idea_group = assimilation0
+			full_idea_group = society0
+			full_idea_group = propaganda0
+			full_idea_group = fleet_base0
+			full_idea_group = nationalism0
+			full_idea_group = imperial_ambition0
+			full_idea_group = imperialism0
+			full_idea_group = dynasty0
+			
+			#full_idea_group = aristocracy_ideas
+			full_idea_group = offensive0
+			full_idea_group = defensive0
+			full_idea_group = defensive0
+			full_idea_group = quantity0
+			#full_idea_group = naval_ideas
+			#full_idea_group = theocracy_gov_ideas
+			#full_idea_group = indigenous_ideas
+			#full_idea_group = horde_gov_ideas
+			#full_idea_group = plutocracy_ideas
+			#full_idea_group = mercenary_ideas
+			
+			full_idea_group = general_staff0
+			full_idea_group = standing_army0
+			full_idea_group = conscription0
+			full_idea_group = mercenary0
+			full_idea_group = weapon_quality0
+			full_idea_group = fortress0
+			full_idea_group = war_production0
+			full_idea_group = tactical0
+			full_idea_group = militarism0
+			full_idea_group = shock0
+			full_idea_group = fire0
+		}
+	}
+}
+
+has_completed_religious_ideas_group = {
+	custom_trigger_tooltip = {
+		tooltip = has_completed_one_religious_idea_group
+		OR = {
+			full_idea_group = religious_ideas
+			full_idea_group = catholic0
+			full_idea_group = protestant0
+			full_idea_group = reformed0
+			full_idea_group = orthodox0
+			full_idea_group = sunni0
+			full_idea_group = tengri0
+			full_idea_group = hindu0
+			full_idea_group = confucian0
+			full_idea_group = buddhism0
+			full_idea_group = norse0
+			full_idea_group = shinto0
+			full_idea_group = cathar0
+			full_idea_group = coptic0
+			full_idea_group = romuva0
+			full_idea_group = suomi0
+			full_idea_group = jewish0
+			full_idea_group = slavic0
+			full_idea_group = hellenic0
+			full_idea_group = manichean0
+			full_idea_group = animist0
+			full_idea_group = fetishist0
+			full_idea_group = zoroastrian0
+			full_idea_group = anglican0
+			full_idea_group = nahuatl0
+			full_idea_group = mesoamerican0
+			full_idea_group = inti0
+			full_idea_group = totemist0
+			full_idea_group = shia0
+			full_idea_group = ibadi0
+			full_idea_group = hussite0
+			full_idea_group = dreamtime0
+		}
+	}
+}
+
+has_selected_religious_ideas_group = {
+	OR = {
+		has_idea_group = religious_ideas
+		has_idea_group = catholic0
+		has_idea_group = protestant0
+		has_idea_group = reformed0
+		has_idea_group = orthodox0
+		has_idea_group = sunni0
+		has_idea_group = tengri0
+		has_idea_group = hindu0
+		has_idea_group = confucian0
+		has_idea_group = buddhism0
+		has_idea_group = norse0
+		has_idea_group = shinto0
+		has_idea_group = cathar0
+		has_idea_group = coptic0
+		has_idea_group = romuva0
+		has_idea_group = suomi0
+		has_idea_group = jewish0
+		has_idea_group = slavic0
+		has_idea_group = hellenic0
+		has_idea_group = manichean0
+		has_idea_group = animist0
+		has_idea_group = fetishist0
+		has_idea_group = zoroastrian0
+		has_idea_group = anglican0
+		has_idea_group = nahuatl0
+		has_idea_group = mesoamerican0
+		has_idea_group = inti0
+		has_idea_group = totemist0
+		has_idea_group = shia0
+		has_idea_group = ibadi0
+		has_idea_group = hussite0
+		has_idea_group = dreamtime0
+	}
+}
+
+has_completed_government_ideas_group = {
+	custom_trigger_tooltip = {
+		tooltip = has_completed_one_government_idea_group
+		OR = {
+			full_idea_group = monarchy0
+			full_idea_group = republic0
+			full_idea_group = theocracy0
+			full_idea_group = dictatorship0
+			full_idea_group = horde0
+		}
+	}
+}
+
+has_selected_government_ideas_group = {
+	OR = {
+		has_idea_group = monarchy0
+		has_idea_group = republic0
+		has_idea_group = theocracy0
+		has_idea_group = dictatorship0
+		has_idea_group = horde0
+	}
+}
+
+gypsy_country_allows_banners = {
+	custom_trigger_tooltip = {
+		tooltip = gypsy_country_allows_banners_tootltip
+		OR = {
+			has_country_modifier = mng_banner_recruitment_modifier
+			primary_culture = altaic_new
+			primary_culture = manchu_new
+			primary_culture = manchu
+			has_government_attribute = allow_banners
+		}
+	}
+}

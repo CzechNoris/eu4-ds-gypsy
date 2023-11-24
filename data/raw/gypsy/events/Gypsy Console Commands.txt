@@ -1,0 +1,70 @@
+namespace = gypsy_console
+
+country_event = {
+	id = gypsy_console.1
+	title = gypsy_console.1.name
+	desc = gypsy_console.1.desc
+	picture = SMUGGLERS_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		always = no
+	}
+
+	option = {
+		name = "gypsy_console.1.a"
+		custom_tooltip = gypsy_console_command_integrate_jap
+		hidden_effect = {
+			japan_region = {
+				add_core = ROOT
+				cede_province = ROOT
+			}
+		}
+	}
+	option = {
+		name = "gypsy_console.1.b"
+		custom_tooltip = gypsy_console_command_integrate_mongol
+		hidden_effect = {
+			add_stability = 6
+			add_prestige = 200
+			china_superregion = {
+				add_core = ROOT
+				cede_province = ROOT
+			}
+			tartary_superregion = {
+				add_core = ROOT
+				cede_province = ROOT
+			}
+			manchuria_region = {
+				add_core = ROOT
+				cede_province = ROOT
+			}
+			khorasan_region = {
+				add_core = ROOT
+				cede_province = ROOT
+			}
+			persia_region = {
+				add_core = ROOT
+				cede_province = ROOT
+			}
+			crimea_region = {
+				add_core = ROOT
+				cede_province = ROOT
+			}
+			ural_region = {
+				add_core = ROOT
+				cede_province = ROOT
+			}
+			russia_region = {
+				add_core = ROOT
+				cede_province = ROOT
+			}
+			ruthenia_region = {
+				add_core = ROOT
+				cede_province = ROOT
+			}
+		}
+	}
+}
