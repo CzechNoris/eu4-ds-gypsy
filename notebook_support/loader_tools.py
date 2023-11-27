@@ -37,11 +37,10 @@ def load_policies(file_paths: list[str]) -> list[Policy]:
             for key in value.keys():
                 if key not in POLICY_PROTECTED_KEYS:
                     effect[key] = abs(value[key])
-            policies.append(
-                Policy(
+            policies[name] = Policy(
                     name = name, 
-                    type = value['monarch_power'], 
+                    type = monarch_power, 
                     req = (req0, req1),
                     effect = effect
-            ))
+                )
     return policies

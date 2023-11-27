@@ -1,4 +1,16 @@
 # python ./scripts/gen_builds.py -w data/external/weights/imperial_spacemarines.yaml --log-level INFO --exp-from 4 --empire -p 35
+highlights:
+    - development_cost
+    - development_cost_in_primary_culture
+    - discipline
+    - fire_damage
+    - fire_damage_received
+    - shock_damage
+    - shock_damage_received
+    - land_morale
+    - infantry_power
+    - cavalry_power
+    - artillery_power
 
 extra:
     nationalism0: 50                            # Estate interaction - main +1 ADM and +1 DIP

@@ -8,7 +8,7 @@ import sys
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 
 from src.model import *
-from src.build_tools import *
+from build_tools import *
 from src.loader_tools import *
 
 from scripts.support_data import ADMIN_IDEAS, ADMIN_GOV_IDEAS, ADMIN_RELIGION_IDEAS, ADMIN_NOT_COMPATIBLE, DIPLO_IDEAS, DIPLO_NOT_COMPATIBLE, MIL_IDEAS, MIL_NOT_COMPATIBLE
