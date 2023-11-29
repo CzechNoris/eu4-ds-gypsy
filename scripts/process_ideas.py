@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import os
 import yaml
 import ClauseWizard
@@ -59,6 +61,18 @@ for file_path in file_paths:
         else:
             return d
     obj = dictify(obj)
+    
+    # Remove ideas with Trigger-always = no
+
+    ideas_to_remove = []
+    for k, v in obj.items():
+        if 'trigger' in v:
+            if 'always' in v['trigger']:
+                if v['trigger']['always'] == False:
+                    ideas_to_remove.append(k)
+    logging.info('Ignored ideas (trigger always no):', ideas_to_remove)
+    for k in ideas_to_remove:
+        del obj[k]
 
     # Remove keys: ai_will_do, trigger, important, free
 

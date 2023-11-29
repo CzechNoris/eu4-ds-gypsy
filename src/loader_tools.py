@@ -25,8 +25,8 @@ def load_ideas(file_paths: list[str]) -> dict[str, Idea]:
 
 POLICY_PROTECTED_KEYS = ['monarch_power', 'req']
 
-def load_policies(file_paths: list[str]) -> list[Policy]:
-    policies = []
+def load_policies(file_paths: list[str]) -> dict[str, Policy]:
+    policies = {}
     for path in file_paths:
         with open(path, 'r') as f:
             policies_dict = yaml.load(f, Loader=yaml.FullLoader)

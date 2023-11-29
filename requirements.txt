@@ -1,5 +1,8 @@
 pyyaml
 numpy
+pandas
 ClauseWizard
 matplotlib
 seaborn
+tqdm
+openpyxl

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import os
 import yaml
 import copy
@@ -45,7 +47,7 @@ parser.add_argument('-e', '--empire',
 parser.add_argument('-p', '--potential-filtering', type=int, 
                     help='Filter out ideas with the lowest potential. Insert percentage (0-100).')
 parser.add_argument('--exp-from', type=int,
-                    default=5, help='Combinatorics counts grow rapidly, therefore from some idea count, we need to expand only on exp_top and exp_rand builds.')
+                    default=4, help='Combinatorics counts grow rapidly, therefore from some idea count, we need to expand only on exp_top and exp_rand builds.')
 parser.add_argument('--exp-top', type=int,
                     default=4000, help='When expanding, take top exp_top builds.')
 parser.add_argument('--exp-rand', type=int,
