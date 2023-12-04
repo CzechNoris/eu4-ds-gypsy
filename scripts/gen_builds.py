@@ -5,13 +5,15 @@ import yaml
 import copy
 import random
 import numpy as np
-import bisect 
+import bisect
 from collections import defaultdict, Counter
 
 import argparse
+import datetime
 
 import logging
 from tqdm import tqdm
+
 
 def setup_logging(log_level):
     numeric_level = getattr(logging, log_level.upper(), None)
@@ -34,17 +36,17 @@ parser.add_argument('--log-level', dest='log_level', default='INFO',
                     help='Set the logging level (default: warning)')
 parser.add_argument('-i', '--ideas', type=int, default=10,
                     help='Total number of ideas to use.')
-parser.add_argument('-w', '--weight', type=str, required=True,
-                    help='Path to the file with weights.')
+parser.add_argument('-b', '--build_config', type=str, required=True,
+                    help='Path to the file with build config.')
 parser.add_argument('-o', '--output', type=str,
-                    default='output', help='Path to output folder.')
+                    default='output/builds', help='Path to output folder.')
 parser.add_argument('-r', '--religion', type=str, default='catholic0',
                     help='Name of religion idea set.')
 parser.add_argument('-g', '--gov', type=str, default='monarchy0',
                     help='Name of government idea set.')
 parser.add_argument('-e', '--empire',
                     action="store_true", help='Use imperialism0 instead of imperial_ambition0.')
-parser.add_argument('-p', '--potential-filtering', type=int, 
+parser.add_argument('-p', '--potential-filtering', type=int,
                     help='Filter out ideas with the lowest potential. Insert percentage (0-100).')
 parser.add_argument('--exp-from', type=int,
                     default=4, help='Combinatorics counts grow rapidly, therefore from some idea count, we need to expand only on exp_top and exp_rand builds.')
@@ -57,6 +59,11 @@ parser.add_argument('-f', '--force', action='store_true',
 args = parser.parse_args()
 setup_logging(args.log_level)
 
+########################################################################
+### Stats ##############################################################
+########################################################################
+
+start_time = datetime.datetime.now()
 
 ########################################################################
 ### Check arguments ####################################################
@@ -67,39 +74,67 @@ if args.ideas < 3 or args.ideas > 15:
     exit()
 
 ########################################################################
-### Load weights #######################################################
+### Load build config ##################################################
 ########################################################################
 
-weight_file_name = os.path.basename(args.weight)
-weight_file_name = os.path.splitext(weight_file_name)[0]
+build_config_name = os.path.basename(args.build_config)
+build_config_name = os.path.splitext(build_config_name)[0]
 
-OUTPUT_FOLDER_PATH = os.path.join(args.output, weight_file_name)
+OUTPUT_FOLDER_PATH = os.path.join(args.output, build_config_name)
 if not os.path.exists(OUTPUT_FOLDER_PATH):
     os.makedirs(OUTPUT_FOLDER_PATH)
 
-with open(args.weight, 'r') as f:
-    weights = yaml.safe_load(f)
-COUNTRY_WEIGHTS = weights['country']
-MILITARY_WEIGHTS = weights['military']
-EXTRA_WEIGHTS = weights['extra']
-HIGHLIGHTS = weights['highlights']
+with open(args.build_config, 'r') as f:
+    build_config = yaml.safe_load(f)
 
+HIGHLIGHTS = build_config['highlights']
+
+build_weights = build_config['weights']
+COUNTRY_WEIGHTS = build_weights['country']
+MILITARY_WEIGHTS = build_weights['military']
+IDEA_WEIGHTS = build_weights['ideas']
+
+########################################################################
+### Defaults ###########################################################
+########################################################################
+
+build_defaults = build_config.get('defaults')
+
+if not args.religion:
+    if build_defaults and 'religion' in build_defaults:
+        args.religion = build_defaults['religion']
+    else:
+        args.religion = 'catholic0'
+
+if not args.gov:
+    if build_defaults and 'government' in build_defaults:
+        args.gov = build_defaults['government']
+    else:
+        args.gov = 'monarchy0'
+
+if not args.empire:
+    if build_defaults and 'empire' in build_defaults:
+        args.empire = build_defaults['empire']
+    else:
+        args.empire = True
 
 ########################################################################
 ### Model ##############################################################
 ########################################################################
 
+
 class Idea():
-    def __init__(self, name:str, type: str, effect: dict):
+    def __init__(self, name: str, type: str, effect: dict):
         self.name = name
         self.type = type
         self.effect = effect
 
     def __repr__(self):
         return f'Idea({self.name}, {self.type}, {self.effect})'
-    
+
+
 class Policy():
-    def __init__(self, name:str, type: str, req: tuple, effect: dict):
+    def __init__(self, name: str, type: str, req: tuple, effect: dict):
         self.name = name
         self.type = type.upper()
         self.req = req
@@ -108,41 +143,57 @@ class Policy():
 
     def __repr__(self):
         return f"Policy({self.name}, {self.type}, {self.req}, {self.effect})"
-    
+
+
 class Build():
     POLICY_TYPE_INDEX = {'ADM': 0, 'DIP': 1, 'MIL': 2}
+
     def __init__(self,
-            idea_set: set[str] = None,
-            idea_counts: [int, int, int] = None,
-            cum_idea_score: float = 0,
-            ideas_effect: Counter = None,
-            policy_set: set[str] = None,
-            max_policies: tuple[int, int, int] = None,
-            war_policies: tuple[list[tuple[float, str]], list[tuple[float, str]], list[tuple[float, str]]] = None,
-            dev_policies: tuple[list[tuple[float, str]], list[tuple[float, str]], list[tuple[float, str]]] = None,
-            adm_tech_policies: tuple[list[tuple[float, str]], list[tuple[float, str]], list[tuple[float, str]]] = None,
-            dip_tech_policies: tuple[list[tuple[float, str]], list[tuple[float, str]], list[tuple[float, str]]] = None,
-            mil_tech_policies: tuple[list[tuple[float, str]], list[tuple[float, str]], list[tuple[float, str]]] = None,
-            idea_policies: tuple[list[tuple[float, str]], list[tuple[float, str]], list[tuple[float, str]]] = None,
-            total_score: float = 0,
-        ):
+                 idea_set: set[str] = None,
+                 idea_counts: [int, int, int] = None,
+                 cum_idea_score: float = 0,
+                 ideas_effect: Counter = None,
+                 policy_set: set[str] = None,
+                 max_policies: tuple[int, int, int] = None,
+                 war_policies: tuple[list[tuple[float, str]],
+                                     list[tuple[float, str]], list[tuple[float, str]]] = None,
+                 dev_policies: tuple[list[tuple[float, str]],
+                                     list[tuple[float, str]], list[tuple[float, str]]] = None,
+                 adm_tech_policies: tuple[list[tuple[float, str]],
+                                          list[tuple[float, str]], list[tuple[float, str]]] = None,
+                 dip_tech_policies: tuple[list[tuple[float, str]],
+                                          list[tuple[float, str]], list[tuple[float, str]]] = None,
+                 mil_tech_policies: tuple[list[tuple[float, str]],
+                                          list[tuple[float, str]], list[tuple[float, str]]] = None,
+                 idea_policies: tuple[list[tuple[float, str]],
+                                      list[tuple[float, str]], list[tuple[float, str]]] = None,
+                 total_score: float = 0,
+                 ):
         self.idea_set = idea_set if idea_set is not None else set()
-        self.idea_counts = idea_counts if idea_counts is not None else (0, 0, 0)
+        self.idea_counts = idea_counts if idea_counts is not None else (
+            0, 0, 0)
         self.cum_idea_score = cum_idea_score if cum_idea_score is not None else 0
         self.ideas_effect = ideas_effect if ideas_effect is not None else Counter()
         self.policy_set = policy_set if policy_set is not None else set()
-        self.max_policies = max_policies if max_policies is not None else (4, 4, 4)
-        self.war_policies = war_policies if war_policies is not None else ([], [], [])
-        self.dev_policies = dev_policies if dev_policies is not None else ([], [], [])
-        self.adm_tech_policies = adm_tech_policies if adm_tech_policies is not None else ([], [], [])
-        self.dip_tech_policies = dip_tech_policies if dip_tech_policies is not None else ([], [], [])
-        self.mil_tech_policies = mil_tech_policies if mil_tech_policies is not None else ([], [], [])
-        self.idea_policies = idea_policies if idea_policies is not None else ([], [], [])
+        self.max_policies = max_policies if max_policies is not None else (
+            4, 4, 4)
+        self.war_policies = war_policies if war_policies is not None else ([], [
+        ], [])
+        self.dev_policies = dev_policies if dev_policies is not None else ([], [
+        ], [])
+        self.adm_tech_policies = adm_tech_policies if adm_tech_policies is not None else ([
+        ], [], [])
+        self.dip_tech_policies = dip_tech_policies if dip_tech_policies is not None else ([
+        ], [], [])
+        self.mil_tech_policies = mil_tech_policies if mil_tech_policies is not None else ([
+        ], [], [])
+        self.idea_policies = idea_policies if idea_policies is not None else ([], [
+        ], [])
         self.total_score = total_score if total_score is not None else 0
 
     def __repr__(self):
         return f"Build( {self.total_score:.2f} - ideas: {self.idea_set}"
-    
+
     def print(self):
         print(f"Build( {self.total_score:.2f} - ideas: {self.idea_set}")
         print(f"    - Idea counts: {self.idea_counts}")
@@ -164,6 +215,8 @@ class Build():
 ########################################################################
 
 IDEA_PROTECTED_KEYS = ['category']
+
+
 def load_ideas(file_paths: list[str]) -> dict[str, Idea]:
     ideas = {}
     for path in file_paths:
@@ -182,6 +235,8 @@ def load_ideas(file_paths: list[str]) -> dict[str, Idea]:
 
 
 POLICY_PROTECTED_KEYS = ['monarch_power', 'req']
+
+
 def load_policies(file_paths: list[str]) -> list[Policy]:
     policies = {}
     for path in file_paths:
@@ -195,12 +250,13 @@ def load_policies(file_paths: list[str]) -> list[Policy]:
                 if key not in POLICY_PROTECTED_KEYS:
                     effect[key] = abs(value[key])
             policies[name] = Policy(
-                    name = name, 
-                    type = monarch_power, 
-                    req = (req0, req1),
-                    effect = effect
-                )
+                name=name,
+                type=monarch_power,
+                req=(req0, req1),
+                effect=effect
+            )
     return policies
+
 
 IDEAS = load_ideas([
     'data/processed/gypsy-1-36-1/00_basic_ideas.yaml',
@@ -259,7 +315,8 @@ for idea_name in ALL_IDEA_NAMES:
     if idea_name not in IDEAS:
         logging.critical(f'Idea {idea_name} not found!')
         exit()
-        
+
+
 def get_score(effects: dict, weights: list[dict]):
     score = 0
     for weight in weights:
@@ -268,33 +325,40 @@ def get_score(effects: dict, weights: list[dict]):
                 score += value * effects[key]
     return score
 
+
 def get_development_effect(effects):
     return effects['development_cost'] + effects['development_cost_in_primary_culture']
+
 
 def get_adm_tech_effect(effects):
     return effects['adm_tech_cost_modifier'] + effects['technology_cost']
 
+
 def get_dip_tech_effect(effects):
     return effects['dip_tech_cost_modifier'] + effects['technology_cost']
+
 
 def get_mil_tech_effect(effects):
     return effects['mil_tech_cost_modifier'] + effects['technology_cost']
 
+
 def get_idea_effect(effects):
     return effects['idea_cost']
-        
+
 ########################################################################
 ### Pre-compute ########################################################
 ########################################################################
+
 
 logging.info('Pre-computing...')
 
 IDEA_SCORE = {}
 for idea_name in ALL_IDEA_NAMES:
     idea = IDEAS[idea_name]
-    score = get_score(idea.effect, [COUNTRY_WEIGHTS, MILITARY_WEIGHTS]) + EXTRA_WEIGHTS.get(idea_name, 0)
+    score = get_score(idea.effect, [
+                      COUNTRY_WEIGHTS, MILITARY_WEIGHTS]) + IDEA_WEIGHTS.get(idea_name, 0)
     IDEA_SCORE[idea_name] = score
-    
+
 IDEA_POLICY_POTENTIAL = defaultdict(list)
 for policy in POLICIES.values():
     req0, req1 = policy.req
@@ -302,12 +366,12 @@ for policy in POLICIES.values():
         IDEA_POLICY_POTENTIAL[req0_1].append(policy)
     for req1_1 in req1:
         IDEA_POLICY_POTENTIAL[req1_1].append(policy)
-        
+
 IDEA_NOT_COMPATIBLE = defaultdict(list)
 for idea_1, idea_2 in ADM_NOT_COMPATIBLE + DIP_NOT_COMPATIBLE + MIL_NOT_COMPATIBLE:
     IDEA_NOT_COMPATIBLE[idea_1].append(idea_2)
     IDEA_NOT_COMPATIBLE[idea_2].append(idea_1)
-    
+
 POLICY_LIB = {}
 for policy in POLICIES.values():
     req0, req1 = policy.req
@@ -315,17 +379,22 @@ for policy in POLICIES.values():
         for req1_1 in req1:
             policy_id = tuple(sorted([req0_1, req1_1]))
             POLICY_LIB[policy_id] = policy
-            
+
 POLICY_WAR_SCORE = {}
 for policy in POLICIES.values():
     score = get_score(policy.effect, [MILITARY_WEIGHTS])
     POLICY_WAR_SCORE[policy.name] = score
-    
-DEV_POLICY_SET = set([policy.name for policy in POLICIES.values() if policy.effect.get('development_cost', 0) != 0 or policy.effect.get('development_cost_in_primary_culture', 0) != 0])
-ADM_TECH_POLICY_SET = set([policy.name for policy in POLICIES.values() if policy.effect.get('adm_tech_cost_modifier', 0) != 0 or policy.effect.get('technology_cost', 0) != 0])
-DIP_TECH_POLICY_SET = set([policy.name for policy in POLICIES.values() if policy.effect.get('dip_tech_cost_modifier', 0) != 0 or policy.effect.get('technology_cost', 0) != 0])
-MIL_TECH_POLICY_SET = set([policy.name for policy in POLICIES.values() if policy.effect.get('mil_tech_cost_modifier', 0) != 0 or policy.effect.get('technology_cost', 0) != 0])
-IDEA_POLICY_SET = set([policy.name for policy in POLICIES.values() if policy.effect.get('idea_cost', 0) != 0])  
+
+DEV_POLICY_SET = set([policy.name for policy in POLICIES.values() if policy.effect.get(
+    'development_cost', 0) != 0 or policy.effect.get('development_cost_in_primary_culture', 0) != 0])
+ADM_TECH_POLICY_SET = set([policy.name for policy in POLICIES.values() if policy.effect.get(
+    'adm_tech_cost_modifier', 0) != 0 or policy.effect.get('technology_cost', 0) != 0])
+DIP_TECH_POLICY_SET = set([policy.name for policy in POLICIES.values() if policy.effect.get(
+    'dip_tech_cost_modifier', 0) != 0 or policy.effect.get('technology_cost', 0) != 0])
+MIL_TECH_POLICY_SET = set([policy.name for policy in POLICIES.values() if policy.effect.get(
+    'mil_tech_cost_modifier', 0) != 0 or policy.effect.get('technology_cost', 0) != 0])
+IDEA_POLICY_SET = set([policy.name for policy in POLICIES.values(
+) if policy.effect.get('idea_cost', 0) != 0])
 
 
 ########################################################################
@@ -334,17 +403,20 @@ IDEA_POLICY_SET = set([policy.name for policy in POLICIES.values() if policy.eff
 
 if args.force:
     logging.info('Consider not forcing and using potential filtering!')
+    potential_filtering = 0
 else:
     idea_potential_score = {}
     for idea_name in ALL_IDEA_NAMES:
         idea = IDEAS[idea_name]
         idea_potential_score[idea_name] = get_score(
-            idea.effect, [COUNTRY_WEIGHTS, MILITARY_WEIGHTS]) + EXTRA_WEIGHTS.get(idea_name, 0)
+            idea.effect, [COUNTRY_WEIGHTS, MILITARY_WEIGHTS]) + IDEA_WEIGHTS.get(idea_name, 0)
     idea_policies_potential_score = Counter()
     for idea_name in ALL_IDEA_NAMES:
-        available_policies = [policy for policy in POLICIES.values() if idea_name in policy.req[0] or idea_name in policy.req[1]]
+        available_policies = [policy for policy in POLICIES.values(
+        ) if idea_name in policy.req[0] or idea_name in policy.req[1]]
         for policy in available_policies:
-            idea_policies_potential_score[idea_name] += get_score(policy.effect, [COUNTRY_WEIGHTS, MILITARY_WEIGHTS])
+            idea_policies_potential_score[idea_name] += get_score(
+                policy.effect, [COUNTRY_WEIGHTS, MILITARY_WEIGHTS])
     combined_potential_score = {}
     for idea_name in ALL_IDEA_NAMES:
         combined_potential_score[idea_name] = idea_potential_score[idea_name] + \
@@ -357,12 +429,16 @@ else:
                  f' std: {combined_potential_scores.std():.2f}, \n'
                  f' min: {combined_potential_scores.min():.2f}, \n'
                  f' max: {combined_potential_scores.max():.2f}, \n'
-                 f' median: {np.median(combined_potential_scores):.2f}, \n'
+                 f' 10% percentile: {np.quantile(combined_potential_scores, 0.1):.2f}, \n'
+                 f' 25% percentile: {np.quantile(combined_potential_scores, 0.25):.2f}, \n'
+                 f' 40% percentile: {np.quantile(combined_potential_scores, 0.4):.2f}, \n'
+                 f' 50% percentile: {np.quantile(combined_potential_scores, 0.5):.2f}, \n'
+                 f' 60% percentile: {np.quantile(combined_potential_scores, 0.6):.2f}, \n'
                  f' 75% percentile: {np.quantile(combined_potential_scores, 0.75):.2f}, \n'
                  f' 90% percentile: {np.quantile(combined_potential_scores, 0.9):.2f}')
 
     logging.debug(f'Idea potential scores: {combined_potential_score}')
-    
+
     if args.potential_filtering is None:
         potential_filtering = input(
             'Enter potential threshold in percent (0-100): [25]')
@@ -373,160 +449,210 @@ else:
     else:
         potential_filtering = args.potential_filtering
     logging.info(
-            f'Potential filtering: {potential_filtering}% of least potential ideas will be filtered out.')
-    
+        f'Potential filtering: {potential_filtering}% of least potential ideas will be filtered out.')
+
     # Filter out ideas with the lowest potential
     potential_threshold = np.quantile(
         combined_potential_scores, potential_filtering / 100)
     ADM_IDEA_SCOPE = [
-        idea_name for idea_name in ADM_IDEA_SCOPE if combined_potential_score[idea_name] >= potential_threshold]
+        idea_name for idea_name in ADM_IDEA_SCOPE
+        if combined_potential_score[idea_name] >= potential_threshold
+    ]
     DIP_IDEA_SCOPE = [
-        idea_name for idea_name in DIP_IDEA_SCOPE if combined_potential_score[idea_name] >= potential_threshold]
+        idea_name for idea_name in DIP_IDEA_SCOPE
+        if combined_potential_score[idea_name] >= potential_threshold
+    ]
     MIL_IDEA_SCOPE = [
-        idea_name for idea_name in MIL_IDEA_SCOPE if combined_potential_score[idea_name] >= potential_threshold]
-    ideas_to_be_filtered_out = [ 
-        idea_name for idea_name in ALL_IDEA_NAMES if combined_potential_score[idea_name] < potential_threshold]
+        idea_name for idea_name in MIL_IDEA_SCOPE
+        if combined_potential_score[idea_name] >= potential_threshold
+    ]
+    ideas_to_be_filtered_out = [
+        idea_name for idea_name in ALL_IDEA_NAMES
+        if combined_potential_score[idea_name] < potential_threshold
+    ]
     logging.debug(f'Ideas to be filtered out: {ideas_to_be_filtered_out}')
 
 ########################################################################
 ### Build tools ########################################################
 ########################################################################
 
+
 def get_total_effect(build: Build):
     total_effect = Counter()
     total_effect.update(build.ideas_effect)
-    
-    adm_max_policies = build.max_policies[0] + build.ideas_effect['possible_policy'] + build.ideas_effect['possible_adm_policy']
-    dip_max_policies = build.max_policies[1] + build.ideas_effect['possible_policy'] + build.ideas_effect['possible_dip_policy']
-    mil_max_policies = build.max_policies[2] + build.ideas_effect['possible_policy'] + build.ideas_effect['possible_mil_policy']
-    
-    for policy in build.war_policies[0][:adm_max_policies]:
+
+    adm_max_policies = build.max_policies[0] + \
+        build.ideas_effect['possible_policy'] + \
+        build.ideas_effect['possible_adm_policy']
+    dip_max_policies = build.max_policies[1] + \
+        build.ideas_effect['possible_policy'] + \
+        build.ideas_effect['possible_dip_policy']
+    mil_max_policies = build.max_policies[2] + \
+        build.ideas_effect['possible_policy'] + \
+        build.ideas_effect['possible_mil_policy']
+
+    active_policies = []
+    # War policies
+    active_policies.extend(build.war_policies[0][:adm_max_policies])
+    active_policies.extend(build.war_policies[1][:dip_max_policies])
+    active_policies.extend(build.war_policies[2][:mil_max_policies])
+    # Dev policies
+    active_policies.extend(build.dev_policies[0][:adm_max_policies])
+    active_policies.extend(build.dev_policies[1][:dip_max_policies])
+    active_policies.extend(build.dev_policies[2][:mil_max_policies])
+    # Adm tech policies
+    active_policies.extend(build.adm_tech_policies[0][:adm_max_policies])
+    active_policies.extend(build.adm_tech_policies[1][:dip_max_policies])
+    active_policies.extend(build.adm_tech_policies[2][:mil_max_policies])
+    # Dip tech policies
+    active_policies.extend(build.dip_tech_policies[0][:adm_max_policies])
+    active_policies.extend(build.dip_tech_policies[1][:dip_max_policies])
+    active_policies.extend(build.dip_tech_policies[2][:mil_max_policies])
+    # Mil tech policies
+    active_policies.extend(build.mil_tech_policies[0][:adm_max_policies])
+    active_policies.extend(build.mil_tech_policies[1][:dip_max_policies])
+    active_policies.extend(build.mil_tech_policies[2][:mil_max_policies])
+    # Idea policies
+    active_policies.extend(build.idea_policies[0][:adm_max_policies])
+    active_policies.extend(build.idea_policies[1][:dip_max_policies])
+    active_policies.extend(build.idea_policies[2][:mil_max_policies])
+
+    for policy in active_policies:
         total_effect.update(POLICIES[policy[1]].effect)
-    for policy in build.war_policies[1][:dip_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    for policy in build.war_policies[2][:mil_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    
-    for policy in build.dev_policies[0][:adm_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    for policy in build.dev_policies[1][:dip_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    for policy in build.dev_policies[2][:mil_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    
-    for policy in build.adm_tech_policies[0][:adm_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    for policy in build.adm_tech_policies[1][:dip_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    for policy in build.adm_tech_policies[2][:mil_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-        
-    for policy in build.dip_tech_policies[0][:adm_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    for policy in build.dip_tech_policies[1][:dip_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    for policy in build.dip_tech_policies[2][:mil_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-        
-    for policy in build.mil_tech_policies[0][:adm_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    for policy in build.mil_tech_policies[1][:dip_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    for policy in build.mil_tech_policies[2][:mil_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-        
-    for policy in build.idea_policies[0][:adm_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    for policy in build.idea_policies[1][:dip_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    for policy in build.idea_policies[2][:mil_max_policies]:
-        total_effect.update(POLICIES[policy[1]].effect)
-    
+
     return total_effect
+
 
 def expanded_build(build: Build, idea_name: str,) -> Build:
     idea = IDEAS[idea_name]
-    
+
     # Update Idea counts
-    
+
     idea_counts = (
         build.idea_counts[0] + (idea_name in ADM_IDEA_SCOPE),
         build.idea_counts[1] + (idea_name in DIP_IDEA_SCOPE),
         build.idea_counts[2] + (idea_name in MIL_IDEA_SCOPE),
     )
-        
+
     # Expand build with new idea
-    
+
     idea_set = build.idea_set.copy()
     idea_set.add(idea_name)
-    
+
     cum_idea_score = build.cum_idea_score + IDEA_SCORE[idea_name]
-    
+
     ideas_effect = build.ideas_effect.copy()
     ideas_effect.update(idea.effect)
-    
+
     # Check for new available policies and place them in order of importance
-    
-    policy_set = build.policy_set.copy()
-    war_policies = copy.deepcopy(build.war_policies)
-    dev_policies = copy.deepcopy(build.dev_policies)
-    adm_tech_policies = copy.deepcopy(build.adm_tech_policies)
-    dip_tech_policies = copy.deepcopy(build.dip_tech_policies)
-    mil_tech_policies = copy.deepcopy(build.mil_tech_policies)
-    idea_policies = copy.deepcopy(build.idea_policies)
-    
-    for build_idea in build.idea_set:
-        policy_id = tuple(sorted([build_idea, idea_name]))
-        if (policy := POLICY_LIB.get(policy_id)) and policy.name not in policy_set:
-            policy_set.add(policy.name)  
-            policy_war_score = POLICY_WAR_SCORE[policy.name]
-            policy_dev_effect = get_development_effect(policy.effect)
-            policy_adm_tech_effect = get_adm_tech_effect(policy.effect)
-            policy_dip_tech_effect = get_dip_tech_effect(policy.effect)
-            policy_mil_tech_effect = get_mil_tech_effect(policy.effect)
-            policy_idea_effect = get_idea_effect(policy.effect)
-            if policy_index := Build.POLICY_TYPE_INDEX.get(policy.type):
-                if policy_war_score > 0:
-                    bisect.insort(war_policies[policy_index], (policy_war_score, policy.name), key = lambda x: -1 * x[0])
-                if policy_dev_effect > 0:
-                    bisect.insort(dev_policies[policy_index], (policy_dev_effect, policy.name), key = lambda x: -1 * x[0])
-                if policy_adm_tech_effect > 0:
-                    bisect.insort(adm_tech_policies[policy_index], (policy_adm_tech_effect, policy.name), key = lambda x: -1 * x[0])
-                if policy_dip_tech_effect > 0:
-                    bisect.insort(dip_tech_policies[policy_index], (policy_dip_tech_effect, policy.name), key = lambda x: -1 * x[0])
-                if policy_mil_tech_effect > 0:
-                    bisect.insort(mil_tech_policies[policy_index], (policy_mil_tech_effect, policy.name), key = lambda x: -1 * x[0])
-                if policy_idea_effect > 0:
-                    bisect.insort(idea_policies[policy_index], (policy_idea_effect, policy.name), key = lambda x: -1 * x[0])                
-                    
+
+    def update_policies(build: Build):
+        policy_set = build.policy_set.copy()
+        war_policies = copy.deepcopy(build.war_policies)
+        dev_policies = copy.deepcopy(build.dev_policies)
+        adm_tech_policies = copy.deepcopy(build.adm_tech_policies)
+        dip_tech_policies = copy.deepcopy(build.dip_tech_policies)
+        mil_tech_policies = copy.deepcopy(build.mil_tech_policies)
+        idea_policies = copy.deepcopy(build.idea_policies)
+
+        for build_idea in build.idea_set:
+            policy_id = tuple(sorted([build_idea, idea_name]))
+            if (policy := POLICY_LIB.get(policy_id)) and policy.name not in policy_set:
+                policy_set.add(policy.name)
+                policy_war_score = POLICY_WAR_SCORE[policy.name]
+                policy_dev_effect = get_development_effect(policy.effect)
+                policy_adm_tech_effect = get_adm_tech_effect(policy.effect)
+                policy_dip_tech_effect = get_dip_tech_effect(policy.effect)
+                policy_mil_tech_effect = get_mil_tech_effect(policy.effect)
+                policy_idea_effect = get_idea_effect(policy.effect)
+                if policy.type in Build.POLICY_TYPE_INDEX:
+                    policy_index = Build.POLICY_TYPE_INDEX[policy.type]
+                    if policy_war_score > 0:
+                        bisect.insort(
+                            war_policies[policy_index],
+                            (policy_war_score, policy.name),
+                            key=lambda x: -1 * x[0]
+                        )
+                    if policy_dev_effect > 0:
+                        bisect.insort(
+                            dev_policies[policy_index],
+                            (policy_dev_effect, policy.name),
+                            key=lambda x: -1 * x[0]
+                        )
+                    if policy_adm_tech_effect > 0:
+                        bisect.insort(
+                            adm_tech_policies[policy_index],
+                            (policy_adm_tech_effect, policy.name),
+                            key=lambda x: -1 * x[0]
+                        )
+                    if policy_dip_tech_effect > 0:
+                        bisect.insort(
+                            dip_tech_policies[policy_index],
+                            (policy_dip_tech_effect, policy.name),
+                            key=lambda x: -1 * x[0]
+                        )
+                    if policy_mil_tech_effect > 0:
+                        bisect.insort(
+                            mil_tech_policies[policy_index],
+                            (policy_mil_tech_effect, policy.name),
+                            key=lambda x: -1 * x[0]
+                        )
+                    if policy_idea_effect > 0:
+                        bisect.insort(
+                            idea_policies[policy_index],
+                            (policy_idea_effect, policy.name),
+                            key=lambda x: -1 * x[0]
+                        )
+        return (
+            policy_set,
+            war_policies,
+            dev_policies,
+            adm_tech_policies,
+            dip_tech_policies,
+            mil_tech_policies,
+            idea_policies,
+        )
+        
+    policy_set, \
+    war_policies, \
+    dev_policies, \
+    adm_tech_policies, \
+    dip_tech_policies, \
+    mil_tech_policies, \
+    idea_policies \
+        = update_policies(build)
+
     # Create policy micro management effects
-    
-    adm_max_policies = build.max_policies[0] + ideas_effect['possible_policy'] + ideas_effect['possible_adm_policy']
-    dip_max_policies = build.max_policies[1] + ideas_effect['possible_policy'] + ideas_effect['possible_dip_policy']
-    mil_max_policies = build.max_policies[2] + ideas_effect['possible_policy'] + ideas_effect['possible_mil_policy']
-    
+
+    adm_max_policies = build.max_policies[0] + \
+        ideas_effect['possible_policy'] + ideas_effect['possible_adm_policy']
+    dip_max_policies = build.max_policies[1] + \
+        ideas_effect['possible_policy'] + ideas_effect['possible_dip_policy']
+    mil_max_policies = build.max_policies[2] + \
+        ideas_effect['possible_policy'] + ideas_effect['possible_mil_policy']
+
     total_dev_effect = sum([policy[0] for policy in dev_policies[0][:adm_max_policies]]) + \
-                                sum([policy[0] for policy in dev_policies[1][:dip_max_policies]]) + \
-                                sum([policy[0] for policy in dev_policies[2][:mil_max_policies]])
+        sum([policy[0] for policy in dev_policies[1][:dip_max_policies]]) + \
+        sum([policy[0] for policy in dev_policies[2][:mil_max_policies]])
     total_adm_tech_effect = sum([policy[0] for policy in adm_tech_policies[0][:adm_max_policies]]) + \
-                                sum([policy[0] for policy in adm_tech_policies[1][:dip_max_policies]]) + \
-                                sum([policy[0] for policy in adm_tech_policies[2][:mil_max_policies]])
+        sum([policy[0] for policy in adm_tech_policies[1][:dip_max_policies]]) + \
+        sum([policy[0] for policy in adm_tech_policies[2][:mil_max_policies]])
     total_dip_tech_effect = sum([policy[0] for policy in dip_tech_policies[0][:adm_max_policies]]) + \
-                                sum([policy[0] for policy in dip_tech_policies[1][:dip_max_policies]]) + \
-                                sum([policy[0] for policy in dip_tech_policies[2][:mil_max_policies]])
+        sum([policy[0] for policy in dip_tech_policies[1][:dip_max_policies]]) + \
+        sum([policy[0] for policy in dip_tech_policies[2][:mil_max_policies]])
     total_ida_effect = sum([policy[0] for policy in idea_policies[0][:adm_max_policies]]) + \
-                                sum([policy[0] for policy in idea_policies[1][:dip_max_policies]]) + \
-                                sum([policy[0] for policy in idea_policies[2][:mil_max_policies]])
-                                
+        sum([policy[0] for policy in idea_policies[1][:dip_max_policies]]) + \
+        sum([policy[0] for policy in idea_policies[2][:mil_max_policies]])
+
     micro_policy_effect = Counter()
     micro_policy_effect['development_cost'] = total_dev_effect
     micro_policy_effect['adm_tech_cost_modifier'] = total_adm_tech_effect
     micro_policy_effect['dip_tech_cost_modifier'] = total_dip_tech_effect
     micro_policy_effect['mil_tech_cost_modifier'] = total_dip_tech_effect
     micro_policy_effect['idea_cost'] = total_ida_effect
-    
+
     # Create policy war effects
-    
+
     war_policy_effect = Counter()
     for policy in war_policies[0][:adm_max_policies]:
         war_policy_effect.update(POLICIES[policy[1]].effect)
@@ -534,27 +660,30 @@ def expanded_build(build: Build, idea_name: str,) -> Build:
         war_policy_effect.update(POLICIES[policy[1]].effect)
     for policy in war_policies[2][:mil_max_policies]:
         war_policy_effect.update(POLICIES[policy[1]].effect)
-        
+
     # Calculate total score
-    
-    total_score = cum_idea_score + get_score(micro_policy_effect, [COUNTRY_WEIGHTS]) + get_score(war_policy_effect, [MILITARY_WEIGHTS])
-    
+
+    total_score = cum_idea_score + \
+        get_score(micro_policy_effect, [COUNTRY_WEIGHTS]) + \
+        get_score(war_policy_effect, [MILITARY_WEIGHTS])
+
     return Build(
-        idea_set = idea_set,
-        idea_counts = idea_counts,
-        cum_idea_score = cum_idea_score,
-        ideas_effect = ideas_effect,
-        policy_set = policy_set,
-        max_policies = build.max_policies,
-        war_policies = war_policies,
-        dev_policies = dev_policies,
-        adm_tech_policies = adm_tech_policies,
-        dip_tech_policies = dip_tech_policies,
-        mil_tech_policies = mil_tech_policies,
-        idea_policies = idea_policies,
-        total_score = total_score,
+        idea_set=idea_set,
+        idea_counts=idea_counts,
+        cum_idea_score=cum_idea_score,
+        ideas_effect=ideas_effect,
+        policy_set=policy_set,
+        max_policies=build.max_policies,
+        war_policies=war_policies,
+        dev_policies=dev_policies,
+        adm_tech_policies=adm_tech_policies,
+        dip_tech_policies=dip_tech_policies,
+        mil_tech_policies=mil_tech_policies,
+        idea_policies=idea_policies,
+        total_score=total_score,
     )
-    
+
+
 def iter_expanding_ideas(build: Build, idea_count_threshold=0.39) -> str:
     adm_idea_count, dip_idea_count, mil_idea_count = build.idea_counts
     idea_count = adm_idea_count + dip_idea_count + mil_idea_count
@@ -582,13 +711,15 @@ def iter_expanding_ideas(build: Build, idea_count_threshold=0.39) -> str:
                         break
                 else:
                     yield idea_name
-                    
+
 
 def get_ideas_to_expand(build_list: list[Build], best_n, random_n):
     build_list.sort(key=lambda x: x.total_score, reverse=True)
     best_builds = build_list[:best_n]
-    random_builds = random.sample(build_list[best_n:], min(random_n, len(build_list[best_n:])))
+    random_builds = random.sample(
+        build_list[best_n:], min(random_n, len(build_list[best_n:])))
     return best_builds + random_builds
+
 
 def dump_builds(builds: list[Build], output_file_name: str, count: int = 100, highlights: list[str] = HIGHLIGHTS):
     with open(output_file_name, 'w') as f:
@@ -607,10 +738,57 @@ def dump_builds(builds: list[Build], output_file_name: str, count: int = 100, hi
                     f.write(f'          {effect}: {value}\n')
 
 ########################################################################
-### Main init builds ###################################################
+### Gen README #########################################################
 ########################################################################
 
-total_options = len(ADM_IDEA_SCOPE) *  len(DIP_IDEA_SCOPE) * len(MIL_IDEA_SCOPE)
+
+readme = f'''
+# Build: {build_config_name.replace('_', ' ')}
+
+- Created: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+- Religions: {args.religion}
+- Governments: {args.gov}
+- Empire: {args.empire}
+- Potential filtering: {potential_filtering}
+
+## Potential filtering
+
+- mean: {combined_potential_scores.mean():.2f}
+- std: {combined_potential_scores.std():.2f}
+- min: {combined_potential_scores.min():.2f}
+- max: {combined_potential_scores.max():.2f}
+- 10% percentile: {np.quantile(combined_potential_scores, 0.1):.2f}
+- 25% percentile: {np.quantile(combined_potential_scores, 0.25):.2f}
+- 40% percentile: {np.quantile(combined_potential_scores, 0.4):.2f}
+- 50% percentile: {np.quantile(combined_potential_scores, 0.5):.2f}
+- 60% percentile: {np.quantile(combined_potential_scores, 0.6):.2f}
+- 75% percentile: {np.quantile(combined_potential_scores, 0.75):.2f}
+- 90% percentile: {np.quantile(combined_potential_scores, 0.9):.2f}
+
+## Weights
+
+- Country: 
+```
+{yaml.dump(COUNTRY_WEIGHTS, sort_keys=False)}
+```
+- Military: 
+```
+{yaml.dump(MILITARY_WEIGHTS, sort_keys=False)}
+```
+- Ideas: 
+```
+{yaml.dump(IDEA_WEIGHTS, sort_keys=False)}
+```
+'''
+
+with open(os.path.join(OUTPUT_FOLDER_PATH, 'README.md'), 'w') as f:
+    f.write(readme)
+
+########################################################################
+### Main ###############################################################
+########################################################################
+
+total_options = len(ADM_IDEA_SCOPE) * len(DIP_IDEA_SCOPE) * len(MIL_IDEA_SCOPE)
 init_builds = []
 with tqdm(total=total_options, desc='Creating the init 3 idea sets:') as pbar:
     for adm_idea in ADM_IDEA_SCOPE:
@@ -623,7 +801,7 @@ with tqdm(total=total_options, desc='Creating the init 3 idea sets:') as pbar:
                 pbar.update(1)
 
 expanded_builds = init_builds
-for i in range(4, 13):
+for i in range(4, args.ideas + 1):
     builds_to_expand = list(expanded_builds)
     expanded_builds = []
     explored_builds = set()
@@ -635,8 +813,19 @@ for i in range(4, 13):
             if build_id not in explored_builds:
                 expanded_builds.append(expanded_build(build, idea_name))
                 explored_builds.add(build_id)
-    
+
     expanded_builds.sort(key=lambda x: x.total_score, reverse=True)
     if i >= args.exp_from:
-        expanded_builds = get_ideas_to_expand(expanded_builds, best_n=args.exp_top, random_n=args.exp_rand)
-    dump_builds(expanded_builds, os.path.join(OUTPUT_FOLDER_PATH, f'builds_{i}.txt'), count=100)
+        expanded_builds = get_ideas_to_expand(
+            expanded_builds, best_n=args.exp_top, random_n=args.exp_rand)
+    dump_builds(expanded_builds, os.path.join(
+        OUTPUT_FOLDER_PATH, f'builds_{i}.txt'), count=100)
+
+########################################################################
+### Stats ##############################################################
+########################################################################
+
+end_time = datetime.datetime.now()
+elapsed_time = end_time - start_time
+elapsed_minutes = elapsed_time.total_seconds() / 60
+logging.info(f'Elapsed time: {elapsed_minutes:.2f} minutes')

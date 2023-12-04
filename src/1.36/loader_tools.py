@@ -1,7 +1,7 @@
 import yaml
 from collections import Counter
 
-from .model import Idea, Policy
+from model import Idea, Policy
 
 
 IDEA_PROTECTED_KEYS = ['category']
