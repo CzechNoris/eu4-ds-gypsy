@@ -1,6 +1,6 @@
 from collections import Counter, defaultdict
 import bisect
-import copy
+import pickle
 
 
 from model import Policy, Idea, Build
@@ -122,6 +122,10 @@ def expand_build(
     idea_name: str,
     const: BuildConst,
 ) -> Build:
+    
+    def deepcopy(obj):
+        return pickle.loads(pickle.dumps(obj))
+    
     idea = const.IDEAS[idea_name]
 
     # Update Idea counts

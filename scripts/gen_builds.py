@@ -3,6 +3,7 @@
 import os
 import yaml
 import copy
+import pickle
 import random
 import numpy as np
 import bisect
@@ -476,6 +477,11 @@ else:
 ### Build tools ########################################################
 ########################################################################
 
+def deepcopy(obj):
+    # return copy.deepcopy(obj)
+    return pickle.loads(pickle.dumps(obj))
+    
+
 
 def get_total_effect(build: Build):
     total_effect = Counter()
@@ -548,12 +554,12 @@ def expanded_build(build: Build, idea_name: str,) -> Build:
 
     def update_policies(build: Build):
         policy_set = build.policy_set.copy()
-        war_policies = copy.deepcopy(build.war_policies)
-        dev_policies = copy.deepcopy(build.dev_policies)
-        adm_tech_policies = copy.deepcopy(build.adm_tech_policies)
-        dip_tech_policies = copy.deepcopy(build.dip_tech_policies)
-        mil_tech_policies = copy.deepcopy(build.mil_tech_policies)
-        idea_policies = copy.deepcopy(build.idea_policies)
+        war_policies = deepcopy(build.war_policies)
+        dev_policies = deepcopy(build.dev_policies)
+        adm_tech_policies = deepcopy(build.adm_tech_policies)
+        dip_tech_policies = deepcopy(build.dip_tech_policies)
+        mil_tech_policies = deepcopy(build.mil_tech_policies)
+        idea_policies = deepcopy(build.idea_policies)
 
         for build_idea in build.idea_set:
             policy_id = tuple(sorted([build_idea, idea_name]))
