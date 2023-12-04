@@ -40,7 +40,7 @@ parser.add_argument('-i', '--ideas', type=int, default=10,
 parser.add_argument('-b', '--build_config', type=str, required=True,
                     help='Path to the file with build config.')
 parser.add_argument('-o', '--output', type=str,
-                    default='output/builds', help='Path to output folder.')
+                    default='generated/builds', help='Path to output folder.')
 parser.add_argument('-r', '--religion', type=str, default='catholic0',
                     help='Name of religion idea set.')
 parser.add_argument('-g', '--gov', type=str, default='monarchy0',
@@ -94,6 +94,11 @@ build_weights = build_config['weights']
 COUNTRY_WEIGHTS = build_weights['country']
 MILITARY_WEIGHTS = build_weights['military']
 IDEA_WEIGHTS = build_weights['ideas']
+
+LIMITS = defaultdict(lambda: 100)
+if 'limits' in build_config:
+    for key, value in build_config['limits'].items():
+        LIMITS[key] = value
 
 ########################################################################
 ### Defaults ###########################################################
@@ -323,7 +328,7 @@ def get_score(effects: dict, weights: list[dict]):
     for weight in weights:
         for key, value in weight.items():
             if key in effects:
-                score += value * effects[key]
+                score += value * min(effects[key], LIMITS[key])
     return score
 
 
@@ -442,7 +447,7 @@ else:
 
     if args.potential_filtering is None:
         potential_filtering = input(
-            'Enter potential threshold in percent (0-100): [25]')
+            'Enter potential threshold in percent (0-100): [25] ')
         if potential_filtering == '':
             potential_filtering = 25
         else:
@@ -480,8 +485,6 @@ else:
 def deepcopy(obj):
     # return copy.deepcopy(obj)
     return pickle.loads(pickle.dumps(obj))
-    
-
 
 def get_total_effect(build: Build):
     total_effect = Counter()
@@ -819,6 +822,10 @@ for i in range(4, args.ideas + 1):
             if build_id not in explored_builds:
                 expanded_builds.append(expanded_build(build, idea_name))
                 explored_builds.add(build_id)
+            # TODO: implement reservoir_sampling
+            # if i >= args.exp_from and len(expanded_builds) >= 2 * (args.exp_top + args.exp_rand):
+            #     expanded_builds.sort(key=lambda x: x.total_score, reverse=True)
+            #     expanded_builds = expanded_builds[:args.exp_top + args.exp_rand]
 
     expanded_builds.sort(key=lambda x: x.total_score, reverse=True)
     if i >= args.exp_from:

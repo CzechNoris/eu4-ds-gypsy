@@ -1,0 +1,63 @@
+defaults:
+    religion: catholic0
+    goverment: monarchy0
+    empire: true
+
+highlights:
+    - discipline
+    - fire_damage
+    - fire_damage_received
+    - shock_damage
+    - shock_damage_received
+    - land_morale
+    - infantry_power
+    - cavalry_power
+    - artillery_power
+    - land_forcelimit_modifier
+    - land_maintenance_modifier
+    - global_manpower_modifier
+    - manpower_in_true_faith_provinces
+    - manpower_recovery_speed
+    - defensiveness
+
+weights:
+    ideas:
+        nationalism0: 0                              # Estate interaction - main +1 ADM and +1 DIP
+        centralisation0: 0                           # Allow development_over_25
+
+    country:
+        # Policies
+        possible_policy: 12                          # Each extra policy column is 12 points
+        possible_adm_policy: 4                       # Each possible policy is 4 points
+        possible_dip_policy:  4                      # Each possible policy is 4 points
+        possible_mil_policy: 4                       # Each possible policy is 4 points
+
+    # War weights are used to determine the score of a country during war time and to find the best policies
+    military:
+        # Main modifiers
+        discipline: 400                              # Each 10% is 40 points
+        fire_damage: 50                              # Each 10% is 5 points
+        fire_damage_received: 200                    # Each 10% is 20 points
+        shock_damage: 200                            # Each 10% is 20 points
+        shock_damage_received: 200                   # Each 10% is 20 points
+        land_morale: 100                             # Each 10% is 10 points
+        army_tradition: 10                           # Each 10% is 1 points
+        # Infantry  
+        infantry_power: 0                          # Each 10% is 20 points
+        infantry_cost: 0                            # Each 10% discount is 1 points
+        # Cavalry   
+        cavalry_power: 200                           # Each 10% is 20 points
+        cavalry_flanking: 10                         # Each point is 10 points
+        # Artillery 
+        artillery_power: 200                         # Each 10% is 20 points
+        backrow_artillery_damage: 100                # Each 10% is 10 points
+        # Army  
+        global_manpower_modifier: 70                 # Each 10% is 7 points
+        land_forcelimit_modifier: 200                # Each 10% is 20 points
+        land_maintenance_modifier: 20                # Each 10% discount is 2 points
+        manpower_recovery_speed: 50                  # Each 10% is 5 points
+        manpower_in_true_faith_provinces: 50         # Each 10% is 5 points
+        # Defensiveness
+        defensiveness: 10                            # Each 10% is 1 points
+        fort_maintenance_modifier: 5                 # Each 10% discount is 0.5 points
+        siege_ability: 5                             # Each 10% is 0.5 points

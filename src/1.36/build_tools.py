@@ -10,12 +10,12 @@ def get_policy_id(policy_a_name: str, policy_b_name: str):
     return tuple(sorted([policy_a_name, policy_b_name]))
 
 
-def get_score(effects: dict, weights: list[dict]):
+def get_score(effects: dict, weights: list[dict], limits: dict[str, int]):
     score = 0
     for weight in weights:
         for key, value in weight.items():
             if key in effects:
-                score += value * effects[key]
+                score += value * min(effects[key], limits[key])
     return score
 
 
@@ -48,25 +48,29 @@ def get_ideas_effect(ideas: tuple[str], idea_pool: dict[str, Idea]):
 
 
 class BuildConst:
-    def __init__(self,
-                 ideas: dict[str, Idea],
-                 policies: dict[str, Policy],
-                 country_weights: dict[str, float],
-                 military_weights: dict[str, float],
-                 idea_weights: dict[str, float],
-                 ):
+    def __init__(
+        self,
+        ideas: dict[str, Idea],
+        policies: dict[str, Policy],
+        country_weights: dict[str, float],
+        military_weights: dict[str, float],
+        idea_weights: dict[str, float],
+        limits: defaultdict[str, int] = defaultdict(lambda: 100),
+    ):
 
         self.IDEAS = ideas
         self.POLICIES = policies
         self.COUNTRY_WEIGHTS = country_weights
         self.MILITARY_WEIGHTS = military_weights
         self.IDEA_WEIGHTS = idea_weights
+        self.LIMITS = limits
 
         self.IDEA_SCORE = {}
         for idea_name, idea in ideas.items():
             score = get_score(
                 idea.effect,
-                [country_weights, military_weights]
+                [country_weights, military_weights],
+                limits
             ) + idea_weights.get(idea_name, 0)
             self.IDEA_SCORE[idea_name] = score
 
@@ -88,7 +92,11 @@ class BuildConst:
 
         self.POLICY_WAR_SCORE = {}
         for _, policy in policies.items():
-            score = get_score(policy.effect, [military_weights])
+            score = get_score(
+                policy.effect,
+                [military_weights],
+                limits
+            )
             self.POLICY_WAR_SCORE[policy.name] = score
 
         self.DEV_POLICY_SET = set([
@@ -122,10 +130,10 @@ def expand_build(
     idea_name: str,
     const: BuildConst,
 ) -> Build:
-    
+
     def deepcopy(obj):
         return pickle.loads(pickle.dumps(obj))
-    
+
     idea = const.IDEAS[idea_name]
 
     # Update Idea counts
@@ -149,12 +157,12 @@ def expand_build(
     # Check for new available policies and place them in order of importance
 
     policy_set = build.policy_set.copy()
-    war_policies = copy.deepcopy(build.war_policies)
-    dev_policies = copy.deepcopy(build.dev_policies)
-    adm_tech_policies = copy.deepcopy(build.adm_tech_policies)
-    dip_tech_policies = copy.deepcopy(build.dip_tech_policies)
-    mil_tech_policies = copy.deepcopy(build.mil_tech_policies)
-    idea_policies = copy.deepcopy(build.idea_policies)
+    war_policies = deepcopy(build.war_policies)
+    dev_policies = deepcopy(build.dev_policies)
+    adm_tech_policies = deepcopy(build.adm_tech_policies)
+    dip_tech_policies = deepcopy(build.dip_tech_policies)
+    mil_tech_policies = deepcopy(build.mil_tech_policies)
+    idea_policies = deepcopy(build.idea_policies)
 
     for build_idea in build.idea_set:
         policy_id = get_policy_id(idea_name, build_idea)
@@ -259,8 +267,16 @@ def expand_build(
     # Calculate total score
 
     total_score = cum_idea_score + \
-        get_score(micro_policy_effect, [const.COUNTRY_WEIGHTS]) + \
-        get_score(war_policy_effect, [const.MILITARY_WEIGHTS])
+        get_score(
+            micro_policy_effect,
+            [const.COUNTRY_WEIGHTS],
+            const.LIMITS
+        ) + \
+        get_score(
+            war_policy_effect,
+            [const.MILITARY_WEIGHTS],
+            const.LIMITS
+        )
 
     return Build(
         idea_set=idea_set,
@@ -278,14 +294,21 @@ def expand_build(
         total_score=total_score,
     )
 
+
 def get_total_effect(build: Build, policies: dict[str, Policy]):
     total_effect = Counter()
     total_effect.update(build.ideas_effect)
-    
-    adm_max_policies = build.max_policies[0] + build.ideas_effect['possible_policy'] + build.ideas_effect['possible_adm_policy']
-    dip_max_policies = build.max_policies[1] + build.ideas_effect['possible_policy'] + build.ideas_effect['possible_dip_policy']
-    mil_max_policies = build.max_policies[2] + build.ideas_effect['possible_policy'] + build.ideas_effect['possible_mil_policy']
-    
+
+    adm_max_policies = build.max_policies[0] + \
+        build.ideas_effect['possible_policy'] + \
+        build.ideas_effect['possible_adm_policy']
+    dip_max_policies = build.max_policies[1] + \
+        build.ideas_effect['possible_policy'] + \
+        build.ideas_effect['possible_dip_policy']
+    mil_max_policies = build.max_policies[2] + \
+        build.ideas_effect['possible_policy'] + \
+        build.ideas_effect['possible_mil_policy']
+
     active_policies = []
     # War policies
     active_policies.extend(build.war_policies[0][:adm_max_policies])
@@ -311,8 +334,8 @@ def get_total_effect(build: Build, policies: dict[str, Policy]):
     active_policies.extend(build.idea_policies[0][:adm_max_policies])
     active_policies.extend(build.idea_policies[1][:dip_max_policies])
     active_policies.extend(build.idea_policies[2][:mil_max_policies])
-    
+
     for policy in active_policies:
         total_effect.update(policies[policy[1]].effect)
-    
+
     return total_effect
