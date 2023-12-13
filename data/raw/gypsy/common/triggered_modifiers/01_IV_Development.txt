@@ -20,8 +20,8 @@ gov_nerf_1 = {
 			num_of_provinces_in_states = 54
 			has_global_flag = setting_1
 			OR = {
-			has_idea = horde6
-			has_idea = decentralisation1
+				has_idea = horde6
+				has_idea = decentralisation1
 			}
 		}
 	}
@@ -1304,36 +1304,3 @@ gov_nerf_redu_25 = {
 	}
 	state_governing_cost = 0.125
 }
-
-
-engagement_1 = {
-	potential = {
-		current_age = age_of_reformation
-	}
-	trigger = {
-		current_age = age_of_reformation
-	}
-	global_naval_engagement_modifier = 0.5
-}
-
-engagement_2 = {
-	potential = {
-		current_age = age_of_absolutism
-	}
-	trigger = {
-		current_age = age_of_absolutism
-	}
-	global_naval_engagement_modifier = 1.0
-}
-
-engagement_3 = {
-	potential = {
-		current_age = age_of_revolutions
-	}
-	trigger = {
-		current_age = age_of_revolutions
-	}
-	global_naval_engagement_modifier = 1.5
-}
-
-

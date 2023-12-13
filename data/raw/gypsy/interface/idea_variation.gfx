@@ -20,14 +20,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	
-	spriteType = {
-		name = "GFX_cb_seekrieg"
-		texturefile = "gfx/interface/casus_bellis/cb_seekrieg.tga"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	
 	###################
 	### Ideas Start ###
 	###################
@@ -356,6 +348,14 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_idea_spy_ideas"
+		texturefile = "gfx//interface//ideas//idea_espionage.tga"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate_linear.lua"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_mercenary0"
 		texturefile = "gfx//interface//ideas//idea_mercenary.tga"
 		noOfFrames = 1
@@ -584,7 +584,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_1"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_1.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_1.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -592,7 +592,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_1_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_1_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_1_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -600,7 +600,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_2"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_2.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_2.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -608,7 +608,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_2_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_2_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_2_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -616,7 +616,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_3"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_3.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_3.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -624,7 +624,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_3_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_3_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_3_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -632,7 +632,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_4"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_4.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_4.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -640,7 +640,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_4_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_4_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_4_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -648,7 +648,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_5"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_5.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_5.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -656,7 +656,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_5_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_5_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_5_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -664,7 +664,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_6"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_6.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_6.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -672,7 +672,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_6_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_6_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_6_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -680,7 +680,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_7"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_7.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_7.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -688,7 +688,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_7_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_7_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_7_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -696,7 +696,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_8"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_8.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_8.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -704,7 +704,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_8_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_8_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_8_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -712,7 +712,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_9"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_9.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_9.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -720,7 +720,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_9_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_9_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_9_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -728,7 +728,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_10"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_10.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_10.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -736,7 +736,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_10_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_10_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_10_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -744,7 +744,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_11"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_11.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_11.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -752,7 +752,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_11_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_11_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_11_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -760,7 +760,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_12"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_12.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_12.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -768,7 +768,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_12_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_12_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_12_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -776,7 +776,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_13"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_13.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_13.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -784,7 +784,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_13_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_13_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_13_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -792,7 +792,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_14"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_14.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_14.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -800,7 +800,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_14_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_14_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_14_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -808,7 +808,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_15"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_15.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_15.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -816,7 +816,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_15_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_15_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_15_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -824,7 +824,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_16"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_16.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_16.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -832,7 +832,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_16_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_16_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_16_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -840,7 +840,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_17"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_17.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_17.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -848,7 +848,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_17_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_17_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_17_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -856,7 +856,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_18"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_18.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_18.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -864,7 +864,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_18_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_18_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_18_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -873,7 +873,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_19"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_19.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_19.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -881,7 +881,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_19_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_19_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_19_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -890,7 +890,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_20"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_20.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_20.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -898,7 +898,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_20_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_20_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_20_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -907,7 +907,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_21"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_21.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_21.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -915,7 +915,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_21_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_21_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_21_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -924,7 +924,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_22"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_22.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_22.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -932,7 +932,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_22_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_22_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_22_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -941,7 +941,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_23"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -949,7 +949,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_23_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -958,7 +958,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_24"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -966,7 +966,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_24_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -975,7 +975,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_25"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -983,7 +983,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_25_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -992,7 +992,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_26"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1000,7 +1000,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_26_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1009,7 +1009,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_27"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1017,7 +1017,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_27_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1026,7 +1026,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_28"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1034,7 +1034,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_28_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1043,7 +1043,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_29"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1051,7 +1051,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_29_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1060,7 +1060,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_30"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1068,7 +1068,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_30_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1077,7 +1077,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_31"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1085,7 +1085,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_31_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1094,7 +1094,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_32"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -1102,7 +1102,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_advisor_idea_var_advisor_32_female"
-		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.tga"
+		texturefile = "gfx//interface//advisors//idea_var_advisor_23_female.dds"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

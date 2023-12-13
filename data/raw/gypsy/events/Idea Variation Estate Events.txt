@@ -951,6 +951,9 @@ country_event = {
 	
 	option = {
 		name = "iv_estate_events.1.back"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 	
@@ -1015,6 +1018,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_church
@@ -1030,12 +1036,18 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 } 
-	}	
+	}
 
 	option = {
 		name = "iv_estate_events.1f"
-	}	
+		ai_chance = {
+			factor = 0
+		}
+	}
 }
 
 ##########################################
@@ -1099,6 +1111,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_nobles
@@ -1114,11 +1129,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 }
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }				
 
@@ -1183,6 +1204,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_burghers
@@ -1198,11 +1222,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -1267,6 +1297,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_brahmins
@@ -1282,11 +1315,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 }
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }		
 
@@ -1352,6 +1391,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_maratha
@@ -1367,11 +1409,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 } 
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }		
 
@@ -1437,6 +1485,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_vaisyas
@@ -1452,11 +1503,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 }
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }		
 
@@ -1522,6 +1579,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_cossacks
@@ -1537,11 +1597,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 } 
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }		
 
@@ -1607,6 +1673,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_nomadic_tribes
@@ -1622,11 +1691,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 } 
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }		
 
@@ -1691,6 +1766,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_dhimmi
@@ -1706,11 +1784,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 } 
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }		
 
@@ -1775,6 +1859,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_jains
@@ -1790,11 +1877,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 } 
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }		
 
@@ -1859,6 +1952,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_rajput
@@ -1874,11 +1970,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 } 
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -1943,6 +2045,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_janissaries
@@ -1958,11 +2063,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 } 
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -2027,6 +2138,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_nationalist
@@ -2042,11 +2156,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 } 
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }		
 
@@ -2110,6 +2230,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_eunuchs
@@ -2125,11 +2248,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -2194,6 +2323,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_qizilbash
@@ -2209,11 +2341,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 } 
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -2278,6 +2416,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { crown_land_share = 20 }
 		change_estate_land_share = {
 			estate = estate_ghulams
@@ -2293,11 +2434,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.1 } 
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -2320,7 +2467,7 @@ country_event = {
 		name = "iv_estate_events.101.chur"
 		trigger = {
 			has_estate = estate_church
-			estate_not_has_exempt_from_seize_land_privilege = estate_church
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_church }
 		}
 		country_event = { id = iv_estate_events.102 }
 	}
@@ -2329,7 +2476,7 @@ country_event = {
 		name = "iv_estate_events.101.nobl"
 		trigger = {
 			has_estate = estate_nobles
-			estate_not_has_exempt_from_seize_land_privilege = estate_nobles
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_nobles }
 		}
 		country_event = { id = iv_estate_events.103 }
 	}
@@ -2338,7 +2485,7 @@ country_event = {
 		name = "iv_estate_events.101.burg"
 		trigger = {
 			has_estate = estate_burghers
-			estate_not_has_exempt_from_seize_land_privilege = estate_burghers
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_burghers }
 		}
 		country_event = { id = iv_estate_events.104 }
 	}
@@ -2347,7 +2494,7 @@ country_event = {
 		name = "iv_estate_events.101.brah"
 		trigger = {
 			has_estate = estate_brahmins
-			estate_not_has_exempt_from_seize_land_privilege = estate_brahmins
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_brahmins }
 		}
 		country_event = { id = iv_estate_events.105 }
 	}
@@ -2356,7 +2503,7 @@ country_event = {
 		name = "iv_estate_events.101.mara"
 		trigger = {
 			has_estate = estate_maratha
-			estate_not_has_exempt_from_seize_land_privilege = estate_maratha
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_maratha }
 		}
 		country_event = { id = iv_estate_events.106 }
 	}
@@ -2365,7 +2512,7 @@ country_event = {
 		name = "iv_estate_events.101.vais"
 		trigger = {
 			has_estate = estate_vaisyas
-			estate_not_has_exempt_from_seize_land_privilege = estate_vaisyas
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas }
 		}
 		country_event = { id = iv_estate_events.107 }
 	}
@@ -2374,7 +2521,7 @@ country_event = {
 		name = "iv_estate_events.101.coss"
 		trigger = {
 			has_estate = estate_cossacks
-			estate_not_has_exempt_from_seize_land_privilege = estate_cossacks
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_cossacks }
 		}
 		country_event = { id = iv_estate_events.108 }
 	}
@@ -2383,7 +2530,7 @@ country_event = {
 		name = "iv_estate_events.101.trib"
 		trigger = {
 			has_estate = estate_nomadic_tribes
-			estate_not_has_exempt_from_seize_land_privilege = estate_nomadic_tribes
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_nomadic_tribes }
 		}
 		country_event = { id = iv_estate_events.109 }
 	}
@@ -2392,7 +2539,7 @@ country_event = {
 		name = "iv_estate_events.101.dhim"
 		trigger = {
 			has_estate = estate_dhimmi
-			estate_not_has_exempt_from_seize_land_privilege = estate_dhimmi
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_dhimmi }
 		}
 		country_event = { id = iv_estate_events.110 }
 	}
@@ -2401,7 +2548,7 @@ country_event = {
 		name = "iv_estate_events.101.jain"
 		trigger = {
 			has_estate = estate_jains
-			estate_not_has_exempt_from_seize_land_privilege = estate_jains
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_jains }
 		}
 		country_event = { id = iv_estate_events.111 }
 	}
@@ -2410,7 +2557,7 @@ country_event = {
 		name = "iv_estate_events.101.rajp"
 		trigger = {
 			has_estate = estate_rajput
-			estate_not_has_exempt_from_seize_land_privilege = estate_rajput
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_rajput }
 		}
 		country_event = { id = iv_estate_events.112 }
 	}
@@ -2419,7 +2566,7 @@ country_event = {
 		name = "iv_estate_events.101.jani"
 		trigger = {
 			has_estate = estate_janissaries
-			estate_not_has_exempt_from_seize_land_privilege = estate_janissaries
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_janissaries }
 		}
 		country_event = { id = iv_estate_events.113 }
 	}
@@ -2428,7 +2575,7 @@ country_event = {
 		name = "iv_estate_events.101.nati"
 		trigger = {
 			has_estate = estate_nationalist
-			estate_not_has_exempt_from_seize_land_privilege = estate_nationalist
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_nationalist }
 		}
 		country_event = { id = iv_estate_events.114 }
 	}
@@ -2437,7 +2584,7 @@ country_event = {
 		name = "iv_estate_events.101.eunu"
 		trigger = {
 			has_estate = estate_eunuchs
-			estate_not_has_exempt_from_seize_land_privilege = estate_eunuchs
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs }
 		}
 		country_event = { id = iv_estate_events.115 }
 	}
@@ -2446,7 +2593,7 @@ country_event = {
 		name = "iv_estate_events.101.qizi"
 		trigger = {
 			has_estate = estate_qizilbash
-			estate_not_has_exempt_from_seize_land_privilege = estate_qizilbash
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_qizilbash }
 		}
 		country_event = { id = iv_estate_events.116 }
 	}
@@ -2455,13 +2602,16 @@ country_event = {
 		name = "iv_estate_events.101.ghul"
 		trigger = {
 			has_estate = estate_ghulams
-			estate_not_has_exempt_from_seize_land_privilege = estate_estate_ghulams
+			estate_not_has_exempt_from_seize_land_privilege = { estate = estate_estate_ghulams }
 		}
 		country_event = { id = iv_estate_events.117 }
 	}
 	
 	option = {
 		name = "iv_estate_events.1.back"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -2571,6 +2721,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_church
@@ -2603,11 +2756,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -2717,6 +2876,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_nobles
@@ -2749,11 +2911,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}	
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -2863,6 +3031,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_burghers
@@ -2895,11 +3066,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -3010,6 +3187,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_brahmins
@@ -3042,11 +3222,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -3157,6 +3343,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_maratha
@@ -3189,11 +3378,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -3303,6 +3498,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_vaisyas
@@ -3335,11 +3533,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -3449,6 +3653,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_cossacks
@@ -3481,11 +3688,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -3596,6 +3809,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_nomadic_tribes
@@ -3628,11 +3844,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -3743,6 +3965,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_dhimmi
@@ -3775,11 +4000,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -3890,6 +4121,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_jains
@@ -3922,11 +4156,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -4037,6 +4277,9 @@ country_event = {
 	
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_rajput
@@ -4069,11 +4312,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -4183,6 +4432,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_janissaries
@@ -4215,11 +4467,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"	
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -4329,6 +4587,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_nationalist
@@ -4361,11 +4622,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -4475,6 +4742,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_eunuchs
@@ -4507,11 +4777,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -4621,6 +4897,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_ghulams
@@ -4653,11 +4932,17 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"	
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -4767,6 +5052,9 @@ country_event = {
 		
 	option = {
 		name = "iv_estate_events.1d"
+		ai_chance = {
+			factor = 100
+		}
 		trigger = { 
 			estate_territory = {
 				estate = estate_qizilbash
@@ -4799,10 +5087,16 @@ country_event = {
 
 	option = {
 		name = "iv_estate_events.1e"
+		ai_chance = {
+			factor = 0
+		}
 		country_event = { id = iv_estate_events.101 }
 	}
 
 	option = {
 		name = "iv_estate_events.1f"	
+		ai_chance = {
+			factor = 0
+		}
 	}
 }

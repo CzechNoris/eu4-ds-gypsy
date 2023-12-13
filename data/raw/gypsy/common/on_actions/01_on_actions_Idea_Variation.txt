@@ -108,6 +108,74 @@ on_startup = {
 	}
 	if = {
 		limit = {
+			SWE = { ai = no }
+			OR = {
+				NOV = { ai = no }
+				MOS = { ai = no }
+			}
+			NOT = { started_in = 1445.1.1 }
+		}
+		SWE = { add_truce_with = NOV }
+	}
+	if = {
+		limit = {
+			LAN = { ai = no }
+			LUC = { ai = yes }
+			SIE = { ai = yes }
+			NOT = { started_in = 1445.1.1 }
+		}
+		2980 = {
+			add_core = LAN
+			cede_province = LAN
+			set_local_autonomy = 0
+		}
+		117 = {
+			add_core = LAN
+			cede_province = LAN
+			set_local_autonomy = 0
+		}
+	}
+	if = {
+		limit = {
+			PAP = { ai = no }
+			PGA = { ai = yes }
+			URB = { ai = yes }
+			NOT = { started_in = 1445.1.1 }
+		}
+		2976 = {
+			add_core = PAP
+			cede_province = PAP
+			set_local_autonomy = 0
+		}
+		2977 = {
+			add_core = PAP
+			cede_province = PAP
+			set_local_autonomy = 0
+		}
+	}
+	if = {
+		limit = {
+			HES = { ai = no }
+			WBG = { ai = yes }
+			NOT = { started_in = 1445.1.1 }
+		}
+		4774 = {
+			add_core = HES
+			cede_province = HES
+			set_local_autonomy = 0
+		}
+		if = {
+			limit = { NOT = { has_global_flag = hese_start_dev_flag } }
+			4774 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			set_global_flag = hese_start_dev_flag
+		}
+	}
+	if = {
+		limit = {
 			OR = {
 				has_country_modifier = rise_of_the_ottomans
 				has_country_modifier = zenith_of_the_ottomans
@@ -171,68 +239,19 @@ on_startup = {
 	
 	every_province = {
 			
-		add_province_triggered_modifier = iv_idea_1
-	
-		add_province_triggered_modifier = iv_university
+		add_province_triggered_modifier = gypsy_idea_1
+		add_province_triggered_modifier = gypsy_idea_2
 		
+		add_province_triggered_modifier = iv_idea_1
 		add_province_triggered_modifier = iv_building_15_1
 		add_province_triggered_modifier = iv_building_15_2
 		add_province_triggered_modifier = iv_building_15_3
-		
 		add_province_triggered_modifier = iv_building_16_1
 		add_province_triggered_modifier = iv_building_16_2
 		add_province_triggered_modifier = iv_building_16_3
 		add_province_triggered_modifier = iv_building_16_4
 		add_province_triggered_modifier = iv_building_16_5
 		add_province_triggered_modifier = iv_building_16_6
-		
-		# State Maintenance Stuff
-		add_province_triggered_modifier = iv_building_1_1
-		add_province_triggered_modifier = iv_building_1_2
-		add_province_triggered_modifier = iv_building_1_3
-		add_province_triggered_modifier = iv_building_1_4
-		
-		add_province_triggered_modifier = iv_building_2_1
-		add_province_triggered_modifier = iv_building_2_2
-		add_province_triggered_modifier = iv_building_2_3
-		add_province_triggered_modifier = iv_building_2_4
-		
-		add_province_triggered_modifier = iv_building_3_1
-		add_province_triggered_modifier = iv_building_3_2
-		add_province_triggered_modifier = iv_building_3_3
-		add_province_triggered_modifier = iv_building_3_4
-		
-		add_province_triggered_modifier = iv_building_4_1
-		add_province_triggered_modifier = iv_building_4_2
-		add_province_triggered_modifier = iv_building_4_3
-		add_province_triggered_modifier = iv_building_4_4
-		
-		add_province_triggered_modifier = iv_building_5_1
-		add_province_triggered_modifier = iv_building_5_2
-		
-		add_province_triggered_modifier = iv_building_6_1
-		add_province_triggered_modifier = iv_building_6_2
-		add_province_triggered_modifier = iv_building_6_3
-		add_province_triggered_modifier = iv_building_6_4
-		add_province_triggered_modifier = iv_building_6_5
-		
-		add_province_triggered_modifier = iv_building_7_1
-		add_province_triggered_modifier = iv_building_7_2
-		add_province_triggered_modifier = iv_building_7_3
-		add_province_triggered_modifier = iv_building_7_4
-		
-		add_province_triggered_modifier = iv_building_8_1
-		add_province_triggered_modifier = iv_building_8_2
-		add_province_triggered_modifier = iv_building_8_3
-		
-		add_province_triggered_modifier = iv_building_9_1
-		
-		add_province_triggered_modifier = iv_building_10_1
-		add_province_triggered_modifier = iv_building_10_2
-		add_province_triggered_modifier = iv_building_10_3
-		add_province_triggered_modifier = iv_building_10_4
-		add_province_triggered_modifier = iv_building_10_5
-		add_province_triggered_modifier = iv_building_10_6
 	}
 	
 	#### Dev click counter ###

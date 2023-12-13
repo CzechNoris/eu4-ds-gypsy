@@ -103,13 +103,23 @@ interaction = {
 interaction = {
     key = sale_of_titles
     random_seed = crown_land_share
-	cooldown_months = 120
+	cooldown_months = 6
 
     trigger = {
         crown_land_share = 0.1
         NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		hidden_trigger = { has_any_estates = yes }
+		custom_tooltip = recent_land_distribution_tooltip
+		hidden_trigger = { 
+			OR = {
+				NOT = { has_country_flag = recent_land_distribution }
+				had_country_flag = {
+					flag = recent_land_distribution
+					days = 3650
+				}
+			}
+		}
     }
     effect = {
 		country_event = { id = iv_estate_events.1 }
@@ -223,7 +233,7 @@ interaction = {
 interaction = {
     key = seize_land
     random_seed = random
-	cooldown_months = 120
+	cooldown_months = 6
 
     trigger = {
 		hidden_trigger = { has_any_estates = yes }
@@ -231,6 +241,16 @@ interaction = {
         NOT = { num_of_rebel_armies = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		#The following if/else_if-statements match those in estate_privileges_and_agendas_events.2.a. If those change, these should too.
+		custom_tooltip = recent_land_seizure_tooltip
+		hidden_trigger = {
+			OR = {
+				NOT = { has_country_flag = recent_land_seizure }
+				had_country_flag = {
+					flag = recent_land_seizure
+					days = 3650
+				}
+			}
+		}
 		if = {
 			limit = {
 				OR = {
@@ -302,11 +322,7 @@ interaction = {
 		modifier = {
 			factor = 0
 			# This is a hack for countries with enclaves that can be hard to get to, to kill the rebels
-			OR = {
-				tag = TEU
-				tag = KOL
-				# Add more as necessary
-			}
+			any_owned_province = { is_in_capital_area = no }
 			NOT = {
 				estate_loyalty = {
 					estate = all

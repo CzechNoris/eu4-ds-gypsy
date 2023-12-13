@@ -207,7 +207,7 @@ country_event = {
 			factor = 100
 		}
 	}
-	option = {	#Debug
+	option = {
 		name = flavor_liv.2.e
 		trigger = {
 			OR = {
@@ -225,7 +225,7 @@ country_event = {
 			factor = 100
 		}
 	}
-	option = {	#Debug
+	option = {
 		name = flavor_liv.2.f
 		trigger = {
 			NOT = {
@@ -315,7 +315,7 @@ country_event = {
 			factor = 100
 		}
 	}
-	option = {	#Debug
+	option = {
 		name = flavor_liv.2.e
 		trigger = {
 			OR = {
@@ -333,7 +333,7 @@ country_event = {
 			factor = 100
 		}
 	}
-	option = {	#Debug
+	option = {
 		name = flavor_liv.2.f
 		trigger = {
 			NOT = {

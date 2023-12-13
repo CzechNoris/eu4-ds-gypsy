@@ -16167,7 +16167,7 @@ white_house = {
 		}
 		country_modifiers = {
 			reform_progress_growth = 0.1
-			state_governing_cost = -0.15
+			state_governing_cost = -0.10
 			reelection_cost = -0.1
 		}
 		on_upgraded = {
@@ -16187,7 +16187,7 @@ white_house = {
 		}
 		country_modifiers = {
 			reform_progress_growth = 0.2
-			state_governing_cost = -0.25
+			state_governing_cost = -0.15
 			reelection_cost = -0.1
 		}
 		on_upgraded = {

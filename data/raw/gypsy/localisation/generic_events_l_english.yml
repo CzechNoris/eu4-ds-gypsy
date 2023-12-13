@@ -3617,7 +3617,7 @@
  EVTNAME727:0 "Fight the Good Fight!"
  EVTOPTA727:0 "Hold the Line!"
  EVTNAME728:0 "Claims on Our Rivals!"
- EVTDESC728:1 "Too long has [claims_province.Owner.GetUsableName] threatened our borders! But no more: We have managed to produce very legitimate documents which show that we have a historical claim on [claims_province.GetName]!"
+ EVTDESC728:1 "Too long has [claims_province.Owner.GetUsableName] threatened our borders! But no more: We have managed to produce very legitimate documents which show that we have a historical claim on [claims_province.Owner.GetUsableName]!"
  EVTOPTA728:0 "Glorious will $COUNTRY$ be!"
  EVTNAME800:0 "Noble Uprising"
  EVTDESC800:0 "The nobility of $COUNTRY$ is up in arms over our decision to limit their privileges and have vowed to stop us. Perhaps we should have considered this before taking action."

@@ -275,7 +275,7 @@ gme_neuschwanstein_castle = {
 	can_use_modifiers_trigger = {
 		OR = {
 			AND = {
-				FROM = { government = monarchy }
+				owner = { government = monarchy }
 				OR = {
 					culture = bavarian
 					culture = austrian
@@ -289,7 +289,7 @@ gme_neuschwanstein_castle = {
 		FROM = { adm_tech = 10 }
 		OR = {
 			AND = {
-				FROM = { government = monarchy }
+				owner = { government = monarchy }
 				OR = {
 					culture = bavarian
 					culture = austrian

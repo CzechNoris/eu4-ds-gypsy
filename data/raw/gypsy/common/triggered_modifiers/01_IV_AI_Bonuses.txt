@@ -23,9 +23,7 @@ ai_idea_bonus_1 = {
 		ai = yes
 		is_year = 1470
 		is_subject = yes
-		NOT = {
-			num_of_completed_idea_groups = { amount = 2 }
-		}
+		NOT = { num_of_completed_idea_groups = { amount = 2 } }
 	}
 	idea_cost = -0.1
 }
@@ -41,9 +39,7 @@ ai_idea_bonus_2 = {
 		ai = yes
 		is_year = 1500
 		is_subject = yes
-		NOT = {
-			num_of_completed_idea_groups = { amount = 4 }
-		}
+		NOT = { num_of_completed_idea_groups = { amount = 4 } }
 	}
 	idea_cost = -0.1
 }
@@ -59,9 +55,7 @@ ai_idea_bonus_3 = {
 		ai = yes
 		is_year = 1550
 		is_subject = yes
-		NOT = {
-			num_of_completed_idea_groups = { amount = 6 }
-		}
+		NOT = { num_of_completed_idea_groups = { amount = 6 } }
 	}
 	idea_cost = -0.1
 }
@@ -76,9 +70,7 @@ ai_idea_bonus_4 = {
 		ai = yes
 		is_year = 1600
 		is_subject = yes
-		NOT = {
-			num_of_completed_idea_groups = { amount = 8 }
-		}
+		NOT = { num_of_completed_idea_groups = { amount = 8 } }
 	}
 	idea_cost = -0.1
 }
@@ -93,9 +85,7 @@ ai_idea_bonus_5 = {
 		ai = yes
 		is_year = 1650
 		is_subject = yes
-		NOT = {
-			num_of_completed_idea_groups = { amount = 10 }
-		}
+		NOT = { num_of_completed_idea_groups = { amount = 10 } }
 	}
 	idea_cost = -0.1
 }
@@ -110,9 +100,7 @@ ai_idea_bonus_6 = {
 		ai = yes
 		is_year = 1700
 		is_subject = yes
-		NOT = {
-			num_of_completed_idea_groups = { amount = 12 }
-		}
+		NOT = { num_of_completed_idea_groups = { amount = 12 } }
 	}
 	idea_cost = -0.1
 }
@@ -127,9 +115,7 @@ ai_idea_bonus_7 = {
 		ai = yes
 		is_year = 1750
 		is_subject = yes
-		NOT = {
-			num_of_completed_idea_groups = { amount = 14 }
-		}
+		NOT = { num_of_completed_idea_groups = { amount = 14 } }
 	}
 	idea_cost = -0.1
 }
@@ -144,9 +130,7 @@ ai_idea_bonus_8 = {
 		ai = yes
 		is_year = 1800
 		is_subject = yes
-		NOT = {
-			num_of_completed_idea_groups = { amount = 16 }
-		}
+		NOT = { num_of_completed_idea_groups = { amount = 16 } }
 	}
 	idea_cost = -0.1
 }

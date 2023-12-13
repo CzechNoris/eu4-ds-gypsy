@@ -6454,7 +6454,7 @@ estate_burghers_build_port_building_in_y = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = { #debug check compat. with idea var. buildings
+    task_requirements = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
@@ -7273,7 +7273,7 @@ estate_vaisyas_build_port_building_in_y = {
 			}
 		}
 	}
-	pre_effect = { #debug compat. with idea var. buildings
+	pre_effect = {
 		set_variable = {
 			which = estate_vaisyas_build_port_building_in_y_var
 			value = 0
@@ -8385,7 +8385,7 @@ estate_jains_build_port_building_in_y = {
 			}
 		}
 	}
-	pre_effect = { #debug compat. with idea var. buildings
+	pre_effect = {
 		set_variable = {
 			which = estate_jains_build_port_building_in_y_var
 			value = 0
@@ -8464,7 +8464,7 @@ estate_jains_build_port_building_in_y = {
 			}
 			save_event_target_as = agenda_province
 		}
-		random_owned_province = { #debug compat. with idea var. buildings
+		random_owned_province = {
 			limit = {
 				is_state_core = root
 				development = 12
@@ -8539,7 +8539,7 @@ estate_jains_build_port_building_in_y = {
 			}
 			save_event_target_as = agenda_province
 		}
-		random_owned_province = { #debug compat. with idea var. buildings
+		random_owned_province = {
 			limit = {
 				is_state_core = root
 				development = 20
@@ -8614,7 +8614,7 @@ estate_jains_build_port_building_in_y = {
 			}
 			save_event_target_as = agenda_province
 		}
-		event_target:agenda_province = { #debug compat. with idea var. buildings
+		event_target:agenda_province = {
 			if = {
 				limit = {
 					OR = {
@@ -8679,7 +8679,7 @@ estate_jains_build_port_building_in_y = {
 			NOT = { owned_by = root }
 		}
 	}
-    task_requirements = { #debug compat. with idea var. buildings
+    task_requirements = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {

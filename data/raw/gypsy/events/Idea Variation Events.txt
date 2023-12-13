@@ -2050,7 +2050,12 @@ country_event = {
 		name = "flogi_ideas.163"
 		add_years_of_income = -0.15
 		trigger = {
-			NOT = { militarised_society = 0 }
+			OR = {
+				has_government_mechanic = militarization_mechanic
+				has_government_mechanic = prussian_militarization_mechanic_1
+				has_government_mechanic = prussian_militarization_mechanic_2
+				has_government_mechanic = prussian_militarization_mechanic_3
+			}
 		}
 		define_advisor = {
 			type = idea_var_advisor_30
@@ -2323,7 +2328,12 @@ country_event = {
 		name = "flogi_ideas.163"
 		add_years_of_income = -0.3
 		trigger = {
-			NOT = { militarised_society = 0 }
+			OR = {
+				has_government_mechanic = militarization_mechanic
+				has_government_mechanic = prussian_militarization_mechanic_1
+				has_government_mechanic = prussian_militarization_mechanic_2
+				has_government_mechanic = prussian_militarization_mechanic_3
+			}
 		}
 		define_advisor = {
 			type = idea_var_advisor_30

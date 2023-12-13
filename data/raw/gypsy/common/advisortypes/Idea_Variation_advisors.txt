@@ -56,13 +56,33 @@ idea_var_advisor_1 = {		# Administrator
 	
 	chance = {
 		factor = 1
+		modifier = {
+			factor = 2
+			owner = { overextension_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 2
+			owner = { overextension_percentage = 0.8 }
+		}
 	}
 
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 2
 			overextension_percentage = 0.1
+		}
+		modifier = {
+			factor = 2
+			overextension_percentage = 0.25
+		}
+		modifier = {
+			factor = 5
+			overextension_percentage = 0.5
+		}
+		modifier = {
+			factor = 10
+			overextension_percentage = 0.8
 		}
 	}
 }
@@ -105,7 +125,7 @@ idea_var_advisor_2 = {		# Lawyer
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 2
 			has_subject_of_type = vassal
 		}
 	}
@@ -167,10 +187,18 @@ idea_var_advisor_3 = {		# Architect
 	
 	chance = {
 		factor = 1
+		modifier = {
+			factor = 2
+			xorme_has_any_manufactory_trigger = no
+		}
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 5
+		modifier = {
+			factor = 10
+			any_owned_province = { xorme_has_any_manufactory_trigger = no }
+		}
 	}
 }
 
@@ -227,11 +255,11 @@ idea_var_advisor_4 = {		# Capitalist
 	development_cost = -0.1
 	
 	chance = {
-		factor = 1
+		factor = 2
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 2
 		modifier = {
 			factor = 2
 			is_at_war = no
@@ -329,10 +357,19 @@ idea_var_advisor_6 = {		# Humanist
 	
 	chance = {
 		factor = 1
+		modifier = {
+			factor = 2
+			owner = { is_lacking_institutions = yes }
+		}
 	}
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 5
+			is_lacking_institutions = yes
+			current_institution_growth = 1
+		}
 	}
 }
 
@@ -436,10 +473,38 @@ idea_var_advisor_8 = {		# Judge
 	
 	chance = {
 		factor = 1
+		modifier = {
+			factor = 2
+			owner = { corruption = 5 }
+		}
+		modifier = {
+			factor = 2
+			owner = { corruption = 10 }
+		}
 	}
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 2
+			corruption = 2
+		}
+		modifier = {
+			factor = 2
+			corruption = 4
+		}
+		modifier = {
+			factor = 2
+			corruption = 6
+		}
+		modifier = {
+			factor = 2
+			corruption = 8
+		}
+		modifier = {
+			factor = 5
+			corruption = 10
+		}
 	}
 }
 
@@ -543,9 +608,17 @@ idea_var_advisor_10 = {		# Colonist
 			factor = 0
 			owner = { NOT = { num_of_colonists = 1 } }
 		}
+		modifier = {
+			factor = 2
+			owner = { tag = POR }
+		}
 	}
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 2
+			tag = POR
+		}
 	}
 }
 
@@ -704,14 +777,26 @@ idea_var_advisor_14 = {
 			factor = 0
 			owner = { NOT = { mil_tech = 7 } }
 		}
-		modifier = {
-			factor = 0
-			owner = { has_idea_group = shock0 }
-		}
 	}
 	
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { mil_tech = 7 }
+		}
+		modifier = {
+			factor = 5
+			mil_tech = 16
+		}
+		modifier = {
+			factor = 10
+			mil_tech = 22
+		}
+		modifier = {
+			factor = 10
+			mil_tech = 25
+		}
 	}
 }
 
@@ -751,7 +836,7 @@ idea_var_advisor_15 = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 2
 			has_idea_group = shock0
 		}
 	}
@@ -830,6 +915,18 @@ idea_var_advisor_17 = {
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 2
+			mil_tech = 16
+		}
+		modifier = {
+			factor = 5
+			mil_tech = 22
+		}
+		modifier = {
+			factor = 10
+			mil_tech = 25
+		}
 	}
 }
 
@@ -868,6 +965,18 @@ idea_var_advisor_18 = {
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 2
+			mil_tech = 16
+		}
+		modifier = {
+			factor = 2
+			mil_tech = 22
+		}
+		modifier = {
+			factor = 2
+			mil_tech = 25
+		}
 	}
 }
 
@@ -1106,7 +1215,7 @@ idea_var_advisor_23 = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 10
 			is_at_war = yes
 		}
 	}
@@ -1231,11 +1340,23 @@ idea_var_advisor_26 = {
 	transport_power = 0.2
 
 	chance = {
-		factor = 0
+		factor = 1
+		modifier = {
+			factor = 0
+			owner = { NOT = { has_idea_group = light_ship0 } }
+		}
 	}
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 2
+			full_idea_group = light_ship0
+		}
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
 	}
 }
 
@@ -1273,6 +1394,14 @@ idea_var_advisor_27 = {
 
 	chance = {
 		factor = 1
+		modifier = {
+			factor = 2
+			owner = { vassal = 3 }
+		}
+		modifier = {
+			factor = 2
+			owner = { vassal = 4 }
+		}
 	}
 
 	ai_will_do = {
@@ -1282,15 +1411,15 @@ idea_var_advisor_27 = {
 			vassal = 1
 		}
 		modifier = {
-			factor = 1.5
+			factor = 2
 			vassal = 3
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			vassal = 4
 		}
 		modifier = {
-			factor = 3
+			factor = 10
 			vassal = 5
 		}
 	}
@@ -1371,6 +1500,10 @@ idea_var_advisor_29 = {
 
 	ai_will_do = {
 		factor = 1
+		modifier = {
+			factor = 10
+			is_at_war = no
+		}
 	}
 }
 
@@ -1515,7 +1648,7 @@ idea_var_advisor_31 = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 2
 	}
 }
 
@@ -1589,6 +1722,10 @@ idea_var_advisor_32 = {
 	}
 	
 	ai_will_do = {
-		factor = 1.5
+		factor = 5
+		modifier = {
+			factor = 10
+			is_at_war = no
+		}
 	}
 }

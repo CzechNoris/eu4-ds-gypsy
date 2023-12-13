@@ -564,7 +564,7 @@ gme_grote_raad_mechelen = {
 		country_modifiers = {
 			global_autonomy = -0.05
 			reform_progress_growth = 0.10
-			state_governing_cost = -0.15
+			state_governing_cost = -0.10
 		}
 		on_upgraded = {
 			owner = {
@@ -603,7 +603,7 @@ gme_grote_raad_mechelen = {
 		country_modifiers = {
 			global_autonomy = -0.1
 			reform_progress_growth = 0.15
-			state_governing_cost = -0.25
+			state_governing_cost = -0.15
 		}
 		on_upgraded = {
 			owner = {

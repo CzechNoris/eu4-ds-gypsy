@@ -380,11 +380,6 @@ country_decisions = {
 		
 		ai_will_do = {
 			factor = 5
-			
-			modifier = {
-			factor = 0.000001
-			num_of_loans = 5
-			}
 		}
 	}
 
@@ -395,41 +390,30 @@ country_decisions = {
 	sailor_manpower_dec = {
 		major = yes
 		
-		potential = {
-			ai = no		#probably won't be able to deal with it	
-		}
-		
+		potential = { ai = no }
 		allow = {
-			NOT = {
-				has_country_modifier = sailor_converted
+			NOT = { has_country_modifier = sailor_converted } 
+			OR = {
+				sailors = 2600
+				manpower = 3
 			}
 		}
 		
-		effect = {
-			country_event = { id = flogi_ideas.106 days = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 5
-		}
-	} # Klammerzu von country_decisions
+		effect = { country_event = { id = flogi_ideas.106 days = 0 } }
+		ai_will_do = { factor = 5 }
+	}
 
 
 	dev_sum_clicks_decision = {
 		major = yes
-		potential = {
-			always = yes
-		}
-		ai_will_do = {
-			factor = 0
-		}
+		potential = { always = yes }
 		allow = {
 			custom_trigger_tooltip = {
 				tooltip = dev_sum_clicks_decision_tooltip
 				always = no
 			}
 		}
-		effect = {
-		}
+		effect = { }
+		ai_will_do = { factor = 0 }
 	}
 }

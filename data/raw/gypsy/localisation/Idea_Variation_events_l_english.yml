@@ -1417,4 +1417,10 @@
  idea_var_gypsy.51.name:0 "The Italianization of [Root.Culture.GetName]"
  idea_var_gypsy.51.desc:0 "With the peninsula becoming united under the rule of a single monarch, former cultural differences between our people have started to dissapear."
  idea_var_gypsy.51a:0 "Embrace Italianization"
- idea_var_gypsy.51b:0 "Remain true to our roots"
+ idea_var_gypsy.52.name:0 ""
+ idea_var_gypsy.52.desc:0 ""
+ idea_var_gypsy.52a:0 "Gothic is the true German"
+ 
+ flavor_ara.EVTOPTC7:0 "We shall follow Alfons' last testament and return Naples' rightful provinces."
+ flavor_ara7_naples_goes_free_plus_cores:0 "Naples will become independent, ruled by the son of Alfonso V and shall recieve it's former provinces."
+ flavor_brapru.15.tt:1 "Request for the provinces of §YNeumark§! and §YDramburg§! to be given to us."

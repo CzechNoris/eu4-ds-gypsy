@@ -49,20 +49,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_idea_aristocracy_ideas"
-		texturefile = "gfx//interface//ideas//idea_aristocracy_ideas.tga"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}
-	spriteType = {
-		name = "GFX_idea_plutocracy_ideas"
-		texturefile = "gfx//interface//ideas//idea_plutocracy_ideas.tga"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}
-	spriteType = {
 		name = "GFX_idea_innovativeness_ideas"
 		texturefile = "gfx//interface//ideas//idea_innovativeness.tga"
 		noOfFrames = 1
@@ -76,34 +62,7 @@ spriteTypes = {
 		
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
-	spriteType = {
-		name = "GFX_idea_spy_ideas"
-		texturefile = "gfx//interface//ideas//idea_espionage.tga"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}
-	spriteType = {
-		name = "GFX_idea_diplomatic_ideas"
-		texturefile = "gfx//interface//ideas//idea_diplomatic_ideas.tga"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}
-	spriteType = {
-		name = "GFX_idea_offensive_ideas"
-		texturefile = "gfx//interface//ideas//idea_offensive_ideas.tga"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}
-	spriteType = {
-		name = "GFX_idea_defensive_ideas"
-		texturefile = "gfx//interface//ideas//idea_defensive_ideas.tga"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}
+	
 	spriteType = {
 		name = "GFX_idea_trade_ideas"
 		texturefile = "gfx//interface//ideas//idea_trade.tga"
@@ -125,13 +84,7 @@ spriteTypes = {
 		
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
-	spriteType = {
-		name = "GFX_idea_naval_ideas"
-		texturefile = "gfx//interface//ideas//idea_naval_ideas.tga"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}
+	
 	spriteType = {
 		name = "GFX_idea_empty"
 		texturefile = "gfx//interface//ideas//empty.tga"
@@ -163,46 +116,7 @@ spriteTypes = {
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}	
-	
-	spriteType = {
-		name = "GFX_idea_quality_ideas"
-		texturefile = "gfx//interface//ideas//idea_quality_ideas.tga"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}
-	spriteType = {
-		name = "GFX_idea_quantity_ideas"
-		texturefile = "gfx//interface//ideas//idea_quantity_ideas.tga"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}
-
-	spriteType = {
-		name = "GFX_idea_theocracy_gov_ideas"
-		texturefile = "gfx//interface//ideas//idea_theocracy_gov_ideas.dds"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}
-
-	spriteType = {
-		name = "GFX_idea_indigenous_ideas"
-		texturefile = "gfx//interface//ideas//idea_native.dds"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_horde_gov_ideas"
-		texturefile = "gfx//interface//ideas//idea_horde_gov_ideas.dds"
-		noOfFrames = 1
-		
-		effectFile = "gfx/FX/buttonstate_linear.lua"
-    }
 	
 	spriteType = {
 		name = "GFX_idea_administrative_ideas"
@@ -214,13 +128,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_court_ideas"
 		texturefile = "gfx/interface/ideas/idea_court.dds"
-		noOfFrames = 1
-		effectFile = "gfx/FX/buttonstate_linear.lua"
-	}
-
-	spriteType = {
-		name = "GFX_idea_mercenary_ideas"
-		texturefile = "gfx/interface/ideas/idea_mercenary.dds"
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate_linear.lua"
 	}

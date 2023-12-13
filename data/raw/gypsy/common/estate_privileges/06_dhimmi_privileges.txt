@@ -853,6 +853,7 @@ estate_dhimmi_grant_trading_privileges = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		always = no
 	}
 	can_select = {
 		if = {
@@ -861,10 +862,19 @@ estate_dhimmi_grant_trading_privileges = {
 		}
 	}
 	on_granted = {
+		enable_estate_action = {
+			estate_action = RECRUIT_MINISTER_DHIMMI
+		}
 	}
 	on_revoked = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MINISTER_DHIMMI
+		}
 	}
 	on_invalid = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MINISTER_DHIMMI
+		}
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
@@ -886,6 +896,7 @@ estate_dhimmi_dhimmi_education = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		always = no
 	}
 	can_select = {
 		if = {
@@ -1009,12 +1020,22 @@ estate_dhimmi_promote_dhimmi_nobility = {
 #	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 #	is_valid = {
 #		has_dlc = "Domination"
+#		always = no
 #	}
 #	on_granted = {
+#		enable_estate_action = {
+#			estate_action = RECRUIT_FROM_THE_DHIMMI_DHIMMI
+#		}
 #	}
 #	on_revoked = {
+#		disable_estate_action = {
+#			estate_action = RECRUIT_FROM_THE_DHIMMI_DHIMMI
+#		}
 #	}
 #	on_invalid = {
+#		disable_estate_action = {
+#			estate_action = RECRUIT_FROM_THE_DHIMMI_DHIMMI
+#		}
 #	}
 #	ai_will_do = {
 #		factor = 0
@@ -1033,6 +1054,7 @@ estate_dhimmi_protected_communities = {
 				estate_privilege = estate_dhimmi_millet_system
 			}
 		}
+		always = no
 	}
 	on_granted = {
 		scaling_with_loyalty_privilege_tooltip = {
@@ -1077,12 +1099,22 @@ estate_dhimmi_contribution_demand = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		always = no
 	}
 	on_granted = {
+		enable_estate_action = {
+			estate_action = DEMAND_CONTRIBUTION_DHIMMI
+		}
 	}
 	on_invalid = {
+		disable_estate_action = {
+			estate_action = DEMAND_CONTRIBUTION_DHIMMI
+		}
 	}
 	on_revoked = {
+		disable_estate_action = {
+			estate_action = DEMAND_CONTRIBUTION_DHIMMI
+		}
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }

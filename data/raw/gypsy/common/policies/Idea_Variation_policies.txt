@@ -5089,7 +5089,7 @@ idea_variation_act_106 = {
 		full_idea_group = trade_ideas
 	}
 	
-	fire_damage = 0.05
+	fire_damage = 0.075
 	
 	ai_will_do = {
 		factor = 1
@@ -6150,28 +6150,6 @@ idea_variation_act_151 = {
 }
 
 
-idea_variation_act_152 = {
-
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = propaganda0
-		has_idea_group = jurisprudence0
-			
-	}
-	allow = {
-		full_idea_group = propaganda0
-		full_idea_group = jurisprudence0
-	}
-	
-	improve_relation_modifier = 0.25
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-
 idea_variation_act_153 = {
 
 	monarch_power = DIP
@@ -6974,7 +6952,7 @@ idea_variation_act_183 = {
 		full_idea_group = development0
 	}
 	
-	global_tariffs = 0.25
+	global_trade_goods_size_modifier = 0.15
 	
 	ai_will_do = {
 		factor = 1
@@ -10569,7 +10547,7 @@ idea_variation_act_338 = {
 		full_idea_group = innovativeness_ideas
 	}
 	
-	land_morale = 0.15
+	artillery_power = 0.15
 	
 	ai_will_do = {
 		factor = 1
@@ -12643,27 +12621,6 @@ idea_variation_act_435 = {
 			factor = 0.6
 			NOT = { navy_size = 20 }
 		}
-	}
-}
-
-idea_variation_act_437 = {
-
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = war_production0
-		has_idea_group = propaganda0
-		
-	}
-	allow = {
-		full_idea_group = war_production0
-		full_idea_group = propaganda0
-	}
-	
-	global_trade_goods_size_modifier = 0.15
-	
-	ai_will_do = {
-		factor = 5
 	}
 }
 

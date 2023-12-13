@@ -355,6 +355,11 @@ qizilbash_regiment = {
 	fire_damage_received = -0.1
 	land_maintenance_modifier = -0.25
 }
+
+cossacks_regiment = {
+    shock_damage = 0.15
+}
+
 innovativeness = {
 	technology_cost = -0.1
 	idea_cost = -0.1
@@ -366,9 +371,9 @@ innovativeness = {
 }
 
 rajput_regiment = {
-	drill_decay_modifier = -0.25
+	drill_decay_modifier = -0.30
 	reinforce_cost_modifier = -0.5
-	land_morale = 0.15
+	land_morale = 0.20
 }
 
 ########################################

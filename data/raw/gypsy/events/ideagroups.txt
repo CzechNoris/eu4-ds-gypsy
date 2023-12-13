@@ -8816,7 +8816,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = native0
+		#has_idea_group = native0
+		always = no
 	}
 
 	mean_time_to_happen = {
@@ -8850,7 +8851,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = native0
+		#has_idea_group = native0
+		always = no
 		is_at_war = yes
 		NOT = { 
 			has_country_modifier = defensive_stance
@@ -8880,7 +8882,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = native0
+		#has_idea_group = native0
+		always = no
 	}
 
 	mean_time_to_happen = {
@@ -8907,7 +8910,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = native0
+		#has_idea_group = native0
+		always = no
 		NOT = { 
 			has_country_modifier = disrespecting_the_ancestors
 		}
@@ -8937,7 +8941,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = native0
+		#has_idea_group = native0
+		always = no
 	}
 
 	mean_time_to_happen = {
@@ -8960,7 +8965,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = native0
+		#has_idea_group = native0
+		always = no
 		NOT = { 
 			has_country_modifier = overconfidence
 		}
@@ -8989,7 +8995,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = native0
+		#has_idea_group = native0
+		always = no
 	}
 
 	mean_time_to_happen = {
@@ -9014,7 +9021,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = native0
+		#has_idea_group = native0
+		always = no
 		is_at_war = no
 	}
 
@@ -9057,7 +9065,8 @@ country_event = {
 		is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = native0
+		#has_idea_group = native0
+		always = no
 		any_owned_province = { 
 			has_owner_culture = no
 			OR = {
@@ -9122,7 +9131,8 @@ country_event = {
 		is_triggered_only = yes
 	
 	trigger = {
-		has_idea_group = native0
+		#has_idea_group = native0
+		always = no
 	}
 
 	mean_time_to_happen = {
@@ -9981,7 +9991,7 @@ country_event = {
 		hidden_effect = {
 			event_target:noble_origin_country = {
 				country_event = {
-					id = ideagroups.2014.00
+					id = ideagroups.201400
 				}
 			}
 		}
@@ -10005,7 +10015,7 @@ country_event = {
 
 # The foreign Noble reveals - Interregnum event
 country_event = {
-	id = ideagroups.2014.00
+	id = ideagroups.201400
 	title = none
 	desc = none
 	picture = none

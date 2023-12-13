@@ -1,5 +1,5 @@
 country_decisions = {
-	become_horseite = {
+	gypsy_become_horseite = {
 		major = yes
 		potential = {
 			current_age = age_of_reformation

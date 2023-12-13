@@ -1067,16 +1067,26 @@ estate_jains_right_to_offer_loans = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		always = no
 	}
 	can_select = {
 	}
 	benefits = {
 	}
 	on_granted = {
+		enable_estate_action = {
+			estate_action = PROCURE_LOANS_JAINS
+		}
 	}
 	on_revoked = {
+		disable_estate_action = {
+			estate_action = PROCURE_LOANS_JAINS
+		}
 	}
 	on_invalid = {
+		disable_estate_action = {
+			estate_action = PROCURE_LOANS_JAINS
+		}
 	}
 	ai_will_do = {
 		factor = 0
@@ -1166,6 +1176,7 @@ estate_jains_patronize_jain_familiy = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		always = no
 	}
 	on_granted = {
 		enable_estate_action = {
@@ -1204,14 +1215,24 @@ estate_jains_incorruptible_offices = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		always = no
 	}
 	can_select = {
 	}
 	on_granted = {
+		enable_estate_action = {
+			estate_action = INVESTIGATE_CORRUPTION_JAINS
+		}
 	}
 	on_revoked = {
+		disable_estate_action = {
+			estate_action = INVESTIGATE_CORRUPTION_JAINS
+		}
 	}
 	on_invalid = {
+		disable_estate_action = {
+			estate_action = INVESTIGATE_CORRUPTION_JAINS
+		}
 	}
 	ai_will_do = {
 		factor = 0
@@ -1238,15 +1259,24 @@ estate_jains_promote_jain_bookkeeping = {
 		scaling_with_loyalty_privilege_tooltip = {
 			estate_privilege = estate_burghers_promote_burgher_bookkeeping
 		}
+		enable_estate_action = {
+			estate_action = COMMISSION_JAIN_SCRIPTURES_JAINS
+		}
 	}
 	on_revoked = {
 		scaling_with_loyalty_privilege_tooltip = {
 			estate_privilege = estate_burghers_promote_burgher_bookkeeping
 		}
+		disable_estate_action = {
+			estate_action = COMMISSION_JAIN_SCRIPTURES_JAINS
+		}
 	}
 	on_invalid = {
 		scaling_with_loyalty_privilege_tooltip = {
 			estate_privilege = estate_burghers_promote_burgher_bookkeeping
+		}
+		disable_estate_action = {
+			estate_action = COMMISSION_JAIN_SCRIPTURES_JAINS
 		}
 	}
 	ai_will_do = {

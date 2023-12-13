@@ -112,15 +112,14 @@ estate_nomadic_tribes = {
 		estate_nomadic_tribes_primacy_to_the_bannermen
 		estate_nomadic_tribes_autonomy_of_the_tribes
 		estate_nomadic_tribes_freedom_of_the_steppes
-		#estate_nomadic_tribes_grant_military_leadership
-		#estate_nomadic_tribes_military_service
+		estate_nomadic_tribes_grant_military_leadership
+		estate_nomadic_tribes_military_service
 		estate_nomadic_tribes_ensure_tribal_loyalty
 		estate_nomadic_tribes_secured_succession
 		
 		estate_priv_idea_variation_13_2
 		estate_priv_idea_variation_13_3
-		#estate_priv_idea_variation_13_4
-		#estate_priv_idea_variation_13_5
+		estate_priv_idea_variation_13_5
 		estate_priv_idea_variation_13_6
 		estate_priv_idea_variation_13_8
 	}

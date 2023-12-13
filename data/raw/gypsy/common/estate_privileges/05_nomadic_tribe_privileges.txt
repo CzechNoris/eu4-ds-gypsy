@@ -248,11 +248,15 @@ estate_nomadic_tribes_tribal_host = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = -0.05
 	influence = 0.1
-	on_granted = { add_manpower = 10 }
-	cooldown_years = 15
-	benefits = { global_manpower_modifier = 0.2 }
+	benefits = {
+		global_manpower_modifier = 0.2
+	}
 	ai_will_do = {
-		factor = 20
+		factor = 10
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
 	}
 }
 
@@ -272,6 +276,13 @@ estate_nomadic_tribes_primacy_to_the_bannermen = {
 	}
 	ai_will_do = {
 		factor = 20
+		modifier = {
+			factor = 10
+			OR = {
+				tag = MCH
+				tag = MJZ
+			}
+		}
 	}
 }
 
@@ -357,14 +368,24 @@ estate_nomadic_tribes_grant_military_leadership = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		always = no
 	}
 	can_select = {
 	}
 	on_granted = {
+		enable_estate_action = {
+			estate_action = RECRUIT_MINISTER_NOMADIC_TRIBES
+		}
 	}
 	on_revoked = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MINISTER_NOMADIC_TRIBES
+		}
 	}
 	on_invalid = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MINISTER_NOMADIC_TRIBES
+		}
 	}
 	ai_will_do = {
 		factor = 5
@@ -378,14 +399,33 @@ estate_nomadic_tribes_military_service = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		always = no
 	}
 	can_select = {
 	}
 	on_granted = {
+		enable_estate_action = {
+			estate_action = CONTRIBUTE_WARRIORS_NOMADIC_TRIBES
+		}
+		enable_estate_action = {
+			estate_action = RAISE_HOST_NOMADIC_TRIBES
+		}
 	}
 	on_revoked = {
+		disable_estate_action = {
+			estate_action = CONTRIBUTE_WARRIORS_NOMADIC_TRIBES
+		}
+		disable_estate_action = {
+			estate_action = RAISE_HOST_NOMADIC_TRIBES
+		}
 	}
 	on_invalid = {
+		disable_estate_action = {
+			estate_action = CONTRIBUTE_WARRIORS_NOMADIC_TRIBES
+		}
+		disable_estate_action = {
+			estate_action = RAISE_HOST_NOMADIC_TRIBES
+		}
 	}
 	ai_will_do = {
 		factor = 1
@@ -442,12 +482,21 @@ estate_nomadic_tribes_secured_succession = {
 	}
 	on_granted = {
 		custom_tooltip = estate_nomadic_tribes_ensure_tribal_loyalty_gt
+		enable_estate_action = {
+			estate_action = SUPPORT_TRIBES_NOMADIC_TRIBES
+		}
 	}
 	on_invalid = {
 		custom_tooltip = estate_nomadic_tribes_ensure_tribal_loyalty_rt
+		disable_estate_action = {
+			estate_action = SUPPORT_TRIBES_NOMADIC_TRIBES
+		}
 	}
 	on_revoked = {
 		custom_tooltip = estate_nomadic_tribes_ensure_tribal_loyalty_rt
+		disable_estate_action = {
+			estate_action = SUPPORT_TRIBES_NOMADIC_TRIBES
+		}
 	}
 	ai_will_do = {
 		factor = 5

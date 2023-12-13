@@ -547,9 +547,9 @@ french_missions_1_hre_branch = {
 				army_size = emperor
 			} 
 			else = { prestige = 50 } 
-			OR = { 
-				influence_ideas = 5 
-				diplomatic_ideas = 5
+			OR = {
+				full_idea_group = influence_ideas 
+				full_idea_group = dynasty0
 				monthly_dip = 15
 			}
 		}

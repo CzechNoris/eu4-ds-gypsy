@@ -4695,17 +4695,17 @@ tur_persian_conquest = {
 				}
 			}
 			else = {
-				egypt_region = {
+				persia_region = {
 					country_or_non_sovereign_subject_holds = ROOT
 					NOT = { local_autonomy_above_min = 10 }
 					type = all
 				}
-				bahari_area = {
+				tabarestan_area = {
 					type = all 
 					country_or_non_sovereign_subject_holds = ROOT 
 					num_of_times_improved = 4 
 				}
-				delta_area = { 
+				azerbaijan_area = { 
 					type = all 
 					country_or_non_sovereign_subject_holds = ROOT 
 					num_of_times_improved = 4 

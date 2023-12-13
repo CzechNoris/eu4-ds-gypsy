@@ -119,7 +119,7 @@ defender_of_faith_3 = {
 		monthly_fervor_increase = 1
     }
 	ai_will_do = {
-		factor = 5
+		factor = 10
 		modifier = {
 			factor = 0.5
 			full_idea_group = humanist_ideas
@@ -175,7 +175,7 @@ defender_of_faith_4 = {
 		manpower_in_true_faith_provinces = 0.2
     }
 	ai_will_do = {
-		factor = 5
+		factor = 10
 		modifier = {
 			factor = 0.5
 			full_idea_group = humanist_ideas
@@ -234,7 +234,7 @@ defender_of_faith_5 = {
 		missionary_maintenance_cost = -0.2
 	}
 	ai_will_do = {
-		factor = 10
+		factor = 20
 		modifier = {
 			factor = 0.5
 			full_idea_group = humanist_ideas

@@ -3,7 +3,7 @@ humanist_bonus = {
 		has_idea_group = humanist_ideas
 	}
 	trigger = {
-		has_idea = cultural_ties_2
+		has_idea = cultural_ties
 		num_accepted_cultures = 5
 	}
 	land_morale = 0.1
@@ -690,6 +690,27 @@ kolo6_10_bonus = {
 }
 
 
+kolo5_1_bonus = { # moved to province triggered modifier
+	potential = {
+		colonial_parent = {	has_idea_group = colonial_empire0 }
+	}
+	trigger = {
+		colonial_parent = {	has_idea = colonial_empire5 }
+	}
+	build_cost = -0.33
+}
+
+kolo5_2_bonus = {
+	potential = {
+		colonial_parent = {	has_idea_group = colonial_empire0 }
+	}
+	trigger = {
+		colonial_parent = {	has_idea = colonial_empire2 }
+	}
+	colonists = 1
+}
+
+
 fleet_base_manpower_1 = {
 	potential = {
 		has_idea_group = fleet_base0
@@ -724,27 +745,6 @@ fleet_base_manpower_3 = {
 		current_age = age_of_revolutions
 	}
 	global_manpower = 7.5
-}
-
-
-kolo5_1_bonus = { # moved to province triggered modifier
-	potential = {
-		colonial_parent = {	has_idea_group = colonial_empire0 }
-	}
-	trigger = {
-		colonial_parent = {	has_idea = colonial_empire5 }
-	}
-	build_cost = -0.33
-}
-
-kolo5_2_bonus = {
-	potential = {
-		colonial_parent = {	has_idea_group = colonial_empire0 }
-	}
-	trigger = {
-		colonial_parent = {	has_idea = colonial_empire2 }
-	}
-	colonists = 1
 }
 
 fleet_base_sailors_1 = {
@@ -1077,120 +1077,6 @@ galley_force_fleet_3 = {
 	naval_forcelimit = 200
 }
 
-#kriegsprod_forcelimit_1 = {
-#	potential = {
-#		has_idea_group = war_production0
-#		current_age = age_of_reformation
-#	}
-#	trigger = {
-#		has_idea = war_production4
-#		current_age = age_of_reformation
-#	}
-#	naval_forcelimit = 15
-#	land_forcelimit = 7
-#}
-
-#kriegsprod_forcelimit_2 = {
-#	potential = {
-#		has_idea_group = war_production0
-#		current_age = age_of_absolutism
-#	}
-#	trigger = {
-#		has_idea = war_production4
-#		current_age = age_of_absolutism
-#	}
-#	naval_forcelimit = 30
-#	land_forcelimit = 14
-#}
-
-#kriegsprod_forcelimit_3 = {
-#	potential = {
-#		has_idea_group = war_production0
-#		current_age = age_of_revolutions
-#	}
-#	trigger = {
-#		has_idea = war_production4
-#		current_age = age_of_revolutions
-#	}
-#	naval_forcelimit = 45
-#	land_forcelimit = 21
-#}
-
-#full_merc_1 = {
-#	potential = {
-#		has_idea_group = mercenary0
-#		army_professionalism = 0.9
-#	}
-#	trigger = {
-#		full_idea_group = mercenary0
-#		army_professionalism = 0.9
-#	}
-#	yearly_army_professionalism = -0.025
-#	
-#}
-
-#full_merc_2 = {
-#	potential = {
-#		has_idea_group = mercenary0
-#		army_professionalism = 0.8
-#		NOT = { army_professionalism = 0.9 }
-#	}
-#	trigger = {
-#		full_idea_group = mercenary0
-#		army_professionalism = 0.8
-#		NOT = { army_professionalism = 0.9 }
-#	}
-#	yearly_army_professionalism = -0.02
-#	
-#}
-
-#full_merc_3 = {
-#	potential = {
-#		has_idea_group = mercenary0
-#		army_professionalism = 0.7
-#		NOT = { army_professionalism = 0.8 }
-#		
-#	}
-#	trigger = {
-#		full_idea_group = mercenary0
-#		army_professionalism = 0.7
-#		NOT = { army_professionalism = 0.8 }
-#	}
-#	yearly_army_professionalism = -0.015
-#	
-#}
-
-#full_merc_4 = {
-#	potential = {
-#		has_idea_group = mercenary0
-#		army_professionalism = 0.6
-#		NOT = { army_professionalism = 0.7 }
-#	}
-#	trigger = {
-#		full_idea_group = mercenary0
-#		army_professionalism = 0.6
-#		NOT = { army_professionalism = 0.7 }
-#		
-#	}
-#	yearly_army_professionalism = -0.01
-#	
-#}
-
-#full_merc_5 = {
-#	potential = {
-#		has_idea_group = mercenary0
-#		army_professionalism = 0.5
-#		NOT = { army_professionalism = 0.6 }
-#	}
-#	trigger = {
-#		full_idea_group = mercenary0
-#		army_professionalism = 0.5
-#		NOT = { army_professionalism = 0.6 }
-#	}
-#	yearly_army_professionalism = -0.005
-#	
-#}
-
 shock_firedamage_1 = {
 	potential = {
 		has_idea_group = shock0
@@ -1226,19 +1112,6 @@ shock_firedamage_3 = {
 	}
 	fire_damage_received = -0.075
 }
-
-#development_6_bonus = { # removed and moved to Admin Ideas (and to province triggered modifier)
-#	potential = {
-#	overlord = {	has_idea_group = development0 }
-#			
-#	}
-#	trigger = {
-#	overlord = {	has_idea = development6 }
-#
-#	}
-#	build_cost = -0.25
-#	
-#}
 
 formation_5_1 = {
 	potential = {

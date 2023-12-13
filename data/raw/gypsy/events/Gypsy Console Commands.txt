@@ -15,7 +15,7 @@ country_event = {
 
 	option = {
 		name = "gypsy_console.1.a"
-		custom_tooltip = gypsy_console_command_integrate_jap
+		custom_tooltip = gypsy_console_command_integrate_japan
 		hidden_effect = {
 			japan_region = {
 				add_core = ROOT
@@ -66,5 +66,25 @@ country_event = {
 				cede_province = ROOT
 			}
 		}
+	}
+	option = {
+		name = "gypsy_console.1.c"
+		custom_tooltip = gypsy_console_command_integrate_germany
+		hidden_effect = {
+			north_german_region = {
+				add_core = ROOT
+				cede_province = ROOT
+			}
+			south_german_region = {
+				add_core = ROOT
+				cede_province = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = "gypsy_console.1.d"
+		custom_tooltip = gypsy_console_command_ottoman_color
+		change_country_color = { country = TUR }
 	}
 }

@@ -779,7 +779,7 @@ cathar0 = {
 	}
 	
 	cathar3 = {
-		defensiveness = 0.1
+		defensiveness = 0.2
 	}
 
 	cathar4 = {
@@ -1849,7 +1849,7 @@ ibadi0 = {
 	}
 
 	ibadi5 = {
-		defensiveness = 0.1
+		defensiveness = 0.2
 	}
 	
 	ibadi6 = {
@@ -2132,7 +2132,7 @@ strongman0 = {
 	}
 
 	strongman4 = {
-		siege_ability = 0.15
+		siege_ability = 0.1
 		war_exhaustion = -0.05
 	}
 
@@ -2188,7 +2188,7 @@ strongfem0 = {
 	}
 
 	strongfem4 = {
-		siege_ability = 0.15
+		siege_ability = 0.1
 		war_exhaustion = -0.05
 	}
 
@@ -2452,7 +2452,7 @@ horde0 = {
 	}
 	horde6 = {
 		governing_capacity = 100
-		# <<WIKI>> reduced_dev_malus = yes
+		# <<WIKI>> reduced_gov_malus = yes
 	}
 	horde7 = {
 		reduced_liberty_desire = 5
@@ -2491,7 +2491,7 @@ heavy_ship0 = {
 	}
 	
 	heavy_ship2 = {
-		heavy_ship_power = 0.3
+		heavy_ship_power = 0.2
 	}
 	
 	heavy_ship3 = {
@@ -2588,7 +2588,7 @@ galley0 = {
 	}
 	
 	galley3 = {
-		galley_power = 0.2
+		galley_power = 0.3
 	}
 
 	galley7 = {
@@ -3231,7 +3231,7 @@ standing_army0 = {
 	category = MIL
 
 	bonus = {
-		drill_decay_modifier = -0.5
+		drill_decay_modifier = -0.25
 	}
 		
 	trigger = {
@@ -3278,7 +3278,6 @@ conscription0 = {
 
 	bonus = {
 		manpower_recovery_speed = 0.5
-		global_regiment_recruit_speed = -0.33
 	}
 		
 	trigger = {
@@ -3290,7 +3289,7 @@ conscription0 = {
 		reinforce_speed = 0.25
 	}
 	conscription2 = {
-		land_morale = 0.3
+		land_morale = 0.4
 	}
 	conscription1 = {
 		global_manpower = 5.0
@@ -3306,7 +3305,7 @@ conscription0 = {
 		global_manpower_modifier = 0.25
 	}
 	conscription7 = {
-		drill_gain_modifier = 0.5
+		global_regiment_recruit_speed = -0.33
 	}
 	
 	ai_will_do = {
@@ -3402,7 +3401,7 @@ weapon_quality0 = {
 		factor = 2
 		modifier = {
 			factor = 2.0
-			has_idea_group = quality_ideas
+			has_idea_group = quality0
 		}
 		modifier = {
 			factor = 2
@@ -3421,6 +3420,7 @@ fortress0 = {
 
 	bonus = {
 		reinforce_speed = 0.25
+		max_hostile_attrition = 1
 	}
 	fortress7 = {
 		reinforce_cost_modifier = -0.25
@@ -3486,7 +3486,7 @@ war_production0 = {
 	}
 
 	war_production5 = {
-		fire_damage = 0.05
+		fire_damage = 0.075
 	}
 	
 	war_production6 = {
@@ -3626,7 +3626,7 @@ decentralisation0 = {
 
 	decentralisation1 = {
 		build_cost = -0.1
-		# <<WIKI>> reduced_dev_malus = yes
+		# <<WIKI>> reduced_gov_malus = yes
 	}
 	
 	decentralisation2 = {
@@ -3685,7 +3685,7 @@ tactical0 = {
 		shock_damage_received = -0.075
 	}
 	tactical5 = {
-		drill_decay_modifier = -0.33
+		drill_decay_modifier = -0.20
 		# <<WIKI>> diszi_per_prof_level = 0.02
 	}
 	tactical6 = {
@@ -3737,6 +3737,7 @@ militarism0 = {
 	}
 	militarism3 = {
 		discipline = 0.075
+		# <<WIKI>> development_of_barracks = -5%
 	}
 	militarism4 = {
 		global_manpower = 5.0

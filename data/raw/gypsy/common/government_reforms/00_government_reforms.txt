@@ -5,7 +5,6 @@ defaults_reform = {
 	heirs_can_be_generals = yes
 	fixed_rank = 0
 	republican_name = no
-	militarised_society = no
 	government_abilities = { }
 	claim_states = no
 	religion = no
@@ -77,8 +76,6 @@ defaults_reform = {
 	can_remove_idea_group = yes
 	mercs_do_not_cost_army_professionalism = no
 	is_eligible_for_hre_emperor = no
-	seizing_land_no_rebels_from_$estate$ = no
-	enable_karma_decision = no
 }
 
 # legacy governments

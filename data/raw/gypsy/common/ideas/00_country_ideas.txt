@@ -16188,7 +16188,7 @@ CLI_ideas = {
 WES_ideas = {
 	start = {
 		diplomats = 1
-		land_forcelimit_modifier = 0.2
+		land_forcelimit_modifier = 0.25
 	}
 	bonus = {
 		discipline = 0.05
@@ -16203,7 +16203,7 @@ WES_ideas = {
 	}
 	wes_westphalian_decentralisation  = {
 		state_maintenance_modifier = -0.1
-		development_cost = -0.05
+		development_cost = -0.1
 	}
 	wes_increased_conscription = {
 		global_manpower_modifier = 0.20
@@ -16214,10 +16214,11 @@ WES_ideas = {
 	}
 	wes_taxation = {
 		global_tax_modifier = 0.1
+		production_efficiency = 0.1
 	}
 	wes_enlightenment = {
-		tolerance_heretic = 1
-		tolerance_heathen = 1
+		tolerance_heretic = 2
+		tolerance_heathen = 2
 	}
 	wes_cities_of_the_rhineland = {
 		global_prov_trade_power_modifier = 0.15

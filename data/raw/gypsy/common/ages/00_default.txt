@@ -412,7 +412,7 @@ age_of_reformation = {
 				tag = MUG
 			}
 			modifier = {
-				artillery_power = 0.2
+				artillery_power = 0.15
 			}
 			ai_will_do = {
 				factor = 100
@@ -481,7 +481,7 @@ age_of_absolutism = {
 		increase_autonomy_command = -2
 		debase_currency = -1
 		execute_rebel_acceptance_command = -10
-		automatic_seat_in_parliament = -3
+		automatic_seat_in_parliament = -2
 		manual_seat_in_parliament = -2
 		war_exhaustion = -1
 	}
@@ -670,7 +670,7 @@ age_of_revolutions = {
 		increase_autonomy_command = -2
 		debase_currency = -1
 		execute_rebel_acceptance_command = -10
-		automatic_seat_in_parliament = -3
+		automatic_seat_in_parliament = -2
 		manual_seat_in_parliament = -2
 		war_exhaustion = -1
 	}

@@ -103,7 +103,7 @@ italy_missions_1 = {
 						}
 					}
 					reverse_add_casus_belli = {
-						type = cb_italy_humiliation_rivals
+						type = cb_humiliate_rotw
 						target = ROOT
 					}
 				}
@@ -299,9 +299,20 @@ italy_missions_2 = {
 				}
 				if = {
 					limit = {
-						has_building = grand_shipyard
+						has_building = navyforcelimit_lvl_3
 					}
-					add_base_production = 4
+					add_base_production = 2
+				}
+				else_if = {
+					limit = {
+						has_building = navyforcelimit_lvl_2
+					}
+					remove_building = navyforcelimit_lvl_2
+					add_building_construction = {
+						building = navyforcelimit_lvl_3
+						speed = 1
+						cost = 0
+					}
 				}
 				else_if = {
 					limit = {
@@ -309,7 +320,7 @@ italy_missions_2 = {
 					}
 					remove_building = shipyard
 					add_building_construction = {
-						building = grand_shipyard
+						building = navyforcelimit_lvl_2
 						speed = 1
 						cost = 0
 					}

@@ -21,8 +21,8 @@ iv_mpadjust_loans_25_1 = {
 		monthly_income = 25
 		NOT = {
 			OR = {
-			monthly_income = 50
-			num_of_loans = 10
+				monthly_income = 50
+				num_of_loans = 10
 			}
 		}
 	}
@@ -47,8 +47,8 @@ iv_mpadjust_loans_25_2 = {
 		monthly_income = 25
 		NOT = {
 			OR = {
-			monthly_income = 50
-			num_of_loans = 15
+				monthly_income = 50
+				num_of_loans = 15
 			}
 		}
 	}

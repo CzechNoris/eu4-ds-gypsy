@@ -202,7 +202,70 @@ country_event = {
 	}
 	
 	option = {
-		name = "idea_var_gypsy.51b"
+		name = "idea_var_gypsy.50b"
+		add_dip_power = 100
+	}
+}
+
+country_event = {
+	id = idea_var_gypsy.52
+	title = idea_var_gypsy.52.name
+	desc = idea_var_gypsy.52.desc
+	
+	picture = BIG_BOOK_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "idea_var_gypsy.52a"
+		ai_chance = { factor = 100 }
+		change_primary_culture = goths_new
+		custom_tooltip = gothic_nation_convert.tt
+		hidden_effect = {
+			set_ruler_culture = goths_new
+			if = {
+				limit = {
+					has_heir = yes
+				}
+				set_heir_culture = goths_new
+			}
+			if = {
+				limit = {
+					has_consort = yes
+					OR = {
+						consort_culture = pommeranian
+						consort_culture = prussian
+						consort_culture = lower_saxon
+						consort_culture = hannoverian
+						consort_culture = hessian
+						consort_culture = saxon
+						consort_culture = franconian
+						consort_culture = swabian
+						consort_culture = swiss
+						consort_culture = bavarian
+						consort_culture = austrian
+					}
+				}
+				set_consort_culture = goths_new
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						culture = goths
+						AND = {
+							culture_group = germanic
+							NOT = { culture = dutch }
+							NOT = { culture = flemish }
+							NOT = { culture = frisian }
+						}
+					}
+				}
+				change_culture = goths_new
+			}
+		}
+	}
+	option = {
+		name = "idea_var_gypsy.50b"
 		add_dip_power = 100
 	}
 }

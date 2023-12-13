@@ -867,7 +867,7 @@ russia_siberian_missions_slot = {
 						OR = {
 							num_free_building_slots = 1
 							has_building = shipyard
-							has_building = grand_shipyard
+							has_building = navyforcelimit_lvl_2
 						}
 					}
 										

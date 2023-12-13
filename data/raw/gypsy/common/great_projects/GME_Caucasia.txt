@@ -351,6 +351,7 @@ gme_noah_mausoleum = {
 		country_modifiers = {
 			legitimacy = 0.25
 			stability_cost_modifier = -0.05
+			state_governing_cost = -0.05
 		}
 		on_upgraded = { }
 	}
@@ -381,7 +382,7 @@ gme_noah_mausoleum = {
 		country_modifiers = {
 			legitimacy = 1
 			stability_cost_modifier = -0.15
-			state_governing_cost = -0.20
+			state_governing_cost = -0.15
 		}
 		on_upgraded = { }
 	}

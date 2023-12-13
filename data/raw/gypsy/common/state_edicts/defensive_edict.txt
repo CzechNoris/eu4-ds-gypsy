@@ -12,9 +12,7 @@ edict_defensive_edict = {
 	}
 	
 	notify_trigger = {
-		owner = {
-			is_at_war = no
-		}
+		is_at_war = no
 	}
 
 	
@@ -25,7 +23,11 @@ edict_defensive_edict = {
 		factor = 5
 		modifier = {
 			factor = 0
-			is_at_war = no
+			owner = { is_at_war = no }
+		}
+		modifier = {
+			factor = 20
+			owner = { is_at_war = yes }
 		}
 		modifier = {
 			factor = 20

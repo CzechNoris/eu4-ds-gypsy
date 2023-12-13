@@ -1671,7 +1671,7 @@ merc_colonial_rangers = {
 	}
     modifier = {
 		movement_speed = 0.1
-        land_morale = 0.10
+        land_morale = 0.2
 	}
 }
 

@@ -5844,7 +5844,7 @@ guru_granth_sahib_spread = {
 
 guru_granth_sahib_military = {
 	drill_gain_modifier = 0.5
-	drill_decay_modifier = -0.25
+	drill_decay_modifier = -0.20
 	religion = yes
 }
 
@@ -9934,7 +9934,7 @@ elite_revolutionary_guard_modifier_country = {
 
 professional_revolutionary_guard_modifier = {
 	is_revolutionary_guard_modifier = yes
-	drill_decay_modifier = -0.25
+	drill_decay_modifier = -0.20
 	land_maintenance_modifier = 0.5
 }
 
@@ -11441,8 +11441,8 @@ oir_captured_mng_emperor = {
 }
 
 mng_militry_incompetence = {
-	land_morale = -0.30
-	discipline = -0.1
+	land_morale = -0.20
+	discipline = -0.05
 }
 
 warriors_do_not_read_books = {
@@ -11684,7 +11684,7 @@ estate_maratha_monopoly_of_gems_mod = {
 }
 
 estate_janissary_professional_soldiers_mod = {
-	drill_decay_modifier = -0.25
+	drill_decay_modifier = -0.20
 	reinforce_cost_modifier = -0.1
 	is_janissary_modifier = yes
 }

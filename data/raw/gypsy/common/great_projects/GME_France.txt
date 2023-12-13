@@ -126,7 +126,7 @@ gme_chambord = {
 		OR = {
 			AND = {
 				culture_group = french
-				FROM = { government = monarchy }
+				owner = { government = monarchy }
 				province_is_or_accepts_culture = yes
 			}
 			has_idea = assimilation3
@@ -136,7 +136,7 @@ gme_chambord = {
 		OR = {
 			AND = {
 				culture_group = french
-				FROM = { government = monarchy }
+				owner = { government = monarchy }
 				province_is_or_accepts_culture = yes
 			}
 			has_idea = assimilation3

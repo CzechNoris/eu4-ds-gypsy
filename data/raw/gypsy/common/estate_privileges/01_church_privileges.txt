@@ -320,10 +320,45 @@ estate_church_new_world_mission = {
 		native_assimilation = 0.5
 	}
 	on_granted = {
+		if = {
+			limit = { has_dlc = "Domination" always = no }
+			enable_estate_action = {
+				estate_action = NEW_WORLD_MISSION_CHURCH
+			}
+		}
+		else = {
+			custom_tooltip = has_no_effects_on_granted
+		}
 	}
 	on_invalid = {
+		if = {
+			limit = { has_dlc = "Domination" always = no }
+			disable_estate_action = {
+				estate_action = NEW_WORLD_MISSION_CHURCH
+			}
+		}
+		else = {
+			hidden_effect = {
+				disable_estate_action = {
+					estate_action = NEW_WORLD_MISSION_CHURCH
+				}
+			}
+		}
 	}
 	on_revoked = {
+		if = {
+			limit = { has_dlc = "Domination" always = no }
+			disable_estate_action = {
+				estate_action = NEW_WORLD_MISSION_CHURCH
+			}
+		}
+		else = {
+			hidden_effect = {
+				disable_estate_action = {
+					estate_action = NEW_WORLD_MISSION_CHURCH
+				}
+			}
+		}
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
@@ -531,7 +566,7 @@ estate_church_clerical_ministers = {
 			religion = confucianism
 		}
 		modifier = {
-			yearly_harmony = 0.25
+			yearly_harmony = 0.5
 		}
 	}
 	conditional_modifier = {
@@ -1359,7 +1394,7 @@ estate_church_for_the_faith = {
 		}
 		modifier = {
 			church_loyalty_modifier = 0.1
-			land_morale = 0.20
+			land_morale = 0.30
 			war_exhaustion = -0.05
 			max_absolutism = 5
 		}
@@ -2511,6 +2546,7 @@ estate_church_expand_the_theology = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		always = no
 	}
 	can_select = {
 		if = {
@@ -2519,10 +2555,30 @@ estate_church_expand_the_theology = {
 		}
 	}
 	on_granted = {
+		enable_estate_action = {
+			estate_action = RECRUIT_MINISTER_CHURCH
+		}
+		custom_tooltip = empty_text
+		enable_estate_action = {
+			estate_action = RECRUIT_INQUISITOR_CHURCH
+		}
 	}
 	on_revoked = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MINISTER_CHURCH
+		}
+		custom_tooltip = empty_text
+		disable_estate_action = {
+			estate_action = RECRUIT_INQUISITOR_CHURCH
+		}
 	}
 	on_invalid = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MINISTER_CHURCH
+		}
+		disable_estate_action = {
+			estate_action = RECRUIT_INQUISITOR_CHURCH
+		}
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
@@ -2544,6 +2600,7 @@ estate_church_clerical_education = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		always = no
 	}
 	can_select = {
 		if = {
@@ -2688,12 +2745,22 @@ estate_church_institutionalized_clergy = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		always = no
 	}
 	on_granted = {
+		enable_estate_action = {
+			estate_action = SEEK_SUPPORT_OF_CLERGY_CHURCH
+		}
 	}
 	on_invalid = {
+		disable_estate_action = {
+			estate_action = SEEK_SUPPORT_OF_CLERGY_CHURCH
+		}
 	}
 	on_revoked = {
+		disable_estate_action = {
+			estate_action = SEEK_SUPPORT_OF_CLERGY_CHURCH
+		}
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
@@ -2719,6 +2786,7 @@ estate_church_donation_right = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		has_dlc = "Domination"
+		always = no
 	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = {
@@ -2733,15 +2801,24 @@ estate_church_donation_right = {
 		scaling_with_loyalty_privilege_tooltip = {
 			estate_privilege = estate_church_donation_right
 		}
+		enable_estate_action = {
+			estate_action = MAKE_GENEROUS_DONATION_CHURCH
+		}
 	}
 	on_invalid = {
 		scaling_with_loyalty_privilege_tooltip = {
 			estate_privilege = estate_church_donation_right
 		}
+		disable_estate_action = {
+			estate_action = MAKE_GENEROUS_DONATION_CHURCH
+		}
 	}
 	on_revoked = {
 		scaling_with_loyalty_privilege_tooltip = {
 			estate_privilege = estate_church_donation_right
+		}
+		disable_estate_action = {
+			estate_action = MAKE_GENEROUS_DONATION_CHURCH
 		}
 	}
 	conditional_modifier = {

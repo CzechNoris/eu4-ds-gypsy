@@ -12,26 +12,32 @@ gme_reichstag = {
 	can_use_modifiers_trigger = {
 		OR = {
 			AND = {
-				OR = {
-					tag = GER
-					tag = PRU
-					tag = HLR
-					AND = {
-						culture_group = germanic
-						NOT = { primary_culture = dutch }
+				owner = {
+					OR = {
+						tag = GER
+						tag = PRU
+						tag = HLR
+						AND = {
+							culture_group = germanic
+							NOT = { primary_culture = dutch }
+						}
 					}
 				}
 				if = {
 					limit = { has_dlc = "Common Sense" }
-					OR = {
-						has_parliament = yes
-						government = republic
+					owner = {
+						OR = {
+							has_parliament = yes
+							government = republic
+						}
 					}
 				}
 				else = {
-					OR = {
-						government = republic
-						has_reform = parliamentary_reform
+					owner = {
+						OR = {
+							government = republic
+							has_reform = parliamentary_reform
+						}
 					}
 				}
 			}
@@ -42,26 +48,32 @@ gme_reichstag = {
 		adm_tech = 15
 		OR = {
 			AND = {
-				OR = {
-					tag = GER
-					tag = PRU
-					tag = HLR
-					AND = {
-						culture_group = germanic
-						NOT = { primary_culture = dutch }
+				owner = { 
+					OR = {
+						tag = GER
+						tag = PRU
+						tag = HLR
+						AND = {
+							culture_group = germanic
+							NOT = { primary_culture = dutch }
+						}
 					}
 				}
 				if = {
 					limit = { has_dlc = "Common Sense" }
-					OR = {
-						has_parliament = yes
-						government = republic
+					owner = {
+						OR = {
+							has_parliament = yes
+							government = republic
+						}
 					}
 				}
 				else = {
-					OR = {
-						government = republic
-						has_reform = parliamentary_reform
+					owner = {
+						OR = {
+							government = republic
+							has_reform = parliamentary_reform
+						}
 					}
 				}
 			}
@@ -195,7 +207,7 @@ gme_schloss_neuhaus = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		has_institution = renaissance
+		owner = { has_institution = renaissance }
 		OR = {
 			OR = {
 				has_reform = monarchy_mechanic

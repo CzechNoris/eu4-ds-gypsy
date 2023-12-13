@@ -4930,3 +4930,4 @@ iv_estate_rebels = {
 		spawn_rebels_seize_land_switch = yes
 	}
 }
+on_completed_agenda_effect_estate_nationalist = {}

@@ -2770,8 +2770,8 @@ guiTypes = {
 			fullScreen = no
 			moveable = 0
 			Orientation = "UPPER_LEFT"
-			max_slots_horizontal = 6
-			max_slots_vertical = 3
+#			max_slots_horizontal = 6	#debug
+#			max_slots_vertical = 3
 
 			#### GREAT PROJECTS WINDOW
 			windowType = {
@@ -4612,7 +4612,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name ="build_upgrade_button"
-			position = { x= 193 y = 7 }
+			position = { x= 220 y = 7 }
 			quadTextureSprite ="GFX_great_project_level_icon_upgrade_build"
 			tooltip = ""
 			tooltipText =""
@@ -4624,7 +4624,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name ="use_money_to_boost_button"
-			position = { x= 193 y = 42 }
+			position = { x= 220 y = 42 }
 			quadTextureSprite ="GFX_great_project_level_icon_upgrade_money"
 			tooltip = ""
 			tooltipText =""
@@ -4636,7 +4636,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name ="use_manpower_to_boost_button"
-			position = { x= 193 y = 77 }
+			position = { x= 220 y = 77 }
 			quadTextureSprite ="GFX_great_project_level_icon_upgrade_manpower"
 			tooltip = ""
 			tooltipText =""
@@ -4648,7 +4648,7 @@ guiTypes = {
 
 		guiButtonType = {
 			name ="move_button"
-			position = { x= 9 y = 28 }
+			position = { x= 9 y = 35 }
 			quadTextureSprite ="GFX_great_project_level_icon_move"
 			tooltip = ""
 			tooltipText =""

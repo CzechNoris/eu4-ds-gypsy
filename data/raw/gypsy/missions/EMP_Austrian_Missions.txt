@@ -941,7 +941,6 @@ emp_hab_minorities_branch = {
 					duration = -1
 				}
 			}
-			set_country_flag = hab_development_minorities_flag
 		}
 	}
 }

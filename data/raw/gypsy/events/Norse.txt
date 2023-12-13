@@ -108,7 +108,7 @@ country_event = {
 		is_subject = no
 	}
 	mean_time_to_happen = {
-		years = 100
+		years = 20
 		#Being excommunicated DESPITE being very religious should make you question the Pope even more
 		modifier = {
 			is_excommunicated = yes
@@ -352,7 +352,7 @@ country_event = {
 		}
 		change_religion = norse_pagan_reformed
 		remove_country_modifier = rethinking_catholic_life
-		add_stability = -3
+		add_stability = -1
 		ai_chance = {
 			#AI should NEVER become Norse under any circumstance
 			factor = 0
@@ -469,7 +469,6 @@ country_event = {
 				size = 2
 			}
 		}
-		add_stability = -2
 		ai_chance = {
 			factor = 1
 		}

@@ -557,7 +557,7 @@ liv_the_livonian_defender = {	#Permanent
 
 liv_militarized_knights = {
 	army_tradition_from_battle = 2
-	drill_decay_modifier = -0.75
+	drill_decay_modifier = -0.33
 }
 
 liv_protector_of_the_catholics = {	#Permanent
@@ -1191,7 +1191,7 @@ dan_sca_refocus_on_personal_armies = {	#Permanent
 	discipline = 0.025
 	global_manpower_modifier = 0.15
 	drill_gain_modifier = 0.5
-	drill_decay_modifier = -0.5
+	drill_decay_modifier = -0.25
 	#Disables mercenaries
 }
 
@@ -5441,7 +5441,7 @@ lan_clean_government = {
 
 pru_space_marines = {
 	drill_gain_modifier = 0.25
-	drill_decay_modifier = -0.25
+	drill_decay_modifier = -0.20
 	reinforce_cost_modifier = -0.15
 }
 
@@ -7022,7 +7022,7 @@ kon_south_african_hegemony_province = {	#Accepts non-accepted culture effect
 
 #Country modifier
 kon_permanent_army_level_1 = {	#Permanent
-	drill_decay_modifier = -0.25
+	drill_decay_modifier = -0.20
 	recover_army_morale_speed = 0.05
 }
 
@@ -7396,7 +7396,7 @@ ada_war_against_ethiopia = {
 
 ada_professional_army = {
 	drill_gain_modifier = 0.5
-	drill_decay_modifier = -0.5
+	drill_decay_modifier = -0.25
 	discipline = 0.05
 }
 
@@ -9824,7 +9824,7 @@ pru_oblique_order_modifier = {
 }
 
 pru_rewrite_military_manual_modifier = {
-	drill_decay_modifier = -0.33
+	drill_decay_modifier = -0.20
 	reinforce_speed = 0.25
 	war_exhaustion = -0.05
 }

@@ -123,21 +123,19 @@ estate_jains = {
 		estate_jains_grant_liberties
 		estate_jains_land_trade_rights
 		estate_jains_development_of_cities
-		#estate_jains_right_to_offer_loans
+		estate_jains_right_to_offer_loans
 		estate_jains_economical_boost
-		#estate_jains_patronize_jain_familiy
-		#estate_jains_incorruptible_offices
+		estate_jains_patronize_jain_familiy
+		estate_jains_incorruptible_offices
 		estate_jains_promote_jain_bookkeeping
-		
 		estate_burghers_commercial_board_of_advice
+		
 		estate_priv_idea_variation_11_2
 		estate_priv_idea_variation_11_3
-		#estate_priv_idea_variation_11_4
 		estate_priv_idea_variation_11_5
 		estate_priv_idea_variation_11_6
 		estate_priv_idea_variation_11_7
 		estate_priv_idea_variation_11_8
-		#estate_priv_idea_variation_11_12
 	}
 	
 	agendas = {

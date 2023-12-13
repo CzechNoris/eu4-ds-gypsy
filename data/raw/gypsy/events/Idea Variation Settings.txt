@@ -6,29 +6,6 @@ namespace = idea_settings
 
 
 ##########################################
-#### Start Event
-##########################################
-
-
-#country_event = {
-#	id = idea_settings.1
-#	title = "idea_settings.10"
-#	desc = "idea_settings.11"
-#	picture = BIG_BOOK_eventPicture   
-#	
-#	trigger = {
-#		NOT = { has_country_flag = idea_variation_tutorial_started }
-#	}
-#	
-#	is_triggered_only = yes
-#
-#	option = { 
-#		name = "idea_settings.12"
-#		set_country_flag = idea_variation_tutorial_started
-#	}
-#}
-
-##########################################
 #### Vote Schwierigkeit / Difficulty
 ##########################################
 

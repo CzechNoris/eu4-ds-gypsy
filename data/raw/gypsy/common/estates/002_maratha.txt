@@ -161,22 +161,20 @@ estate_maratha = {
 		estate_maratha_subject_rights
 		estate_maratha_better_integration
 		estate_maratha_development_of_marathi_lands
-		#estate_maratha_military_ministerium
+		estate_maratha_military_ministerium
 		estate_maratha_royal_court_tasks
-		#estate_maratha_noble_promotion
-		#estate_maratha_force_conscription
+		estate_maratha_noble_promotion
+		estate_maratha_force_conscription
 		
-		#estate_priv_idea_variation_3_1
+		estate_priv_idea_variation_3_1
 		estate_priv_idea_variation_3_2
 		estate_priv_idea_variation_3_3
-		#estate_priv_idea_variation_3_4
 		estate_priv_idea_variation_3_5
 		estate_priv_idea_variation_3_6
-		#estate_priv_idea_variation_3_7
+		estate_priv_idea_variation_3_7
 		estate_priv_idea_variation_3_8
 		estate_priv_idea_variation_3_9
 		estate_priv_idea_variation_3_11
-		#estate_priv_idea_variation_3_12
 	}
 	
 	agendas = {

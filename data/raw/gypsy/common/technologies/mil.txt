@@ -322,6 +322,7 @@ technology = {
 	}
 	
 	#Spanish Square
+	fort_16th = yes
 	sprite_level = 2
 	
 	supply_limit 		= 	0.8
@@ -374,7 +375,6 @@ technology = {
 	}
 	
 	#Star Bastions
-	fort_16th = yes
 	infantry_fire		=	0.5
 	
 	enable = african_hussar

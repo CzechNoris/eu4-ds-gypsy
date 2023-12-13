@@ -208,11 +208,11 @@ artist = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 1.2
+			factor = 2
 			NOT = { stability = 1 }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 10
 			NOT = { stability = 0 }
 		}
 		modifier = {
@@ -439,15 +439,15 @@ master_of_mint = {
 			NOT = { inflation = 1 }
 		}
 		modifier = {
-			factor = 1.2
+			factor = 2
 			inflation = 5
 		}
 		modifier = {
-			factor = 1.5
+			factor = 5
 			inflation = 10
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			inflation = 15
 		}
 	}
@@ -517,15 +517,15 @@ inquisitor = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 0.5
+			factor = 2
 			religious_unity = 0.95
 		}
 		modifier = {
-			factor = 1.5
+			factor = 5
 			religious_unity = 0.8
 		}
 		modifier = {
-			factor = 2
+			factor = 10
 			religious_unity = 0.5
 		}
 	}
@@ -579,7 +579,7 @@ statesman = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 20
 			is_emperor = yes
 		}
 	}
@@ -682,11 +682,11 @@ trader = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 1.5
+			factor = 2
 			trade_income_percentage = 0.4
 		}
 		modifier = {
-			factor = 1.5
+			factor = 4
 			has_idea_group = trade_ideas
 		}
 	}
@@ -823,7 +823,15 @@ diplomat = {
 	improve_relation_modifier = 0.2
 	
 	chance = {
-		factor = 1
+		factor = 0.5
+		modifier = {
+			factor = 5
+			owner = { is_part_of_hre = yes }
+		}
+		modifier = {
+			factor = 5
+			owner = { has_reform = shogunate }
+		}
 	}
 	
 	ai_will_do = {
@@ -915,7 +923,23 @@ army_reformer = {
 	}
 	
 	ai_will_do = {
-		factor = 1.2
+		factor = 1
+		modifier = {
+			factor = 10
+			NOT = { is_year = 1500 }
+		}
+		modifier = {
+			factor = 0.5
+			is_year = 1500
+		}
+		modifier = {
+			factor = 5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = no
+		}
 	}
 }
 
@@ -981,10 +1005,18 @@ commandant = {
 
 	chance = {
 		factor = 1
+		modifier = {
+			factor = 2
+			owner = { is_at_war = yes }
+		}
 	}
 	
 	ai_will_do = {
-		factor = 1.2
+		factor = 2
+		modifier = {
+			factor = 10
+			is_at_war = yes
+		}
 	}
 }
 
@@ -1084,7 +1116,7 @@ fortification_expert = {
 	global_manpower_modifier = 0.10
 
 	chance = {
-		factor = 0.8
+		factor = 1
 	}
 	
 	ai_will_do = {

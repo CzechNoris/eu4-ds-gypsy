@@ -1298,10 +1298,9 @@ estate_janissaries = {
 		estate_priv_idea_variation_9_1
 		estate_priv_idea_variation_9_2
 		estate_priv_idea_variation_9_3
-		#estate_priv_idea_variation_9_4
-		#estate_priv_idea_variation_9_5
+		estate_priv_idea_variation_9_5
 		estate_priv_idea_variation_9_6
-		#estate_priv_idea_variation_9_7
+		estate_priv_idea_variation_9_7
 		estate_priv_idea_variation_9_8
 		estate_priv_idea_variation_9_12
 	}

@@ -256,12 +256,12 @@ feudalism = {
 			factor = 0.1
 			scale = yes
 			potential = {
-				has_idea = patron_of_art_2
+				has_idea = patron_of_art
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_innovativ
 				owner = {
-					has_idea = patron_of_art_2
+					has_idea = patron_of_art
 				}
 			}
 		}
@@ -547,12 +547,12 @@ renaissance = {
 			factor = 0.1
 			scale = yes
 			potential = {
-				has_idea = patron_of_art_2
+				has_idea = patron_of_art
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_innovativ
 				owner = {
-					has_idea = patron_of_art_2
+					has_idea = patron_of_art
 				}
 			}
 		}
@@ -868,12 +868,12 @@ new_world_i = {
 			factor = 0.1
 			scale = yes
 			potential = {
-				has_idea = patron_of_art_2
+				has_idea = patron_of_art
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_innovativ
 				owner = {
-					has_idea = patron_of_art_2
+					has_idea = patron_of_art
 				}
 			}
 		}
@@ -1244,12 +1244,12 @@ printing_press = {
 			factor = 0.1
 			scale = yes
 			potential = {
-				has_idea = patron_of_art_2
+				has_idea = patron_of_art
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_innovativ
 				owner = {
-					has_idea = patron_of_art_2
+					has_idea = patron_of_art
 				}
 			}
 		}
@@ -1576,12 +1576,12 @@ global_trade = {
 			factor = 0.1
 			scale = yes
 			potential = {
-				has_idea = patron_of_art_2
+				has_idea = patron_of_art
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_innovativ
 				owner = {
-					has_idea = patron_of_art_2
+					has_idea = patron_of_art
 				}
 			}
 		}
@@ -2108,12 +2108,12 @@ manufactories = {
 			factor = 0.1
 			scale = yes
 			potential = {
-				has_idea = patron_of_art_2
+				has_idea = patron_of_art
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_innovativ
 				owner = {
-					has_idea = patron_of_art_2
+					has_idea = patron_of_art
 				}
 			}
 		}
@@ -2517,12 +2517,12 @@ enlightenment = {
 			factor = 0.1
 			scale = yes
 			potential = {
-				has_idea = patron_of_art_2
+				has_idea = patron_of_art
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_innovativ
 				owner = {
-					has_idea = patron_of_art_2
+					has_idea = patron_of_art
 				}
 			}
 		}
@@ -3203,12 +3203,12 @@ industrialization = {
 			factor = 0.1
 			scale = yes
 			potential = {
-				has_idea = patron_of_art_2
+				has_idea = patron_of_art
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_innovativ
 				owner = {
-					has_idea = patron_of_art_2
+					has_idea = patron_of_art
 				}
 			}
 		}

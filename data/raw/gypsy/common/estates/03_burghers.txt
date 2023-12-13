@@ -266,7 +266,7 @@ estate_burghers = {
 		estate_burghers_the_great_privilege
 		estate_burghers_exclusive_trade_rights
 		estate_burghers_control_over_monetary_policy
-		#estate_burghers_private_trade_fleets
+		estate_burghers_private_trade_fleets
 		estate_burghers_khmer_irrigation
 		estate_burghers_tropical_nation
 		estate_burghers_monopoly_of_textiles
@@ -287,12 +287,12 @@ estate_burghers = {
 		estate_burghers_the_new_middle_class
 		estate_burghers_autonomous_trade_companies
 		estate_burghers_development_of_cities
-		#estate_burghers_control_over_the_coinage
+		estate_burghers_control_over_the_coinage
 		estate_burghers_economical_boost
-		#estate_burghers_force_impressment
-		#estate_burghers_naval_school_right
+		estate_burghers_force_impressment
+		estate_burghers_naval_school_right
 		estate_burghers_expanded_monopoly_rights
-		#estate_burghers_financial_demand
+		estate_burghers_financial_demand
 		estate_burghers_sindicat_remensa_privilege
 		estate_burghers_promote_burgher_bookkeeping
 		estate_burghers_great_works_of_iran
@@ -307,21 +307,19 @@ estate_burghers = {
 		estate_burghers_YEM_coffee_monopoly
 		estate_burghers_persian_rugs
 		
-		#estate_priv_idea_variation_4_1
+		estate_priv_idea_variation_4_1
 		estate_priv_idea_variation_4_2
 		estate_priv_idea_variation_4_3
-		#estate_priv_idea_variation_4_4
 		estate_priv_idea_variation_4_5
 		estate_priv_idea_variation_4_6
 		estate_priv_idea_variation_4_7
 		estate_priv_idea_variation_4_8
-		#estate_priv_idea_variation_4_9
+		estate_priv_idea_variation_4_9
 		estate_priv_idea_variation_4_10
 		estate_priv_idea_variation_4_11
-		#estate_priv_idea_variation_4_12
 		estate_priv_idea_variation_4_13
 		estate_priv_idea_variation_4_14
-		#estate_priv_idea_variation_4_15
+		estate_priv_idea_variation_4_15
 	}
 
 	agendas = {
