@@ -1,30 +1,35 @@
+# Links:
+#   - https://eu4.paradoxwikis.com/Discipline
+#   - https://eu4.paradoxwikis.com/Land_warfare
+
 defaults:
     religion: catholic0
     goverment: monarchy0
     empire: true
+    base_policy_slots: 4
 
 highlights:
+    - discipline
+    - infantry_power
+    - cavalry_power
+    - artillery_power
     - development_cost
     - development_cost_in_primary_culture
-    - discipline
     - fire_damage
     - fire_damage_received
     - shock_damage
     - shock_damage_received
     - land_morale
-    - infantry_power
-    - cavalry_power
-    - artillery_power
 
 weights:
     ideas:
-        nationalism0: 50                            # Estate interaction - main +1 ADM and +1 DIP
-        centralisation0: 20                            # Allow development_over_25
+        nationalism0: 80                             # Estate interaction - main +1 ADM and +1 DIP, 35% manpower in primary culture
+        centralisation0: 20                          # Allow development_over_25
 
     country:
         # Development
-        development_cost: 150                        # Each 10% is 15 points
-        development_cost_in_primary_culture: 100     # Each 10% is 10 points
+        development_cost: 240                        # Each 10% is 24 points (value 0.065 development cost as 0.05 discipline)
+        development_cost_in_primary_culture: 200     # Each 10% is 20 points
         # Mana
         country_admin_power: 25                      # Each point is 25 points
         country_diplomatic_power: 25                 # Each point is 25 points
@@ -38,11 +43,11 @@ weights:
         possible_dip_policy:  4                      # Each possible policy is 4 points
         possible_mil_policy: 4                       # Each possible policy is 4 points
         # Tech and idea cost        
-        technology_cost: 60                           # Each 10% discount is 6 points
-        adm_tech_cost_modifier: 20                    # Each 10% discount is 2 point
-        dip_tech_cost_modifier:  20                   # Each 10% discount is 2 point
-        mil_tech_cost_modifier:  20                   # Each 10% discount is 2 point
-        idea_cost: 60                                 # Each 10% discount is 6 points
+        technology_cost: 60                          # Each 10% discount is 6 points
+        adm_tech_cost_modifier: 20                   # Each 10% discount is 2 point
+        dip_tech_cost_modifier:  20                  # Each 10% discount is 2 point
+        mil_tech_cost_modifier:  20                  # Each 10% discount is 2 point
+        idea_cost: 60                                # Each 10% discount is 6 points
         # State     
         governing_capacity_modifier: 30              # Each 10% is 3 points
         advisor_cost: 10                             # Each 10% discount is 1 point
@@ -61,28 +66,28 @@ weights:
     # War weights are used to determine the score of a country during war time and to find the best policies
     military:
         # Main modifiers
-        discipline: 300                              # Each 10% is 30 points
-        fire_damage: 150                             # Each 10% is 15 points
-        fire_damage_received: 150                    # Each 10% is 15 points
-        shock_damage: 150                            # Each 10% is 15 points
-        shock_damage_received: 150                   # Each 10% is 15 points
+        discipline: 300                              # Each 10% is 30 points (5% is the common additional discipline)
+        fire_damage: 150                             # Each 10% is 15 points (5% ~ 5% discipline in fire, but discipline also reduces damage received)
+        fire_damage_received: 150                    # Each 10% is 15 points (in general stronger than damage)
+        shock_damage: 150                            # Each 10% is 15 points (5% ~ 5% discipline in shock, but discipline also reduces damage received)
+        shock_damage_received: 150                   # Each 10% is 15 points (in general stronger than damage)
         land_morale: 150                             # Each 10% is 15 points
         army_tradition: 10                           # Each 10% is 1 points
         # Infantry  
-        infantry_power: 150                          # Each 10% is 15 points
+        infantry_power: 250                          # Each 10% is 25 points (for inf stack 10% ica is 10% discipline)
         infantry_cost: 10                            # Each 10% discount is 1 points
         # Cavalry   
-        cavalry_power: 150                           # Each 10% is 15 points
+        cavalry_power: 250                           # Each 10% is 25 points (for cav stack 10% ica is 10% discipline)
         cavalry_flanking: 10                         # Each point is 10 points
         # Artillery 
-        artillery_power: 150                         # Each 10% is 15 points
+        artillery_power: 250                         # Each 10% is 25 points (! back row attack has 50% penalty)
         backrow_artillery_damage: 100                # Each 10% is 10 points
         # Army  
-        global_manpower_modifier: 50                 # Each 10% is 5 points
-        land_forcelimit_modifier: 50                 # Each 10% is 5 points
+        global_manpower_modifier: 60                 # Each 10% is 6 points (value 0.25 manpower as 0.05 discipline)
+        land_forcelimit_modifier: 60                 # Each 10% is 6 points (value 0.25 forcelimit as 0.05 discipline)
         land_maintenance_modifier: 20                # Each 10% discount is 2 points
-        manpower_recovery_speed: 20                  # Each 10% is 2 points
-        manpower_in_true_faith_provinces: 20         # Each 10% is 2 points
+        manpower_recovery_speed: 30                  # Each 10% is 3 points (value 0.50 manpower recovery as 0.05 discipline)
+        manpower_in_true_faith_provinces: 50         # Each 10% is 5 points
         # Defensiveness
         defensiveness: 10                            # Each 10% is 1 points
         fort_maintenance_modifier: 5                 # Each 10% discount is 0.5 points

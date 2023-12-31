@@ -18,17 +18,16 @@ highlights:
 
 weights:
     ideas:
-        nationalism0: 50                            # Estate interaction - main +1 ADM and +1 DIP
-        centralisation0: 20                         # Allow development_over_25
-
+        nationalism0: 100                            # Estate interaction - main +1 ADM and +1 DIP, 35% manpower in primary culture
+        centralisation0: 20                          # Allow development_over_25
 
     country:
         # Development
-        development_cost: 150                        # Each 10% is 15 points
-        development_cost_in_primary_culture: 100     # Each 10% is 10 points
+        development_cost: 800                        # Each 5% is 40 points - value 0.065 development cost as 0.05 discipline
+        development_cost_in_primary_culture: 500     # Each 5% is 25 points
         # Mana
-        country_admin_power: 25                      # Each point is 25 points
-        country_diplomatic_power: 25                 # Each point is 25 points
+        country_admin_power: 50                      # Each point is 50 points
+        country_diplomatic_power: 50                 # Each point is 50 points
         # Policies
         free_policy: 5                               # Each free extra policy is 5 points
         free_adm_policy: 2                           # Each free extra policy is 2 points
@@ -56,35 +55,34 @@ weights:
         global_trade_goods_size_modifier: 5          # Each 10% is 0.5 point
         trade_efficiency: 5                          # Each 10% is 0.5 point
         # Buildings     
-        build_cost: 20                               # Each 10% discount is 2 points
-
+        build_cost: 20    
 
     # War weights are used to determine the score of a country during war time and to find the best policies
     military:
         # Main modifiers
-        discipline: 600                              # Each 10% is 60 points
-        fire_damage: 150                             # Each 10% is 15 points
-        fire_damage_received: 300                    # Each 10% is 30 points
-        shock_damage: 150                            # Each 10% is 15 points
-        shock_damage_received: 300                   # Each 10% is 30 points
-        land_morale: 100                             # Each 10% is 10 points
+        discipline: 1200                             # Each 5% is 60 points
+        fire_damage: 500                             # Each 5% is 25 points
+        fire_damage_received: 600                    # Each 5% is 30 points
+        shock_damage: 400                            # Each 5% is 20 points
+        shock_damage_received: 600                   # Each 5% is 30 points
+        land_morale: 300                             # Each 10% is 30 points - value 0.25 morale as 0.05 discipline
         army_tradition: 10                           # Each 10% is 1 points
         # Infantry  
-        infantry_power: 300                          # Each 10% is 30 points
-        infantry_cost: 10                            # Each 10% discount is 1 points
+        infantry_power: 700                          # Each 10% is 70 pointsb - focus on infantry and arty
+        infantry_cost: 0                             # Each 10% discount is 0 points
         # Cavalry   
-        cavalry_power: 0                             # Each 10% is 0 points
+        cavalry_power: 0                             # Dont focus on cav
         cavalry_flanking: 0                          # Each point is 0 points
         # Artillery 
-        artillery_power: 300                         # Each 10% is 30 points
-        backrow_artillery_damage: 200                # Each 10% is 20 points
+        artillery_power: 600                         # Each 10% is 60 points - focus on infantry and arty
+        backrow_artillery_damage: 600                # Each 10% is 60 points
         # Army  
-        global_manpower_modifier: 50                 # Each 10% is 5 points
-        land_forcelimit_modifier: 50                 # Each 10% is 5 points
+        global_manpower_modifier: 200                # Each 10% is 20 points - value 0.3 manpower as 0.05 discipline
+        land_forcelimit_modifier: 200                # Each 10% is 20 points - value 0.3 forcelimit as 0.05 discipline
         land_maintenance_modifier: 20                # Each 10% discount is 2 points
-        manpower_recovery_speed: 20                  # Each 10% is 2 points
-        manpower_in_true_faith_provinces: 20         # Each 10% is 2 points
+        manpower_recovery_speed: 100                 # Each 10% is 10 points - value 0.60 manpower recovery as 0.05 discipline
+        manpower_in_true_faith_provinces: 150        # Each 10% is 15 points
         # Defensiveness
         defensiveness: 10                            # Each 10% is 1 points
         fort_maintenance_modifier: 5                 # Each 10% discount is 0.5 points
-        siege_ability: 5                             # Each 10% is 0.5 points
+        siege_ability: 5  

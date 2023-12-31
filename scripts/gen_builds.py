@@ -41,12 +41,14 @@ parser.add_argument('-b', '--build_config', type=str, required=True,
                     help='Path to the file with build config.')
 parser.add_argument('-o', '--output', type=str,
                     default='generated/builds', help='Path to output folder.')
-parser.add_argument('-r', '--religion', type=str, default='catholic0',
+parser.add_argument('-r', '--religion', type=str,
                     help='Name of religion idea set.')
 parser.add_argument('-g', '--gov', type=str, default='monarchy0',
                     help='Name of government idea set.')
 parser.add_argument('-e', '--empire',
                     action="store_true", help='Use imperialism0 instead of imperial_ambition0.')
+parser.add_argument('-s', '--base_policy_slots', type=int, default=4,
+                    help='Number of base policy slots.')
 parser.add_argument('-p', '--potential-filtering', type=int,
                     help='Filter out ideas with the lowest potential. Insert percentage (0-100).')
 parser.add_argument('--exp-from', type=int,
@@ -265,12 +267,12 @@ def load_policies(file_paths: list[str]) -> list[Policy]:
 
 
 IDEAS = load_ideas([
-    'data/processed/gypsy-1-36-1/00_basic_ideas.yaml',
-    'data/processed/gypsy-1-36-1/00_flogi_ideas.yaml',
+    'data/processed/gypsy/00_basic_ideas.yaml',
+    'data/processed/gypsy/00_flogi_ideas.yaml',
 ])
 
 POLICIES = load_policies([
-    'data/processed/gypsy-1-36-1/Idea_Variation_policies.yaml'
+    'data/processed/gypsy/Idea_Variation_policies.yaml'
 ])
 
 ########################################################################
@@ -361,8 +363,10 @@ logging.info('Pre-computing...')
 IDEA_SCORE = {}
 for idea_name in ALL_IDEA_NAMES:
     idea = IDEAS[idea_name]
-    score = get_score(idea.effect, [
-                      COUNTRY_WEIGHTS, MILITARY_WEIGHTS]) + IDEA_WEIGHTS.get(idea_name, 0)
+    score = get_score(
+        idea.effect, 
+        [COUNTRY_WEIGHTS, MILITARY_WEIGHTS]
+        ) + IDEA_WEIGHTS.get(idea_name, 0)
     IDEA_SCORE[idea_name] = score
 
 IDEA_POLICY_POTENTIAL = defaultdict(list)
@@ -482,9 +486,11 @@ else:
 ### Build tools ########################################################
 ########################################################################
 
+
 def deepcopy(obj):
     # return copy.deepcopy(obj)
     return pickle.loads(pickle.dumps(obj))
+
 
 def get_total_effect(build: Build):
     total_effect = Counter()
@@ -621,14 +627,14 @@ def expanded_build(build: Build, idea_name: str,) -> Build:
             mil_tech_policies,
             idea_policies,
         )
-        
+
     policy_set, \
-    war_policies, \
-    dev_policies, \
-    adm_tech_policies, \
-    dip_tech_policies, \
-    mil_tech_policies, \
-    idea_policies \
+        war_policies, \
+        dev_policies, \
+        adm_tech_policies, \
+        dip_tech_policies, \
+        mil_tech_policies, \
+        idea_policies \
         = update_policies(build)
 
     # Create policy micro management effects
@@ -730,21 +736,20 @@ def get_ideas_to_expand(build_list: list[Build], best_n, random_n):
     return best_builds + random_builds
 
 
-def dump_builds(builds: list[Build], output_file_name: str, count: int = 100, highlights: list[str] = HIGHLIGHTS):
+def dump_builds_to_yaml(builds: list[Build], output_file_name: str, count: int = 100, highlights: list[str] = HIGHLIGHTS):
+    data = []
+    for build in builds[:count]:
+        build_total_effect = get_total_effect(build)
+        build_data = {
+            'score': build.total_score,
+            'ideas': list(build.idea_set),
+            'main': {highlight: round(build_total_effect.get(highlight, 0), 3) for highlight in highlights},
+            'other': {effect: round(value, 3) for effect, value in build_total_effect.items() if effect not in highlights}
+        }
+        data.append(build_data)
+
     with open(output_file_name, 'w') as f:
-        for build in builds[:count]:
-            build_total_effect = get_total_effect(build)
-            f.write('---------------------------------------------------\n')
-            f.write(f'Score: {build.total_score}\n')
-            f.write(f'Ideas: {build.idea_set}\n')
-            f.write('     Main effects:\n')
-            for highlight in highlights:
-                f.write(
-                    f'          {highlight}: {build_total_effect.get(highlight, 0)}\n')
-            f.write('     Other effects:\n')
-            for effect, value in build_total_effect.items():
-                if not effect in highlights:
-                    f.write(f'          {effect}: {value}\n')
+        yaml.dump(data, f)
 
 ########################################################################
 ### Gen README #########################################################
@@ -831,8 +836,8 @@ for i in range(4, args.ideas + 1):
     if i >= args.exp_from:
         expanded_builds = get_ideas_to_expand(
             expanded_builds, best_n=args.exp_top, random_n=args.exp_rand)
-    dump_builds(expanded_builds, os.path.join(
-        OUTPUT_FOLDER_PATH, f'builds_{i}.txt'), count=100)
+    dump_builds_to_yaml(expanded_builds, os.path.join(
+        OUTPUT_FOLDER_PATH, f'builds_{i}.yaml'), count=200)
 
 ########################################################################
 ### Stats ##############################################################

@@ -9,6 +9,9 @@ BUILD_CONFIGS_DIR="data/external/build_configs"
 BUILD_CONFIGS=$(ls $BUILD_CONFIGS_DIR)
 
 for BUILD_CONFIG in $BUILD_CONFIGS; do
+    if [[ $BUILD_CONFIG == _* ]] || [[ $BUILD_CONFIG != *.yaml ]]; then
+        continue
+    fi
     echo "Updating $BUILD_CONFIG"
     $python ./scripts/gen_builds.py -b "$BUILD_CONFIGS_DIR/$BUILD_CONFIG" -p 25 --exp-from 5 --exp-top 8000 --exp-rand 30000
 done

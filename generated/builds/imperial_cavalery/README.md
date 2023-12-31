@@ -1,7 +1,7 @@
 
 # Build: imperial cavalery
 
-- Created: 2023-12-04 14:09:07
+- Created: 2023-12-29 16:22:08
 - Religions: catholic0
 - Governments: monarchy0
 - Empire: True
@@ -9,26 +9,26 @@
 
 ## Potential filtering
 
-- mean: 183.72
-- std: 95.37
+- mean: 451.76
+- std: 240.58
 - min: 2.00
-- max: 362.00
-- 10% percentile: 63.27
-- 25% percentile: 105.84
-- 40% percentile: 161.90
-- 50% percentile: 185.25
-- 60% percentile: 212.00
-- 75% percentile: 241.55
-- 90% percentile: 310.30
+- max: 938.50
+- 10% percentile: 163.10
+- 25% percentile: 267.94
+- 40% percentile: 404.20
+- 50% percentile: 461.25
+- 60% percentile: 497.10
+- 75% percentile: 588.77
+- 90% percentile: 779.50
 
 ## Weights
 
 - Country: 
 ```
-development_cost: 150
-development_cost_in_primary_culture: 100
-country_admin_power: 25
-country_diplomatic_power: 25
+development_cost: 800
+development_cost_in_primary_culture: 500
+country_admin_power: 50
+country_diplomatic_power: 50
 free_policy: 5
 free_adm_policy: 2
 free_dip_policy: 2
@@ -56,24 +56,24 @@ build_cost: 20
 ```
 - Military: 
 ```
-discipline: 600
-fire_damage: 100
-fire_damage_received: 300
-shock_damage: 250
-shock_damage_received: 300
-land_morale: 100
+discipline: 1000
+fire_damage: 160
+fire_damage_received: 200
+shock_damage: 600
+shock_damage_received: 400
+land_morale: 300
 army_tradition: 10
 infantry_power: 0
 infantry_cost: 0
-cavalry_power: 300
+cavalry_power: 800
 cavalry_flanking: 10
-artillery_power: 300
-backrow_artillery_damage: 200
-global_manpower_modifier: 50
-land_forcelimit_modifier: 50
+artillery_power: 600
+backrow_artillery_damage: 600
+global_manpower_modifier: 200
+land_forcelimit_modifier: 200
 land_maintenance_modifier: 20
-manpower_recovery_speed: 20
-manpower_in_true_faith_provinces: 20
+manpower_recovery_speed: 100
+manpower_in_true_faith_provinces: 50
 defensiveness: 10
 fort_maintenance_modifier: 5
 siege_ability: 5
@@ -81,7 +81,7 @@ siege_ability: 5
 ```
 - Ideas: 
 ```
-nationalism0: 50
+nationalism0: 100
 centralisation0: 20
 
 ```

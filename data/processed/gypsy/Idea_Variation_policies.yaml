@@ -1,64 +1,64 @@
 idea_variation_act_1:
   monarch_power: DIP
   naval_maintenance_modifier: -0.2
-  req: !!python/tuple
+  req:
   - - state_administration0
   - - fleet_base0
 idea_variation_act_10:
   embracement_cost: -0.2
   global_institution_spread: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - jurisprudence0
   - - assimilation0
 idea_variation_act_100:
   artillery_power: 0.1
   infantry_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - - economic_ideas
 idea_variation_act_101:
   defensiveness: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - fortress0
 idea_variation_act_102:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - - spy_ideas
   siege_ability: 0.1
 idea_variation_act_103:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - - trade_ideas
 idea_variation_act_104:
   artillery_power: 0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - war_production0
   - - economic_ideas
 idea_variation_act_105:
   inflation_reduction: 0.02
   interest: -1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - war_production0
   - - administrative_ideas
 idea_variation_act_106:
   fire_damage: 0.075
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - war_production0
   - - trade_ideas
 idea_variation_act_107:
   defensiveness: 0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - fortress0
   - &id001
     - religious_ideas
@@ -96,12 +96,12 @@ idea_variation_act_107:
 idea_variation_act_108:
   fire_damage_received: -0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fortress0
   - - administrative_ideas
 idea_variation_act_109:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fortress0
   - - republic0
     - theocracy0
@@ -113,18 +113,18 @@ idea_variation_act_11:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - jurisprudence0
   - - trade_ideas
 idea_variation_act_110:
   hostile_attrition: 2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fortress0
   - - society0
 idea_variation_act_111:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - administrative_ideas
   state_maintenance_modifier: -0.5
@@ -132,25 +132,25 @@ idea_variation_act_111:
 idea_variation_act_112:
   global_colonial_growth: 20
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - *id001
 idea_variation_act_113:
   global_tariffs: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - economic_ideas
   trade_efficiency: 0.1
 idea_variation_act_114:
   fire_damage_received: -0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - defensive0
 idea_variation_act_115:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - offensive0
   siege_ability: 0.1
@@ -158,88 +158,88 @@ idea_variation_act_116:
   colonist_placement_chance: 0.15
   global_colonial_growth: 10
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - quality0
 idea_variation_act_117:
   colonists: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - quantity0
 idea_variation_act_118:
   monarch_power: DIP
   native_uprising_chance: -0.5
   reduced_liberty_desire: 10
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - development0
 idea_variation_act_12:
   land_attrition: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - jurisprudence0
   - - offensive0
 idea_variation_act_120:
   global_unrest: -1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - jurisprudence0
   yearly_corruption: -0.1
 idea_variation_act_121:
   free_leader_pool: 2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - general_staff0
 idea_variation_act_122:
   land_forcelimit_modifier: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - standing_army0
 idea_variation_act_123:
   mercenary_manpower: 0.25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - mercenary0
 idea_variation_act_124:
   monarch_power: DIP
   reinforce_speed: 0.25
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - weapon_quality0
 idea_variation_act_125:
   fort_maintenance_modifier: -0.25
   monarch_power: DIP
   reduced_liberty_desire: 10
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - fortress0
 idea_variation_act_126:
   colonists: 1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - war_production0
 idea_variation_act_127:
   governing_capacity_modifier: 0.25
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - administrative_ideas
 idea_variation_act_128:
   monarch_power: DIP
   naval_forcelimit_modifier: 0.15
   num_accepted_cultures: 1
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - humanist_ideas
 idea_variation_act_129:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - innovativeness_ideas
   state_maintenance_modifier: -0.5
@@ -247,12 +247,12 @@ idea_variation_act_129:
 idea_variation_act_13:
   idea_cost: -0.075
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - jurisprudence0
   - - society0
 idea_variation_act_130:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - *id001
   tolerance_heathen: 1
@@ -263,7 +263,7 @@ idea_variation_act_131:
   legitimacy: 1
   monarch_power: ADM
   republican_tradition: 0.5
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - republic0
     - theocracy0
@@ -273,12 +273,12 @@ idea_variation_act_131:
 idea_variation_act_132:
   fire_damage_received: -0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - defensive0
 idea_variation_act_133:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - quality0
   ship_durability: 0.05
@@ -286,98 +286,98 @@ idea_variation_act_134:
   monarch_power: DIP
   naval_morale: 0.15
   range: 0.5
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - offensive0
 idea_variation_act_135:
   monarch_power: DIP
   naval_maintenance_modifier: -0.2
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - quantity0
 idea_variation_act_136:
   global_autonomy: -0.1
   global_unrest: -1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - jurisprudence0
 idea_variation_act_137:
   monarch_power: DIP
   navy_tradition: 1
   range: 0.5
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - strongman0
     - strongfem0
 idea_variation_act_138:
   build_cost: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - development0
 idea_variation_act_14:
   global_trade_goods_size_modifier: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - jurisprudence0
   - - war_production0
 idea_variation_act_140:
   global_manpower_modifier: 0.25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - standing_army0
 idea_variation_act_141:
   mercenary_cost: -0.15
   mercenary_manpower: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - mercenary0
 idea_variation_act_142:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - weapon_quality0
 idea_variation_act_143:
   infantry_power: 0.1
   land_morale: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - war_production0
 idea_variation_act_144:
   inflation_reduction: 0.02
   interest: -1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - administrative_ideas
 idea_variation_act_145:
   culture_conversion_cost: -0.2
   monarch_power: DIP
   num_accepted_cultures: 1
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - humanist_ideas
 idea_variation_act_146:
   core_creation: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - expansion_ideas
 idea_variation_act_147:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - propaganda0
   - *id001
   tolerance_own: 3
 idea_variation_act_149:
   defensiveness: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - defensive0
   war_exhaustion: -0.03
@@ -385,102 +385,102 @@ idea_variation_act_15:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - economic_ideas
   - - propaganda0
 idea_variation_act_150:
   land_forcelimit_modifier: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - quantity0
 idea_variation_act_151:
   army_tradition_decay: -0.01
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - quality0
 idea_variation_act_153:
   development_cost: -0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - development0
 idea_variation_act_154:
   embracement_cost: -0.2
   global_institution_spread: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - state_administration0
 idea_variation_act_155:
   embracement_cost: -0.2
   global_institution_spread: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - strongman0
     - strongfem0
 idea_variation_act_156:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - standing_army0
 idea_variation_act_157:
   development_cost_in_primary_culture: -0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - economic_ideas
   - - nationalism0
 idea_variation_act_158:
   mercenary_discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - mercenary0
 idea_variation_act_159:
   global_trade_power: 0.15
   merchants: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - weapon_quality0
 idea_variation_act_16:
   diplomatic_reputation: 2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - jurisprudence0
   - - influence_ideas
 idea_variation_act_160:
   global_trade_goods_size_modifier: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - war_production0
 idea_variation_act_161:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - expansion_ideas
   years_of_nationalism: -5
 idea_variation_act_162:
   enemy_core_creation: 0.5
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - humanist_ideas
 idea_variation_act_163:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - innovativeness_ideas
   same_culture_advisor_cost: -0.15
 idea_variation_act_164:
   global_autonomy: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - nationalism0
   - &id002
     - dictatorship0
@@ -491,71 +491,71 @@ idea_variation_act_164:
 idea_variation_act_165:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - offensive0
 idea_variation_act_166:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - quality0
 idea_variation_act_167:
   global_manpower_modifier: 0.15
   global_sailors_modifier: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - quantity0
 idea_variation_act_168:
   governing_capacity_modifier: 0.25
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - jurisprudence0
 idea_variation_act_169:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - development0
 idea_variation_act_17:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - development0
   - - weapon_quality0
 idea_variation_act_170:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - strongman0
     - strongfem0
 idea_variation_act_171:
   hostile_attrition: 2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - mercenary0
 idea_variation_act_172:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - weapon_quality0
 idea_variation_act_173:
   missionaries: 1
   monarch_power: ADM
   religious_unity: 0.25
-  req: !!python/tuple
+  req:
   - - nationalism0
   - *id001
 idea_variation_act_174:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - society0
   - - state_administration0
   state_maintenance_modifier: -0.5
@@ -564,19 +564,19 @@ idea_variation_act_175:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - society0
   - - economic_ideas
 idea_variation_act_176:
   monarch_power: ADM
   religious_unity: 0.2
-  req: !!python/tuple
+  req:
   - - society0
   - - expansion_ideas
   tolerance_own: 2
 idea_variation_act_177:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - society0
   - - humanist_ideas
   tolerance_heathen: 1
@@ -585,173 +585,173 @@ idea_variation_act_178:
   embracement_cost: -0.2
   global_institution_spread: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - society0
   - - innovativeness_ideas
 idea_variation_act_179:
   defensiveness: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - society0
   - - defensive0
 idea_variation_act_18:
   global_trade_power: 0.15
   merchants: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - development0
   - - trade_ideas
 idea_variation_act_180:
   embracement_cost: -0.2
   global_institution_spread: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - society0
   - - offensive0
 idea_variation_act_181:
   artillery_power: 0.1
   cavalry_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - society0
   - - quality0
 idea_variation_act_182:
   land_forcelimit_modifier: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - society0
   - - quantity0
 idea_variation_act_183:
   global_trade_goods_size_modifier: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - society0
   - - development0
 idea_variation_act_184:
   global_trade_goods_size_modifier: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - society0
   - - war_production0
 idea_variation_act_185:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - society0
   - - mercenary0
 idea_variation_act_186:
   diplomatic_annexation_cost: -0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - administrative_ideas
 idea_variation_act_187:
   advisor_cost: -0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - economic_ideas
 idea_variation_act_188:
   core_creation: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - expansion_ideas
 idea_variation_act_189:
   global_foreign_trade_power: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - innovativeness_ideas
 idea_variation_act_19:
   global_ship_recruit_speed: -0.25
   monarch_power: DIP
   naval_attrition: -0.25
-  req: !!python/tuple
+  req:
   - - development0
   - - maritime_ideas
 idea_variation_act_190:
   global_missionary_strength: 0.03
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - assimilation0
   - *id001
 idea_variation_act_191:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - defensive0
 idea_variation_act_192:
   culture_conversion_cost: -0.2
   global_missionary_strength: 0.02
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - offensive0
 idea_variation_act_193:
   cav_to_inf_ratio: 0.1
   cavalry_power: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - quantity0
 idea_variation_act_194:
   development_cost_in_primary_culture: -0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - development0
 idea_variation_act_195:
   free_leader_pool: 1
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - general_staff0
 idea_variation_act_196:
   cav_to_inf_ratio: 0.1
   cavalry_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - standing_army0
 idea_variation_act_197:
   global_manpower_modifier: 0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - mercenary0
 idea_variation_act_198:
   mil_tech_cost_modifier: -0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - weapon_quality0
 idea_variation_act_199:
   global_trade_goods_size_modifier: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - war_production0
 idea_variation_act_2:
   global_colonial_growth: 15
   global_tariffs: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - state_administration0
   - - colonial_empire0
 idea_variation_act_20:
   drill_gain_modifier: 0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - development0
   - - general_staff0
   yearly_army_professionalism: 0.015
 idea_variation_act_200:
   governing_capacity_modifier: 0.25
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - administrative_ideas
   - - imperialism0
     - imperial_ambition0
@@ -759,56 +759,56 @@ idea_variation_act_201:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - economic_ideas
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_202:
   advisor_pool: 5
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - innovativeness_ideas
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_203:
   defensiveness: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - defensive0
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_204:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - offensive0
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_205:
   fire_damage: 0.075
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - quality0
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_206:
   idea_cost: -0.075
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - jurisprudence0
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_207:
   development_cost: -0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - imperialism0
     - imperial_ambition0
   - - strongman0
     - strongfem0
 idea_variation_act_208:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - state_administration0
   - - imperialism0
     - imperial_ambition0
@@ -818,41 +818,41 @@ idea_variation_act_209:
   land_forcelimit_modifier: 0.15
   land_maintenance_modifier: -0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_21:
   build_cost: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - development0
   - - quantity0
 idea_variation_act_210:
   global_manpower_modifier: 0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_211:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_212:
   defensiveness: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fortress0
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_213:
   fire_damage_received: -0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - war_production0
   - - imperialism0
     - imperial_ambition0
@@ -860,21 +860,21 @@ idea_variation_act_214:
   inflation_reduction: 0.02
   interest: -1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - jurisprudence0
 idea_variation_act_215:
   diplomatic_upkeep: 2
   improve_relation_modifier: 0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - development0
 idea_variation_act_216:
   diplomatic_reputation: 1
   monarch_power: DIP
   reduced_liberty_desire: 10
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - strongman0
     - strongfem0
@@ -882,76 +882,76 @@ idea_variation_act_218:
   diplomatic_annexation_cost: -0.1
   diplomats: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - state_administration0
 idea_variation_act_219:
   idea_cost: -0.075
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - general_staff0
 idea_variation_act_22:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - development0
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_220:
   ae_impact: -0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - standing_army0
 idea_variation_act_221:
   global_manpower_modifier: 0.25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - conscription0
 idea_variation_act_222:
   mil_tech_cost_modifier: -0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - weapon_quality0
 idea_variation_act_223:
   diplomatic_reputation: 2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - fortress0
 idea_variation_act_224:
   land_morale: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - war_production0
   siege_ability: 0.1
 idea_variation_act_225:
   global_spy_defence: 0.35
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - jurisprudence0
 idea_variation_act_226:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - development0
   spy_offence: 0.5
 idea_variation_act_227:
   idea_cost: -0.075
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - strongman0
     - strongfem0
 idea_variation_act_229:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - state_administration0
   spy_offence: 0.15
@@ -959,25 +959,25 @@ idea_variation_act_229:
 idea_variation_act_23:
   development_cost: -0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - jurisprudence0
   - - propaganda0
 idea_variation_act_230:
   land_morale: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - general_staff0
   siege_ability: 0.1
 idea_variation_act_231:
   manpower_recovery_speed: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - conscription0
 idea_variation_act_232:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - standing_army0
   stability_cost_modifier: -0.25
@@ -985,58 +985,58 @@ idea_variation_act_232:
 idea_variation_act_233:
   merc_maintenance_modifier: -0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - mercenary0
   war_exhaustion: -0.03
 idea_variation_act_234:
   artillery_power: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - fortress0
 idea_variation_act_235:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - war_production0
 idea_variation_act_236:
   colonists: 1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - - jurisprudence0
 idea_variation_act_237:
   colonist_placement_chance: 0.15
   global_colonial_growth: 10
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - - strongman0
     - strongfem0
 idea_variation_act_238:
   development_cost: -0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - - development0
 idea_variation_act_24:
   defensiveness: 0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - development0
   - - quality0
 idea_variation_act_240:
   leader_land_manuever: 1
   leader_naval_manuever: 1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - - general_staff0
 idea_variation_act_241:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - - conscription0
   trade_efficiency: 0.2
@@ -1044,116 +1044,116 @@ idea_variation_act_241:
 idea_variation_act_242:
   global_sailors_modifier: 0.33
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - - standing_army0
 idea_variation_act_243:
   mercenary_manpower: 0.25
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - - mercenary0
 idea_variation_act_244:
   infantry_cost: -0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - - weapon_quality0
 idea_variation_act_245:
   defensiveness: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - - fortress0
 idea_variation_act_246:
   infantry_cost: -0.1
   infantry_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - - war_production0
 idea_variation_act_247:
   diplomatic_annexation_cost: -0.1
   diplomatic_reputation: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - development0
 idea_variation_act_248:
   inflation_reduction: 0.02
   interest: -1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - state_administration0
 idea_variation_act_25:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - offensive0
   - - strongman0
     - strongfem0
 idea_variation_act_250:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - strongman0
     - strongfem0
   technology_cost: -0.05
 idea_variation_act_251:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - general_staff0
   yearly_absolutism: 1.0
 idea_variation_act_252:
   mercenary_discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - mercenary0
 idea_variation_act_253:
   global_manpower_modifier: 0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - conscription0
 idea_variation_act_254:
   land_forcelimit_modifier: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - weapon_quality0
 idea_variation_act_255:
   fort_maintenance_modifier: -0.25
   garrison_size: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - fortress0
 idea_variation_act_256:
   ae_impact: -0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - war_production0
 idea_variation_act_257:
   global_ship_cost: -0.15
   global_ship_recruit_speed: -0.25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - jurisprudence0
 idea_variation_act_259:
   development_cost: -0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - state_administration0
 idea_variation_act_26:
   manpower_recovery_speed: 0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - standing_army0
     - conscription0
   - - strongman0
@@ -1163,13 +1163,13 @@ idea_variation_act_260:
   heavy_ship_power: 0.1
   light_ship_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - general_staff0
 idea_variation_act_263:
   global_sailors_modifier: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - standing_army0
     - conscription0
@@ -1177,7 +1177,7 @@ idea_variation_act_263:
 idea_variation_act_264:
   monarch_power: DIP
   naval_maintenance_modifier: -0.2
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - mercenary0
 idea_variation_act_265:
@@ -1185,32 +1185,32 @@ idea_variation_act_265:
   heavy_ship_power: 0.1
   light_ship_power: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - weapon_quality0
 idea_variation_act_266:
   heavy_ship_cost: -0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - fortress0
 idea_variation_act_267:
   global_ship_cost: -0.33
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - war_production0
 idea_variation_act_268:
   merchants: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - - strongman0
     - strongfem0
 idea_variation_act_269:
   caravan_power: 0.25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - - state_administration0
   trade_steering: 0.25
@@ -1218,65 +1218,65 @@ idea_variation_act_27:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - society0
   - - strongman0
     - strongfem0
 idea_variation_act_271:
   merchants: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - - general_staff0
 idea_variation_act_272:
   global_prov_trade_power_modifier: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - - conscription0
 idea_variation_act_273:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - - standing_army0
 idea_variation_act_274:
   light_ship_power: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - - fortress0
   trade_efficiency: 0.15
 idea_variation_act_275:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - defensive0
   - - jurisprudence0
 idea_variation_act_276:
   defensiveness: 0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - defensive0
   - - development0
 idea_variation_act_277:
   land_morale: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - defensive0
   - - strongman0
     - strongfem0
 idea_variation_act_279:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - defensive0
   - - state_administration0
 idea_variation_act_28:
   embracement_cost: -0.2
   global_institution_spread: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - fortress0
   - - strongman0
     - strongfem0
@@ -1284,59 +1284,59 @@ idea_variation_act_281:
   global_regiment_cost: -0.15
   global_regiment_recruit_speed: -0.3
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - offensive0
   - - development0
 idea_variation_act_283:
   global_autonomy: -0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - quality0
   - - jurisprudence0
 idea_variation_act_284:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - quality0
   - - state_administration0
 idea_variation_act_285:
   global_missionary_strength: 0.01
   missionaries: 1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - quantity0
   - - jurisprudence0
 idea_variation_act_286:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - quantity0
   - - state_administration0
   state_maintenance_modifier: -0.5
   yearly_corruption: -0.05
 idea_variation_act_287:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - society0
   - - administrative_ideas
   state_maintenance_modifier: -0.5
   yearly_corruption: -0.05
 idea_variation_act_288:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - expansion_ideas
   shock_damage: 0.075
 idea_variation_act_289:
   army_tradition: 1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - humanist_ideas
 idea_variation_act_29:
   diplomatic_annexation_cost: -0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - strongman0
     - strongfem0
@@ -1344,7 +1344,7 @@ idea_variation_act_290:
   advisor_pool: 3
   free_leader_pool: 1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - republic0
     - theocracy0
@@ -1354,7 +1354,7 @@ idea_variation_act_290:
 idea_variation_act_291:
   missionaries: 1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - general_staff0
   - *id001
 idea_variation_act_292:
@@ -1363,52 +1363,52 @@ idea_variation_act_292:
   legitimacy: 1
   monarch_power: ADM
   republican_tradition: 0.5
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - jurisprudence0
 idea_variation_act_293:
   land_forcelimit_modifier: 0.1
   manpower_recovery_speed: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - strongman0
     - strongfem0
 idea_variation_act_295:
   monarch_power: ADM
   reinforce_speed: 0.25
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - state_administration0
 idea_variation_act_296:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - economic_ideas
 idea_variation_act_297:
   land_maintenance_modifier: -0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - humanist_ideas
 idea_variation_act_298:
   infantry_power: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - innovativeness_ideas
 idea_variation_act_299:
   global_regiment_cost: -0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - expansion_ideas
 idea_variation_act_3:
   monarch_power: DIP
   naval_forcelimit_modifier: 0.2
-  req: !!python/tuple
+  req:
   - - state_administration0
   - - light_ship0
     - galley0
@@ -1417,7 +1417,7 @@ idea_variation_act_30:
   monarch_power: DIP
   native_assimilation: 0.5
   native_uprising_chance: -0.5
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - strongman0
     - strongfem0
@@ -1425,104 +1425,104 @@ idea_variation_act_300:
   global_missionary_strength: 0.02
   missionaries: 1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - standing_army0
   - *id001
 idea_variation_act_301:
   global_unrest: -2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - jurisprudence0
 idea_variation_act_302:
   development_cost: -0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - development0
 idea_variation_act_304:
   land_maintenance_modifier: -0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - state_administration0
 idea_variation_act_305:
   merc_maintenance_modifier: -0.15
   mercenary_cost: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - mercenary0
   - - administrative_ideas
 idea_variation_act_306:
   mercenary_cost: -0.1
   mercenary_manpower: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - mercenary0
   - *id001
 idea_variation_act_307:
   global_unrest: -1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - mercenary0
   - *id002
   war_exhaustion: -0.03
 idea_variation_act_31:
   discipline: 0.05
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - quality0
   - - strongman0
     - strongfem0
 idea_variation_act_310:
   merc_maintenance_modifier: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - mercenary0
   - - jurisprudence0
   yearly_corruption: -0.1
 idea_variation_act_311:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - mercenary0
   - - strongman0
     - strongfem0
 idea_variation_act_312:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - mercenary0
   - - development0
   siege_ability: 0.1
 idea_variation_act_313:
   missionaries: 1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - conscription0
   - *id001
 idea_variation_act_314:
   global_manpower_modifier: 0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - conscription0
   - *id002
 idea_variation_act_315:
   global_regiment_cost: -0.15
   global_regiment_recruit_speed: -0.3
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - conscription0
   - - administrative_ideas
 idea_variation_act_316:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - conscription0
   - - economic_ideas
 idea_variation_act_317:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - conscription0
   - - expansion_ideas
   yearly_corruption: -0.1
@@ -1531,64 +1531,64 @@ idea_variation_act_318:
   artillery_power: 0.1
   infantry_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - conscription0
   - - humanist_ideas
 idea_variation_act_319:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - conscription0
   - - innovativeness_ideas
 idea_variation_act_32:
   monarch_power: MIL
   naval_morale: 0.15
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - strongman0
     - strongfem0
 idea_variation_act_321:
   land_morale: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - conscription0
   - - jurisprudence0
 idea_variation_act_322:
   land_forcelimit_modifier: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - conscription0
   - - development0
 idea_variation_act_323:
   global_manpower_modifier: 0.25
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - conscription0
   - - state_administration0
 idea_variation_act_324:
   land_attrition: -0.1
   monarch_power: ADM
   reinforce_speed: 0.2
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - - administrative_ideas
 idea_variation_act_325:
   artillery_power: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - *id001
 idea_variation_act_326:
   leader_land_fire: 1
   leader_land_shock: 1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - *id002
 idea_variation_act_327:
   monarch_power: DIP
   range: 0.5
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - - expansion_ideas
   trade_efficiency: 0.1
@@ -1596,27 +1596,27 @@ idea_variation_act_328:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - - humanist_ideas
 idea_variation_act_329:
   embracement_cost: -0.2
   global_institution_spread: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - - innovativeness_ideas
 idea_variation_act_332:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - - jurisprudence0
 idea_variation_act_333:
   idea_cost: -0.075
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - - strongman0
     - strongfem0
@@ -1624,50 +1624,50 @@ idea_variation_act_334:
   inflation_reduction: 0.02
   interest: -1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - - state_administration0
 idea_variation_act_335:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - fortress0
   - - economic_ideas
 idea_variation_act_336:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fortress0
   - - expansion_ideas
   shock_damage_received: -0.05
 idea_variation_act_337:
   fire_damage_received: -0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fortress0
   - - humanist_ideas
 idea_variation_act_338:
   artillery_power: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fortress0
   - - innovativeness_ideas
 idea_variation_act_339:
   global_garrison_growth: 0.2
   global_manpower_modifier: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fortress0
   - - jurisprudence0
 idea_variation_act_340:
   development_cost: -0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - fortress0
   - - development0
 idea_variation_act_342:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - fortress0
   - - state_administration0
   state_maintenance_modifier: -0.5
@@ -1675,12 +1675,12 @@ idea_variation_act_342:
 idea_variation_act_343:
   global_trade_goods_size_modifier: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - war_production0
   - - expansion_ideas
 idea_variation_act_344:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - war_production0
   - *id001
   tolerance_heathen: 2
@@ -1688,40 +1688,40 @@ idea_variation_act_344:
 idea_variation_act_345:
   global_own_trade_power: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - war_production0
   - *id002
 idea_variation_act_346:
   global_regiment_cost: -0.15
   global_regiment_recruit_speed: -0.3
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - war_production0
   - - humanist_ideas
 idea_variation_act_347:
   global_trade_goods_size_modifier: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - war_production0
   - - innovativeness_ideas
 idea_variation_act_350:
   land_forcelimit_modifier: 0.1
   manpower_recovery_speed: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - war_production0
   - - strongman0
     - strongfem0
 idea_variation_act_351:
   fire_damage: 0.075
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - war_production0
   - - development0
 idea_variation_act_355:
   global_sailors_modifier: 0.33
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - conscription0
   - - light_ship0
     - galley0
@@ -1729,7 +1729,7 @@ idea_variation_act_355:
 idea_variation_act_356:
   monarch_power: ADM
   naval_morale: 0.15
-  req: !!python/tuple
+  req:
   - - light_ship0
     - galley0
     - heavy_ship0
@@ -1738,7 +1738,7 @@ idea_variation_act_356:
 idea_variation_act_357:
   global_ship_cost: -0.25
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - development0
   - - light_ship0
     - galley0
@@ -1746,7 +1746,7 @@ idea_variation_act_357:
 idea_variation_act_358:
   monarch_power: DIP
   naval_forcelimit_modifier: 0.2
-  req: !!python/tuple
+  req:
   - - quantity0
   - - light_ship0
     - galley0
@@ -1757,7 +1757,7 @@ idea_variation_act_359:
   legitimacy: 1
   monarch_power: ADM
   republican_tradition: 0.5
-  req: !!python/tuple
+  req:
   - *id002
   - - galley0
     - heavy_ship0
@@ -1766,7 +1766,7 @@ idea_variation_act_360:
   monarch_power: DIP
   naval_maintenance_modifier: -0.2
   privateer_efficiency: 1
-  req: !!python/tuple
+  req:
   - - mercenary0
   - - light_ship0
     - galley0
@@ -1774,7 +1774,7 @@ idea_variation_act_360:
 idea_variation_act_361:
   monarch_power: DIP
   naval_morale: 0.15
-  req: !!python/tuple
+  req:
   - - jurisprudence0
   - - light_ship0
     - galley0
@@ -1782,7 +1782,7 @@ idea_variation_act_361:
 idea_variation_act_362:
   defensiveness: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - defensive0
   - - light_ship0
     - galley0
@@ -1792,7 +1792,7 @@ idea_variation_act_364:
   heavy_ship_power: 0.1
   light_ship_power: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - offensive0
   - - light_ship0
     - galley0
@@ -1800,7 +1800,7 @@ idea_variation_act_364:
 idea_variation_act_365:
   global_ship_cost: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - economic_ideas
   - - light_ship0
     - galley0
@@ -1810,7 +1810,7 @@ idea_variation_act_371:
   heavy_ship_power: 0.1
   light_ship_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fortress0
   - - light_ship0
     - galley0
@@ -1818,31 +1818,31 @@ idea_variation_act_371:
 idea_variation_act_373:
   global_manpower_modifier: 0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - militarism0
   - - innovativeness_ideas
 idea_variation_act_374:
   artillery_power: 0.1
   cavalry_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - militarism0
   - - economic_ideas
 idea_variation_act_375:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - militarism0
   - - expansion_ideas
 idea_variation_act_376:
   land_morale: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - militarism0
   - - administrative_ideas
 idea_variation_act_377:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - militarism0
   - - humanist_ideas
   shock_damage_received: -0.05
@@ -1850,76 +1850,76 @@ idea_variation_act_378:
   global_unrest: -1
   missionaries: 1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - militarism0
   - *id001
 idea_variation_act_379:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - militarism0
   - - jurisprudence0
 idea_variation_act_380:
   fort_maintenance_modifier: -0.1
   land_maintenance_modifier: -0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - militarism0
   - - development0
 idea_variation_act_381:
   global_trade_goods_size_modifier: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - militarism0
   - - strongman0
     - strongfem0
 idea_variation_act_382:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - militarism0
   - *id002
   shock_damage: 0.075
 idea_variation_act_385:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - militarism0
   - - state_administration0
   shock_damage_received: -0.05
 idea_variation_act_386:
   global_spy_defence: 0.35
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - militarism0
   - - spy_ideas
 idea_variation_act_387:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - militarism0
   - - dynasty0
 idea_variation_act_388:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - militarism0
   - - influence_ideas
   shock_damage: 0.075
 idea_variation_act_389:
   fire_damage: 0.075
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - militarism0
   - - trade_ideas
 idea_variation_act_390:
   global_colonial_growth: 35
   monarch_power: DIP
   native_uprising_chance: -0.5
-  req: !!python/tuple
+  req:
   - - militarism0
   - - exploration_ideas
 idea_variation_act_391:
   monarch_power: DIP
   naval_morale: 0.15
-  req: !!python/tuple
+  req:
   - - militarism0
   - - maritime_ideas
 idea_variation_act_392:
@@ -1927,7 +1927,7 @@ idea_variation_act_392:
   heavy_ship_power: 0.1
   light_ship_power: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - militarism0
   - - light_ship0
     - galley0
@@ -1936,39 +1936,39 @@ idea_variation_act_395:
   global_manpower_modifier: 0.15
   infantry_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - militarism0
   - - colonial_empire0
 idea_variation_act_396:
   global_manpower_modifier: 0.25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - militarism0
   - - assimilation0
 idea_variation_act_397:
   inflation_reduction: 0.02
   interest: -1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - militarism0
   - - society0
 idea_variation_act_398:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - militarism0
   - - propaganda0
   war_exhaustion: -0.05
 idea_variation_act_399:
   defensiveness: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - militarism0
   - - fleet_base0
 idea_variation_act_4:
   colonist_placement_chance: 0.1
   colonists: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - state_administration0
   - - exploration_ideas
 idea_variation_act_400:
@@ -1977,120 +1977,120 @@ idea_variation_act_400:
   legitimacy: 1
   monarch_power: ADM
   republican_tradition: 0.5
-  req: !!python/tuple
+  req:
   - - militarism0
   - - nationalism0
 idea_variation_act_401:
   global_autonomy: -0.05
   imperial_authority: 0.25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - militarism0
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_402:
   manpower_recovery_speed: 0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - tactical0
   - - innovativeness_ideas
 idea_variation_act_403:
   embracement_cost: -0.2
   global_institution_spread: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - tactical0
   - - economic_ideas
 idea_variation_act_404:
   monarch_power: ADM
   movement_speed: 0.25
-  req: !!python/tuple
+  req:
   - - tactical0
   - - expansion_ideas
 idea_variation_act_405:
   fire_damage: 0.075
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - tactical0
   - - administrative_ideas
 idea_variation_act_406:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - tactical0
   - - humanist_ideas
 idea_variation_act_407:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - tactical0
   - *id001
   shock_damage_received: -0.05
 idea_variation_act_408:
   land_morale: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - tactical0
   - - jurisprudence0
 idea_variation_act_409:
   fire_damage_received: -0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - tactical0
   - - development0
 idea_variation_act_41:
   global_trade_power: 0.15
   merchants: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - innovativeness_ideas
 idea_variation_act_410:
   manpower_recovery_speed: 0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - tactical0
   - - strongman0
     - strongfem0
 idea_variation_act_411:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - tactical0
   - *id002
   shock_damage_received: -0.05
 idea_variation_act_414:
   fire_damage_received: -0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - tactical0
   - - state_administration0
 idea_variation_act_415:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - tactical0
   - - spy_ideas
   shock_damage: 0.075
 idea_variation_act_416:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - tactical0
   - - dynasty0
 idea_variation_act_417:
   land_morale: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - tactical0
   - - influence_ideas
 idea_variation_act_418:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - tactical0
   - - trade_ideas
   shock_damage_received: -0.05
 idea_variation_act_419:
   fire_damage_received: -0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - tactical0
   - - exploration_ideas
 idea_variation_act_420:
@@ -2098,14 +2098,14 @@ idea_variation_act_420:
   heavy_ship_power: 0.1
   light_ship_power: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - tactical0
   - - maritime_ideas
 idea_variation_act_421:
   monarch_power: DIP
   naval_morale: 0.15
   navy_tradition: 1
-  req: !!python/tuple
+  req:
   - - tactical0
   - - light_ship0
     - galley0
@@ -2113,50 +2113,50 @@ idea_variation_act_421:
 idea_variation_act_424:
   global_manpower_modifier: 0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - tactical0
   - - colonial_empire0
 idea_variation_act_425:
   build_cost: -0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - tactical0
   - - assimilation0
 idea_variation_act_426:
   land_morale: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - tactical0
   - - society0
 idea_variation_act_427:
   global_unrest: -2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - tactical0
   - - propaganda0
 idea_variation_act_428:
   monarch_power: DIP
   naval_forcelimit_modifier: 0.15
   naval_morale: 0.1
-  req: !!python/tuple
+  req:
   - - tactical0
   - - fleet_base0
 idea_variation_act_429:
   enemy_core_creation: 0.5
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - tactical0
   - - nationalism0
 idea_variation_act_43:
   global_tariffs: 0.25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - *id002
 idea_variation_act_430:
   monarch_power: DIP
   num_accepted_cultures: 1
-  req: !!python/tuple
+  req:
   - - tactical0
   - - imperialism0
     - imperial_ambition0
@@ -2164,14 +2164,14 @@ idea_variation_act_430:
 idea_variation_act_431:
   mercenary_discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - offensive0
   - *id002
 idea_variation_act_432:
   embargo_efficiency: 0.25
   global_own_trade_power: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - defensive0
   - *id002
 idea_variation_act_433:
@@ -2180,119 +2180,119 @@ idea_variation_act_433:
   legitimacy: 1
   monarch_power: ADM
   republican_tradition: 0.5
-  req: !!python/tuple
+  req:
   - - quality0
   - *id002
 idea_variation_act_434:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - quantity0
   - *id002
 idea_variation_act_435:
   monarch_power: DIP
   naval_morale: 0.15
-  req: !!python/tuple
+  req:
   - - quality0
   - - light_ship0
     - galley0
     - heavy_ship0
 idea_variation_act_438:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - shock0
   - *id001
   shock_damage: 0.075
 idea_variation_act_439:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - shock0
   - *id002
   shock_damage: 0.075
 idea_variation_act_440:
   core_creation: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - shock0
   - - innovativeness_ideas
 idea_variation_act_441:
   cav_to_inf_ratio: 0.1
   cavalry_power: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - shock0
   - - spy_ideas
 idea_variation_act_442:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - shock0
   - - dynasty0
   shock_damage: 0.075
 idea_variation_act_443:
   global_manpower_modifier: 0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - shock0
   - - influence_ideas
 idea_variation_act_444:
   embargo_efficiency: 0.25
   global_foreign_trade_power: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - shock0
   - - trade_ideas
 idea_variation_act_445:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - shock0
   - - economic_ideas
   shock_damage: 0.075
 idea_variation_act_446:
   land_forcelimit_modifier: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - shock0
   - - exploration_ideas
 idea_variation_act_448:
   diplomatic_annexation_cost: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - shock0
   - - expansion_ideas
 idea_variation_act_449:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - shock0
   - - administrative_ideas
   shock_damage: 0.075
 idea_variation_act_45:
   land_forcelimit_modifier: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - quantity0
   - - strongman0
     - strongfem0
 idea_variation_act_450:
   fire_damage_received: -0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - shock0
   - - humanist_ideas
 idea_variation_act_451:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - shock0
   - - jurisprudence0
 idea_variation_act_452:
   build_time: -0.25
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - shock0
   - - development0
 idea_variation_act_453:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - shock0
   - - strongman0
     - strongfem0
@@ -2300,51 +2300,51 @@ idea_variation_act_453:
 idea_variation_act_458:
   monarch_power: DIP
   reduced_liberty_desire: 10
-  req: !!python/tuple
+  req:
   - - shock0
   - - colonial_empire0
 idea_variation_act_459:
   cav_to_inf_ratio: 0.1
   cavalry_power: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - shock0
   - - assimilation0
 idea_variation_act_46:
   global_colonial_growth: 25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - humanist_ideas
 idea_variation_act_460:
   culture_conversion_cost: -0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - shock0
   - - society0
 idea_variation_act_461:
   global_manpower_modifier: 0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - shock0
   - - propaganda0
 idea_variation_act_462:
   global_sailors_modifier: 0.2
   monarch_power: DIP
   naval_forcelimit_modifier: 0.15
-  req: !!python/tuple
+  req:
   - - shock0
   - - fleet_base0
 idea_variation_act_463:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - shock0
   - - nationalism0
   shock_damage: 0.075
 idea_variation_act_464:
   global_unrest: -1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - shock0
   - - imperialism0
     - imperial_ambition0
@@ -2352,12 +2352,12 @@ idea_variation_act_464:
 idea_variation_act_465:
   global_trade_goods_size_modifier: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - shock0
   - - state_administration0
 idea_variation_act_466:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - shock0
   - - centralisation0
     - decentralisation0
@@ -2368,64 +2368,64 @@ idea_variation_act_468:
   legitimacy: 1
   monarch_power: ADM
   republican_tradition: 0.5
-  req: !!python/tuple
+  req:
   - - fire0
   - *id001
 idea_variation_act_469:
   artillery_cost: -0.2
   infantry_cost: -0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - fire0
   - *id002
 idea_variation_act_47:
   colonists: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - expansion_ideas
 idea_variation_act_470:
   fire_damage: 0.075
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fire0
   - - innovativeness_ideas
 idea_variation_act_471:
   diplomatic_reputation: 1
   diplomatic_upkeep: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fire0
   - - spy_ideas
 idea_variation_act_472:
   manpower_recovery_speed: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fire0
   - - dynasty0
 idea_variation_act_473:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fire0
   - - influence_ideas
   shock_damage_received: -0.05
 idea_variation_act_474:
   fire_damage: 0.075
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fire0
   - - trade_ideas
 idea_variation_act_475:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - fire0
   - - economic_ideas
 idea_variation_act_476:
   fire_damage: 0.075
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fire0
   - - exploration_ideas
 idea_variation_act_477:
@@ -2433,43 +2433,43 @@ idea_variation_act_477:
   heavy_ship_power: 0.1
   light_ship_power: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - fire0
     - shock0
 idea_variation_act_478:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fire0
   - - expansion_ideas
 idea_variation_act_479:
   fire_damage: 0.075
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fire0
   - - administrative_ideas
 idea_variation_act_48:
   core_creation: -0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - fortress0
 idea_variation_act_480:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fire0
   - - humanist_ideas
 idea_variation_act_481:
   monarch_power: DIP
   province_warscore_cost: -0.2
-  req: !!python/tuple
+  req:
   - - fire0
   - - jurisprudence0
 idea_variation_act_482:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - fire0
   - - development0
   siege_ability: 0.1
@@ -2477,7 +2477,7 @@ idea_variation_act_483:
   manpower_recovery_speed: 0.15
   monarch_power: ADM
   reinforce_speed: 0.2
-  req: !!python/tuple
+  req:
   - - fire0
   - - strongman0
     - strongfem0
@@ -2486,7 +2486,7 @@ idea_variation_act_485:
   heavy_ship_power: 0.1
   light_ship_power: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - light_ship0
     - galley0
     - heavy_ship0
@@ -2496,90 +2496,90 @@ idea_variation_act_488:
   artillery_power: 0.1
   infantry_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fire0
   - - colonial_empire0
 idea_variation_act_489:
   fire_damage: 0.075
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fire0
   - - assimilation0
 idea_variation_act_49:
   global_unrest: -2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - state_administration0
 idea_variation_act_490:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fire0
   - - society0
   yearly_absolutism: 1.0
 idea_variation_act_491:
   improve_relation_modifier: 0.25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fire0
   - - propaganda0
 idea_variation_act_492:
   fire_damage: 0.075
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fire0
   - - fleet_base0
 idea_variation_act_493:
   land_maintenance_modifier: -0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fire0
   - - nationalism0
 idea_variation_act_494:
   monarch_power: ADM
   prestige: 2
-  req: !!python/tuple
+  req:
   - - fire0
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_495:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fire0
   - - state_administration0
   trade_efficiency: 0.25
 idea_variation_act_496:
   global_trade_goods_size_modifier: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - fire0
   - - centralisation0
     - decentralisation0
 idea_variation_act_5:
   core_creation: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - state_administration0
   - - offensive0
 idea_variation_act_50:
   diplomatic_reputation: 1
   improve_relation_modifier: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - assimilation0
   - *id002
 idea_variation_act_501:
   artillery_power: 0.1
   land_morale: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - offensive0
   - - decentralisation0
     - centralisation0
 idea_variation_act_504:
   colonists: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - - decentralisation0
     - centralisation0
@@ -2587,27 +2587,27 @@ idea_variation_act_505:
   monarch_power: DIP
   naval_forcelimit_modifier: 0.15
   naval_maintenance_modifier: -0.15
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - decentralisation0
     - centralisation0
 idea_variation_act_51:
   global_manpower_modifier: 0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - conscription0
 idea_variation_act_511:
   global_tariffs: 0.25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - colonial_empire0
   - - decentralisation0
     - centralisation0
 idea_variation_act_512:
   culture_conversion_cost: -0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - decentralisation0
     - centralisation0
@@ -2615,21 +2615,21 @@ idea_variation_act_513:
   inflation_reduction: 0.02
   interest: -1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - society0
   - - decentralisation0
     - centralisation0
 idea_variation_act_514:
   development_cost: -0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - decentralisation0
     - centralisation0
 idea_variation_act_515:
   monarch_power: ADM
   range: 0.5
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - decentralisation0
     - centralisation0
@@ -2637,7 +2637,7 @@ idea_variation_act_515:
 idea_variation_act_516:
   build_cost: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - decentralisation0
     - centralisation0
   - - imperialism0
@@ -2646,14 +2646,14 @@ idea_variation_act_517:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - decentralisation0
     - centralisation0
 idea_variation_act_518:
   land_forcelimit_modifier: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - decentralisation0
     - centralisation0
@@ -2661,26 +2661,26 @@ idea_variation_act_52:
   infantry_power: 0.1
   land_morale: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - quality0
 idea_variation_act_520:
   mercenary_manpower: 0.5
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - mercenary0
   - - decentralisation0
     - centralisation0
 idea_variation_act_522:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - - decentralisation0
     - centralisation0
   siege_ability: 0.1
 idea_variation_act_524:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - war_production0
   - - decentralisation0
     - centralisation0
@@ -2688,27 +2688,27 @@ idea_variation_act_524:
 idea_variation_act_527:
   monarch_power: DIP
   province_warscore_cost: -0.2
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - decentralisation0
     - centralisation0
 idea_variation_act_528:
   development_cost: -0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - decentralisation0
     - centralisation0
 idea_variation_act_529:
   build_cost: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - decentralisation0
     - centralisation0
 idea_variation_act_53:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - assimilation0
   - - humanist_ideas
   stability_cost_modifier: -0.25
@@ -2716,14 +2716,14 @@ idea_variation_act_53:
 idea_variation_act_531:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - defensive0
   - - decentralisation0
     - centralisation0
 idea_variation_act_532:
   development_cost: -0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - - centralisation0
     - decentralisation0
@@ -2731,21 +2731,21 @@ idea_variation_act_535:
   cav_to_inf_ratio: 0.1
   cavalry_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - quality0
   - - decentralisation0
     - centralisation0
 idea_variation_act_536:
   global_manpower_modifier: 0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - quantity0
   - - decentralisation0
     - centralisation0
 idea_variation_act_537:
   monarch_power: DIP
   naval_morale: 0.15
-  req: !!python/tuple
+  req:
   - - decentralisation0
     - centralisation0
   - - heavy_ship0
@@ -2754,20 +2754,20 @@ idea_variation_act_537:
 idea_variation_act_54:
   missionaries: 2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - society0
   - *id001
 idea_variation_act_548:
   global_manpower_modifier: 0.25
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - decentralisation0
     - centralisation0
 idea_variation_act_55:
   diplomatic_annexation_cost: -0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - society0
   - - republic0
     - theocracy0
@@ -2777,20 +2777,20 @@ idea_variation_act_55:
 idea_variation_act_550:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - conscription0
   - - decentralisation0
     - centralisation0
 idea_variation_act_552:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fortress0
   - - decentralisation0
     - centralisation0
   shock_damage_received: -0.05
 idea_variation_act_554:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - tactical0
   - - decentralisation0
     - centralisation0
@@ -2798,32 +2798,32 @@ idea_variation_act_554:
 idea_variation_act_555:
   advisor_cost: -0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - militarism0
   - - decentralisation0
     - centralisation0
 idea_variation_act_556:
   land_forcelimit_modifier: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - economic_ideas
   - - quantity0
 idea_variation_act_557:
   monarch_power: DIP
   navy_tradition: 2
-  req: !!python/tuple
+  req:
   - - administrative_ideas
   - - maritime_ideas
 idea_variation_act_558:
   global_spy_defence: 0.3
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - innovativeness_ideas
   - - spy_ideas
   spy_offence: 0.2
 idea_variation_act_559:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - *id002
   yearly_absolutism: 0.75
@@ -2831,58 +2831,58 @@ idea_variation_act_559:
 idea_variation_act_56:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - society0
   - - standing_army0
     - conscription0
 idea_variation_act_560:
   defensiveness: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - defensive0
 idea_variation_act_561:
   diplomats: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - economic_ideas
 idea_variation_act_562:
   army_tradition_decay: -0.01
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - quality0
 idea_variation_act_563:
   mercenary_cost: -0.25
   mercenary_manpower: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - quantity0
 idea_variation_act_564:
   global_trade_goods_size_modifier: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - administrative_ideas
 idea_variation_act_565:
   global_unrest: -1
   monarch_power: ADM
   religious_unity: 0.2
-  req: !!python/tuple
+  req:
   - - defensive0
   - *id001
 idea_variation_act_566:
   development_cost: -0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - defensive0
   - - economic_ideas
 idea_variation_act_567:
   defensiveness: 0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - defensive0
   - - administrative_ideas
   yearly_corruption: -0.1
@@ -2890,83 +2890,83 @@ idea_variation_act_568:
   global_missionary_strength: 0.02
   global_spy_defence: 0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - *id001
 idea_variation_act_57:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - society0
   - - weapon_quality0
 idea_variation_act_570:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - offensive0
   - - administrative_ideas
   shock_damage: 0.075
 idea_variation_act_571:
   global_tariffs: 0.25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - economic_ideas
   - - exploration_ideas
 idea_variation_act_572:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - economic_ideas
   - - quality0
 idea_variation_act_573:
   colonist_placement_chance: 0.1
   global_colonial_growth: 10
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - administrative_ideas
   - - exploration_ideas
 idea_variation_act_574:
   diplomatic_reputation: 1
   diplomats: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - administrative_ideas
   - - dynasty0
 idea_variation_act_575:
   ae_impact: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - offensive0
   - - expansion_ideas
 idea_variation_act_576:
   global_missionary_strength: 0.01
   monarch_power: ADM
   religious_unity: 0.2
-  req: !!python/tuple
+  req:
   - - dynasty0
   - *id001
 idea_variation_act_577:
   global_spy_defence: 0.35
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - expansion_ideas
 idea_variation_act_578:
   idea_cost: -0.075
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - humanist_ideas
   - - trade_ideas
 idea_variation_act_579:
   monarch_power: DIP
   reduced_liberty_desire: 10
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - economic_ideas
 idea_variation_act_58:
   leader_naval_fire: 1
   leader_naval_shock: 1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - light_ship0
     - galley0
@@ -2974,25 +2974,25 @@ idea_variation_act_58:
 idea_variation_act_580:
   ae_impact: -0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - innovativeness_ideas
 idea_variation_act_581:
   diplomatic_annexation_cost: -0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - administrative_ideas
 idea_variation_act_582:
   global_tariffs: 0.25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - expansion_ideas
 idea_variation_act_583:
   global_unrest: -1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - humanist_ideas
   - - offensive0
   years_of_nationalism: -5
@@ -3000,13 +3000,13 @@ idea_variation_act_584:
   monarch_power: ADM
   prestige: 1
   prestige_decay: -0.01
-  req: !!python/tuple
+  req:
   - - humanist_ideas
   - - quality0
 idea_variation_act_586:
   global_ship_repair: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - administrative_ideas
   - - light_ship0
     - galley0
@@ -3016,7 +3016,7 @@ idea_variation_act_587:
   global_ship_repair: 0.1
   global_tariffs: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - expansion_ideas
   - - light_ship0
     - galley0
@@ -3024,14 +3024,14 @@ idea_variation_act_587:
 idea_variation_act_588:
   build_cost: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - - economic_ideas
 idea_variation_act_589:
   global_sailors_modifier: 0.2
   monarch_power: DIP
   naval_maintenance_modifier: -0.15
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - economic_ideas
 idea_variation_act_59:
@@ -3040,26 +3040,26 @@ idea_variation_act_59:
   legitimacy: 1
   monarch_power: ADM
   republican_tradition: 0.5
-  req: !!python/tuple
+  req:
   - - propaganda0
   - *id002
 idea_variation_act_591:
   build_cost: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - economic_ideas
 idea_variation_act_592:
   global_ship_recruit_speed: -0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - defensive0
     - offensive0
   trade_efficiency: 0.2
 idea_variation_act_593:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - - administrative_ideas
   trade_efficiency: 0.25
@@ -3067,51 +3067,51 @@ idea_variation_act_594:
   global_colonial_growth: 20
   monarch_power: DIP
   native_uprising_chance: -0.5
-  req: !!python/tuple
+  req:
   - - expansion_ideas
   - - exploration_ideas
 idea_variation_act_595:
   colonist_placement_chance: 0.1
   global_trade_power: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - - innovativeness_ideas
 idea_variation_act_596:
   global_missionary_strength: 0.02
   global_tariffs: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - *id001
 idea_variation_act_597:
   monarch_power: DIP
   naval_forcelimit_modifier: 0.2
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - expansion_ideas
 idea_variation_act_598:
   diplomatic_reputation: 2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - innovativeness_ideas
   - - dynasty0
 idea_variation_act_599:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - innovativeness_ideas
   - - trade_ideas
   trade_efficiency: 0.3
 idea_variation_act_6:
   mercenary_discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - state_administration0
   - - mercenary0
 idea_variation_act_60:
   land_maintenance_modifier: -0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - conscription0
 idea_variation_act_600:
@@ -3119,32 +3119,32 @@ idea_variation_act_600:
   heavy_ship_power: 0.1
   light_ship_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - innovativeness_ideas
   - - maritime_ideas
 idea_variation_act_601:
   global_foreign_trade_power: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - *id002
 idea_variation_act_602:
   diplomatic_reputation: 1
   diplomats: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - *id002
 idea_variation_act_603:
   monarch_power: DIP
   navy_tradition_decay: -0.02
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - *id002
 idea_variation_act_604:
   monarch_power: DIP
   naval_morale: 0.15
-  req: !!python/tuple
+  req:
   - - exploration_ideas
   - - defensive0
 idea_variation_act_605:
@@ -3152,25 +3152,25 @@ idea_variation_act_605:
   heavy_ship_power: 0.1
   light_ship_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - - quantity0
     - quality0
 idea_variation_act_606:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - - quality0
   trade_efficiency: 0.25
 idea_variation_act_607:
   global_trade_goods_size_modifier: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - - quantity0
 idea_variation_act_608:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - - expansion_ideas
   trade_efficiency: 0.15
@@ -3179,108 +3179,108 @@ idea_variation_act_609:
   diplomatic_reputation: 1
   global_trade_power: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - expansion_ideas
 idea_variation_act_61:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - offensive0
   siege_ability: 0.1
 idea_variation_act_612:
   diplomatic_reputation: 2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - quality0
 idea_variation_act_615:
   global_trade_goods_size_modifier: 0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - trade_ideas
   - *id001
 idea_variation_act_616:
   monarch_power: MIL
   naval_morale: 0.1
   recover_navy_morale_speed: 0.1
-  req: !!python/tuple
+  req:
   - - maritime_ideas
   - *id001
 idea_variation_act_617:
   improve_relation_modifier: 0.2
   monarch_power: DIP
   num_accepted_cultures: 1
-  req: !!python/tuple
+  req:
   - - humanist_ideas
   - - dynasty0
 idea_variation_act_618:
   global_colonial_growth: 20
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - humanist_ideas
   - - exploration_ideas
   tolerance_heathen: 1
 idea_variation_act_619:
   global_unrest: -2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - humanist_ideas
   - - spy_ideas
 idea_variation_act_62:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - propaganda0
   - - innovativeness_ideas
 idea_variation_act_620:
   diplomatic_reputation: 1
   improve_relation_modifier: 0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - humanist_ideas
   - - influence_ideas
 idea_variation_act_621:
   culture_conversion_cost: -0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - *id001
 idea_variation_act_622:
   monarch_power: DIP
   naval_attrition: -0.5
-  req: !!python/tuple
+  req:
   - - humanist_ideas
   - - maritime_ideas
 idea_variation_act_626:
   embracement_cost: -0.2
   global_institution_spread: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - quality0
 idea_variation_act_629:
   manpower_recovery_speed: 0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - administrative_ideas
   - - quantity0
 idea_variation_act_63:
   global_ship_cost: -0.25
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - expansion_ideas
 idea_variation_act_630:
   leader_land_fire: 2
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - expansion_ideas
   - - quality0
 idea_variation_act_631:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - quality0
   - - administrative_ideas
   state_maintenance_modifier: -0.5
@@ -3288,13 +3288,13 @@ idea_variation_act_631:
 idea_variation_act_632:
   artillery_power: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - offensive0
   - - economic_ideas
 idea_variation_act_633:
   merchants: 1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - defensive0
   - - trade_ideas
   trade_steering: 0.15
@@ -3302,33 +3302,33 @@ idea_variation_act_634:
   infantry_power: 0.1
   land_morale: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - offensive0
   - - trade_ideas
 idea_variation_act_636:
   land_attrition: -0.1
   manpower_recovery_speed: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - quality0
   - - exploration_ideas
 idea_variation_act_637:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - innovativeness_ideas
   - - offensive0
   siege_ability: 0.1
 idea_variation_act_638:
   defensiveness: 0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - innovativeness_ideas
   - - defensive0
 idea_variation_act_639:
   global_tax_modifier: 0.15
   monarch_power: ADM
   production_efficiency: 0.15
-  req: !!python/tuple
+  req:
   - - innovativeness_ideas
   - - quality0
 idea_variation_act_64:
@@ -3336,7 +3336,7 @@ idea_variation_act_64:
   heavy_ship_power: 0.1
   light_ship_power: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - weapon_quality0
   - - light_ship0
     - galley0
@@ -3344,27 +3344,27 @@ idea_variation_act_64:
 idea_variation_act_640:
   monarch_power: ADM
   recover_army_morale_speed: 0.15
-  req: !!python/tuple
+  req:
   - - innovativeness_ideas
   - - quantity0
 idea_variation_act_641:
   cav_to_inf_ratio: 0.1
   cavalry_power: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - spy_ideas
   - - offensive0
 idea_variation_act_642:
   global_heretic_missionary_strength: 0.03
   monarch_power: ADM
   religious_unity: 0.2
-  req: !!python/tuple
+  req:
   - - offensive0
   - *id001
 idea_variation_act_643:
   land_morale: 0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - quality0
   - *id001
   siege_ability: 0.1
@@ -3373,52 +3373,52 @@ idea_variation_act_644:
   heavy_ship_power: 0.1
   light_ship_power: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - offensive0
   - - exploration_ideas
 idea_variation_act_645:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - quantity0
   - *id001
 idea_variation_act_646:
   diplomatic_reputation: 1
   land_forcelimit_modifier: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - quantity0
 idea_variation_act_647:
   fire_damage_received: -0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - defensive0
 idea_variation_act_648:
   global_regiment_cost: -0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - expansion_ideas
   - - defensive0
 idea_variation_act_649:
   diplomatic_reputation: 2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - dynasty0
   - - offensive0
 idea_variation_act_65:
   land_forcelimit_modifier: 0.15
   land_maintenance_modifier: -0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - fortress0
 idea_variation_act_650:
   global_colonial_growth: 20
   monarch_power: MIL
   native_uprising_chance: -0.5
-  req: !!python/tuple
+  req:
   - - quantity0
   - - exploration_ideas
 idea_variation_act_651:
@@ -3427,21 +3427,21 @@ idea_variation_act_651:
   legitimacy: 1
   monarch_power: ADM
   republican_tradition: 0.5
-  req: !!python/tuple
+  req:
   - - dynasty0
   - *id002
 idea_variation_act_652:
   global_colonial_growth: 10
   land_forcelimit_modifier: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - quantity0
   - - expansion_ideas
 idea_variation_act_653:
   embargo_efficiency: 0.25
   monarch_power: DIP
   naval_forcelimit_modifier: 0.15
-  req: !!python/tuple
+  req:
   - - war_production0
   - - light_ship0
     - galley0
@@ -3449,7 +3449,7 @@ idea_variation_act_653:
 idea_variation_act_655:
   leader_naval_fire: 2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - innovativeness_ideas
   - - light_ship0
     - galley0
@@ -3457,7 +3457,7 @@ idea_variation_act_655:
 idea_variation_act_656:
   leader_naval_shock: 2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - *id001
   - - light_ship0
     - galley0
@@ -3466,26 +3466,26 @@ idea_variation_act_657:
   global_unrest: -1
   monarch_power: DIP
   reduced_liberty_desire: 5
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - *id002
 idea_variation_act_658:
   leader_land_shock: 2
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - humanist_ideas
   - - quantity0
 idea_variation_act_659:
   monarch_power: DIP
   naval_morale: 0.15
-  req: !!python/tuple
+  req:
   - - humanist_ideas
   - - light_ship0
     - galley0
     - heavy_ship0
 idea_variation_act_66:
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - economic_ideas
   trade_range_modifier: 0.25
@@ -3493,108 +3493,108 @@ idea_variation_act_66:
 idea_variation_act_660:
   land_attrition: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - humanist_ideas
   - - defensive0
 idea_variation_act_661:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - defensive0
 idea_variation_act_662:
   monarch_power: DIP
   reduced_liberty_desire: 10
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - offensive0
 idea_variation_act_663:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - influence_ideas
   - - quantity0
   shock_damage: 0.075
 idea_variation_act_67:
   leader_naval_manuever: 2
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - fleet_base0
   - - general_staff0
 idea_variation_act_68:
   leader_land_fire: 1
   leader_land_shock: 1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - general_staff0
 idea_variation_act_69:
   hostile_attrition: 2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - defensive0
 idea_variation_act_7:
   fire_damage: 0.075
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - state_administration0
   - - war_production0
 idea_variation_act_70:
   defensiveness: 0.1
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - fortress0
 idea_variation_act_71:
   global_manpower_modifier: 0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - conscription0
 idea_variation_act_72:
   global_trade_goods_size_modifier: 0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - war_production0
 idea_variation_act_74:
   global_unrest: -2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - nationalism0
   - - administrative_ideas
 idea_variation_act_75:
   mercenary_manpower: 1.0
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - mercenary0
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_76:
   monarch_power: DIP
   religious_unity: 0.5
-  req: !!python/tuple
+  req:
   - *id001
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_77:
   core_creation: -0.15
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - expansion_ideas
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_78:
   land_maintenance_modifier: -0.2
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - quantity0
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_79:
   ae_impact: -0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - imperialism0
     - imperial_ambition0
   - - republic0
@@ -3605,53 +3605,53 @@ idea_variation_act_79:
 idea_variation_act_8:
   advisor_cost: -0.1
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - state_administration0
   - - nationalism0
 idea_variation_act_80:
   diplomatic_annexation_cost: -0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - humanist_ideas
   - - imperialism0
     - imperial_ambition0
 idea_variation_act_81:
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - innovativeness_ideas
   siege_ability: 0.1
 idea_variation_act_82:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - propaganda0
 idea_variation_act_83:
   cav_to_inf_ratio: 0.1
   cavalry_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - society0
 idea_variation_act_84:
   cav_to_inf_ratio: 0.1
   cavalry_power: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - administrative_ideas
 idea_variation_act_85:
   land_maintenance_modifier: -0.15
   monarch_power: MIL
   naval_maintenance_modifier: -0.15
-  req: !!python/tuple
+  req:
   - - general_staff0
   - - economic_ideas
 idea_variation_act_86:
   discipline: 0.05
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - republic0
     - theocracy0
@@ -3661,19 +3661,19 @@ idea_variation_act_86:
 idea_variation_act_87:
   land_maintenance_modifier: -0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - administrative_ideas
 idea_variation_act_88:
   land_morale: 0.15
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - nationalism0
 idea_variation_act_89:
   global_sailors_modifier: 0.33
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - light_ship0
     - galley0
@@ -3681,43 +3681,43 @@ idea_variation_act_89:
 idea_variation_act_90:
   ae_impact: -0.15
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - standing_army0
   - - influence_ideas
 idea_variation_act_91:
   merc_maintenance_modifier: -0.2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - mercenary0
   - - expansion_ideas
 idea_variation_act_92:
   development_cost: -0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - mercenary0
   - - economic_ideas
 idea_variation_act_93:
   free_leader_pool: 2
   monarch_power: ADM
-  req: !!python/tuple
+  req:
   - - mercenary0
   - - innovativeness_ideas
 idea_variation_act_94:
   monarch_power: ADM
   prestige_from_land: 1.0
-  req: !!python/tuple
+  req:
   - - mercenary0
   - - humanist_ideas
   years_of_nationalism: -5
 idea_variation_act_95:
   mercenary_discipline: 0.05
   monarch_power: DIP
-  req: !!python/tuple
+  req:
   - - mercenary0
   - - trade_ideas
 idea_variation_act_96:
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - mercenary0
   - - dynasty0
   shock_damage_received: -0.05
@@ -3725,7 +3725,7 @@ idea_variation_act_97:
   infantry_power: 0.1
   land_morale: 0.1
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - conscription0
   - - imperialism0
     - imperial_ambition0
@@ -3733,12 +3733,12 @@ idea_variation_act_98:
   monarch_power: DIP
   naval_morale: 0.15
   navy_tradition: 1
-  req: !!python/tuple
+  req:
   - - conscription0
   - - fleet_base0
 idea_variation_act_99:
   global_manpower_modifier: 0.25
   monarch_power: MIL
-  req: !!python/tuple
+  req:
   - - conscription0
   - - colonial_empire0

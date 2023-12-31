@@ -35,19 +35,19 @@ weights:
     # War weights are used to determine the score of a country during war time and to find the best policies
     military:
         # Main modifiers
-        discipline: 400                              # Each 10% is 40 points
-        fire_damage: 150                             # Each 10% is 15 points
-        fire_damage_received: 200                    # Each 10% is 20 points
-        shock_damage: 150                            # Each 10% is 15 points
-        shock_damage_received: 200                   # Each 10% is 20 points
-        land_morale: 100                             # Each 10% is 10 points
+        discipline: 1000                             # Each 5% is 50 points
+        fire_damage: 160                             # Each 5% is 8 points
+        fire_damage_received: 200                    # Each 5% is 10 points
+        shock_damage: 600                            # Each 5% is 30 points
+        shock_damage_received: 400                   # Each 5% is 20 points
+        land_morale: 300                             # Each 10% is 30 points - value 0.25 morale as 0.05 discipline
         army_tradition: 10                           # Each 10% is 1 points
         # Infantry  
-        infantry_power: 0                          # Each 10% is 20 points
-        infantry_cost: 0                            # Each 10% discount is 1 points
+        infantry_power: 0                            # Each 10% is 0 pointsb - focus on infantry and arty
+        infantry_cost: 0                             # Each 10% discount is 0 points
         # Cavalry   
-        cavalry_power: 200                           # Each 10% is 20 points
+        cavalry_power: 800                           # Each 10% is 80 points - dont focus on cav
         cavalry_flanking: 10                         # Each point is 10 points
         # Artillery 
-        artillery_power: 200                         # Each 10% is 20 points
-        backrow_artillery_damage: 100                # Each 10% is 10 points
+        artillery_power: 600                         # Each 10% is 60 points - focus on infantry and arty
+        backrow_artillery_damage: 600                # Each 10% is 60 points

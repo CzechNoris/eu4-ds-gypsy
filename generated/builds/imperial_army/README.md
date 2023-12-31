@@ -1,7 +1,7 @@
 
 # Build: imperial army
 
-- Created: 2023-12-04 14:05:59
+- Created: 2023-12-29 17:17:10
 - Religions: catholic0
 - Governments: monarchy0
 - Empire: True
@@ -9,26 +9,26 @@
 
 ## Potential filtering
 
-- mean: 179.55
-- std: 90.11
+- mean: 478.04
+- std: 236.60
 - min: 2.00
-- max: 364.00
-- 10% percentile: 89.35
-- 25% percentile: 131.00
-- 40% percentile: 154.25
-- 50% percentile: 164.18
-- 60% percentile: 179.20
-- 75% percentile: 241.55
-- 90% percentile: 301.93
+- max: 1098.50
+- 10% percentile: 242.45
+- 25% percentile: 331.62
+- 40% percentile: 396.25
+- 50% percentile: 451.88
+- 60% percentile: 554.15
+- 75% percentile: 658.50
+- 90% percentile: 773.98
 
 ## Weights
 
 - Country: 
 ```
-development_cost: 150
-development_cost_in_primary_culture: 100
-country_admin_power: 25
-country_diplomatic_power: 25
+development_cost: 800
+development_cost_in_primary_culture: 500
+country_admin_power: 50
+country_diplomatic_power: 50
 free_policy: 5
 free_adm_policy: 2
 free_dip_policy: 2
@@ -56,24 +56,24 @@ build_cost: 20
 ```
 - Military: 
 ```
-discipline: 600
-fire_damage: 150
-fire_damage_received: 300
-shock_damage: 150
-shock_damage_received: 300
-land_morale: 100
+discipline: 1200
+fire_damage: 500
+fire_damage_received: 600
+shock_damage: 400
+shock_damage_received: 600
+land_morale: 300
 army_tradition: 10
-infantry_power: 300
-infantry_cost: 10
+infantry_power: 700
+infantry_cost: 0
 cavalry_power: 0
 cavalry_flanking: 0
-artillery_power: 300
-backrow_artillery_damage: 200
-global_manpower_modifier: 50
-land_forcelimit_modifier: 50
+artillery_power: 600
+backrow_artillery_damage: 600
+global_manpower_modifier: 200
+land_forcelimit_modifier: 200
 land_maintenance_modifier: 20
-manpower_recovery_speed: 20
-manpower_in_true_faith_provinces: 20
+manpower_recovery_speed: 100
+manpower_in_true_faith_provinces: 150
 defensiveness: 10
 fort_maintenance_modifier: 5
 siege_ability: 5
@@ -81,7 +81,7 @@ siege_ability: 5
 ```
 - Ideas: 
 ```
-nationalism0: 50
+nationalism0: 100
 centralisation0: 20
 
 ```

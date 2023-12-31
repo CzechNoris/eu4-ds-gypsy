@@ -1,0 +1,17 @@
+defaults:
+    religion: catholic0
+    goverment: monarchy0
+    empire: true
+
+highlights:
+    - cavalry_power
+
+weights:
+    ideas:
+        nationalism0: 0
+
+    country:
+        development_cost: 0
+
+    military:
+        cavalry_power: 100                          

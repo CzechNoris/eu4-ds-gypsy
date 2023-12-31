@@ -16,15 +16,14 @@ All the default data comes with this repository so you only need to install used
 pip install -r requirements.txt 
 ```
 
-## Usage
+## Scripts
 
 ### Convert idea or policy files into yaml
 
 This step is mainly necessary only if you are using a different idea or policy files but the ones we used for the experiments and computations. Common output folder is `data/processed/...`
 
 ```bash
-# Idea file/folder conversion
-
+# Idea file/folder convert
 # python scripts/process_ideas.py -help
 
 python scripts/process_ideas.py -i {PATH_TO_IDEA_FOLDER} -o {OUTPUT_PATH}
@@ -32,7 +31,7 @@ python scripts/process_ideas.py -i {PATH_TO_IDEA_FOLDER} -o {OUTPUT_PATH}
 # Example
 python scripts/process_ideas.py -i data/raw/gypsy/common/ideas -o data/processed/gypsy-1-36-1
 
-# Policy file/folder conversion
+# Policy file/folder convert
 # python scripts/process_policies.py -help
 
 python scripts/process_policies.py -i {PATH_TO_POLICY_FOLDER} -o {OUTPUT_PATH}
@@ -57,7 +56,7 @@ python scripts/gen_policy_table.py -i data/processed/gypsy-1-36-1/00_basic_ideas
 
 ### Generate builds by effect weights
 
-You can either use the script to get N best builds per build size of you can use playbook `notebooks/template_build_search.ipynb` to start your research (make a copy of the template). In case of the script way, wou need to craft your own weights using `data/external/weights/weights_template.yaml`. Make an copy and adjust the numbers according your wish, then run the script. There are many parameters how to mainly speed up the process, but to start with, only the weights file is required combined with the religion and government of your choosing.
+You can utilize the script to obtain the N best builds for each idea size. To do so, you'll need to create your own build configuration by modifying the `data/external/build_configs/_build_config.yaml` file. Make a copy of it and adjust the numbers according to your preferences, then execute the script. There are various parameters to enhance the process primarily for speed, but to begin, you only need the weights file along with your chosen religion and government.
 
 ```bash
 # python ./scripts/gen_builds.py -help
@@ -66,7 +65,7 @@ python ./scripts/gen_builds.py -w {PATH_TO_WEIGHTS_FILE} -r {RELIGION} -g {GOVER
 
 # Example 
 
-python ./scripts/gen_builds.py -w data/external/weights/imperial_army.yaml -r protestant0 -g horde0
+python ./scripts/gen_builds.py -w data/external/build_configs/imperial_army.yaml -r protestant0 -g horde0
 ```
 
 Other script options:

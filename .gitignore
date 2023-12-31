@@ -1,6 +1,10 @@
 data
 generated
 export
+private
+
+notebooks/*
+!notebooks/_*
 
 .vscode
 
